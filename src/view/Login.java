@@ -55,7 +55,7 @@ public class Login extends javax.swing.JFrame {
         background.setPreferredSize(new java.awt.Dimension(1280, 720));
         background.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        pnlSuperior.setBackground(new java.awt.Color(0, 9, 32));
+        pnlSuperior.setBackground(new java.awt.Color(255, 255, 255));
         pnlSuperior.setPreferredSize(new java.awt.Dimension(1280, 30));
         pnlSuperior.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
@@ -83,7 +83,7 @@ public class Login extends javax.swing.JFrame {
         pnlSuperiorLayout.setHorizontalGroup(
             pnlSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlSuperiorLayout.createSequentialGroup()
-                .addGap(0, 1250, Short.MAX_VALUE)
+                .addGap(0, 830, Short.MAX_VALUE)
                 .addComponent(btnCerrar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         pnlSuperiorLayout.setVerticalGroup(
@@ -93,9 +93,9 @@ public class Login extends javax.swing.JFrame {
                 .addComponent(btnCerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        background.add(pnlSuperior, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        background.add(pnlSuperior, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 0, 860, -1));
 
-        pnlIzquierdo.setBackground(new java.awt.Color(73, 112, 161));
+        pnlIzquierdo.setBackground(new java.awt.Color(0, 0, 32));
 
         icnLogo.setIcon(new javax.swing.ImageIcon("/home/labingsw06/NetBeansProjects/southernDental/resources/images/LogoLight .png")); // NOI18N
         icnLogo.setPreferredSize(new java.awt.Dimension(320, 320));
@@ -109,14 +109,15 @@ public class Login extends javax.swing.JFrame {
         pnlIzquierdoLayout.setVerticalGroup(
             pnlIzquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlIzquierdoLayout.createSequentialGroup()
-                .addGap(139, 139, 139)
+                .addGap(155, 155, 155)
                 .addComponent(icnLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 352, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(199, Short.MAX_VALUE))
+                .addContainerGap(223, Short.MAX_VALUE))
         );
 
-        background.add(pnlIzquierdo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 420, 690));
+        background.add(pnlIzquierdo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 420, 730));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         passUsuario.setForeground(new java.awt.Color(153, 153, 153));
         passUsuario.setText("Ingrese su contraseña");
@@ -127,12 +128,17 @@ public class Login extends javax.swing.JFrame {
                 passUsuarioMousePressed(evt);
             }
         });
+        jPanel1.add(passUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 390, 170, -1));
 
+        lblContraseña.setFont(new java.awt.Font("Bebas Neue", 0, 24)); // NOI18N
         lblContraseña.setIcon(new javax.swing.ImageIcon("/home/labingsw06/NetBeansProjects/southernDental/resources/images/icons8-open-lock-16.png")); // NOI18N
-        lblContraseña.setText("Contraseña");
+        lblContraseña.setText("Contraseña:");
+        jPanel1.add(lblContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 380, -1, 31));
 
+        lblUsuario.setFont(new java.awt.Font("Bebas Neue", 0, 24)); // NOI18N
         lblUsuario.setIcon(new javax.swing.ImageIcon("/home/labingsw06/NetBeansProjects/southernDental/resources/images/icons8-invitado-masculino-16.png")); // NOI18N
-        lblUsuario.setText("Usuario");
+        lblUsuario.setText("Usuario:");
+        jPanel1.add(lblUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 310, 90, 30));
 
         txtUsuario.setForeground(new java.awt.Color(153, 153, 153));
         txtUsuario.setText("Ingrese su usuario");
@@ -150,10 +156,16 @@ public class Login extends javax.swing.JFrame {
                 txtUsuarioActionPerformed(evt);
             }
         });
+        jPanel1.add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 320, 170, -1));
 
+        icnUsuario.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         icnUsuario.setIcon(new javax.swing.ImageIcon("/home/labingsw06/NetBeansProjects/southernDental/resources/images/icons8-usuario-80.png")); // NOI18N
         icnUsuario.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel1.add(icnUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 860, 104));
 
+        jPanel2.setBackground(new java.awt.Color(204, 204, 204));
+
+        jLabel1.setFont(new java.awt.Font("Bebas Neue", 0, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Login");
         jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -166,53 +178,21 @@ public class Login extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(7, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addGap(0, 3, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(291, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(lblContraseña)
-                        .addGap(30, 30, 30)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(passUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(lblUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(55, 55, 55)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(icnUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(253, 253, 253))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(122, 122, 122)
-                .addComponent(icnUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(9, 9, 9)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(passUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(40, 40, 40)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(283, Short.MAX_VALUE))
-        );
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 460, 110, 40));
 
-        background.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 30, 840, 690));
+        background.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 30, 840, 690));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
