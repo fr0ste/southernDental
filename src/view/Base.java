@@ -54,7 +54,7 @@ public class Base extends javax.swing.JFrame {
         });
 
         btnSalir.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btnSalir.setIcon(new javax.swing.ImageIcon("/home/labingsw05/NetBeansProjects/southernDental/resources/images/exit.png")); // NOI18N
+        btnSalir.setIcon(new javax.swing.ImageIcon("/home/labingsw06/NetBeansProjects/southernDental/resources/images/exit.png")); // NOI18N
         btnSalir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnSalir.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
