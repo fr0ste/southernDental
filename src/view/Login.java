@@ -22,6 +22,7 @@ public class Login extends javax.swing.JFrame {
      */
     public Login() {
         initComponents();
+        //setLocationRelativeTo(null);
     }
 
     /**
@@ -38,13 +39,18 @@ public class Login extends javax.swing.JFrame {
         btnCerrar = new javax.swing.JLabel();
         pnlIzquierdo = new javax.swing.JPanel();
         icnLogo = new javax.swing.JLabel();
+        pnlSuperior1 = new javax.swing.JPanel();
+        btnCerrar1 = new javax.swing.JLabel();
+        pnlSuperior2 = new javax.swing.JPanel();
+        btnCerrar2 = new javax.swing.JLabel();
+        pnlSuperior3 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         passUsuario = new javax.swing.JPasswordField();
         lblContraseña = new javax.swing.JLabel();
         lblUsuario = new javax.swing.JLabel();
         txtUsuario = new javax.swing.JTextField();
         icnUsuario = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
+        btnLogin = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -69,7 +75,6 @@ public class Login extends javax.swing.JFrame {
         });
 
         btnCerrar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btnCerrar.setIcon(new javax.swing.ImageIcon("/home/labingsw06/NetBeansProjects/southernDental/resources/images/exit.png")); // NOI18N
         btnCerrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnCerrar.setPreferredSize(new java.awt.Dimension(30, 30));
         btnCerrar.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -96,28 +101,119 @@ public class Login extends javax.swing.JFrame {
         background.add(pnlSuperior, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 0, 860, -1));
 
         pnlIzquierdo.setBackground(new java.awt.Color(0, 0, 32));
+        pnlIzquierdo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        icnLogo.setIcon(new javax.swing.ImageIcon("/home/labingsw06/NetBeansProjects/southernDental/resources/images/LogoLight .png")); // NOI18N
+        icnLogo.setIcon(new javax.swing.ImageIcon("/home/elioenai/NetBeansProjects/southernDental/resources/images/LogoLight .png")); // NOI18N
         icnLogo.setPreferredSize(new java.awt.Dimension(320, 320));
+        pnlIzquierdo.add(icnLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 155, 415, 352));
 
-        javax.swing.GroupLayout pnlIzquierdoLayout = new javax.swing.GroupLayout(pnlIzquierdo);
-        pnlIzquierdo.setLayout(pnlIzquierdoLayout);
-        pnlIzquierdoLayout.setHorizontalGroup(
-            pnlIzquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(icnLogo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 420, Short.MAX_VALUE)
+        pnlSuperior1.setBackground(new java.awt.Color(255, 255, 255));
+        pnlSuperior1.setPreferredSize(new java.awt.Dimension(1280, 30));
+        pnlSuperior1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                pnlSuperior1MouseDragged(evt);
+            }
+        });
+        pnlSuperior1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                pnlSuperior1MousePressed(evt);
+            }
+        });
+
+        btnCerrar1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btnCerrar1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnCerrar1.setPreferredSize(new java.awt.Dimension(30, 30));
+        btnCerrar1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnCerrar1MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnlSuperior1Layout = new javax.swing.GroupLayout(pnlSuperior1);
+        pnlSuperior1.setLayout(pnlSuperior1Layout);
+        pnlSuperior1Layout.setHorizontalGroup(
+            pnlSuperior1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlSuperior1Layout.createSequentialGroup()
+                .addGap(0, 830, Short.MAX_VALUE)
+                .addComponent(btnCerrar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        pnlIzquierdoLayout.setVerticalGroup(
-            pnlIzquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlIzquierdoLayout.createSequentialGroup()
-                .addGap(155, 155, 155)
-                .addComponent(icnLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 352, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(223, Short.MAX_VALUE))
+        pnlSuperior1Layout.setVerticalGroup(
+            pnlSuperior1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlSuperior1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(btnCerrar1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        background.add(pnlIzquierdo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 420, 730));
+        pnlIzquierdo.add(pnlSuperior1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 0, 860, -1));
+
+        pnlSuperior2.setBackground(new java.awt.Color(255, 255, 255));
+        pnlSuperior2.setPreferredSize(new java.awt.Dimension(1280, 30));
+        pnlSuperior2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                pnlSuperior2MouseDragged(evt);
+            }
+        });
+        pnlSuperior2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                pnlSuperior2MousePressed(evt);
+            }
+        });
+
+        btnCerrar2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btnCerrar2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnCerrar2.setPreferredSize(new java.awt.Dimension(30, 30));
+        btnCerrar2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnCerrar2MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnlSuperior2Layout = new javax.swing.GroupLayout(pnlSuperior2);
+        pnlSuperior2.setLayout(pnlSuperior2Layout);
+        pnlSuperior2Layout.setHorizontalGroup(
+            pnlSuperior2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlSuperior2Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(btnCerrar2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        pnlSuperior2Layout.setVerticalGroup(
+            pnlSuperior2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlSuperior2Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(btnCerrar2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        pnlIzquierdo.add(pnlSuperior2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 0, 860, -1));
+
+        pnlSuperior3.setBackground(new java.awt.Color(0, 0, 32));
+        pnlSuperior3.setPreferredSize(new java.awt.Dimension(1280, 30));
+        pnlSuperior3.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                pnlSuperior3MouseDragged(evt);
+            }
+        });
+        pnlSuperior3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                pnlSuperior3MousePressed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnlSuperior3Layout = new javax.swing.GroupLayout(pnlSuperior3);
+        pnlSuperior3.setLayout(pnlSuperior3Layout);
+        pnlSuperior3Layout.setHorizontalGroup(
+            pnlSuperior3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 420, Short.MAX_VALUE)
+        );
+        pnlSuperior3Layout.setVerticalGroup(
+            pnlSuperior3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 30, Short.MAX_VALUE)
+        );
+
+        pnlIzquierdo.add(pnlSuperior3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, -1));
+
+        background.add(pnlIzquierdo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 720));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         passUsuario.setForeground(new java.awt.Color(153, 153, 153));
         passUsuario.setText("Ingrese su contraseña");
@@ -128,17 +224,12 @@ public class Login extends javax.swing.JFrame {
                 passUsuarioMousePressed(evt);
             }
         });
-        jPanel1.add(passUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 390, 170, -1));
 
-        lblContraseña.setFont(new java.awt.Font("Bebas Neue", 0, 24)); // NOI18N
-        lblContraseña.setIcon(new javax.swing.ImageIcon("/home/labingsw06/NetBeansProjects/southernDental/resources/images/icons8-open-lock-16.png")); // NOI18N
+        lblContraseña.setFont(new java.awt.Font("Signika Light", 1, 24)); // NOI18N
         lblContraseña.setText("Contraseña:");
-        jPanel1.add(lblContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 380, -1, 31));
 
-        lblUsuario.setFont(new java.awt.Font("Bebas Neue", 0, 24)); // NOI18N
-        lblUsuario.setIcon(new javax.swing.ImageIcon("/home/labingsw06/NetBeansProjects/southernDental/resources/images/icons8-invitado-masculino-16.png")); // NOI18N
+        lblUsuario.setFont(new java.awt.Font("Signika Light", 1, 24)); // NOI18N
         lblUsuario.setText("Usuario:");
-        jPanel1.add(lblUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 310, 90, 30));
 
         txtUsuario.setForeground(new java.awt.Color(153, 153, 153));
         txtUsuario.setText("Ingrese su usuario");
@@ -156,16 +247,15 @@ public class Login extends javax.swing.JFrame {
                 txtUsuarioActionPerformed(evt);
             }
         });
-        jPanel1.add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 320, 170, -1));
 
         icnUsuario.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        icnUsuario.setIcon(new javax.swing.ImageIcon("/home/labingsw06/NetBeansProjects/southernDental/resources/images/icons8-usuario-80.png")); // NOI18N
+        icnUsuario.setIcon(new javax.swing.ImageIcon("/home/elioenai/NetBeansProjects/southernDental/resources/images/usuario3d.png")); // NOI18N
         icnUsuario.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(icnUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 860, 104));
 
-        jPanel2.setBackground(new java.awt.Color(204, 204, 204));
+        btnLogin.setBackground(new java.awt.Color(0, 0, 32));
 
-        jLabel1.setFont(new java.awt.Font("Bebas Neue", 0, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Signika Light", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Login");
         jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -174,25 +264,59 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        javax.swing.GroupLayout btnLoginLayout = new javax.swing.GroupLayout(btnLogin);
+        btnLogin.setLayout(btnLoginLayout);
+        btnLoginLayout.setHorizontalGroup(
+            btnLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
+        );
+        btnLoginLayout.setVerticalGroup(
+            btnLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(icnUsuario, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 860, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(7, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(lblUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(lblContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(passUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(240, 240, 240))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(btnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(347, 347, 347))))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(0, 3, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addComponent(icnUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 268, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblUsuario)
+                    .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(34, 34, 34)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(passUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(62, 62, 62)
+                .addComponent(btnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 460, 110, 40));
-
-        background.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 30, 840, 690));
+        background.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 30, 860, 690));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -268,6 +392,41 @@ public class Login extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_btnCerrarMouseClicked
 
+    private void btnCerrar1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCerrar1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCerrar1MouseClicked
+
+    private void pnlSuperior1MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlSuperior1MouseDragged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pnlSuperior1MouseDragged
+
+    private void pnlSuperior1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlSuperior1MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pnlSuperior1MousePressed
+
+    private void btnCerrar2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCerrar2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCerrar2MouseClicked
+
+    private void pnlSuperior2MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlSuperior2MouseDragged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pnlSuperior2MouseDragged
+
+    private void pnlSuperior2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlSuperior2MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pnlSuperior2MousePressed
+
+    private void pnlSuperior3MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlSuperior3MouseDragged
+        int x = evt.getXOnScreen();
+        int y = evt.getYOnScreen();
+        this.setLocation(x - xMouse, y - yMouse);
+    }//GEN-LAST:event_pnlSuperior3MouseDragged
+
+    private void pnlSuperior3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlSuperior3MousePressed
+        xMouse = evt.getX();
+        yMouse = evt.getY();
+    }//GEN-LAST:event_pnlSuperior3MousePressed
+
     /**
      * @param args the command line arguments
      */
@@ -307,16 +466,21 @@ public class Login extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel background;
     private javax.swing.JLabel btnCerrar;
+    private javax.swing.JLabel btnCerrar1;
+    private javax.swing.JLabel btnCerrar2;
+    private javax.swing.JPanel btnLogin;
     private javax.swing.JLabel icnLogo;
     private javax.swing.JLabel icnUsuario;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel lblContraseña;
     private javax.swing.JLabel lblUsuario;
     private javax.swing.JPasswordField passUsuario;
     private javax.swing.JPanel pnlIzquierdo;
     private javax.swing.JPanel pnlSuperior;
+    private javax.swing.JPanel pnlSuperior1;
+    private javax.swing.JPanel pnlSuperior2;
+    private javax.swing.JPanel pnlSuperior3;
     private javax.swing.JTextField txtUsuario;
     // End of variables declaration//GEN-END:variables
 }
