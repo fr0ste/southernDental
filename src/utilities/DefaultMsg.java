@@ -10,4 +10,6 @@ package utilities;
 public class DefaultMsg {
     public static final String IN_NOMBREPACIENE = "Ingrese el nombre del paciente";
     public static final String OUT_MENSAJEERROR = "Rellene los campos";
+    public static final String IN_USUARIO = "Ingrese su usuario";
+    public static final String IN_PASS = "Ingrese su contraseña";
 }
