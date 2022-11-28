@@ -16,12 +16,12 @@ public class Conexion {
     private String driver;
     private String db;
     private Connection connection;
-
+    
     public Conexion() {
         this.user = "root";
         this.constraseña = "root";
-        this.url = "jdbc:mysql//";
-        this.ip = "localhost:";
+        this.url = "jdbc:mysql://";
+        this.ip = "172.17.0.2:";
         this.puerto = "3306";
         this.driver = "com.mysql.cj.jdbc.Driver";
         this.db = "/southern_dental";
@@ -31,9 +31,7 @@ public class Conexion {
         try {
 
             Class.forName(driver);
-            //connection = DriverManager.getConnection(url+ip+puerto+db, user, constraseña);
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306"+db, user, constraseña);
-        
+            connection = DriverManager.getConnection(url+ip+puerto+db, user, constraseña);
             return connection;
 
         } catch (SQLException e) {
