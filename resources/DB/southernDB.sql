@@ -1,4 +1,3 @@
--- DROP database LA_MICHOACANA;
 CREATE DATABASE southern_dental;
 
 USE southern_dental;
