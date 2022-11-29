@@ -21,7 +21,7 @@ public class Conexion {
         this.user = "root";
         this.constraseña = "root";
         this.url = "jdbc:mysql://";
-        this.ip = "172.17.0.2:";
+        this.ip = "localhost:";
         this.puerto = "3306";
         this.driver = "com.mysql.cj.jdbc.Driver";
         this.db = "/southern_dental";
