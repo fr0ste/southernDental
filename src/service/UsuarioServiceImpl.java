@@ -31,4 +31,15 @@ public class UsuarioServiceImpl {
          model = new UsuarioModelImpl();
          model.insertarUsuario(usuario);
      }
+     
+      public void eliminarUsuario(Usuario usuario){
+          model = new UsuarioModelImpl();
+         model.eliminarUsuario(usuario);
+      }
+      
+       public void actualizarUsuario(Usuario usuario){
+           model = new UsuarioModelImpl();
+         model.actualizarUsuario(usuario);
+       }
+     
 }
