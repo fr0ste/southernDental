@@ -28,7 +28,7 @@ public class Login extends javax.swing.JFrame {
     public Login() {
         initComponents();
         
-        //setLocationRelativeTo(null);
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -43,7 +43,9 @@ public class Login extends javax.swing.JFrame {
         background = new javax.swing.JPanel();
         pnlSuperiorDerecho = new javax.swing.JPanel();
         btnCerrar = new javax.swing.JLabel();
-        pnlSuperiorIzquierdo = new javax.swing.JPanel();
+        pnlIzquierdo1 = new javax.swing.JPanel();
+        pnlSuperior1 = new javax.swing.JPanel();
+        btnCerrar1 = new javax.swing.JLabel();
         pnlIzquierdo = new javax.swing.JPanel();
         icnLogo = new javax.swing.JLabel();
         pnlDerecho = new javax.swing.JPanel();
@@ -62,7 +64,6 @@ public class Login extends javax.swing.JFrame {
 
         background.setBackground(new java.awt.Color(255, 255, 255));
         background.setPreferredSize(new java.awt.Dimension(1280, 720));
-        background.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         pnlSuperiorDerecho.setBackground(new java.awt.Color(255, 255, 255));
         pnlSuperiorDerecho.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -89,12 +90,55 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
+        pnlIzquierdo1.setBackground(new java.awt.Color(0, 0, 32));
+        pnlIzquierdo1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        pnlSuperior1.setBackground(new java.awt.Color(255, 255, 255));
+        pnlSuperior1.setPreferredSize(new java.awt.Dimension(1280, 30));
+        pnlSuperior1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                pnlSuperior1MouseDragged(evt);
+            }
+        });
+        pnlSuperior1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                pnlSuperior1MousePressed(evt);
+            }
+        });
+
+        btnCerrar1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btnCerrar1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnCerrar1.setPreferredSize(new java.awt.Dimension(30, 30));
+        btnCerrar1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnCerrar1MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnlSuperior1Layout = new javax.swing.GroupLayout(pnlSuperior1);
+        pnlSuperior1.setLayout(pnlSuperior1Layout);
+        pnlSuperior1Layout.setHorizontalGroup(
+            pnlSuperior1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlSuperior1Layout.createSequentialGroup()
+                .addGap(0, 830, Short.MAX_VALUE)
+                .addComponent(btnCerrar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        pnlSuperior1Layout.setVerticalGroup(
+            pnlSuperior1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlSuperior1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(btnCerrar1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        pnlIzquierdo1.add(pnlSuperior1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 0, 860, -1));
+
         javax.swing.GroupLayout pnlSuperiorDerechoLayout = new javax.swing.GroupLayout(pnlSuperiorDerecho);
         pnlSuperiorDerecho.setLayout(pnlSuperiorDerechoLayout);
         pnlSuperiorDerechoLayout.setHorizontalGroup(
             pnlSuperiorDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlSuperiorDerechoLayout.createSequentialGroup()
-                .addGap(0, 830, Short.MAX_VALUE)
+                .addComponent(pnlIzquierdo1, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 830, Short.MAX_VALUE)
                 .addComponent(btnCerrar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         pnlSuperiorDerechoLayout.setVerticalGroup(
@@ -102,45 +146,27 @@ public class Login extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlSuperiorDerechoLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(btnCerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(pnlIzquierdo1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-
-        background.add(pnlSuperiorDerecho, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 0, 860, -1));
-
-        pnlSuperiorIzquierdo.setBackground(new java.awt.Color(0, 0, 32));
-        pnlSuperiorIzquierdo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        pnlSuperiorIzquierdo.setPreferredSize(new java.awt.Dimension(1280, 30));
-        pnlSuperiorIzquierdo.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseDragged(java.awt.event.MouseEvent evt) {
-                pnlSuperiorIzquierdoMouseDragged(evt);
-            }
-        });
-        pnlSuperiorIzquierdo.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                pnlSuperiorIzquierdoMousePressed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout pnlSuperiorIzquierdoLayout = new javax.swing.GroupLayout(pnlSuperiorIzquierdo);
-        pnlSuperiorIzquierdo.setLayout(pnlSuperiorIzquierdoLayout);
-        pnlSuperiorIzquierdoLayout.setHorizontalGroup(
-            pnlSuperiorIzquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 420, Short.MAX_VALUE)
-        );
-        pnlSuperiorIzquierdoLayout.setVerticalGroup(
-            pnlSuperiorIzquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 30, Short.MAX_VALUE)
-        );
-
-        background.add(pnlSuperiorIzquierdo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, -1));
 
         pnlIzquierdo.setBackground(new java.awt.Color(0, 0, 32));
-        pnlIzquierdo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         icnLogo.setIcon(new javax.swing.ImageIcon("resources/images/LogoLight .png"));
         icnLogo.setPreferredSize(new java.awt.Dimension(320, 320));
-        pnlIzquierdo.add(icnLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 155, 415, 352));
 
-        background.add(pnlIzquierdo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 720));
+        javax.swing.GroupLayout pnlIzquierdoLayout = new javax.swing.GroupLayout(pnlIzquierdo);
+        pnlIzquierdo.setLayout(pnlIzquierdoLayout);
+        pnlIzquierdoLayout.setHorizontalGroup(
+            pnlIzquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(icnLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        pnlIzquierdoLayout.setVerticalGroup(
+            pnlIzquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlIzquierdoLayout.createSequentialGroup()
+                .addGap(155, 155, 155)
+                .addComponent(icnLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 352, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
 
         pnlDerecho.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -253,7 +279,26 @@ public class Login extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        background.add(pnlDerecho, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 30, 860, 690));
+        javax.swing.GroupLayout backgroundLayout = new javax.swing.GroupLayout(background);
+        background.setLayout(backgroundLayout);
+        backgroundLayout.setHorizontalGroup(
+            backgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(backgroundLayout.createSequentialGroup()
+                .addComponent(pnlIzquierdo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pnlDerecho, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(pnlSuperiorDerecho, javax.swing.GroupLayout.PREFERRED_SIZE, 1275, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        backgroundLayout.setVerticalGroup(
+            backgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(backgroundLayout.createSequentialGroup()
+                .addComponent(pnlSuperiorDerecho, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addGroup(backgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(backgroundLayout.createSequentialGroup()
+                        .addComponent(pnlDerecho, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(111, Short.MAX_VALUE))
+                    .addComponent(pnlIzquierdo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -341,16 +386,17 @@ public class Login extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_btnCerrarMouseClicked
 
-    private void pnlSuperiorIzquierdoMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlSuperiorIzquierdoMouseDragged
-        int x = evt.getXOnScreen();
-        int y = evt.getYOnScreen();
-        this.setLocation(x - xMouse1, y - yMouse1);
-    }//GEN-LAST:event_pnlSuperiorIzquierdoMouseDragged
+    private void btnCerrar1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCerrar1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCerrar1MouseClicked
 
-    private void pnlSuperiorIzquierdoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlSuperiorIzquierdoMousePressed
-        xMouse1 = evt.getX();
-        yMouse1 = evt.getY();
-    }//GEN-LAST:event_pnlSuperiorIzquierdoMousePressed
+    private void pnlSuperior1MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlSuperior1MouseDragged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pnlSuperior1MouseDragged
+
+    private void pnlSuperior1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlSuperior1MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pnlSuperior1MousePressed
 
     /**
      * @param args the command line arguments
@@ -391,6 +437,7 @@ public class Login extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel background;
     private javax.swing.JLabel btnCerrar;
+    private javax.swing.JLabel btnCerrar1;
     private javax.swing.JPanel btnLogin;
     private javax.swing.JLabel icnLogo;
     private javax.swing.JLabel icnUsuario;
@@ -401,8 +448,9 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JPasswordField passUsuario;
     private javax.swing.JPanel pnlDerecho;
     private javax.swing.JPanel pnlIzquierdo;
+    private javax.swing.JPanel pnlIzquierdo1;
+    private javax.swing.JPanel pnlSuperior1;
     private javax.swing.JPanel pnlSuperiorDerecho;
-    private javax.swing.JPanel pnlSuperiorIzquierdo;
     private javax.swing.JTextField txtUsuario;
     // End of variables declaration//GEN-END:variables
 }

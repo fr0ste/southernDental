@@ -50,7 +50,7 @@ public class Home extends javax.swing.JFrame {
      */
     public Home() {
         initComponents();
-                       
+        setLocationRelativeTo(null);
 
         
     }
@@ -88,6 +88,7 @@ public class Home extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(1280, 720));
 
+        lblSuperior.setBackground(new java.awt.Color(255, 255, 255));
         lblSuperior.setPreferredSize(new java.awt.Dimension(1280, 30));
         lblSuperior.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
@@ -101,6 +102,8 @@ public class Home extends javax.swing.JFrame {
         });
 
         btnSalir.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btnSalir.setIcon(new javax.swing.ImageIcon("resources/images/exit.png")
+        );
         btnSalir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnSalir.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -155,8 +158,8 @@ public class Home extends javax.swing.JFrame {
         lblSuperiorLayout.setHorizontalGroup(
             lblSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, lblSuperiorLayout.createSequentialGroup()
-                .addComponent(pnlIzquierdo, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 930, Short.MAX_VALUE)
+                .addComponent(pnlIzquierdo, javax.swing.GroupLayout.PREFERRED_SIZE, 321, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 929, Short.MAX_VALUE)
                 .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         lblSuperiorLayout.setVerticalGroup(
@@ -181,6 +184,7 @@ public class Home extends javax.swing.JFrame {
         btnHome.setForeground(new java.awt.Color(255, 255, 255));
         btnHome.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btnHome.setText("HOME");
+        btnHome.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnHome.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnHomeMouseEntered(evt);
@@ -240,6 +244,7 @@ public class Home extends javax.swing.JFrame {
         btnPacientes.setForeground(new java.awt.Color(255, 255, 255));
         btnPacientes.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btnPacientes.setText("PACIENTES");
+        btnPacientes.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout pnlPacientesLayout = new javax.swing.GroupLayout(pnlPacientes);
         pnlPacientes.setLayout(pnlPacientesLayout);
@@ -266,6 +271,7 @@ public class Home extends javax.swing.JFrame {
         btnAlumnos.setForeground(new java.awt.Color(255, 255, 255));
         btnAlumnos.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btnAlumnos.setText("ALUMNOS");
+        btnAlumnos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout pnlAlumnosLayout = new javax.swing.GroupLayout(pnlAlumnos);
         pnlAlumnos.setLayout(pnlAlumnosLayout);
@@ -292,6 +298,7 @@ public class Home extends javax.swing.JFrame {
         btnProfesor.setForeground(new java.awt.Color(255, 255, 255));
         btnProfesor.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btnProfesor.setText("PROFESOR");
+        btnProfesor.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout pnlProfesorLayout = new javax.swing.GroupLayout(pnlProfesor);
         pnlProfesor.setLayout(pnlProfesorLayout);
