@@ -358,7 +358,18 @@ public class Login extends javax.swing.JFrame {
 
         if (service.validarUsuario(usuario)) {
             JOptionPane.showMessageDialog(null, "usuario correcto");
-            new Base().setVisible(true);
+            if (jComboBox1.getSelectedItem().toString().equals("administrador")) {
+                new Registro().setVisible(true);
+                this.setVisible(false);
+                
+            }else if (jComboBox1.getSelectedItem().toString().equals("alumno")) {
+                new Home().setVisible(true);
+                this.setVisible(false);
+                
+            }else if (jComboBox1.getSelectedItem().toString().equals("paciente")) {
+                new Base().setVisible(true);
+                this.setVisible(false);
+            }
         } else {
             JOptionPane.showMessageDialog(null, "error");
         }
