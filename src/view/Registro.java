@@ -6,21 +6,21 @@ Descripción: Registro de un paciente o alumno
  */
 package view;
 
+import controller.UsuarioController;
+import entity.Usuario;
 import utilities.Colors;
 
-
 public class Registro extends javax.swing.JFrame {
-    
+
     //variables
-    private int xMouse,yMouse;
-    
- 
+    private int xMouse, yMouse;
+
     public Registro() {
         initComponents();
+        UsuarioController usuarioController = new UsuarioController();
         setLocationRelativeTo(null);
     }
 
-  
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -144,11 +144,14 @@ public class Registro extends javax.swing.JFrame {
         lblGuardar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblGuardar.setText("Guardar");
         lblGuardar.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                lblGuardarMouseEntered(evt);
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblGuardarMouseClicked(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 lblGuardarMouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lblGuardarMouseEntered(evt);
             }
         });
 
@@ -313,6 +316,18 @@ public class Registro extends javax.swing.JFrame {
     private void lblMostrarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblMostrarMouseExited
         pnlMostrar.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_lblMostrarMouseExited
+
+    private void lblGuardarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblGuardarMouseClicked
+        Usuario usuario = new Usuario();
+        UsuarioController uController = new UsuarioController();
+        usuario.setNombreUsuario(this.jTextField1.getText());
+        usuario.setPassUsuario(String.valueOf(this.passUsuario.getPassword()));
+        usuario.setEmail(this.jTextField2.getText());
+        usuario.setRol(this.jComboBox1.getSelectedItem().toString());
+        uController.insertarUsuario(usuario);
+
+
+    }//GEN-LAST:event_lblGuardarMouseClicked
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
