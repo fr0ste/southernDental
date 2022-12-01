@@ -34,4 +34,11 @@ public class UsuarioController {
         }
     }
     
+    public void insertarUsuario(Usuario usuario){
+        
+        service = new UsuarioServiceImpl();
+        service.insertarUsuario(usuario);
+        
+    }
+    
 }

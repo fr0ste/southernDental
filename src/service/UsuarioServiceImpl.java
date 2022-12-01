@@ -24,4 +24,10 @@ public class UsuarioServiceImpl {
         
     }
     
+    public void insertarUsuario(Usuario usuario){
+        model = new UsuarioModelImpl();
+        model.insertarUsuario(usuario);
+        
+        
+    }
 }

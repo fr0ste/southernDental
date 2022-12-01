@@ -1,12 +1,16 @@
 package model;
 
 import DB.Conexion;
+import com.sun.tools.javac.Main;
 import entity.Usuario;
 import java.sql.Connection;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -83,6 +87,61 @@ public class UsuarioModelImpl {
             System.out.println("Error: " + e.getMessage());
             return null;
         }
+    }
+    
+    public void insertarUsuario(Usuario usuario){
+        try {
+            
+            int idRolAux;
+            int idUsuarioAux;
+            ResultSet rs;
+            conexion = new Conexion();//se establece la conexion
+            connection = conexion.getConnection();//se obtiene la conexion de la base de datos 
+            
+            
+            String query = "insert into usuarios(nombre_usuario,pass_usuario,email_usuario) values('"+usuario.getNombreUsuario()+"','"+usuario.getPassUsuario()+"','"+usuario.getEmail()+"');";
+            stm = connection.createStatement();
+           stm.execute(query);
+            stm.close();
+            
+            query = "select id_usuario from usuarios where nombre_usuario='"+usuario.getNombreUsuario()+"';";
+            stm = connection.createStatement();
+            rs = stm.executeQuery(query);
+            rs.next();
+            idUsuarioAux = rs.getInt("id_usuario");
+            stm.close();
+            
+            query = "select id_rol from roles_tipos_usuario where nombre_rol='"+usuario.getRol()+"';";
+            stm = connection.createStatement();
+            rs = stm.executeQuery(query);
+            rs.next();
+            idRolAux = rs.getInt("id_rol");
+            stm.close();
+            
+            query = "insert into roles_usuarios(id_usuario,id_rol) values("+idUsuarioAux+","+idRolAux+");";
+            stm = connection.createStatement();
+           stm.execute(query);
+           stm.close();
+            
+            connection.close();
+            
+            
+            
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(UsuarioModelImpl.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+       
+    
+    }
+    
+    public static void main(String[] args) {
+        UsuarioModelImpl us = new UsuarioModelImpl();
+        
+        us.insertarUsuario(new Usuario("fred", "fred123", "fred@gmail.com", "alumno"));
     }
     
 }
