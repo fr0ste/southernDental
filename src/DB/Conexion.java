@@ -1,8 +1,16 @@
-package DB;
+/*
 
+Autor: Joel && Elio
+Fecha de creación: 01/12/2022
+Fecha de modificación: 01/12/2022
+Descripción: clase que gestiona la conexion a la base de datos.
+
+*/
+package DB;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+
 
 public class Conexion {
 

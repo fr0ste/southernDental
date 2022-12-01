@@ -1,9 +1,11 @@
 /*
-Autor: Joel Francisco Figueroa Martinez
-Fecha de creación: 26 de noviembre del 2022
-Fecha de modificación: 01 de diciembre del 2022
-Descripción: Mensajes mostrados por default en los jTextFiel
- */
+
+Autor: Joel && Elio
+Fecha de creación: 01/12/2022
+Fecha de modificación: 01/12/2022
+Descripción: clase que contiene los mensajes predeterminados
+             EL PREFIJO IN SERÁ PARA LOS CAMPOS DE ENTRADA Y OUT PARA LOS DE SALIDA
+*/
 package utilities;
 
 public class DefaultMsg {

@@ -1,7 +1,15 @@
+/*
+
+Autor: Joel && Elio
+Fecha de creación: 01/12/2022
+Fecha de modificación: 01/12/2022
+Descripción: clase de usuarios.
+
+*/
 package entity;
 
 public class Usuario {
-
+    private int idUsuario;
     private String nombreUsuario;
     private String passUsuario;
     private String email;
@@ -16,6 +24,16 @@ public class Usuario {
         this.email = email;
         this.rol = rol;
     }
+
+    public int getIdUsuario() {
+        return idUsuario;
+    }
+
+    public void setIdUsuario(int idUsuario) {
+        this.idUsuario = idUsuario;
+    }
+    
+    
 
     public String getNombreUsuario() {
         return nombreUsuario;
