@@ -3,8 +3,6 @@ package DB;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import javax.swing.JOptionPane;
-
 
 public class Conexion {
 
@@ -16,7 +14,7 @@ public class Conexion {
     private String driver;
     private String db;
     private Connection connection;
-    
+
     public Conexion() {
         this.user = "root";
         this.constraseña = "root";
@@ -31,7 +29,7 @@ public class Conexion {
         try {
 
             Class.forName(driver);
-            connection = DriverManager.getConnection(url+ip+puerto+db, user, constraseña);
+            connection = DriverManager.getConnection(url + ip + puerto + db, user, constraseña);
             return connection;
 
         } catch (SQLException e) {

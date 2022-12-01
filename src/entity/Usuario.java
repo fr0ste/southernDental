@@ -1,15 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package entity;
 
-/**
- *
- * @author froste
- */
 public class Usuario {
-    
+
     private String nombreUsuario;
     private String passUsuario;
     private String email;
@@ -17,9 +9,7 @@ public class Usuario {
 
     public Usuario() {
     }
-    
-    
-    
+
     public Usuario(String nombreUsuario, String passUsuario, String email, String rol) {
         this.nombreUsuario = nombreUsuario;
         this.passUsuario = passUsuario;
@@ -63,6 +53,5 @@ public class Usuario {
     public String toString() {
         return "Usuario{" + "nombreUsuario=" + nombreUsuario + ", passUsuario=" + passUsuario + ", email=" + email + ", rol=" + rol + '}';
     }
-    
-    
+
 }
