@@ -1,3 +1,11 @@
+/*
+
+Autor: Joel && Elio
+Fecha de creación: 01/12/2022
+Fecha de modificación: 01/12/2022
+Descripción: clase que contiene las constantes de colores.
+
+*/
 package utilities;
 
 import java.awt.Color;

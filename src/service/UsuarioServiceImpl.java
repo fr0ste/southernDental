@@ -1,4 +1,11 @@
+/*
 
+Autor: Joel && Elio
+Fecha de creación: 01/12/2022
+Fecha de modificación: 01/12/2022
+Descripción: clase implementadora del servicio para usuarios.
+
+*/
 package service;
 
 import entity.Usuario;

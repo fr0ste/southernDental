@@ -1,7 +1,14 @@
+/*
+
+Autor: Joel && Elio
+Fecha de creación: 01/12/2022
+Fecha de modificación: 01/12/2022
+Descripción: clase implementadora del modelo para usuarios.
+
+*/
 package model;
 
 import DB.Conexion;
-import com.sun.tools.javac.Main;
 import entity.Usuario;
 import java.sql.Connection;
 import java.sql.ResultSet;
