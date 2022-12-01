@@ -1,6 +1,8 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+Autor: Salvador Elioenai Antonio Pérez
+Fecha de creación: 26 de noviembre del 2022
+Fecha de modificación: 01 de diciembre del 2022
+Descripción: Ventana para agregar, eliminar y consultar pacientes
  */
 package view;
 
