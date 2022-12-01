@@ -1,6 +1,8 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+Autor: Salvador Elioenai Antonio Pérez
+Fecha de creación: 26 de noviembre del 2022
+Fecha de modificación: 01 de diciembre del 2022
+Descripción: Ventana Login
  */
 package view;
 
@@ -12,10 +14,6 @@ import service.UsuarioServiceImpl;
 import utilities.DefaultMsg;
 import javax.swing.JComboBox;
 
-/**
- *
- * @author labingsw05
- */
 public class Login extends javax.swing.JFrame {
 
     //variables
