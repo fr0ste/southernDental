@@ -8,6 +8,9 @@ package view;
 
 import controller.UsuarioController;
 import entity.Usuario;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
+import javax.swing.plaf.nimbus.NimbusLookAndFeel;
 import javax.swing.table.DefaultTableModel;
 import utilities.Colors;
 
@@ -37,6 +40,10 @@ public class Registro extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         lblNombreUsuario1 = new javax.swing.JLabel();
         passUsuario = new javax.swing.JPasswordField();
+        pnlEliminar = new javax.swing.JPanel();
+        lblEliminar = new javax.swing.JLabel();
+        pnlActualizar = new javax.swing.JPanel();
+        lblActualizar = new javax.swing.JLabel();
         pnlGuardar = new javax.swing.JPanel();
         lblGuardar = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -116,6 +123,64 @@ public class Registro extends javax.swing.JFrame {
             }
         });
 
+        pnlEliminar.setBackground(new java.awt.Color(0, 0, 32));
+        pnlEliminar.setForeground(new java.awt.Color(255, 255, 255));
+
+        lblEliminar.setForeground(new java.awt.Color(255, 255, 255));
+        lblEliminar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblEliminar.setText("Eliminar");
+        lblEliminar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblEliminarMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lblEliminarMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                lblEliminarMouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnlEliminarLayout = new javax.swing.GroupLayout(pnlEliminar);
+        pnlEliminar.setLayout(pnlEliminarLayout);
+        pnlEliminarLayout.setHorizontalGroup(
+            pnlEliminarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        pnlEliminarLayout.setVerticalGroup(
+            pnlEliminarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        pnlActualizar.setBackground(new java.awt.Color(0, 0, 32));
+        pnlActualizar.setForeground(new java.awt.Color(255, 255, 255));
+
+        lblActualizar.setForeground(new java.awt.Color(255, 255, 255));
+        lblActualizar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblActualizar.setText("Actualizar");
+        lblActualizar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblActualizarMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lblActualizarMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                lblActualizarMouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnlActualizarLayout = new javax.swing.GroupLayout(pnlActualizar);
+        pnlActualizar.setLayout(pnlActualizarLayout);
+        pnlActualizarLayout.setHorizontalGroup(
+            pnlActualizarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        pnlActualizarLayout.setVerticalGroup(
+            pnlActualizarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
         pnlGuardar.setBackground(new java.awt.Color(0, 0, 32));
         pnlGuardar.setForeground(new java.awt.Color(255, 255, 255));
 
@@ -147,16 +212,16 @@ public class Registro extends javax.swing.JFrame {
 
         tablaRol.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "id", "Usuario", "Rol", "Email"
+                "id", "Usuario", "Rol", "Email", "Editar"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false
+                false, true, true, true, true
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -202,14 +267,21 @@ public class Registro extends javax.swing.JFrame {
                             .addComponent(lblNombreUsuario1)
                             .addComponent(jLabel1))
                         .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(pnlGuardar, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(passUsuario, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jTextField2))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane1))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(pnlEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addComponent(pnlGuardar, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(passUsuario, javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jComboBox1, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jTextField2))
+                                    .addComponent(pnlActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jScrollPane1))))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(regresar)
@@ -222,6 +294,11 @@ public class Registro extends javax.swing.JFrame {
                 .addComponent(lblSuperior, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(166, 166, 166)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 190, Short.MAX_VALUE)
+                        .addComponent(regresar)
+                        .addGap(46, 46, 46))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblNombreUsuario)
@@ -237,11 +314,12 @@ public class Registro extends javax.swing.JFrame {
                         .addGap(52, 52, 52)
                         .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(26, 26, 26)
-                        .addComponent(pnlGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 190, Short.MAX_VALUE)
-                .addComponent(regresar)
-                .addGap(46, 46, 46))
+                        .addComponent(pnlGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(pnlActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(pnlEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
@@ -312,6 +390,59 @@ public class Registro extends javax.swing.JFrame {
         new Login().setVisible(true);
     }//GEN-LAST:event_regresarActionPerformed
 
+    private void lblActualizarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblActualizarMouseClicked
+       Usuario usuario = new Usuario();
+       UsuarioController uController = new UsuarioController();
+       usuario.setNombreUsuario(this.jTextField1.getText());
+       usuario.setPassUsuario(String.valueOf(this.passUsuario.getPassword()));
+       usuario.setEmail(this.jTextField2.getText());
+       usuario.setRol(this.jComboBox1.getSelectedItem().toString());
+       
+       
+    }//GEN-LAST:event_lblActualizarMouseClicked
+
+    private void lblActualizarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblActualizarMouseEntered
+        pnlActualizar.setBackground(Colors.MOUSE_ENTERED);
+
+    }//GEN-LAST:event_lblActualizarMouseEntered
+
+    private void lblActualizarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblActualizarMouseExited
+        pnlActualizar.setBackground(Colors.MOUSE_EXITED);
+    }//GEN-LAST:event_lblActualizarMouseExited
+
+    private void lblEliminarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEliminarMouseClicked
+        Usuario usuario = new Usuario();
+        UsuarioController uController = new UsuarioController();
+    }//GEN-LAST:event_lblEliminarMouseClicked
+
+    private void lblEliminarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEliminarMouseEntered
+        pnlEliminar.setBackground(Colors.MOUSE_ENTERED);
+    }//GEN-LAST:event_lblEliminarMouseEntered
+
+    private void lblEliminarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEliminarMouseExited
+        pnlEliminar.setBackground(Colors.MOUSE_EXITED);
+    }//GEN-LAST:event_lblEliminarMouseExited
+
+        public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try{
+            UIManager.setLookAndFeel(new NimbusLookAndFeel());
+        }catch(UnsupportedLookAndFeelException  e) {
+        }
+        //</editor-fold>
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Registro().setVisible(true);
+            }
+        });
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel btnSalir;
     private javax.swing.JComboBox<String> jComboBox1;
@@ -321,11 +452,15 @@ public class Registro extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JLabel lblActualizar;
+    private javax.swing.JLabel lblEliminar;
     private javax.swing.JLabel lblGuardar;
     private javax.swing.JLabel lblNombreUsuario;
     private javax.swing.JLabel lblNombreUsuario1;
     private javax.swing.JPanel lblSuperior;
     private javax.swing.JPasswordField passUsuario;
+    private javax.swing.JPanel pnlActualizar;
+    private javax.swing.JPanel pnlEliminar;
     private javax.swing.JPanel pnlGuardar;
     private javax.swing.JButton regresar;
     private javax.swing.JTable tablaRol;
