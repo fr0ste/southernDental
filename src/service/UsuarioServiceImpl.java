@@ -1,11 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package service;
 
 import entity.Usuario;
-import model.UsuarioModel;
+import java.util.List;
+import model.UsuarioModelImpl;
 
 /**
  *
@@ -13,11 +11,17 @@ import model.UsuarioModel;
  */
 public class UsuarioServiceImpl {
     
-    private UsuarioModel model;
+    private UsuarioModelImpl model;
     
     public boolean validarUsuario(Usuario usuario){
-        model = new UsuarioModel();
+        model = new UsuarioModelImpl();
         return !model.buscarUsuarioConRol(usuario).isEmpty();
+    }
+    
+    public List<Usuario> obtenerUsuarios(){
+        model = new UsuarioModelImpl();
+        return model.obtenerUsuarios();
+        
     }
     
 }

@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package entity;
 
 /**
@@ -9,7 +6,7 @@ package entity;
  * @author froste
  */
 public class Usuario {
-    
+    private int idUsuario;
     private String nombreUsuario;
     private String passUsuario;
     private String email;
@@ -17,15 +14,24 @@ public class Usuario {
 
     public Usuario() {
     }
-    
-    
-    
-    public Usuario(String nombreUsuario, String passUsuario, String email, String rol) {
+
+    public Usuario(int idUsuario, String nombreUsuario, String passUsuario, String email, String rol) {
+        this.idUsuario = idUsuario;
         this.nombreUsuario = nombreUsuario;
         this.passUsuario = passUsuario;
         this.email = email;
         this.rol = rol;
     }
+
+    public int getIdUsuario() {
+        return idUsuario;
+    }
+
+    public void setIdUsuario(int idUsuario) {
+        this.idUsuario = idUsuario;
+    }
+    
+    
 
     public String getNombreUsuario() {
         return nombreUsuario;
