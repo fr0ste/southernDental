@@ -1,7 +1,7 @@
 /*
 Autor: Salvador Elioenai Antonio Pérez
 Fecha de creación: 26 de noviembre del 2022
-Fecha de modificación: 01 de diciembre del 2022
+Fecha de modificación: 03 de diciembre del 2022
 Descripción: Registro de un paciente o alumno
  */
 package view;
@@ -44,6 +44,8 @@ public class Registro extends javax.swing.JFrame {
         lblEliminar = new javax.swing.JLabel();
         pnlActualizar = new javax.swing.JPanel();
         lblActualizar = new javax.swing.JLabel();
+        pnlMostrar = new javax.swing.JPanel();
+        lblMostrar = new javax.swing.JLabel();
         pnlGuardar = new javax.swing.JPanel();
         lblGuardar = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -181,6 +183,35 @@ public class Registro extends javax.swing.JFrame {
             .addComponent(lblActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        pnlMostrar.setBackground(new java.awt.Color(0, 0, 32));
+        pnlMostrar.setForeground(new java.awt.Color(255, 255, 255));
+
+        lblMostrar.setForeground(new java.awt.Color(255, 255, 255));
+        lblMostrar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblMostrar.setText("Mostrar");
+        lblMostrar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblMostrarMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lblMostrarMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                lblMostrarMouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnlMostrarLayout = new javax.swing.GroupLayout(pnlMostrar);
+        pnlMostrar.setLayout(pnlMostrarLayout);
+        pnlMostrarLayout.setHorizontalGroup(
+            pnlMostrarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblMostrar, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        pnlMostrarLayout.setVerticalGroup(
+            pnlMostrarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblMostrar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
         pnlGuardar.setBackground(new java.awt.Color(0, 0, 32));
         pnlGuardar.setForeground(new java.awt.Color(255, 255, 255));
 
@@ -212,16 +243,16 @@ public class Registro extends javax.swing.JFrame {
 
         tablaRol.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
             },
             new String [] {
-                "id", "Usuario", "Rol", "Email", "Editar"
+                "id", "Usuario", "Email", "Rol"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, true, true, true, true
+                false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -261,6 +292,10 @@ public class Registro extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(regresar)
+                        .addGap(21, 21, 21))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(lblNombreUsuario)
@@ -268,9 +303,6 @@ public class Registro extends javax.swing.JFrame {
                             .addComponent(jLabel1))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(pnlEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -281,11 +313,12 @@ public class Registro extends javax.swing.JFrame {
                                         .addComponent(jTextField2))
                                     .addComponent(pnlActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jScrollPane1))))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(regresar)
-                        .addGap(21, 21, 21)))
+                                .addComponent(jScrollPane1))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(pnlMostrar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(pnlEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 0, Short.MAX_VALUE)))))
                 .addGap(25, 25, 25))
         );
         jPanel1Layout.setVerticalGroup(
@@ -319,6 +352,8 @@ public class Registro extends javax.swing.JFrame {
                         .addComponent(pnlActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(pnlEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(pnlMostrar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -380,9 +415,7 @@ public class Registro extends javax.swing.JFrame {
         usuario.setEmail(this.jTextField2.getText());
         usuario.setRol(this.jComboBox1.getSelectedItem().toString());
         uController.insertarUsuario(usuario);
-        UsuarioController usuarioController = new UsuarioController();
-        modeloTabla = (DefaultTableModel) tablaRol.getModel();
-        usuarioController.mostrarRegistros(modeloTabla);
+
 
     }//GEN-LAST:event_lblGuardarMouseClicked
 
@@ -391,14 +424,18 @@ public class Registro extends javax.swing.JFrame {
     }//GEN-LAST:event_regresarActionPerformed
 
     private void lblActualizarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblActualizarMouseClicked
-       Usuario usuario = new Usuario();
-       UsuarioController uController = new UsuarioController();
-       usuario.setNombreUsuario(this.jTextField1.getText());
-       usuario.setPassUsuario(String.valueOf(this.passUsuario.getPassword()));
-       usuario.setEmail(this.jTextField2.getText());
-       usuario.setRol(this.jComboBox1.getSelectedItem().toString());
-       
-       
+        Usuario usuario = new Usuario();
+        UsuarioController uController = new UsuarioController();
+        usuario.setNombreUsuario(this.jTextField1.getText());
+        usuario.setPassUsuario(String.valueOf(this.passUsuario.getPassword()));
+        usuario.setEmail(this.jTextField2.getText());
+        usuario.setRol(this.jComboBox1.getSelectedItem().toString());
+        uController.actualizarUsuario(usuario);
+        UsuarioController usuarioController = new UsuarioController();
+        modeloTabla = (DefaultTableModel) tablaRol.getModel();
+        usuarioController.mostrarRegistros(modeloTabla);
+
+
     }//GEN-LAST:event_lblActualizarMouseClicked
 
     private void lblActualizarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblActualizarMouseEntered
@@ -411,8 +448,18 @@ public class Registro extends javax.swing.JFrame {
     }//GEN-LAST:event_lblActualizarMouseExited
 
     private void lblEliminarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEliminarMouseClicked
-        Usuario usuario = new Usuario();
         UsuarioController uController = new UsuarioController();
+        Usuario usuario = new Usuario();
+//        usuario.setNombreUsuario(nombreUsuario);
+//        usuario.setPassUsuario(passUsuario);
+//        usuario.setEmail(email);
+//        usuario.setRol(rol);
+        uController.eliminarUsuario(usuario);
+        UsuarioController usuarioController = new UsuarioController();
+        modeloTabla = (DefaultTableModel) tablaRol.getModel();
+        usuarioController.mostrarRegistros(modeloTabla);
+        
+
     }//GEN-LAST:event_lblEliminarMouseClicked
 
     private void lblEliminarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEliminarMouseEntered
@@ -423,15 +470,31 @@ public class Registro extends javax.swing.JFrame {
         pnlEliminar.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_lblEliminarMouseExited
 
-        public static void main(String args[]) {
+    private void lblMostrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblMostrarMouseClicked
+        UsuarioController usuarioController = new UsuarioController();
+        modeloTabla = (DefaultTableModel) tablaRol.getModel();
+        usuarioController.mostrarRegistros(modeloTabla);
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblMostrarMouseClicked
+
+    private void lblMostrarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblMostrarMouseEntered
+        pnlMostrar.setBackground(Colors.MOUSE_ENTERED);
+    }//GEN-LAST:event_lblMostrarMouseEntered
+
+    private void lblMostrarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblMostrarMouseExited
+        pnlMostrar.setBackground(Colors.MOUSE_EXITED);
+    }//GEN-LAST:event_lblMostrarMouseExited
+
+    public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
-        try{
+        try {
             UIManager.setLookAndFeel(new NimbusLookAndFeel());
-        }catch(UnsupportedLookAndFeelException  e) {
+        } catch (UnsupportedLookAndFeelException e) {
         }
         //</editor-fold>
         //</editor-fold>
@@ -455,6 +518,7 @@ public class Registro extends javax.swing.JFrame {
     private javax.swing.JLabel lblActualizar;
     private javax.swing.JLabel lblEliminar;
     private javax.swing.JLabel lblGuardar;
+    private javax.swing.JLabel lblMostrar;
     private javax.swing.JLabel lblNombreUsuario;
     private javax.swing.JLabel lblNombreUsuario1;
     private javax.swing.JPanel lblSuperior;
@@ -462,6 +526,7 @@ public class Registro extends javax.swing.JFrame {
     private javax.swing.JPanel pnlActualizar;
     private javax.swing.JPanel pnlEliminar;
     private javax.swing.JPanel pnlGuardar;
+    private javax.swing.JPanel pnlMostrar;
     private javax.swing.JButton regresar;
     private javax.swing.JTable tablaRol;
     // End of variables declaration//GEN-END:variables

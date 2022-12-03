@@ -1,11 +1,11 @@
-/*
+/**
 
 Autor: Joel && Elio
 Fecha de creación: 01/12/2022
 Fecha de modificación: 01/12/2022
 Descripción: clase implementadora del modelo para usuarios.
 
-*/
+**/
 package model;
 
 import DB.Conexion;
@@ -140,15 +140,49 @@ public class UsuarioModelImpl {
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(UsuarioModelImpl.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-       
-    
     }
     
-    public static void main(String[] args) {
-        UsuarioModelImpl us = new UsuarioModelImpl();
+    public void eliminarUsuario(Usuario usuario){
         
-        us.insertarUsuario(new Usuario("fred", "fred123", "fred@gmail.com", "alumno"));
+         try {
+            conexion = new Conexion();//se establece la conexion
+            connection = conexion.getConnection();//se obtiene la conexion de la base de datos 
+            //eliminamos primero el rol
+            String query = "delete from roles_usuarios where id_usuario="+usuario.getIdUsuario()+";";
+            stm = connection.createStatement();
+            stm.execute(query);
+            
+            //eliminamos al usuario
+            query ="delete from usuarios where id_usuario="+usuario.getIdUsuario()+";";
+            stm.execute(query);
+            connection.close();
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(UsuarioModelImpl.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+    }
+    
+    public void actualizarUsuario(Usuario usuario){
+        
+        
+        try {
+            conexion = new Conexion();//se establece la conexion
+            connection = conexion.getConnection();//se obtiene la conexion de la base de datos 
+            String query = "UPDATE usuarios SET nombre_usuario='"+usuario.getNombreUsuario()+"', email_usuario='"+usuario.getEmail()+"' WHERE id_usuario="+usuario.getIdUsuario()+";";              
+            stm = connection.createStatement();         
+            stm.execute(query);         
+            stm.close();
+            connection.close();
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(UsuarioModelImpl.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
     }
     
 }

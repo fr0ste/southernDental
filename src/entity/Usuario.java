@@ -8,7 +8,7 @@ Descripción: clase de usuarios.
 */
 package entity;
 
-public class Usuario {
+public class Usuario{
     private int idUsuario;
     private String nombreUsuario;
     private String passUsuario;

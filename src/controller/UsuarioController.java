@@ -11,6 +11,7 @@ package controller;
 import entity.Usuario;
 import java.util.List;
 import javax.swing.table.DefaultTableModel;
+import model.UsuarioModelImpl;
 import service.UsuarioServiceImpl;
 
 public class UsuarioController {
@@ -44,6 +45,14 @@ public class UsuarioController {
         
     }
     
-    
+     public void eliminarUsuario(Usuario usuario){
+          service = new UsuarioServiceImpl();
+        service.eliminarUsuario(usuario);
+      }
+      
+       public void actualizarUsuario(Usuario usuario){
+           service = new UsuarioServiceImpl();
+        service.actualizarUsuario(usuario);
+       }
     
 }
