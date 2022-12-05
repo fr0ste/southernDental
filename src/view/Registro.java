@@ -1,7 +1,7 @@
 /*
 Autor: Salvador Elioenai Antonio Pérez
 Fecha de creación: 26 de noviembre del 2022
-Fecha de modificación: 03 de diciembre del 2022
+Fecha de modificación: 05 de diciembre del 2022
 Descripción: Registro de un paciente o alumno
  */
 package view;
@@ -37,7 +37,7 @@ public class Registro extends javax.swing.JFrame {
         btnSalir = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         lblNombreUsuario = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txtNombreUsuario = new javax.swing.JTextField();
         lblNombreUsuario1 = new javax.swing.JLabel();
         passUsuario = new javax.swing.JPasswordField();
         pnlEliminar = new javax.swing.JPanel();
@@ -52,7 +52,7 @@ public class Registro extends javax.swing.JFrame {
         tablaRol = new javax.swing.JTable();
         jComboBox1 = new javax.swing.JComboBox<>();
         jLabel1 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        txtCorreoElectronico = new javax.swing.JTextField();
         regresar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -307,10 +307,10 @@ public class Registro extends javax.swing.JFrame {
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                         .addComponent(pnlGuardar, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(txtNombreUsuario, javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(passUsuario, javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(jComboBox1, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jTextField2))
+                                        .addComponent(txtCorreoElectronico))
                                     .addComponent(pnlActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jScrollPane1))
@@ -335,7 +335,7 @@ public class Registro extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblNombreUsuario)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtNombreUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(passUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -343,7 +343,7 @@ public class Registro extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel1)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtCorreoElectronico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(52, 52, 52)
                         .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(26, 26, 26)
@@ -410,27 +410,31 @@ public class Registro extends javax.swing.JFrame {
     private void lblGuardarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblGuardarMouseClicked
         Usuario usuario = new Usuario();
         UsuarioController uController = new UsuarioController();
-        usuario.setNombreUsuario(this.jTextField1.getText());
+        usuario.setNombreUsuario(this.txtNombreUsuario.getText());
         usuario.setPassUsuario(String.valueOf(this.passUsuario.getPassword()));
-        usuario.setEmail(this.jTextField2.getText());
+        usuario.setEmail(this.txtCorreoElectronico.getText());
         usuario.setRol(this.jComboBox1.getSelectedItem().toString());
         uController.insertarUsuario(usuario);
+        txtNombreUsuario.setText("");
+        txtCorreoElectronico.setText("");
 
 
     }//GEN-LAST:event_lblGuardarMouseClicked
 
     private void regresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regresarActionPerformed
         new Login().setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_regresarActionPerformed
 
     private void lblActualizarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblActualizarMouseClicked
         Usuario usuario = new Usuario();
         UsuarioController uController = new UsuarioController();
-        usuario.setNombreUsuario(this.jTextField1.getText());
-        usuario.setPassUsuario(String.valueOf(this.passUsuario.getPassword()));
-        usuario.setEmail(this.jTextField2.getText());
-        usuario.setRol(this.jComboBox1.getSelectedItem().toString());
+        usuario.setIdUsuario(Integer.parseInt(tablaRol.getValueAt(tablaRol.getSelectedRow(), 0).toString()));
+        usuario.setNombreUsuario(this.txtNombreUsuario.getText());
+        usuario.setEmail(this.txtCorreoElectronico.getText());
         uController.actualizarUsuario(usuario);
+        txtNombreUsuario.setText("");
+        txtCorreoElectronico.setText("");
         UsuarioController usuarioController = new UsuarioController();
         modeloTabla = (DefaultTableModel) tablaRol.getModel();
         usuarioController.mostrarRegistros(modeloTabla);
@@ -450,15 +454,12 @@ public class Registro extends javax.swing.JFrame {
     private void lblEliminarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEliminarMouseClicked
         UsuarioController uController = new UsuarioController();
         Usuario usuario = new Usuario();
-//        usuario.setNombreUsuario(nombreUsuario);
-//        usuario.setPassUsuario(passUsuario);
-//        usuario.setEmail(email);
-//        usuario.setRol(rol);
+        usuario.setIdUsuario(Integer.parseInt(tablaRol.getValueAt(tablaRol.getSelectedRow(), 0).toString()));
         uController.eliminarUsuario(usuario);
         UsuarioController usuarioController = new UsuarioController();
         modeloTabla = (DefaultTableModel) tablaRol.getModel();
         usuarioController.mostrarRegistros(modeloTabla);
-        
+
 
     }//GEN-LAST:event_lblEliminarMouseClicked
 
@@ -513,8 +514,6 @@ public class Registro extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
     private javax.swing.JLabel lblActualizar;
     private javax.swing.JLabel lblEliminar;
     private javax.swing.JLabel lblGuardar;
@@ -529,5 +528,7 @@ public class Registro extends javax.swing.JFrame {
     private javax.swing.JPanel pnlMostrar;
     private javax.swing.JButton regresar;
     private javax.swing.JTable tablaRol;
+    private javax.swing.JTextField txtCorreoElectronico;
+    private javax.swing.JTextField txtNombreUsuario;
     // End of variables declaration//GEN-END:variables
 }
