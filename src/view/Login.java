@@ -355,9 +355,6 @@ public class Login extends javax.swing.JFrame {
            passUsuario.getPassword()).equals(DefaultMsg.IN_PASS) || 
                 String.valueOf(passUsuario.getPassword()).isEmpty())) {
             JOptionPane.showMessageDialog(null, "error");
-        } else {
-            JOptionPane.showMessageDialog(null, txtUsuario.getText(
-            ) + " " + String.valueOf(passUsuario.getPassword()));
         }
 
 
