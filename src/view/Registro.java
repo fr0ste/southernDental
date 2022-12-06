@@ -1,16 +1,13 @@
-/*
-Autor: Salvador Elioenai Antonio Pérez
-Fecha de creación: 26 de noviembre del 2022
-Fecha de modificación: 05 de diciembre del 2022
-Descripción: Registro de un paciente o alumno
+/**
+ * Autor: Salvador Elioenai Antonio Pérez
+ * Fecha de creación: 26 de noviembre del 2022
+ * Fecha de modificación: 05 de diciembre del 2022
+ * Decripción: Registro de un paciente o alumno
  */
 package view;
 
 import controller.UsuarioController;
 import entity.Usuario;
-import javax.swing.UIManager;
-import javax.swing.UnsupportedLookAndFeelException;
-import javax.swing.plaf.nimbus.NimbusLookAndFeel;
 import javax.swing.table.DefaultTableModel;
 import utilities.Colors;
 
@@ -20,6 +17,9 @@ public class Registro extends javax.swing.JFrame {
     private int xMouse, yMouse;
     private DefaultTableModel modeloTabla;
 
+    /**
+     * constructor sin parametros
+     */
     public Registro() {
         initComponents();
         UsuarioController usuarioController = new UsuarioController();
@@ -376,42 +376,82 @@ public class Registro extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     *
+     * obtiene las cordenadas de la ventana cuando se le da click,
+     */
     private void lblSuperiorMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblSuperiorMousePressed
         xMouse = evt.getX();
         yMouse = evt.getY();
     }//GEN-LAST:event_lblSuperiorMousePressed
 
+    /**
+     *
+     * cambia la localización de la ventana cuando se arrastra
+     *
+     */
     private void lblSuperiorMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblSuperiorMouseDragged
         int x = evt.getXOnScreen();
         int y = evt.getYOnScreen();
         this.setLocation(x - xMouse, y - yMouse);
     }//GEN-LAST:event_lblSuperiorMouseDragged
 
+    /**
+     *
+     * le da evento al boton de salir
+     *
+     */
     private void btnSalirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalirMouseClicked
         System.exit(0);
     }//GEN-LAST:event_btnSalirMouseClicked
 
+    /**
+     *
+     * borra el contenido de la contraseña cuando se le da click
+     *
+     */
     private void passUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_passUsuarioMouseClicked
         passUsuario.setText("");
     }//GEN-LAST:event_passUsuarioMouseClicked
 
+    /**
+     *
+     * otorga el evento de mouse clicked a la tabla
+     *
+     */
     private void tablaRolMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tablaRolMouseClicked
 
     }//GEN-LAST:event_tablaRolMouseClicked
 
+    /**
+     *
+     * otorga y gestiona el evento de mouse entered para el boton guardar
+     *
+     */
     private void lblGuardarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblGuardarMouseEntered
         pnlGuardar.setBackground(Colors.MOUSE_ENTERED);
     }//GEN-LAST:event_lblGuardarMouseEntered
 
+    /**
+     *
+     * otorga y gestiona el evento de mouse exited para el boton guardar
+     *
+     */
     private void lblGuardarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblGuardarMouseExited
         pnlGuardar.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_lblGuardarMouseExited
 
+    /**
+     *
+     * otorga y gestiona el evento de de mouse clicked para el boton guardar
+     *
+     */
     private void lblGuardarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblGuardarMouseClicked
         Usuario usuario = new Usuario();
         UsuarioController uController = new UsuarioController();
         usuario.setNombreUsuario(this.txtNombreUsuario.getText());
-        usuario.setPassUsuario(String.valueOf(this.passUsuario.getPassword()));
+        usuario.setPassUsuario(String.valueOf(
+                this.passUsuario.getPassword()));
         usuario.setEmail(this.txtCorreoElectronico.getText());
         usuario.setRol(this.jComboBox1.getSelectedItem().toString());
         uController.insertarUsuario(usuario);
@@ -421,15 +461,26 @@ public class Registro extends javax.swing.JFrame {
 
     }//GEN-LAST:event_lblGuardarMouseClicked
 
+    /**
+     *
+     * otorga y gestiona los eventos del boton regresar
+     *
+     */
     private void regresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regresarActionPerformed
         new Login().setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_regresarActionPerformed
 
+    /**
+     *
+     * otorga y gestiona el evento de mouse clicked para el boton actualizar
+     *
+     */
     private void lblActualizarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblActualizarMouseClicked
         Usuario usuario = new Usuario();
         UsuarioController uController = new UsuarioController();
-        usuario.setIdUsuario(Integer.parseInt(tablaRol.getValueAt(tablaRol.getSelectedRow(), 0).toString()));
+        usuario.setIdUsuario(Integer.parseInt(tablaRol.getValueAt(
+                tablaRol.getSelectedRow(), 0).toString()));
         usuario.setNombreUsuario(this.txtNombreUsuario.getText());
         usuario.setEmail(this.txtCorreoElectronico.getText());
         uController.actualizarUsuario(usuario);
@@ -442,19 +493,35 @@ public class Registro extends javax.swing.JFrame {
 
     }//GEN-LAST:event_lblActualizarMouseClicked
 
+    /**
+     *
+     * otorga y gestiona el evento de mouse entered para el boton actualizar
+     *
+     */
     private void lblActualizarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblActualizarMouseEntered
         pnlActualizar.setBackground(Colors.MOUSE_ENTERED);
 
     }//GEN-LAST:event_lblActualizarMouseEntered
 
+    /**
+     *
+     * otorga y gestiona el evento de mouse exited para el boton actualizar
+     *
+     */
     private void lblActualizarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblActualizarMouseExited
         pnlActualizar.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_lblActualizarMouseExited
 
+    /**
+     *
+     * otorga y gestiona el evento de mouse clicked para el boton eliminar
+     *
+     */
     private void lblEliminarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEliminarMouseClicked
         UsuarioController uController = new UsuarioController();
         Usuario usuario = new Usuario();
-        usuario.setIdUsuario(Integer.parseInt(tablaRol.getValueAt(tablaRol.getSelectedRow(), 0).toString()));
+        usuario.setIdUsuario(Integer.parseInt(tablaRol.getValueAt(
+                tablaRol.getSelectedRow(), 0).toString()));
         uController.eliminarUsuario(usuario);
         UsuarioController usuarioController = new UsuarioController();
         modeloTabla = (DefaultTableModel) tablaRol.getModel();
@@ -463,50 +530,54 @@ public class Registro extends javax.swing.JFrame {
 
     }//GEN-LAST:event_lblEliminarMouseClicked
 
+    /**
+     *
+     * otorga y gestiona el evento de mouse entered para el boton eliminar
+     *
+     */
     private void lblEliminarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEliminarMouseEntered
         pnlEliminar.setBackground(Colors.MOUSE_ENTERED);
     }//GEN-LAST:event_lblEliminarMouseEntered
 
+    /**
+     *
+     * otorga y gestiona el evento de mouse exited para el boton eliminar
+     *
+     */
     private void lblEliminarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEliminarMouseExited
         pnlEliminar.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_lblEliminarMouseExited
 
+    /**
+     *
+     * otorga y gestiona el evento de mouse clicked para el boton mostrar
+     *
+     */
     private void lblMostrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblMostrarMouseClicked
         UsuarioController usuarioController = new UsuarioController();
         modeloTabla = (DefaultTableModel) tablaRol.getModel();
         usuarioController.mostrarRegistros(modeloTabla);
 
-        // TODO add your handling code here:
     }//GEN-LAST:event_lblMostrarMouseClicked
 
+    /**
+     *
+     * otorga y gestiona el evento de mouse entered para el boton mostrar
+     *
+     */
     private void lblMostrarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblMostrarMouseEntered
         pnlMostrar.setBackground(Colors.MOUSE_ENTERED);
     }//GEN-LAST:event_lblMostrarMouseEntered
 
+    /**
+     *
+     * otorga y gestiona el evento de mouse exited para el boton mostrar
+     *
+     */
     private void lblMostrarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblMostrarMouseExited
         pnlMostrar.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_lblMostrarMouseExited
 
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            UIManager.setLookAndFeel(new NimbusLookAndFeel());
-        } catch (UnsupportedLookAndFeelException e) {
-        }
-        //</editor-fold>
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Registro().setVisible(true);
-            }
-        });
-    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel btnSalir;
     private javax.swing.JComboBox<String> jComboBox1;

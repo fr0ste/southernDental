@@ -1,17 +1,20 @@
- /*
-Autor: Salvador Elioenai Antonio Pérez
-Fecha de creación: 26 de noviembre del 2022
-Fecha de modificación: 01 de diciembre del 2022
-Descripción: Ventana donde el administrador podra seleccionar alumno, paciente o profesor para administrar su información
- */
+ /**
+  * Autor: Salvador Elioenai Antonio Pérez
+  * Fecha de creación: 26 de noviembre del 2022
+  * Fecha de modificación: 01 de diciembre del 2022
+  * Descripción: Ventana donde el administrador podra seleccionar 
+  *              alumno, paciente o profesor para administrar su información
+  */
+
 package view;
 
 import utilities.Colors;
-import javax.swing.ImageIcon;
 
 public class Home extends javax.swing.JFrame {
 
-    //variables
+    /**
+     * variables
+     */
     private int xMouse, yMouse;
 
     public Home() {
@@ -76,25 +79,10 @@ public class Home extends javax.swing.JFrame {
 
         pnlSuperior1.setBackground(new java.awt.Color(255, 255, 255));
         pnlSuperior1.setPreferredSize(new java.awt.Dimension(1280, 30));
-        pnlSuperior1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseDragged(java.awt.event.MouseEvent evt) {
-                pnlSuperior1MouseDragged(evt);
-            }
-        });
-        pnlSuperior1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                pnlSuperior1MousePressed(evt);
-            }
-        });
 
         btnCerrar1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btnCerrar1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnCerrar1.setPreferredSize(new java.awt.Dimension(30, 30));
-        btnCerrar1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnCerrar1MouseClicked(evt);
-            }
-        });
 
         javax.swing.GroupLayout pnlSuperior1Layout = new javax.swing.GroupLayout(pnlSuperior1);
         pnlSuperior1.setLayout(pnlSuperior1Layout);
@@ -134,11 +122,6 @@ public class Home extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(0, 0, 32));
 
         pnlHome.setBackground(new java.awt.Color(0, 0, 32));
-        pnlHome.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                pnlHomeMouseEntered(evt);
-            }
-        });
 
         btnHome.setBackground(new java.awt.Color(0, 0, 32));
         btnHome.setForeground(new java.awt.Color(255, 255, 255));
@@ -316,73 +299,115 @@ public class Home extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
+    /**
+     * 
+     * otorga y gestiona el evento de mouse pressed para la barra superior.
+     * 
+     */
     private void lblSuperiorMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblSuperiorMousePressed
         xMouse = evt.getX();
         yMouse = evt.getY();
     }//GEN-LAST:event_lblSuperiorMousePressed
-
+    
+    /**
+     * 
+     * otorga y gestiona el evento de mouse dragged para la barra superior.
+     * 
+     */
     private void lblSuperiorMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblSuperiorMouseDragged
         int x = evt.getXOnScreen();
         int y = evt.getYOnScreen();
         this.setLocation(x - xMouse, y - yMouse);
     }//GEN-LAST:event_lblSuperiorMouseDragged
-
+    
+    /**
+     * 
+     * otorga y gestiona el evento de mouse clicked para el botón de salir.
+     * 
+     */
     private void btnSalirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalirMouseClicked
         System.exit(0);
     }//GEN-LAST:event_btnSalirMouseClicked
-
-    private void btnCerrar1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCerrar1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCerrar1MouseClicked
-
-    private void pnlSuperior1MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlSuperior1MouseDragged
-        // TODO add your handling code here:
-    }//GEN-LAST:event_pnlSuperior1MouseDragged
-
-    private void pnlSuperior1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlSuperior1MousePressed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_pnlSuperior1MousePressed
-
-    private void btnHomeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHomeMouseEntered
-        pnlHome.setBackground(Colors.MOUSE_ENTERED);
-
-    }//GEN-LAST:event_btnHomeMouseEntered
-
-    private void pnlHomeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlHomeMouseEntered
-    }//GEN-LAST:event_pnlHomeMouseEntered
-
+    
+    /**
+     * 
+     * otorga y gestiona el evento de mouse exited para el botón home.
+     *
+     */
     private void btnHomeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHomeMouseExited
         pnlHome.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_btnHomeMouseExited
-
+    
+    /**
+     * 
+     * otorga y gestiona el evento de mouse entered para el panel que contiene
+     * el botón de pacientes.
+     * 
+     */
     private void pnlPacientesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlPacientesMouseEntered
         pnlPacientes.setBackground(Colors.MOUSE_ENTERED);
     }//GEN-LAST:event_pnlPacientesMouseEntered
-
+    
+    /**
+     * 
+     * otorga y gestiona el evento de mouse exited para el panel que contiene
+     * el botón de pacientes.
+     * 
+     */
     private void pnlPacientesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlPacientesMouseExited
         pnlPacientes.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_pnlPacientesMouseExited
-
+    
+    /**
+     * 
+     * otorga y gestiona el evento de mouse entered para el panel que contiene
+     * el botón de alumnos.
+     * 
+     */
     private void pnlAlumnosMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlAlumnosMouseEntered
         pnlAlumnos.setBackground(Colors.MOUSE_ENTERED);
     }//GEN-LAST:event_pnlAlumnosMouseEntered
-
+    
+    /**
+     * 
+     * otorga y gestiona el evento de mouse exited para el panel que contiene
+     * el botón de alumnos.
+     * 
+     */
     private void pnlAlumnosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlAlumnosMouseExited
         pnlAlumnos.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_pnlAlumnosMouseExited
-
+    
+    /**
+     * 
+     * otorga y gestiona el evento de mouse entered para el panel que contiene
+     * el botón de profesor.
+     * 
+     */
     private void pnlProfesorMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlProfesorMouseEntered
         pnlProfesor.setBackground(Colors.MOUSE_ENTERED);
     }//GEN-LAST:event_pnlProfesorMouseEntered
-
+    
+    /**
+     * 
+     * otorga y gestiona el evento de mouse exited para el panel que contiene
+     * el botón de profesor.
+     * 
+     */
     private void pnlProfesorMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlProfesorMouseExited
         pnlProfesor.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_pnlProfesorMouseExited
-
+    
     /**
-     * @param args the command line arguments
+     *
+     * otorga y gestiona el evento de mouse entered para el el botón home.
+     *
      */
+    private void btnHomeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHomeMouseEntered
+        pnlHome.setBackground(Colors.MOUSE_ENTERED);
+    }//GEN-LAST:event_btnHomeMouseEntered
+
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
