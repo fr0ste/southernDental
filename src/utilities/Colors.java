@@ -1,9 +1,9 @@
-/*
-Autor: Joel Francisco Figueroa Martinez
-Fecha de creación: 26 de noviembre del 2022
-Fecha de modificación: 01 de diciembre del 2022
-Descripción: Clase donde esta contenida la paleta de colores que se usara en 
-             el proyecto
+/**
+ * Autor: Joel Francisco Figueroa Martinez
+ * Fecha de creación: 26 de noviembre del 2022
+ * Fecha de modificación: 01 de diciembre del 2022
+ * Descripción: Clase donde esta contenida la paleta de colores que se usara en 
+ *              el proyecto
  */
 package utilities;
 

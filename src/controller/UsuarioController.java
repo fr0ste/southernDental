@@ -1,29 +1,35 @@
-/*
-
-Autor: Joel && Elio
-Fecha de creación: 01/12/2022
-Fecha de modificación: 01/12/2022
-Descripción: clase controladora para los usuarios.
-
-*/
+/**
+ * Autor: Joel && Elio
+ * Fecha de creación: 01/12/2022
+ * Fecha de modificación: 01/12/2022
+ * Descripción: clase controladora para los usuarios.
+ */
 package controller;
 
 import entity.Usuario;
 import java.util.List;
 import javax.swing.table.DefaultTableModel;
-import model.UsuarioModelImpl;
 import service.UsuarioServiceImpl;
 
 public class UsuarioController {
 
     private UsuarioServiceImpl service;
 
-    //Devuelve true si el usuario con su correspondiente rol existe
+    /**
+     * 
+     * @param usuario
+     * @return Devuelve true si el usuario con su correspondiente rol existe
+     */
     public boolean validarUsuario(Usuario usuario) {
         service = new UsuarioServiceImpl();
         return service.validarUsuario(usuario);
     }
     
+    /**
+     * 
+     * @param modeloTabla 
+     * inserta los usuarios en un jtable con 4 columnas
+     */
     public void mostrarRegistros(DefaultTableModel modeloTabla) {
         service = new UsuarioServiceImpl();
         List<Usuario> listaUsuario = service.obtenerUsuarios();
@@ -38,6 +44,11 @@ public class UsuarioController {
         }
     }
     
+    /**
+     * 
+     * @param usuario 
+     * realiza la peticion para insertar un usuario
+     */
     public void insertarUsuario(Usuario usuario){
         
         service = new UsuarioServiceImpl();
@@ -45,11 +56,21 @@ public class UsuarioController {
         
     }
     
+    /**
+     * 
+     * @param usuario 
+     * realiza la petición para
+     */
      public void eliminarUsuario(Usuario usuario){
           service = new UsuarioServiceImpl();
         service.eliminarUsuario(usuario);
       }
       
+     /**
+      * 
+      * @param usuario 
+      * realiza la petición para actualizar un usuario
+      */
        public void actualizarUsuario(Usuario usuario){
            service = new UsuarioServiceImpl();
         service.actualizarUsuario(usuario);
