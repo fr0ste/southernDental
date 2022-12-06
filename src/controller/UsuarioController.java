@@ -2,7 +2,7 @@
  * Autor: Joel && Elio
  * Fecha de creación: 01/12/2022
  * Fecha de modificación: 01/12/2022
- * Descripción: clase controladora para los usuarios.
+ * Descripción: Clase controladora para los usuarios.
  */
 package controller;
 
@@ -47,7 +47,7 @@ public class UsuarioController {
     /**
      * 
      * @param usuario 
-     * realiza la peticion para insertar un usuario
+     * realiza la petición para insertar un usuario
      */
     public void insertarUsuario(Usuario usuario){
         

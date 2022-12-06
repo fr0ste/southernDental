@@ -1,5 +1,5 @@
 /**
- * Autor: Salvador Elioenai Antonio Pérez
+ * Autor: Joel && Elio
  * Fecha de creación: 26 de noviembre del 2022
  * Fecha de modificación: 05 de diciembre del 2022
  * Decripción: Registro de un paciente o alumno
@@ -18,7 +18,7 @@ public class Registro extends javax.swing.JFrame {
     private DefaultTableModel modeloTabla;
 
     /**
-     * constructor sin parametros
+     * constructor sin parámetros
      */
     public Registro() {
         initComponents();
@@ -398,7 +398,7 @@ public class Registro extends javax.swing.JFrame {
 
     /**
      *
-     * le da evento al boton de salir
+     * le da evento al botón de salir
      *
      */
     private void btnSalirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalirMouseClicked
@@ -425,7 +425,7 @@ public class Registro extends javax.swing.JFrame {
 
     /**
      *
-     * otorga y gestiona el evento de mouse entered para el boton guardar
+     * otorga y gestiona el evento de mouse entered para el botón guardar
      *
      */
     private void lblGuardarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblGuardarMouseEntered
@@ -434,7 +434,7 @@ public class Registro extends javax.swing.JFrame {
 
     /**
      *
-     * otorga y gestiona el evento de mouse exited para el boton guardar
+     * otorga y gestiona el evento de mouse exited para el botón guardar
      *
      */
     private void lblGuardarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblGuardarMouseExited
@@ -443,7 +443,7 @@ public class Registro extends javax.swing.JFrame {
 
     /**
      *
-     * otorga y gestiona el evento de de mouse clicked para el boton guardar
+     * otorga y gestiona el evento de de mouse clicked para el botón guardar
      *
      */
     private void lblGuardarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblGuardarMouseClicked
@@ -463,7 +463,7 @@ public class Registro extends javax.swing.JFrame {
 
     /**
      *
-     * otorga y gestiona los eventos del boton regresar
+     * otorga y gestiona los eventos del botón regresar
      *
      */
     private void regresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regresarActionPerformed
@@ -473,7 +473,7 @@ public class Registro extends javax.swing.JFrame {
 
     /**
      *
-     * otorga y gestiona el evento de mouse clicked para el boton actualizar
+     * otorga y gestiona el evento de mouse clicked para el botón actualizar
      *
      */
     private void lblActualizarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblActualizarMouseClicked
@@ -495,7 +495,7 @@ public class Registro extends javax.swing.JFrame {
 
     /**
      *
-     * otorga y gestiona el evento de mouse entered para el boton actualizar
+     * otorga y gestiona el evento de mouse entered para el botón actualizar
      *
      */
     private void lblActualizarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblActualizarMouseEntered
@@ -505,7 +505,7 @@ public class Registro extends javax.swing.JFrame {
 
     /**
      *
-     * otorga y gestiona el evento de mouse exited para el boton actualizar
+     * otorga y gestiona el evento de mouse exited para el botón actualizar
      *
      */
     private void lblActualizarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblActualizarMouseExited
@@ -514,7 +514,7 @@ public class Registro extends javax.swing.JFrame {
 
     /**
      *
-     * otorga y gestiona el evento de mouse clicked para el boton eliminar
+     * otorga y gestiona el evento de mouse clicked para el botón eliminar
      *
      */
     private void lblEliminarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEliminarMouseClicked
@@ -532,7 +532,7 @@ public class Registro extends javax.swing.JFrame {
 
     /**
      *
-     * otorga y gestiona el evento de mouse entered para el boton eliminar
+     * otorga y gestiona el evento de mouse entered para el botón eliminar
      *
      */
     private void lblEliminarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEliminarMouseEntered
@@ -541,7 +541,7 @@ public class Registro extends javax.swing.JFrame {
 
     /**
      *
-     * otorga y gestiona el evento de mouse exited para el boton eliminar
+     * otorga y gestiona el evento de mouse exited para el botón eliminar
      *
      */
     private void lblEliminarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEliminarMouseExited
@@ -550,7 +550,7 @@ public class Registro extends javax.swing.JFrame {
 
     /**
      *
-     * otorga y gestiona el evento de mouse clicked para el boton mostrar
+     * otorga y gestiona el evento de mouse clicked para el botón mostrar
      *
      */
     private void lblMostrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblMostrarMouseClicked
@@ -562,7 +562,7 @@ public class Registro extends javax.swing.JFrame {
 
     /**
      *
-     * otorga y gestiona el evento de mouse entered para el boton mostrar
+     * otorga y gestiona el evento de mouse entered para el botón mostrar
      *
      */
     private void lblMostrarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblMostrarMouseEntered
@@ -571,7 +571,7 @@ public class Registro extends javax.swing.JFrame {
 
     /**
      *
-     * otorga y gestiona el evento de mouse exited para el boton mostrar
+     * otorga y gestiona el evento de mouse exited para el botón mostrar
      *
      */
     private void lblMostrarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblMostrarMouseExited

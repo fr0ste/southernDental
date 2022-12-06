@@ -2,7 +2,7 @@
  *Autor: Joel && Elio
  * Fecha de creación: 01/12/2022
  * Fecha de modificación: 01/12/2022
- * Descripción: clase implementadora del servicio para usuarios.
+ * Descripción: Clase implementadora del servicio para usuarios.
  */
 package service;
 
@@ -57,7 +57,7 @@ public class UsuarioServiceImpl {
 
     /**
      *
-     * @param usuario pide una actualizacion de un usuario a la base de datos
+     * @param usuario pide una actualización de un usuario a la base de datos
      */
     public void actualizarUsuario(Usuario usuario) {
         model = new UsuarioModelImpl();

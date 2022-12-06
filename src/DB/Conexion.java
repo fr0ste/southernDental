@@ -2,7 +2,7 @@
  * Autor: Joel && Elio
  * Fecha de creación: 01/12/2022
  * Fecha de modificación: 01/12/2022
- * Descripción: clase que gestiona la conexion a la base de datos.
+ * Descripción: Clase que gestiona la conexión a la base de datos.
  */
 package DB;
 import java.sql.Connection;
@@ -35,7 +35,8 @@ public class Conexion {
         try {
 
             Class.forName(driver);
-            connection = DriverManager.getConnection(url + ip + puerto + db, user, constraseña);
+            connection = DriverManager.getConnection(url + ip + puerto + db, 
+                    user, constraseña);
             return connection;
 
         } catch (SQLException e) {

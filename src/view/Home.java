@@ -1,5 +1,5 @@
  /**
-  * Autor: Salvador Elioenai Antonio Pérez
+  * Autor: Joel && Elio
   * Fecha de creación: 26 de noviembre del 2022
   * Fecha de modificación: 01 de diciembre del 2022
   * Descripción: Ventana donde el administrador podra seleccionar 
@@ -401,7 +401,7 @@ public class Home extends javax.swing.JFrame {
     
     /**
      *
-     * otorga y gestiona el evento de mouse entered para el el botón home.
+     * otorga y gestiona el evento de mouse entered para el botón home.
      *
      */
     private void btnHomeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHomeMouseEntered

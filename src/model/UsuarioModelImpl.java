@@ -2,7 +2,7 @@
  * Autor: Joel && Elio
  * Fecha de creación: 01/12/2022
  * Fecha de modificación: 01/12/2022
- * Descripción: clase implementadora del modelo para usuarios.
+ * Descripción: Clase implementadora del modelo para usuarios.
  */
 
 
@@ -34,9 +34,9 @@ public class UsuarioModelImpl {
         try {
             ArrayList<Usuario> listaUsuario = new ArrayList<>();
             ResultSet rs;
-            conexion = new Conexion();//se establece la conexion
+            conexion = new Conexion();//se establece la conexión
             connection = conexion.getConnection();//se obtiene la 
-                                                  //conexion de la base de datos 
+                                                  //conexión de la base de datos 
             String query = "with consulta as ("
                     + "select nombre_usuario,email_usuario,nombre_rol,"
                     + "pass_usuario from usuarios inner join roles_tipos_usuario"
@@ -77,8 +77,8 @@ public class UsuarioModelImpl {
         try {
             ArrayList<Usuario> listaUsuario = new ArrayList<>();
             ResultSet rs;
-            conexion = new Conexion();//se establece la conexion
-            connection = conexion.getConnection();//se obtiene la conexion 
+            conexion = new Conexion();//se establece la conexión
+            connection = conexion.getConnection();//se obtiene la conexión 
                                                   //de la base de datos 
             String query = "select usuarios.id_usuario,nombre_usuario,"
                     + "email_usuario,nombre_rol from "
@@ -124,7 +124,7 @@ public class UsuarioModelImpl {
             int idRolAux;
             int idUsuarioAux;
             ResultSet rs;
-            conexion = new Conexion();//se establece la conexion
+            conexion = new Conexion();//se establece la conexión
             connection = conexion.getConnection();
             
             
@@ -177,7 +177,7 @@ public class UsuarioModelImpl {
     public void eliminarUsuario(Usuario usuario){
         
          try {
-            conexion = new Conexion();//se establece la conexion
+            conexion = new Conexion();//se establece la conexión
             connection = conexion.getConnection();
             //eliminamos primero el rol
             String query = "delete from roles_usuarios where id_usuario="+
@@ -208,7 +208,7 @@ public class UsuarioModelImpl {
         
         
         try {
-            conexion = new Conexion();//se establece la conexion
+            conexion = new Conexion();//se establece la conexión
             connection = conexion.getConnection();
             String query = "UPDATE usuarios SET nombre_usuario='"+
                     usuario.getNombreUsuario()+"', email_usuario='"+
