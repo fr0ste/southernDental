@@ -95,6 +95,9 @@ public class PanelDerechoAdmin extends javax.swing.JPanel {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jLabel2MouseEntered(evt);
             }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel2MouseExited(evt);
+            }
         });
 
         javax.swing.GroupLayout pnlPacientesLayout = new javax.swing.GroupLayout(pnlPacientes);
@@ -150,10 +153,22 @@ public class PanelDerechoAdmin extends javax.swing.JPanel {
     private void jLabel1MouseExited(java.awt.event.MouseEvent evt) {                                    
         pnlAlumnos.setBackground(Colors.MOUSE_EXITED);
     }                                   
-
+/**
+     * 
+     * otorga y gestiona el evento de mouse entered para el botón Pacientes.
+     *
+     */
     private void jLabel2MouseEntered(java.awt.event.MouseEvent evt) {                                     
         pnlPacientes.setBackground(Colors.MOUSE_ENTERED);
     }                                    
+/**
+     * 
+     * otorga y gestiona el evento de mouse exited para el botón Pacientes.
+     *
+     */
+    private void jLabel2MouseExited(java.awt.event.MouseEvent evt) {                                    
+        pnlPacientes.setBackground(Colors.MOUSE_EXITED);
+    }                                   
 
 
     // Variables declaration - do not modify                     
