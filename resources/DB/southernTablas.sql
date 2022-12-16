@@ -259,8 +259,8 @@ movilidad_dental boolean
 );
 
 create table protesis_bucal(
-id_protesis_bucal int not null auto_increment primary key
-
+id_protesis_bucal int not null auto_increment primary key,
+id_examen_parodontal int not null
 );
 
 
