@@ -1,10 +1,9 @@
 /**
- * Autor: Joel && Elio
- * Fecha de creación: 15 de noviembre del 2022
- * Fecha de modificación: 15 de diciembre del 2022
- * Descripción: Panel izquierdo del frame donde se mostrara las funciones del
- * administrador
- */
+  * Autor: Joel && Elio
+  * Fecha de creación: 15 de noviembre del 2022
+  * Fecha de modificación: 15 de diciembre del 2022
+  * Descripción: Panel que servirá como base para partes izquierdas del Frame
+  */
 package view.base;
 
 import view.*;
