@@ -131,3 +131,18 @@ create table frente_facial(
 id_frente_facial int not null primary key,
 tipo_frente varchar(80)
 );
+
+create table examen_facial(
+id_examen_facial int not null primary key,
+id_perfil int,
+id_frente int,
+senias_particulares text
+);
+
+create table examen_facial(
+id_examen_facial int not null primary key,
+id_perfil int,
+id_frente int,
+senias_particulares text
+);
+
