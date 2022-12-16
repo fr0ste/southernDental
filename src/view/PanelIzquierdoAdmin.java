@@ -19,6 +19,7 @@ public class PanelIzquierdoAdmin extends javax.swing.JPanel {
      */
     public PanelIzquierdoAdmin() {
         initComponents();
+        
     }
 
     /**
@@ -30,15 +31,19 @@ public class PanelIzquierdoAdmin extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        setBackground(new java.awt.Color(0, 0, 32));
+        setMaximumSize(new java.awt.Dimension(240, 700));
+        setPreferredSize(new java.awt.Dimension(240, 700));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 240, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 700, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
