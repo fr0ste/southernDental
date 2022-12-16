@@ -172,6 +172,12 @@ Respiración text,
 Observaciones text
 );
 
+create table postura_del_paciente(
+id_postura_del_paciente int not null auto_increment primary key,
+atm_palpacion text
+);
+
+
 create table examen_clinico(
 id_examen_clinico int not null auto_increment primary key,
 Paladar text,
