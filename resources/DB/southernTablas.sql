@@ -305,6 +305,13 @@ id_examen_dientes_pilares int not null,
 id_examen_radiografico_de_dientes_pilares int not null
 );
 
+create table examen_de_organo_dentario(
+id_examen_de_organo_dentario int not null auto_increment primary key,
+numero_de_conductos int,
+proporcion_corona_raiz varchar(10),
+reabsorcion varchar(10)
+);
+
 -- datos de personal de salud
 create table personal_de_salud(
 id_personal_de_salud int not null auto_increment primary key,
