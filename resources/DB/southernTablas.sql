@@ -41,3 +41,14 @@ sexo char,
 ocupacion varchar(100),
 estado_civil varchar(50)
 );
+
+create table signos_vitales(
+id_signos_vitales int not null auto_increment primary key,
+peso double,
+estatura double,
+temperatura double,
+freacuencia_cardiaca double,
+frecuencia_respiratoria double,
+pesion_arterial double,
+saturacion_oxigeno double
+);
