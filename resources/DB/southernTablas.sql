@@ -1,3 +1,10 @@
+use souther_dental;
+
+create table roles_personal_de_salud(
+id_roles_personal_de_salud int auto_increment not null primary key,
+rol_tipo varchar(80)
+);
+
 create table paciente(
 id_paciente int not null auto_increment primary key,
 nombre1 varchar(50),
@@ -17,3 +24,4 @@ nacionalidad varchar(50),
 localidad varchar(100),
 e_mail varchar(100)
 );
+
