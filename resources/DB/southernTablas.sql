@@ -192,6 +192,13 @@ cefalica_lateral text,
 Panoramica text
 );
 
+create table modelos_de_estudio_fotografias(
+modelos_de_estudio_fotografias int not null auto_increment primary key,
+Modelos_de_estudio text,
+Tipo_de_arcada text,
+Fotografías text
+);
+
 create table examen_clinico(
 id_examen_clinico int not null auto_increment primary key,
 Paladar text,
