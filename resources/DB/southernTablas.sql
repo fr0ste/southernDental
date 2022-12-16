@@ -164,6 +164,14 @@ nombre varchar(100),
 descripcion text
 );
 
+create table analisis_funcional(
+id_analisis_funcional int not null auto_increment primary key,
+Deglución text,
+Fonación_masticación text,
+Respiración text,
+Observaciones text
+);
+
 create table examen_clinico(
 id_examen_clinico int not null auto_increment primary key,
 Paladar text,
@@ -179,6 +187,8 @@ Frenillos text,
 Saliva text,
 Otras_señas_particulares text
 );
+
+
 
 -- procedimientos
 
