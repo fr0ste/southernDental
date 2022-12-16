@@ -146,3 +146,7 @@ id_frente int,
 senias_particulares text
 );
 
+create table personal_de_salud(
+id_personal_de_salud int not null auto_increment primary key,
+nombre varchar(100)
+);
