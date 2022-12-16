@@ -91,6 +91,11 @@ public class PanelDerechoAdmin extends javax.swing.JPanel {
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("PACIENTES");
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel2MouseEntered(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnlPacientesLayout = new javax.swing.GroupLayout(pnlPacientes);
         pnlPacientes.setLayout(pnlPacientesLayout);
@@ -145,6 +150,10 @@ public class PanelDerechoAdmin extends javax.swing.JPanel {
     private void jLabel1MouseExited(java.awt.event.MouseEvent evt) {                                    
         pnlAlumnos.setBackground(Colors.MOUSE_EXITED);
     }                                   
+
+    private void jLabel2MouseEntered(java.awt.event.MouseEvent evt) {                                     
+        pnlPacientes.setBackground(Colors.MOUSE_ENTERED);
+    }                                    
 
 
     // Variables declaration - do not modify                     
