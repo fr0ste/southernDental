@@ -318,7 +318,8 @@ id_examen_parodontal int not null,
 id_exploracion_cavidad_bucal int not null,
 id_examen_dientes_pilares int not null,
 id_examen_radiografico_de_dientes_pilares int not null,
-id_examen_de_organo_dentario int not null
+id_examen_de_organo_dentario int not null,
+id_plan_tratamiento int not null
 );
 
 
