@@ -177,6 +177,15 @@ id_postura_del_paciente int not null auto_increment primary key,
 atm_palpacion text
 );
 
+create table examen_bucal(
+id_examen_bucal int not null auto_increment primary key,
+Relación_molar_Derecha text,
+Relación_molar_Izquierda text,
+Relación_canina_Derecha text,
+Relación_canina_Izquierda text
+);
+
+
 
 create table examen_clinico(
 id_examen_clinico int not null auto_increment primary key,
