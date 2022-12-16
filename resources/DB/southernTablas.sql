@@ -241,7 +241,30 @@ nombre varchar(100),
 descripcion text
 );
 
--- procedimientos
+-- *******************historias clinicas (procedimientos)************************
+
+-- ·historia clinica protesis bucal·
+
+create table examen_parodontal(
+id_examen_parodontal int not null auto_increment primary key,
+materia_alba boolean,
+placa_bacteriana boolean,
+sarro boolean,
+gingivitis boolean,
+bolsas_periodontales boolean,
+absceso_periodontal boolean,
+absceso_periodontal boolean,
+reabsorcion_osea boolean,
+movilidad_dental boolean
+);
+
+create table protesis_bucal(
+id_protesis_bucal int not null auto_increment primary key
+
+);
+
+
+
 
 -- datos de personal de salud
 create table personal_de_salud(
