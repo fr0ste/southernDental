@@ -121,3 +121,8 @@ alergia_medicamento_sustancia text,
 embarazo text,
 observaciones text
 );
+
+create table perfil_facial(
+id_perfil_facial int auto_increment,
+tipo_perfil varchar(80)
+);
