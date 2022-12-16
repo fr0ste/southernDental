@@ -208,6 +208,16 @@ región_donde_se_realizó_biopsia text,
 laboratorio_donde_se_envia_el_estudio text
 );
 
+
+create table interconsulta_medica(
+id_interconsulta_medica int not null auto_increment primary key,
+nombre_medico text,
+razon text,
+motivo_de_diagnostico_presuntivo text,
+Motivo_de_envio text,
+servicio_al_que_se_envia text
+);
+
 create table examen_clinico(
 id_examen_clinico int not null auto_increment primary key,
 Paladar text,
