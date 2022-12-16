@@ -52,3 +52,23 @@ frecuencia_respiratoria double,
 pesion_arterial double,
 saturacion_oxigeno double
 );
+
+create table antecedentes_heredofamiliares(
+id_antecedentes_heredofamiliares int not null auto_increment primary key,
+Neoplacia boolean,
+Neoplacia_rAmplia text,
+diabetes boolean,
+diabetes text,
+hipertencion boolean,
+hipertencion text,
+padecimientos_mentales_neurologicos boolean,
+padecimientos_mentales_neurologicos text,
+obecidad boolean,
+obecidad text,
+padecimientos_hematologicos boolean,
+padecimientos_hematologicos text,
+malformaciones_congenitas boolean,
+malformaciones_congenitas text,
+problemas_cardiacos boolean,
+problemas_cardiacos text
+);
