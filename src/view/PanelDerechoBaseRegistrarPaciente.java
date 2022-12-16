@@ -46,6 +46,7 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
         nacionalidad = new javax.swing.JLabel();
         localidad = new javax.swing.JLabel();
         correo = new javax.swing.JLabel();
+        txtNombres = new javax.swing.JTextField();
 
         pnlDerechoBase.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -94,15 +95,18 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
         correo.setForeground(new java.awt.Color(0, 0, 0));
         correo.setText("Correo electrónico:");
 
+        txtNombres.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNombresActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout pnlDerechoBaseLayout = new javax.swing.GroupLayout(pnlDerechoBase);
         pnlDerechoBase.setLayout(pnlDerechoBaseLayout);
         pnlDerechoBaseLayout.setHorizontalGroup(
             pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
                 .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
-                        .addGap(157, 157, 157)
-                        .addComponent(nombres))
                     .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
                         .addGap(113, 113, 113)
                         .addComponent(apellido1))
@@ -141,14 +145,21 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
                         .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(correo)
                             .addComponent(localidad)
-                            .addComponent(nacionalidad))))
-                .addGap(837, 837, 837))
+                            .addComponent(nacionalidad)))
+                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                        .addGap(157, 157, 157)
+                        .addComponent(nombres)
+                        .addGap(18, 18, 18)
+                        .addComponent(txtNombres, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(504, Short.MAX_VALUE))
         );
         pnlDerechoBaseLayout.setVerticalGroup(
             pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
-                .addGap(62, 62, 62)
-                .addComponent(nombres)
+                .addGap(56, 56, 56)
+                .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(nombres)
+                    .addComponent(txtNombres, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(apellido1)
                 .addGap(18, 18, 18)
@@ -191,6 +202,10 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void txtNombresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombresActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNombresActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel apellido1;
@@ -209,5 +224,6 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
     private javax.swing.JPanel pnlDerechoBase;
     private javax.swing.JLabel religion;
     private javax.swing.JLabel sexo;
+    private javax.swing.JTextField txtNombres;
     // End of variables declaration//GEN-END:variables
 }
