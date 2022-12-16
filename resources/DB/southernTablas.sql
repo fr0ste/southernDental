@@ -258,12 +258,25 @@ reabsorcion_osea boolean,
 movilidad_dental boolean
 );
 
+
+create table exploracion_cavidad_bucal(
+id_exploracion_cavidad_bucal int not null auto_increment primary key,
+piso_de_la_boca text,
+labios text,
+paladar_duro text,
+paladar_blando text,
+lengua text,
+carrillos text,
+proceso_residual text,
+areas_adentulas text,
+mucosa_bucal text,
+articulacion_temporomandibular text
+);
+
 create table protesis_bucal(
 id_protesis_bucal int not null auto_increment primary key,
 id_examen_parodontal int not null
 );
-
-
 
 
 -- datos de personal de salud
