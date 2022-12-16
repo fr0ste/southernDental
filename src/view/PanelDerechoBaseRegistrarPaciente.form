@@ -36,63 +36,102 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="112" max="-2" attributes="0"/>
+              <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="correo" min="-2" max="-2" attributes="0"/>
-                      <Component id="localidad" min="-2" max="-2" attributes="0"/>
-                      <Component id="nacionalidad" min="-2" max="-2" attributes="0"/>
-                      <Component id="fechaingreso" min="-2" max="-2" attributes="0"/>
-                      <Component id="religion" min="-2" max="-2" attributes="0"/>
-                      <Component id="estadoCivil" min="-2" max="-2" attributes="0"/>
-                      <Component id="domicilio" min="-2" max="-2" attributes="0"/>
-                      <Component id="fechanacimiento" min="-2" max="-2" attributes="0"/>
-                      <Component id="ocupacion" min="-2" max="-2" attributes="0"/>
-                      <Component id="grupoEtnico" min="-2" max="-2" attributes="0"/>
-                      <Component id="sexo" min="-2" max="-2" attributes="0"/>
-                      <Component id="edad" min="-2" max="-2" attributes="0"/>
-                      <Component id="apellido2" min="-2" max="-2" attributes="0"/>
-                      <Component id="apellido1" min="-2" max="-2" attributes="0"/>
-                      <Component id="nombres" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="157" pref="157" max="-2" attributes="0"/>
+                          <Component id="nombres" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="113" pref="113" max="-2" attributes="0"/>
+                          <Component id="apellido1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="112" pref="112" max="-2" attributes="0"/>
+                          <Component id="apellido2" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="184" pref="184" max="-2" attributes="0"/>
+                          <Component id="edad" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="184" pref="184" max="-2" attributes="0"/>
+                          <Component id="sexo" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="134" pref="134" max="-2" attributes="0"/>
+                          <Component id="grupoEtnico" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="146" pref="146" max="-2" attributes="0"/>
+                          <Component id="ocupacion" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="81" pref="81" max="-2" attributes="0"/>
+                          <Component id="fechanacimiento" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="157" pref="157" max="-2" attributes="0"/>
+                          <Component id="domicilio" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="143" pref="143" max="-2" attributes="0"/>
+                          <Component id="estadoCivil" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="165" pref="165" max="-2" attributes="0"/>
+                          <Component id="religion" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="104" pref="104" max="-2" attributes="0"/>
+                          <Component id="fechaingreso" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="97" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="correo" min="-2" max="-2" attributes="0"/>
+                              <Component id="localidad" min="-2" max="-2" attributes="0"/>
+                              <Component id="nacionalidad" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                   </Group>
-                  <EmptySpace pref="788" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="837" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
+              <Group type="102" attributes="0">
+                  <EmptySpace min="62" pref="62" max="-2" attributes="0"/>
                   <Component id="nombres" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Component id="apellido1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Component id="apellido2" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Component id="edad" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Component id="sexo" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Component id="grupoEtnico" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Component id="ocupacion" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Component id="fechanacimiento" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Component id="domicilio" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Component id="estadoCivil" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Component id="religion" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Component id="fechaingreso" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Component id="nacionalidad" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Component id="localidad" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Component id="correo" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="116" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -103,7 +142,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="0" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Nombres: "/>
+            <Property name="text" type="java.lang.String" value="Nombres:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="apellido1">
@@ -111,7 +150,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="0" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Apellido Paterno: "/>
+            <Property name="text" type="java.lang.String" value="Apellido Paterno:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="apellido2">
@@ -119,7 +158,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="0" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Apellido Materno: "/>
+            <Property name="text" type="java.lang.String" value="Apellido Materno:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="edad">
@@ -143,7 +182,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="0" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Grupo &#xe9;tnico: "/>
+            <Property name="text" type="java.lang.String" value="Grupo &#xe9;tnico:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="ocupacion">

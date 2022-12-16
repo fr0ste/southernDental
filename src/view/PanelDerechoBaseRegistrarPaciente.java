@@ -50,13 +50,13 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
         pnlDerechoBase.setBackground(new java.awt.Color(255, 255, 255));
 
         nombres.setForeground(new java.awt.Color(0, 0, 0));
-        nombres.setText("Nombres: ");
+        nombres.setText("Nombres:");
 
         apellido1.setForeground(new java.awt.Color(0, 0, 0));
-        apellido1.setText("Apellido Paterno: ");
+        apellido1.setText("Apellido Paterno:");
 
         apellido2.setForeground(new java.awt.Color(0, 0, 0));
-        apellido2.setText("Apellido Materno: ");
+        apellido2.setText("Apellido Materno:");
 
         edad.setForeground(new java.awt.Color(0, 0, 0));
         edad.setText("Edad:");
@@ -65,7 +65,7 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
         sexo.setText("Sexo:");
 
         grupoEtnico.setForeground(new java.awt.Color(0, 0, 0));
-        grupoEtnico.setText("Grupo étnico: ");
+        grupoEtnico.setText("Grupo étnico:");
 
         ocupacion.setForeground(new java.awt.Color(0, 0, 0));
         ocupacion.setText("Ocupación:");
@@ -99,24 +99,50 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
         pnlDerechoBaseLayout.setHorizontalGroup(
             pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
-                .addGap(112, 112, 112)
                 .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(correo)
-                    .addComponent(localidad)
-                    .addComponent(nacionalidad)
-                    .addComponent(fechaingreso)
-                    .addComponent(religion)
-                    .addComponent(estadoCivil)
-                    .addComponent(domicilio)
-                    .addComponent(fechanacimiento)
-                    .addComponent(ocupacion)
-                    .addComponent(grupoEtnico)
-                    .addComponent(sexo)
-                    .addComponent(edad)
-                    .addComponent(apellido2)
-                    .addComponent(apellido1)
-                    .addComponent(nombres))
-                .addContainerGap(788, Short.MAX_VALUE))
+                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                        .addGap(157, 157, 157)
+                        .addComponent(nombres))
+                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                        .addGap(113, 113, 113)
+                        .addComponent(apellido1))
+                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                        .addGap(112, 112, 112)
+                        .addComponent(apellido2))
+                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                        .addGap(184, 184, 184)
+                        .addComponent(edad))
+                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                        .addGap(184, 184, 184)
+                        .addComponent(sexo))
+                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                        .addGap(134, 134, 134)
+                        .addComponent(grupoEtnico))
+                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                        .addGap(146, 146, 146)
+                        .addComponent(ocupacion))
+                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                        .addGap(81, 81, 81)
+                        .addComponent(fechanacimiento))
+                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                        .addGap(157, 157, 157)
+                        .addComponent(domicilio))
+                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                        .addGap(143, 143, 143)
+                        .addComponent(estadoCivil))
+                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                        .addGap(165, 165, 165)
+                        .addComponent(religion))
+                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                        .addGap(104, 104, 104)
+                        .addComponent(fechaingreso))
+                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                        .addGap(97, 97, 97)
+                        .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(correo)
+                            .addComponent(localidad)
+                            .addComponent(nacionalidad))))
+                .addGap(837, 837, 837))
         );
         pnlDerechoBaseLayout.setVerticalGroup(
             pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -150,8 +176,7 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addComponent(localidad)
                 .addGap(18, 18, 18)
-                .addComponent(correo)
-                .addContainerGap(116, Short.MAX_VALUE))
+                .addComponent(correo))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
