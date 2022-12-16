@@ -247,5 +247,11 @@ manejo_integral text,
 fecha_de_consulta date
 );
 
--- procedimientos
 
+create table procedimiento_tipo(
+id_procedimiento_tipo int not null auto_increment primary key,
+nombre varchar(100),
+descripcion text
+);
+
+-- procedimientos
