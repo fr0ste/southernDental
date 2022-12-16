@@ -129,7 +129,11 @@ public class PanelDerechoAdmin extends javax.swing.JPanel {
 
         add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1040, 700));
     }// </editor-fold>                        
-
+/**
+     * 
+     * otorga y gestiona el evento de mouse entered para el botón alumnos.
+     *
+     */
     private void jLabel1MouseEntered(java.awt.event.MouseEvent evt) {                                     
         pnlAlumnos.setBackground(Colors.MOUSE_ENTERED);
     }                                    
