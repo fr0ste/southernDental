@@ -1,7 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
- */
+/**
+  * Autor: Joel && Elio
+  * Fecha de creación: 15 de noviembre del 2022
+  * Fecha de modificación: 15 de diciembre del 2022
+  * Descripción: Panel que servirá como base para partes izquierdas del Frame
+  */
 package view.base;
 
 /**
