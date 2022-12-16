@@ -290,6 +290,12 @@ protesis_removible int
 );
 
 
+create table examen_radiografico_de_dientes_pilares(
+id_examen_radiografico_de_dientes_pilares int not null auto_increment primary key,
+camara_pulpar text,
+zona_apical text,
+conducto_radicular text
+);
 
 create table protesis_bucal(
 id_protesis_bucal int not null auto_increment primary key,
@@ -297,7 +303,6 @@ id_examen_parodontal int not null,
 id_exploracion_cavidad_bucal int not null,
 id_examen_dientes_pilares int not null
 );
-
 
 -- datos de personal de salud
 create table personal_de_salud(
