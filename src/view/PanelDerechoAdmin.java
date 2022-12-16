@@ -177,11 +177,19 @@ public class PanelDerechoAdmin extends javax.swing.JPanel {
     private void jLabel2MouseExited(java.awt.event.MouseEvent evt) {                                    
         pnlPacientes.setBackground(Colors.MOUSE_EXITED);
     }                                   
-
+/**
+     * 
+     * otorga y gestiona el evento de mouse entered para el botón Profesores.
+     *
+     */
     private void jLabel3MouseEntered(java.awt.event.MouseEvent evt) {                                     
         pnlProfesores.setBackground(Colors.MOUSE_ENTERED);
     }                                    
-
+/**
+     * 
+     * otorga y gestiona el evento de mouse exited para el botón Profesores.
+     *
+     */
     private void jLabel3MouseExited(java.awt.event.MouseEvent evt) {                                    
         pnlProfesores.setBackground(Colors.MOUSE_EXITED);
     }                                   
