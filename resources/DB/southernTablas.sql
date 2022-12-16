@@ -72,3 +72,18 @@ malformaciones_congenitas text,
 problemas_cardiacos boolean,
 problemas_cardiacos text
 );
+
+create table antecedentes_personales_no_patologicos(
+id_ntecedentes_personales_no_patologicos int not null primary key, 
+come_frutas_verduras boolean,
+come_carne boolean,
+come_cereales boolean,
+come_alimentos_chatarra boolean,
+dos_litros_de_agua_dia boolean,
+uno_mas_refrescos_dia boolean,
+horas_duerme_dia int,
+baño_veces_x_semana int,
+cepillado_dia int,
+su_vivienda_tiene_piso int,
+material_de_vivienda varchar(30)
+);
