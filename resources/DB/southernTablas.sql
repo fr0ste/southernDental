@@ -150,3 +150,11 @@ create table personal_de_salud(
 id_personal_de_salud int not null auto_increment primary key,
 nombre varchar(100)
 );
+
+create table consulta(
+id_consulta int auto_increment not null primary key,
+id_tipo_consulta_f int,
+id_personal_de_salud_f int,
+id_clinica int
+);
+
