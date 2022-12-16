@@ -33,6 +33,7 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
         pnlDerechoBase = new javax.swing.JPanel();
         Nombres = new javax.swing.JLabel();
         Apellido1 = new javax.swing.JLabel();
+        Apellido2 = new javax.swing.JLabel();
 
         pnlDerechoBase.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -42,6 +43,9 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
         Apellido1.setForeground(new java.awt.Color(0, 0, 0));
         Apellido1.setText("Apellido Paterno: ");
 
+        Apellido2.setForeground(new java.awt.Color(0, 0, 0));
+        Apellido2.setText("Apellido Materno: ");
+
         javax.swing.GroupLayout pnlDerechoBaseLayout = new javax.swing.GroupLayout(pnlDerechoBase);
         pnlDerechoBase.setLayout(pnlDerechoBaseLayout);
         pnlDerechoBaseLayout.setHorizontalGroup(
@@ -49,9 +53,10 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
             .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
                 .addGap(112, 112, 112)
                 .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Apellido2)
                     .addComponent(Apellido1)
                     .addComponent(Nombres))
-                .addContainerGap(815, Short.MAX_VALUE))
+                .addContainerGap(814, Short.MAX_VALUE))
         );
         pnlDerechoBaseLayout.setVerticalGroup(
             pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -60,7 +65,9 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
                 .addComponent(Nombres)
                 .addGap(29, 29, 29)
                 .addComponent(Apellido1)
-                .addContainerGap(545, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(Apellido2)
+                .addContainerGap(509, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -78,6 +85,7 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Apellido1;
+    private javax.swing.JLabel Apellido2;
     private javax.swing.JLabel Nombres;
     private javax.swing.JPanel pnlDerechoBase;
     // End of variables declaration//GEN-END:variables
