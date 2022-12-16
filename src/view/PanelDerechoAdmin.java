@@ -74,6 +74,14 @@ public class PanelDerechoAdmin extends javax.swing.JPanel {
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("PROFESORES");
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel3MouseExited(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnlProfesoresLayout = new javax.swing.GroupLayout(pnlProfesores);
         pnlProfesores.setLayout(pnlProfesoresLayout);
@@ -168,6 +176,14 @@ public class PanelDerechoAdmin extends javax.swing.JPanel {
      */
     private void jLabel2MouseExited(java.awt.event.MouseEvent evt) {                                    
         pnlPacientes.setBackground(Colors.MOUSE_EXITED);
+    }                                   
+
+    private void jLabel3MouseEntered(java.awt.event.MouseEvent evt) {                                     
+        pnlProfesores.setBackground(Colors.MOUSE_ENTERED);
+    }                                    
+
+    private void jLabel3MouseExited(java.awt.event.MouseEvent evt) {                                    
+        pnlProfesores.setBackground(Colors.MOUSE_EXITED);
     }                                   
 
 
