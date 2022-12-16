@@ -185,7 +185,12 @@ Relación_canina_Derecha text,
 Relación_canina_Izquierda text
 );
 
-
+create table analis_radiografico(
+analis_radiografico int not null auto_increment primary key,
+Periapical text,
+cefalica_lateral text,
+Panoramica text
+);
 
 create table examen_clinico(
 id_examen_clinico int not null auto_increment primary key,
