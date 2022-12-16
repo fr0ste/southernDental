@@ -158,3 +158,8 @@ id_personal_de_salud_f int,
 id_clinica int
 );
 
+create table procedimiento_tipo(
+id_procedimiento_tipo int auto_increment not null primary key,
+nombre varchar(100),
+descripcion text
+);
