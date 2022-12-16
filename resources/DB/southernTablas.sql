@@ -274,7 +274,7 @@ articulacion_temporomandibular text
 );
 
 create table examen_dientes_pilares(
-examen_dientes_pilares int not null auto_increment primary key,
+id_examen_dientes_pilares int not null auto_increment primary key,
 dientes_cariados int,
 dientes_ausentes int,
 dientes_cariados int,
@@ -288,6 +288,8 @@ protesis_fija int,
 raices int,
 protesis_removible int
 );
+
+
 
 create table protesis_bucal(
 id_protesis_bucal int not null auto_increment primary key,
