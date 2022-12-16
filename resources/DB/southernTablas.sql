@@ -234,7 +234,17 @@ Saliva text,
 Otras_señas_particulares text
 );
 
-
+create table consulta(
+id_consulta int not null auto_increment primary key,
+id_paciente int not null,
+id_personal_de_salud int not null, 
+id_clinica int not null,
+diagnostico text,
+pronostico text,
+tratamiento text,
+manejo_integral text,
+fecha_de_consulta date
+);
 
 -- procedimientos
 
