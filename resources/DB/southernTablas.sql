@@ -301,7 +301,8 @@ create table protesis_bucal(
 id_protesis_bucal int not null auto_increment primary key,
 id_examen_parodontal int not null,
 id_exploracion_cavidad_bucal int not null,
-id_examen_dientes_pilares int not null
+id_examen_dientes_pilares int not null,
+id_examen_radiografico_de_dientes_pilares int not null
 );
 
 -- datos de personal de salud
