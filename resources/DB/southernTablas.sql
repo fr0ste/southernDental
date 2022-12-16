@@ -236,15 +236,16 @@ Otras_señas_particulares text
 
 create table consulta(
 id_consulta int not null auto_increment primary key,
-id_paciente int not null,
-id_personal_de_salud int not null, 
-id_clinica int not null,
-id_procedimiento_realizado int,
+id_interrogatorio int,
 diagnostico text,
 pronostico text,
 tratamiento text,
 manejo_integral text,
-fecha_de_consulta date
+fecha_de_consulta date,
+id_paciente int not null,
+id_personal_de_salud int not null, 
+id_clinica int not null,
+id_procedimiento_realizado int
 );
 
 
