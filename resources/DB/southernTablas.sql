@@ -126,3 +126,8 @@ create table perfil_facial(
 id_perfil_facial int auto_increment,
 tipo_perfil varchar(80)
 );
+
+create table frente_facial(
+id_frente_facial int not null primary key,
+tipo_frente varchar(80)
+);
