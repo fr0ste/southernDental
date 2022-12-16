@@ -5,6 +5,11 @@ id_roles_personal_de_salud int auto_increment not null primary key,
 rol_tipo varchar(80)
 );
 
+create table clinica(
+id_clinica int auto_increment not null primary key,
+nombre_clinica varchar(80)
+);
+
 create table paciente(
 id_paciente int not null auto_increment primary key,
 nombre1 varchar(50),
