@@ -199,6 +199,15 @@ Tipo_de_arcada text,
 Fotografías text
 );
 
+create table estudio_de_laboratorio_biopsia(
+estudio_de_laboratorio_biopsia int not null auto_increment primary key,
+tipo_de_estudio text,
+tipo_de_biopsia text,
+region_de_biopsia text,
+región_donde_se_realizó_biopsia text,
+laboratorio_donde_se_envia_el_estudio text
+);
+
 create table examen_clinico(
 id_examen_clinico int not null auto_increment primary key,
 Paladar text,
