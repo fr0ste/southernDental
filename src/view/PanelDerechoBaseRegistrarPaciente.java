@@ -31,60 +31,68 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
     private void initComponents() {
 
         pnlDerechoBase = new javax.swing.JPanel();
-        Nombres = new javax.swing.JLabel();
-        Apellido1 = new javax.swing.JLabel();
-        Apellido2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
+        nombres = new javax.swing.JLabel();
+        apellido1 = new javax.swing.JLabel();
+        apellido2 = new javax.swing.JLabel();
+        edad = new javax.swing.JLabel();
+        sexo = new javax.swing.JLabel();
+        grupoEtnico = new javax.swing.JLabel();
+        ocupacion = new javax.swing.JLabel();
+        fechanacimiento = new javax.swing.JLabel();
+        domicilio = new javax.swing.JLabel();
+        estadoCivil = new javax.swing.JLabel();
+        religion = new javax.swing.JLabel();
+        fechaingreso = new javax.swing.JLabel();
+        nacionalidad = new javax.swing.JLabel();
+        localidad = new javax.swing.JLabel();
+        correo = new javax.swing.JLabel();
 
         pnlDerechoBase.setBackground(new java.awt.Color(255, 255, 255));
 
-        Nombres.setForeground(new java.awt.Color(0, 0, 0));
-        Nombres.setText("Nombres: ");
+        nombres.setForeground(new java.awt.Color(0, 0, 0));
+        nombres.setText("Nombres: ");
 
-        Apellido1.setForeground(new java.awt.Color(0, 0, 0));
-        Apellido1.setText("Apellido Paterno: ");
+        apellido1.setForeground(new java.awt.Color(0, 0, 0));
+        apellido1.setText("Apellido Paterno: ");
 
-        Apellido2.setForeground(new java.awt.Color(0, 0, 0));
-        Apellido2.setText("Apellido Materno: ");
+        apellido2.setForeground(new java.awt.Color(0, 0, 0));
+        apellido2.setText("Apellido Materno: ");
 
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel1.setText("Edad:");
+        edad.setForeground(new java.awt.Color(0, 0, 0));
+        edad.setText("Edad:");
 
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel2.setText("Sexo:");
+        sexo.setForeground(new java.awt.Color(0, 0, 0));
+        sexo.setText("Sexo:");
 
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel3.setText("Grupo étnico: ");
+        grupoEtnico.setForeground(new java.awt.Color(0, 0, 0));
+        grupoEtnico.setText("Grupo étnico: ");
 
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel4.setText("Ocupación:");
+        ocupacion.setForeground(new java.awt.Color(0, 0, 0));
+        ocupacion.setText("Ocupación:");
 
-        jLabel5.setText("jLabel5");
+        fechanacimiento.setForeground(new java.awt.Color(0, 0, 0));
+        fechanacimiento.setText("Fecha de nacimiento:");
 
-        jLabel6.setText("jLabel6");
+        domicilio.setForeground(new java.awt.Color(0, 0, 0));
+        domicilio.setText("Domicilio:");
 
-        jLabel7.setText("jLabel7");
+        estadoCivil.setForeground(new java.awt.Color(0, 0, 0));
+        estadoCivil.setText("Estado civil:");
 
-        jLabel8.setText("jLabel8");
+        religion.setForeground(new java.awt.Color(0, 0, 0));
+        religion.setText("Religión:");
 
-        jLabel9.setText("jLabel9");
+        fechaingreso.setForeground(new java.awt.Color(0, 0, 0));
+        fechaingreso.setText("Fecha de ingreso:");
 
-        jLabel10.setText("jLabel10");
+        nacionalidad.setForeground(new java.awt.Color(0, 0, 0));
+        nacionalidad.setText("Nacionalidad:");
 
-        jLabel11.setText("jLabel11");
+        localidad.setForeground(new java.awt.Color(0, 0, 0));
+        localidad.setText("Localidad:");
 
-        jLabel12.setText("jLabel12");
+        correo.setForeground(new java.awt.Color(0, 0, 0));
+        correo.setText("Correo electrónico:");
 
         javax.swing.GroupLayout pnlDerechoBaseLayout = new javax.swing.GroupLayout(pnlDerechoBase);
         pnlDerechoBase.setLayout(pnlDerechoBaseLayout);
@@ -93,56 +101,56 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
             .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
                 .addGap(112, 112, 112)
                 .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel12)
-                    .addComponent(jLabel11)
-                    .addComponent(jLabel10)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel1)
-                    .addComponent(Apellido2)
-                    .addComponent(Apellido1)
-                    .addComponent(Nombres))
-                .addContainerGap(814, Short.MAX_VALUE))
+                    .addComponent(correo)
+                    .addComponent(localidad)
+                    .addComponent(nacionalidad)
+                    .addComponent(fechaingreso)
+                    .addComponent(religion)
+                    .addComponent(estadoCivil)
+                    .addComponent(domicilio)
+                    .addComponent(fechanacimiento)
+                    .addComponent(ocupacion)
+                    .addComponent(grupoEtnico)
+                    .addComponent(sexo)
+                    .addComponent(edad)
+                    .addComponent(apellido2)
+                    .addComponent(apellido1)
+                    .addComponent(nombres))
+                .addContainerGap(788, Short.MAX_VALUE))
         );
         pnlDerechoBaseLayout.setVerticalGroup(
             pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
                 .addGap(62, 62, 62)
-                .addComponent(Nombres)
+                .addComponent(nombres)
                 .addGap(18, 18, 18)
-                .addComponent(Apellido1)
+                .addComponent(apellido1)
                 .addGap(18, 18, 18)
-                .addComponent(Apellido2)
+                .addComponent(apellido2)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel1)
+                .addComponent(edad)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel2)
+                .addComponent(sexo)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel3)
+                .addComponent(grupoEtnico)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel4)
+                .addComponent(ocupacion)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel5)
+                .addComponent(fechanacimiento)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel6)
+                .addComponent(domicilio)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel7)
+                .addComponent(estadoCivil)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel8)
+                .addComponent(religion)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel9)
+                .addComponent(fechaingreso)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel10)
+                .addComponent(nacionalidad)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel11)
+                .addComponent(localidad)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel12)
+                .addComponent(correo)
                 .addContainerGap(116, Short.MAX_VALUE))
         );
 
@@ -160,21 +168,21 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel Apellido1;
-    private javax.swing.JLabel Apellido2;
-    private javax.swing.JLabel Nombres;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel apellido1;
+    private javax.swing.JLabel apellido2;
+    private javax.swing.JLabel correo;
+    private javax.swing.JLabel domicilio;
+    private javax.swing.JLabel edad;
+    private javax.swing.JLabel estadoCivil;
+    private javax.swing.JLabel fechaingreso;
+    private javax.swing.JLabel fechanacimiento;
+    private javax.swing.JLabel grupoEtnico;
+    private javax.swing.JLabel localidad;
+    private javax.swing.JLabel nacionalidad;
+    private javax.swing.JLabel nombres;
+    private javax.swing.JLabel ocupacion;
     private javax.swing.JPanel pnlDerechoBase;
+    private javax.swing.JLabel religion;
+    private javax.swing.JLabel sexo;
     // End of variables declaration//GEN-END:variables
 }
