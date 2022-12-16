@@ -100,7 +100,11 @@ public class PanelIzquierdoAdmin extends javax.swing.JPanel {
         pnlHome.setBackground(Colors.MOUSE_ENTERED);
 
     }//GEN-LAST:event_btnHomeMouseEntered
-
+/**
+     * 
+     * otorga y gestiona el evento de mouse exited para el botón home.
+     *
+     */
     private void btnHomeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHomeMouseExited
         pnlHome.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_btnHomeMouseExited
