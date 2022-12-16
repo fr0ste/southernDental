@@ -30,3 +30,14 @@ localidad varchar(100),
 e_mail varchar(100)
 );
 
+
+create table tutor(
+id_tutor int not null auto_increment primary key,
+nombre1 varchar(50),
+nombre2 varchar(50),
+apellido1 varchar(50),
+apellido2 varchar(50),
+sexo char,
+ocupacion varchar(100),
+estado_civil varchar(50)
+);
