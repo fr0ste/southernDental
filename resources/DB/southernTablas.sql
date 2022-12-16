@@ -297,20 +297,22 @@ zona_apical text,
 conducto_radicular text
 );
 
-create table protesis_bucal(
-id_protesis_bucal int not null auto_increment primary key,
-id_examen_parodontal int not null,
-id_exploracion_cavidad_bucal int not null,
-id_examen_dientes_pilares int not null,
-id_examen_radiografico_de_dientes_pilares int not null
-);
-
 create table examen_de_organo_dentario(
 id_examen_de_organo_dentario int not null auto_increment primary key,
 numero_de_conductos int,
 proporcion_corona_raiz varchar(10),
 reabsorcion varchar(10)
 );
+
+create table protesis_bucal(
+id_protesis_bucal int not null auto_increment primary key,
+id_examen_parodontal int not null,
+id_exploracion_cavidad_bucal int not null,
+id_examen_dientes_pilares int not null,
+id_examen_radiografico_de_dientes_pilares int not null,
+id_examen_de_organo_dentario int not null
+);
+
 
 -- datos de personal de salud
 create table personal_de_salud(
