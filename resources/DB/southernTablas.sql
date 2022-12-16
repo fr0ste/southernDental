@@ -332,7 +332,8 @@ nombre2 varchar(100),
 apellido varchar(100),
 apellido2 varchar(100),
 semestre int,
-grupo int
+grupo int,
+id_catedratico_responsable int not null
  );
 
 
