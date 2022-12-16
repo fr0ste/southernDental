@@ -10,6 +10,7 @@ id_clinica int auto_increment not null primary key,
 nombre_clinica varchar(80)
 );
 
+-- tabla de pacientes
 create table paciente(
 id_paciente int not null auto_increment primary key,
 nombre1 varchar(50),
@@ -42,6 +43,7 @@ ocupacion varchar(100),
 estado_civil varchar(50)
 );
 
+-- interrogatorio general de pacientes
 create table signos_vitales(
 id_signos_vitales int not null auto_increment primary key,
 peso double,
@@ -146,24 +148,6 @@ id_frente int,
 senias_particulares text
 );
 
-create table personal_de_salud(
-id_personal_de_salud int not null auto_increment primary key,
-nombre varchar(100)
-);
-
-create table consulta(
-id_consulta int auto_increment not null primary key,
-id_tipo_consulta_f int,
-id_personal_de_salud_f int,
-id_clinica int
-);
-
-create table procedimiento_tipo(
-id_procedimiento_tipo int auto_increment not null primary key,
-nombre varchar(100),
-descripcion text
-);
-
 create table analisis_funcional(
 id_analisis_funcional int not null auto_increment primary key,
 Deglución text,
@@ -234,6 +218,8 @@ Saliva text,
 Otras_señas_particulares text
 );
 
+-- datos de consulta
+
 create table consulta(
 id_consulta int not null auto_increment primary key,
 id_interrogatorio int,
@@ -241,13 +227,13 @@ diagnostico text,
 pronostico text,
 tratamiento text,
 manejo_integral text,
+motivo_de_la_consulta text,
 fecha_de_consulta date,
 id_paciente int not null,
 id_personal_de_salud int not null, 
 id_clinica int not null,
 id_procedimiento_realizado int
 );
-
 
 create table procedimiento_tipo(
 id_procedimiento_tipo int not null auto_increment primary key,
@@ -256,3 +242,11 @@ descripcion text
 );
 
 -- procedimientos
+
+-- datos de personal de salud
+create table personal_de_salud(
+id_personal_de_salud int not null auto_increment primary key,
+nombre varchar(100)
+);
+
+
