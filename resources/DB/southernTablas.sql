@@ -304,6 +304,14 @@ proporcion_corona_raiz varchar(10),
 reabsorcion varchar(10)
 );
 
+create table plan_tratamiento(
+id_plan_tratamiento int not null auto_increment primary key,
+fecha_inicio date,
+fecha_de_terminado date,
+observaciones text,
+control_post_operatorio date
+);
+
 create table protesis_bucal(
 id_protesis_bucal int not null auto_increment primary key,
 id_examen_parodontal int not null,
