@@ -327,7 +327,7 @@ id_plan_tratamiento int not null
 
 
 create table alumno(
-id_personal_de_salud int not null auto_increment primary key,
+id_alumno int not null auto_increment primary key,
 nombre varchar(100),
 nombre2 varchar(100),
 apellido varchar(100),
