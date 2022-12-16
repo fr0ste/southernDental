@@ -273,9 +273,26 @@ mucosa_bucal text,
 articulacion_temporomandibular text
 );
 
+create table examen_dientes_pilares(
+examen_dientes_pilares int not null auto_increment primary key,
+dientes_cariados int,
+dientes_ausentes int,
+dientes_cariados int,
+amalgamas int, 
+dientes_ausentes int,
+resinas int,
+dientes_obturados int,
+incrustaciones int, 
+extracciones_indicadas int,
+protesis_fija int,
+raices int,
+protesis_removible int
+);
+
 create table protesis_bucal(
 id_protesis_bucal int not null auto_increment primary key,
-id_examen_parodontal int not null
+id_examen_parodontal int not null,
+id_exploracion_cavidad_bucal int not null
 );
 
 
