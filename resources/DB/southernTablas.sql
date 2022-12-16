@@ -1,4 +1,4 @@
-use souther_dental;
+use southern_dental;
 
 create table roles_personal_de_salud(
 id_roles_personal_de_salud int auto_increment not null primary key,
@@ -163,3 +163,22 @@ id_procedimiento_tipo int auto_increment not null primary key,
 nombre varchar(100),
 descripcion text
 );
+
+create table examen_clinico(
+id_examen_clinico int not null auto_increment primary key,
+Paladar text,
+Istmo_fauces text,
+Mucosa_yugal text,
+Nódulos_linfáticos text,
+Lengua text,
+Piso_boca text,
+Labios text,
+Glándulas_salivales text,
+Encía text,
+Frenillos text,
+Saliva text,
+Otras_señas_particulares text
+);
+
+-- procedimientos
+
