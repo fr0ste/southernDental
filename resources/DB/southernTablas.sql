@@ -325,7 +325,6 @@ id_plan_tratamiento int not null
 
 -- datos de personal de salud
 
-
 create table alumno(
 id_alumno int not null auto_increment primary key,
 nombre varchar(100),
@@ -336,4 +335,12 @@ semestre int,
 grupo int
  );
 
+
+create table catedraticos(
+id_catedratico int not null auto_increment primary key,
+nombre varchar(100),
+nombre2 varchar(100),
+apellido varchar(100),
+apellido2 varchar(100)
+)
 
