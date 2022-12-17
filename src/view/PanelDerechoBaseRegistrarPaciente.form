@@ -67,6 +67,8 @@
                       <Group type="102" attributes="0">
                           <EmptySpace min="146" pref="146" max="-2" attributes="0"/>
                           <Component id="ocupacion" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="txtOcupacion" min="-2" pref="316" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
                           <EmptySpace min="81" pref="81" max="-2" attributes="0"/>
@@ -134,9 +136,12 @@
                       <Component id="grupoEtnico" min="-2" max="-2" attributes="0"/>
                       <Component id="txtGrupoEtnico" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
-                  <Component id="ocupacion" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                  <EmptySpace min="15" pref="15" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="ocupacion" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtOcupacion" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="15" pref="15" max="-2" attributes="0"/>
                   <Component id="fechanacimiento" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Component id="domicilio" min="-2" max="-2" attributes="0"/>
@@ -295,6 +300,11 @@
         <Component class="javax.swing.JTextField" name="txtGrupoEtnico">
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtGrupoEtnicoActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txtOcupacion">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtOcupacionActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
