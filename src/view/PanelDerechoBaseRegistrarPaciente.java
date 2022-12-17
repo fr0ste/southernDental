@@ -51,6 +51,7 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
         txtApellidoMaterno = new javax.swing.JTextField();
         txtGrupoEtnico = new javax.swing.JTextField();
         txtOcupacion = new javax.swing.JTextField();
+        txtDomicilio = new javax.swing.JTextField();
 
         pnlDerechoBase.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -129,6 +130,12 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
             }
         });
 
+        txtDomicilio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtDomicilioActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout pnlDerechoBaseLayout = new javax.swing.GroupLayout(pnlDerechoBase);
         pnlDerechoBase.setLayout(pnlDerechoBaseLayout);
         pnlDerechoBaseLayout.setHorizontalGroup(
@@ -166,7 +173,9 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
                         .addComponent(fechanacimiento))
                     .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
                         .addGap(157, 157, 157)
-                        .addComponent(domicilio))
+                        .addComponent(domicilio)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txtDomicilio, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
                         .addGap(143, 143, 143)
                         .addComponent(estadoCivil))
@@ -218,9 +227,11 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
                     .addComponent(txtOcupacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15)
                 .addComponent(fechanacimiento)
-                .addGap(18, 18, 18)
-                .addComponent(domicilio)
-                .addGap(18, 18, 18)
+                .addGap(15, 15, 15)
+                .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(domicilio)
+                    .addComponent(txtDomicilio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(15, 15, 15)
                 .addComponent(estadoCivil)
                 .addGap(18, 18, 18)
                 .addComponent(religion)
@@ -266,6 +277,10 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtOcupacionActionPerformed
 
+    private void txtDomicilioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDomicilioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtDomicilioActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel apellido1;
@@ -286,6 +301,7 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
     private javax.swing.JLabel sexo;
     private javax.swing.JTextField txtApellidoMaterno;
     private javax.swing.JTextField txtApellidoPaterno;
+    private javax.swing.JTextField txtDomicilio;
     private javax.swing.JTextField txtGrupoEtnico;
     private javax.swing.JTextField txtNombres;
     private javax.swing.JTextField txtOcupacion;
