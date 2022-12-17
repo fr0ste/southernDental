@@ -107,6 +107,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="txtNacionalidad" min="-2" pref="316" max="-2" attributes="0"/>
                               <Component id="txtLocalidad" min="-2" pref="316" max="-2" attributes="0"/>
+                              <Component id="txtCorreo" min="-2" pref="316" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
@@ -116,7 +117,7 @@
                           <Component id="txtNombres" min="-2" pref="316" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="503" max="32767" attributes="0"/>
+                  <EmptySpace pref="484" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -181,8 +182,11 @@
                       <Component id="localidad" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtLocalidad" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="15" pref="15" max="-2" attributes="0"/>
-                  <Component id="correo" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="correo" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtCorreo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
           </Group>
         </DimensionLayout>
@@ -356,6 +360,11 @@
         <Component class="javax.swing.JTextField" name="txtLocalidad">
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtLocalidadActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txtCorreo">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtCorreoActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
