@@ -52,6 +52,7 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
         txtGrupoEtnico = new javax.swing.JTextField();
         txtOcupacion = new javax.swing.JTextField();
         txtDomicilio = new javax.swing.JTextField();
+        txtEstadoCivil = new javax.swing.JTextField();
 
         pnlDerechoBase.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -136,6 +137,12 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
             }
         });
 
+        txtEstadoCivil.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtEstadoCivilActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout pnlDerechoBaseLayout = new javax.swing.GroupLayout(pnlDerechoBase);
         pnlDerechoBase.setLayout(pnlDerechoBaseLayout);
         pnlDerechoBaseLayout.setHorizontalGroup(
@@ -174,11 +181,13 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
                     .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
                         .addGap(157, 157, 157)
                         .addComponent(domicilio)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(18, 18, 18)
                         .addComponent(txtDomicilio, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
                         .addGap(143, 143, 143)
-                        .addComponent(estadoCivil))
+                        .addComponent(estadoCivil)
+                        .addGap(18, 18, 18)
+                        .addComponent(txtEstadoCivil, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
                         .addGap(165, 165, 165)
                         .addComponent(religion))
@@ -231,9 +240,11 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
                 .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(domicilio)
                     .addComponent(txtDomicilio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(12, 12, 12)
+                .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(estadoCivil)
+                    .addComponent(txtEstadoCivil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15)
-                .addComponent(estadoCivil)
-                .addGap(18, 18, 18)
                 .addComponent(religion)
                 .addGap(18, 18, 18)
                 .addComponent(fechaingreso)
@@ -281,6 +292,10 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtDomicilioActionPerformed
 
+    private void txtEstadoCivilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEstadoCivilActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtEstadoCivilActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel apellido1;
@@ -302,6 +317,7 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
     private javax.swing.JTextField txtApellidoMaterno;
     private javax.swing.JTextField txtApellidoPaterno;
     private javax.swing.JTextField txtDomicilio;
+    private javax.swing.JTextField txtEstadoCivil;
     private javax.swing.JTextField txtGrupoEtnico;
     private javax.swing.JTextField txtNombres;
     private javax.swing.JTextField txtOcupacion;
