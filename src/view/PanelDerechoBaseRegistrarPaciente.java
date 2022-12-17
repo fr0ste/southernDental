@@ -53,6 +53,7 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
         txtOcupacion = new javax.swing.JTextField();
         txtDomicilio = new javax.swing.JTextField();
         txtEstadoCivil = new javax.swing.JTextField();
+        txtReligion = new javax.swing.JTextField();
 
         pnlDerechoBase.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -143,6 +144,12 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
             }
         });
 
+        txtReligion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtReligionActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout pnlDerechoBaseLayout = new javax.swing.GroupLayout(pnlDerechoBase);
         pnlDerechoBase.setLayout(pnlDerechoBaseLayout);
         pnlDerechoBaseLayout.setHorizontalGroup(
@@ -190,7 +197,9 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
                         .addComponent(txtEstadoCivil, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
                         .addGap(165, 165, 165)
-                        .addComponent(religion))
+                        .addComponent(religion)
+                        .addGap(18, 18, 18)
+                        .addComponent(txtReligion, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
                         .addGap(104, 104, 104)
                         .addComponent(fechaingreso))
@@ -244,9 +253,11 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
                 .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(estadoCivil)
                     .addComponent(txtEstadoCivil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(12, 12, 12)
+                .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(religion)
+                    .addComponent(txtReligion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15)
-                .addComponent(religion)
-                .addGap(18, 18, 18)
                 .addComponent(fechaingreso)
                 .addGap(18, 18, 18)
                 .addComponent(nacionalidad)
@@ -296,6 +307,10 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtEstadoCivilActionPerformed
 
+    private void txtReligionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtReligionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtReligionActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel apellido1;
@@ -321,5 +336,6 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
     private javax.swing.JTextField txtGrupoEtnico;
     private javax.swing.JTextField txtNombres;
     private javax.swing.JTextField txtOcupacion;
+    private javax.swing.JTextField txtReligion;
     // End of variables declaration//GEN-END:variables
 }

@@ -89,6 +89,8 @@
                       <Group type="102" attributes="0">
                           <EmptySpace min="165" pref="165" max="-2" attributes="0"/>
                           <Component id="religion" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="txtReligion" min="-2" pref="316" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
                           <EmptySpace min="104" pref="104" max="-2" attributes="0"/>
@@ -157,9 +159,12 @@
                       <Component id="estadoCivil" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtEstadoCivil" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="religion" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtReligion" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
                   <EmptySpace min="15" pref="15" max="-2" attributes="0"/>
-                  <Component id="religion" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Component id="fechaingreso" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Component id="nacionalidad" min="-2" max="-2" attributes="0"/>
@@ -325,6 +330,11 @@
         <Component class="javax.swing.JTextField" name="txtEstadoCivil">
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtEstadoCivilActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txtReligion">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtReligionActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
