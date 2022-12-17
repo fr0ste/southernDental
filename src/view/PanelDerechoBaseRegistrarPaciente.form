@@ -61,6 +61,8 @@
                       <Group type="102" attributes="0">
                           <EmptySpace min="134" pref="134" max="-2" attributes="0"/>
                           <Component id="grupoEtnico" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="txtGrupoEtnico" min="-2" pref="316" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
                           <EmptySpace min="146" pref="146" max="-2" attributes="0"/>
@@ -127,8 +129,11 @@
                   <Component id="edad" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Component id="sexo" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
-                  <Component id="grupoEtnico" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="grupoEtnico" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtGrupoEtnico" min="-2" max="-2" attributes="0"/>
+                  </Group>
                   <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Component id="ocupacion" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
@@ -285,6 +290,11 @@
         <Component class="javax.swing.JTextField" name="txtApellidoMaterno">
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtApellidoMaternoActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txtGrupoEtnico">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtGrupoEtnicoActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
