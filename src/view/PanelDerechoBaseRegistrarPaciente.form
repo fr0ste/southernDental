@@ -47,6 +47,8 @@
                       <Group type="102" attributes="0">
                           <EmptySpace min="112" pref="112" max="-2" attributes="0"/>
                           <Component id="apellido2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="txtApellidoMaterno" min="-2" pref="316" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
                           <EmptySpace min="184" pref="184" max="-2" attributes="0"/>
@@ -116,9 +118,12 @@
                       <Component id="apellido1" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtApellidoPaterno" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="apellido2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtApellidoMaterno" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
                   <EmptySpace min="15" pref="15" max="-2" attributes="0"/>
-                  <Component id="apellido2" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Component id="edad" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Component id="sexo" min="-2" max="-2" attributes="0"/>
@@ -275,6 +280,11 @@
         <Component class="javax.swing.JTextField" name="txtApellidoPaterno">
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtApellidoPaternoActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txtApellidoMaterno">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtApellidoMaternoActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
