@@ -1,8 +1,8 @@
 /**
   * Autor: Joel && Elio
-  * Fecha de creación: 15 de noviembre del 2022
-  * Fecha de modificación: 15 de diciembre del 2022
-  * Descripción: Panel que servirá como base para partes izquierdas del Frame
+  * Fecha de creación: 16 de noviembre del 2022
+  * Fecha de modificación: 16 de diciembre del 2022
+  * Descripción: Panel derecho para registrar pacientes
   */
 package view;
 
