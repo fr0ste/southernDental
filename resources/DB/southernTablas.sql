@@ -322,8 +322,14 @@ id_examen_de_organo_dentario int not null,
 id_plan_tratamiento int not null
 );
 
+-- ·historia clinica de operatoria dental·
 
--- datos de personal de salud
+
+create table operatoria_dental(
+id_operatoria_dental int not null auto_increment primary key
+);
+
+-- ************************datos de personal de salud***********************************
 
 create table alumno(
 id_alumno int not null auto_increment primary key,
@@ -334,7 +340,7 @@ apellido2 varchar(100),
 semestre int,
 grupo int,
 id_catedratico_responsable int not null
- );
+);
 
 
 create table catedraticos(
