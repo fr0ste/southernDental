@@ -1,8 +1,9 @@
 /**
   * Autor: Joel && Elio
-  * Fecha de creación: 15 de noviembre del 2022
-  * Fecha de modificación: 15 de diciembre del 2022
-  * Descripción: Panel que servirá como base para partes izquierdas del Frame
+  * Fecha de creación: 19 de noviembre del 2022
+  * Fecha de modificación: 19 de diciembre del 2022
+  * Descripción: Panel que servirá para regisar los signos vitales de los 
+  * pacientes
   */
 package view;
 
