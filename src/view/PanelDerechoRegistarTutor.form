@@ -52,6 +52,7 @@
                       <Component id="txtApellidoPaterno" min="-2" pref="316" max="-2" attributes="0"/>
                       <Component id="txtApellidoMaterno" min="-2" pref="316" max="-2" attributes="0"/>
                       <Component id="txtOcupacion" min="-2" pref="316" max="-2" attributes="0"/>
+                      <Component id="txtEstadoCivil" min="-2" pref="316" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="485" max="32767" attributes="0"/>
               </Group>
@@ -83,7 +84,10 @@
                       <Component id="txtOcupacion" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="estadoCivil" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="estadoCivil" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtEstadoCivil" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
                   <EmptySpace pref="442" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -156,6 +160,11 @@
         <Component class="javax.swing.JTextField" name="txtOcupacion">
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtOcupacionActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txtEstadoCivil">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtEstadoCivilActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
