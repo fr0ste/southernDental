@@ -381,7 +381,8 @@ estado_del_paciente text
 create table cirugia_bucal(
 
 id_cirugia_bucal int not null auto_increment primary key,
-id_interrogatorio_por_aparatos_y_sistemas int not null auto_increment primary key
+id_interrogatorio_por_aparatos_y_sistemas int not null auto_increment primary key,
+id_padecimieto_actual int not null auto_increment primary key
 );
 
 -- ************************datos de personal de salud***********************************
