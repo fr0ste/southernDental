@@ -46,8 +46,6 @@ public class PanelDerechoRegistrarPaciente extends javax.swing.JPanel {
         txtLocalidad = new javax.swing.JTextField();
         txtCorreo = new javax.swing.JTextField();
 
-        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
         pnlDerechoBase.setBackground(new java.awt.Color(255, 255, 255));
 
         nombres.setForeground(new java.awt.Color(0, 0, 0));
@@ -286,10 +284,20 @@ public class PanelDerechoRegistrarPaciente extends javax.swing.JPanel {
                 .addGap(12, 12, 12)
                 .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(correo)
-                    .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(113, Short.MAX_VALUE))
         );
 
-        add(pnlDerechoBase, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 700));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(pnlDerechoBase, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(pnlDerechoBase, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtCorreoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCorreoActionPerformed
