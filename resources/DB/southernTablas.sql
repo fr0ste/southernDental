@@ -331,10 +331,23 @@ tejidos_oseos text,
 articulacion_temporomandibular text
 );
 
+
+
 create table operatoria_dental(
 id_operatoria_dental int not null auto_increment primary key,
 id_cavidad_bucal_anexos int not null
 );
+
+-- ·historia clinica de odontologia preventiva y salud publica·
+
+
+create table preventiva_y_salud_publica(
+
+id_preventiva_y_salud_publica int not null,
+
+
+);
+
 
 -- ************************datos de personal de salud***********************************
 
