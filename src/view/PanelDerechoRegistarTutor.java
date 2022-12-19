@@ -35,6 +35,7 @@ public class PanelDerechoRegistarTutor extends javax.swing.JPanel {
         apellidoPaterno = new javax.swing.JLabel();
         apellidoMaterno = new javax.swing.JLabel();
         sexo = new javax.swing.JLabel();
+        ocupacion = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -52,6 +53,9 @@ public class PanelDerechoRegistarTutor extends javax.swing.JPanel {
         sexo.setForeground(new java.awt.Color(0, 0, 0));
         sexo.setText("Sexo:");
 
+        ocupacion.setForeground(new java.awt.Color(0, 0, 0));
+        ocupacion.setText("Ocupacion:");
+
         javax.swing.GroupLayout pnlDerechoBaseLayout = new javax.swing.GroupLayout(pnlDerechoBase);
         pnlDerechoBase.setLayout(pnlDerechoBaseLayout);
         pnlDerechoBaseLayout.setHorizontalGroup(
@@ -59,6 +63,7 @@ public class PanelDerechoRegistarTutor extends javax.swing.JPanel {
             .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
                 .addGap(111, 111, 111)
                 .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(ocupacion)
                     .addComponent(sexo)
                     .addComponent(apellidoMaterno)
                     .addComponent(apellidoPaterno)
@@ -76,7 +81,9 @@ public class PanelDerechoRegistarTutor extends javax.swing.JPanel {
                 .addComponent(apellidoMaterno)
                 .addGap(18, 18, 18)
                 .addComponent(sexo)
-                .addContainerGap(514, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(ocupacion)
+                .addContainerGap(478, Short.MAX_VALUE))
         );
 
         add(pnlDerechoBase, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1040, 700));
@@ -87,6 +94,7 @@ public class PanelDerechoRegistarTutor extends javax.swing.JPanel {
     private javax.swing.JLabel apellidoMaterno;
     private javax.swing.JLabel apellidoPaterno;
     private javax.swing.JLabel nombres;
+    private javax.swing.JLabel ocupacion;
     private javax.swing.JPanel pnlDerechoBase;
     private javax.swing.JLabel sexo;
     // End of variables declaration//GEN-END:variables
