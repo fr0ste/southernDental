@@ -345,10 +345,18 @@ id_cavidad_bucal_anexos int not null
 
 create table preventiva_y_salud_publica(
 
-id_preventiva_y_salud_publica int not null
+id_preventiva_y_salud_publica int not null auto_increment primary key
 
 );
 
+
+-- ·historia clinica de cirugia bucal·
+
+create table cirugia_bucal(
+
+id_cirugia_bucal int not null auto_increment primary key
+
+);
 
 -- ************************datos de personal de salud***********************************
 
