@@ -24,8 +24,6 @@ public class PanelDerechoRegistarTutor extends javax.swing.JPanel {
         ocupacion = new javax.swing.JLabel();
         estadoCivil = new javax.swing.JLabel();
 
-        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
         pnlDerechoBase.setBackground(new java.awt.Color(255, 255, 255));
 
         nombres.setForeground(new java.awt.Color(0, 0, 0));
@@ -79,7 +77,16 @@ public class PanelDerechoRegistarTutor extends javax.swing.JPanel {
                 .addContainerGap(442, Short.MAX_VALUE))
         );
 
-        add(pnlDerechoBase, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1040, 700));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(pnlDerechoBase, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(pnlDerechoBase, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
     }// </editor-fold>//GEN-END:initComponents
 
 
