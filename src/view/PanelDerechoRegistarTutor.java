@@ -31,27 +31,38 @@ public class PanelDerechoRegistarTutor extends javax.swing.JPanel {
     private void initComponents() {
 
         pnlDerechoBase = new javax.swing.JPanel();
+        nombres = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         pnlDerechoBase.setBackground(new java.awt.Color(255, 255, 255));
 
+        nombres.setForeground(new java.awt.Color(0, 0, 0));
+        nombres.setText("Nombres:");
+
         javax.swing.GroupLayout pnlDerechoBaseLayout = new javax.swing.GroupLayout(pnlDerechoBase);
         pnlDerechoBase.setLayout(pnlDerechoBaseLayout);
         pnlDerechoBaseLayout.setHorizontalGroup(
             pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1040, Short.MAX_VALUE)
+            .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                .addGap(156, 156, 156)
+                .addComponent(nombres)
+                .addContainerGap(820, Short.MAX_VALUE))
         );
         pnlDerechoBaseLayout.setVerticalGroup(
             pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 700, Short.MAX_VALUE)
+            .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                .addGap(60, 60, 60)
+                .addComponent(nombres)
+                .addContainerGap(622, Short.MAX_VALUE))
         );
 
-        add(pnlDerechoBase, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        add(pnlDerechoBase, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1040, 700));
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel nombres;
     private javax.swing.JPanel pnlDerechoBase;
     // End of variables declaration//GEN-END:variables
 }
