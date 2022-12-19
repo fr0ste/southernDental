@@ -35,10 +35,11 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="apellidoMaterno" min="-2" max="-2" attributes="0"/>
                       <Component id="apellidoPaterno" min="-2" max="-2" attributes="0"/>
                       <Component id="nombres" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="820" max="32767" attributes="0"/>
+                  <EmptySpace pref="819" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -49,7 +50,9 @@
                   <Component id="nombres" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="apellidoPaterno" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="586" max="32767" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="apellidoMaterno" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="550" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -69,6 +72,14 @@
               <Color blue="0" green="0" red="0" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Apellido Paterno:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="apellidoMaterno">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Apellido Materno:"/>
           </Properties>
         </Component>
       </SubComponents>
