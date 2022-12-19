@@ -32,6 +32,7 @@ public class PanelDerechoRegistarTutor extends javax.swing.JPanel {
 
         pnlDerechoBase = new javax.swing.JPanel();
         nombres = new javax.swing.JLabel();
+        apellidoPaterno = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -40,13 +41,18 @@ public class PanelDerechoRegistarTutor extends javax.swing.JPanel {
         nombres.setForeground(new java.awt.Color(0, 0, 0));
         nombres.setText("Nombres:");
 
+        apellidoPaterno.setForeground(new java.awt.Color(0, 0, 0));
+        apellidoPaterno.setText("Apellido Paterno:");
+
         javax.swing.GroupLayout pnlDerechoBaseLayout = new javax.swing.GroupLayout(pnlDerechoBase);
         pnlDerechoBase.setLayout(pnlDerechoBaseLayout);
         pnlDerechoBaseLayout.setHorizontalGroup(
             pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
-                .addGap(156, 156, 156)
-                .addComponent(nombres)
+                .addGap(111, 111, 111)
+                .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(apellidoPaterno)
+                    .addComponent(nombres))
                 .addContainerGap(820, Short.MAX_VALUE))
         );
         pnlDerechoBaseLayout.setVerticalGroup(
@@ -54,7 +60,9 @@ public class PanelDerechoRegistarTutor extends javax.swing.JPanel {
             .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
                 .addGap(60, 60, 60)
                 .addComponent(nombres)
-                .addContainerGap(622, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(apellidoPaterno)
+                .addContainerGap(586, Short.MAX_VALUE))
         );
 
         add(pnlDerechoBase, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1040, 700));
@@ -62,6 +70,7 @@ public class PanelDerechoRegistarTutor extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel apellidoPaterno;
     private javax.swing.JLabel nombres;
     private javax.swing.JPanel pnlDerechoBase;
     // End of variables declaration//GEN-END:variables
