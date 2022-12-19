@@ -324,6 +324,12 @@ id_plan_tratamiento int not null
 
 -- ·historia clinica de operatoria dental·
 
+create table cavidad_bucal_anexos(
+id_cavidad_bucal_anexos int not null auto_increment primary key,
+tejidos_blandos text,
+tejidos_oseos text,
+articulacion_temporomandibular text
+);
 
 create table operatoria_dental(
 id_operatoria_dental int not null auto_increment primary key
