@@ -292,49 +292,49 @@ public class PanelDerechoRegistrarPaciente extends javax.swing.JPanel {
         add(pnlDerechoBase, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 700));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtNombresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombresActionPerformed
+    private void txtCorreoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCorreoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtNombresActionPerformed
-
-    private void txtApellidoPaternoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoPaternoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtApellidoPaternoActionPerformed
-
-    private void txtApellidoMaternoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoMaternoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtApellidoMaternoActionPerformed
-
-    private void txtGrupoEtnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtGrupoEtnicoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtGrupoEtnicoActionPerformed
-
-    private void txtOcupacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtOcupacionActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtOcupacionActionPerformed
-
-    private void txtDomicilioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDomicilioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtDomicilioActionPerformed
-
-    private void txtEstadoCivilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEstadoCivilActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtEstadoCivilActionPerformed
-
-    private void txtReligionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtReligionActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtReligionActionPerformed
-
-    private void txtNacionalidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNacionalidadActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtNacionalidadActionPerformed
+    }//GEN-LAST:event_txtCorreoActionPerformed
 
     private void txtLocalidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLocalidadActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtLocalidadActionPerformed
 
-    private void txtCorreoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCorreoActionPerformed
+    private void txtNacionalidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNacionalidadActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtCorreoActionPerformed
+    }//GEN-LAST:event_txtNacionalidadActionPerformed
+
+    private void txtReligionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtReligionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtReligionActionPerformed
+
+    private void txtEstadoCivilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEstadoCivilActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtEstadoCivilActionPerformed
+
+    private void txtDomicilioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDomicilioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtDomicilioActionPerformed
+
+    private void txtOcupacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtOcupacionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtOcupacionActionPerformed
+
+    private void txtGrupoEtnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtGrupoEtnicoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtGrupoEtnicoActionPerformed
+
+    private void txtApellidoMaternoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoMaternoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtApellidoMaternoActionPerformed
+
+    private void txtApellidoPaternoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoPaternoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtApellidoPaternoActionPerformed
+
+    private void txtNombresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombresActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNombresActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
