@@ -25,6 +25,7 @@ public class PanelDerechoRegistarTutor extends javax.swing.JPanel {
         estadoCivil = new javax.swing.JLabel();
         txtNombres = new javax.swing.JTextField();
         txtApellidoPaterno = new javax.swing.JTextField();
+        txtApellidoMaterno = new javax.swing.JTextField();
 
         pnlDerechoBase.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -58,6 +59,12 @@ public class PanelDerechoRegistarTutor extends javax.swing.JPanel {
             }
         });
 
+        txtApellidoMaterno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtApellidoMaternoActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout pnlDerechoBaseLayout = new javax.swing.GroupLayout(pnlDerechoBase);
         pnlDerechoBase.setLayout(pnlDerechoBaseLayout);
         pnlDerechoBaseLayout.setHorizontalGroup(
@@ -74,7 +81,8 @@ public class PanelDerechoRegistarTutor extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(txtNombres, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtApellidoPaterno, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtApellidoPaterno, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtApellidoMaterno, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(485, Short.MAX_VALUE))
         );
         pnlDerechoBaseLayout.setVerticalGroup(
@@ -89,7 +97,9 @@ public class PanelDerechoRegistarTutor extends javax.swing.JPanel {
                     .addComponent(apellidoPaterno)
                     .addComponent(txtApellidoPaterno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(apellidoMaterno)
+                .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(apellidoMaterno)
+                    .addComponent(txtApellidoMaterno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(sexo)
                 .addGap(18, 18, 18)
@@ -119,6 +129,10 @@ public class PanelDerechoRegistarTutor extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtApellidoPaternoActionPerformed
 
+    private void txtApellidoMaternoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoMaternoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtApellidoMaternoActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel apellidoMaterno;
@@ -128,6 +142,7 @@ public class PanelDerechoRegistarTutor extends javax.swing.JPanel {
     private javax.swing.JLabel ocupacion;
     private javax.swing.JPanel pnlDerechoBase;
     private javax.swing.JLabel sexo;
+    private javax.swing.JTextField txtApellidoMaterno;
     private javax.swing.JTextField txtApellidoPaterno;
     private javax.swing.JTextField txtNombres;
     // End of variables declaration//GEN-END:variables
