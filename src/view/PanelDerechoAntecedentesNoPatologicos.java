@@ -44,6 +44,26 @@ public class PanelDerechoAntecedentesNoPatologicos extends javax.swing.JPanel {
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
+        jRadioButton3 = new javax.swing.JRadioButton();
+        jRadioButton4 = new javax.swing.JRadioButton();
+        jRadioButton5 = new javax.swing.JRadioButton();
+        jRadioButton6 = new javax.swing.JRadioButton();
+        jRadioButton7 = new javax.swing.JRadioButton();
+        jRadioButton8 = new javax.swing.JRadioButton();
+        jRadioButton9 = new javax.swing.JRadioButton();
+        jRadioButton10 = new javax.swing.JRadioButton();
+        jRadioButton11 = new javax.swing.JRadioButton();
+        jRadioButton12 = new javax.swing.JRadioButton();
+        jRadioButton13 = new javax.swing.JRadioButton();
+        jRadioButton14 = new javax.swing.JRadioButton();
+        jRadioButton15 = new javax.swing.JRadioButton();
+        jRadioButton16 = new javax.swing.JRadioButton();
+        jRadioButton17 = new javax.swing.JRadioButton();
+        jRadioButton18 = new javax.swing.JRadioButton();
+        jRadioButton19 = new javax.swing.JRadioButton();
+        jRadioButton20 = new javax.swing.JRadioButton();
+        jRadioButton21 = new javax.swing.JRadioButton();
+        jRadioButton22 = new javax.swing.JRadioButton();
 
         pnlDerechoBase.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -86,6 +106,66 @@ public class PanelDerechoAntecedentesNoPatologicos extends javax.swing.JPanel {
         jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("Cuantas veces al dia cepilla sus dientes:");
 
+        jRadioButton3.setForeground(new java.awt.Color(0, 0, 0));
+        jRadioButton3.setText("Si");
+
+        jRadioButton4.setForeground(new java.awt.Color(0, 0, 0));
+        jRadioButton4.setText("No");
+
+        jRadioButton5.setForeground(new java.awt.Color(0, 0, 0));
+        jRadioButton5.setText("Si");
+
+        jRadioButton6.setForeground(new java.awt.Color(0, 0, 0));
+        jRadioButton6.setText("No");
+
+        jRadioButton7.setForeground(new java.awt.Color(0, 0, 0));
+        jRadioButton7.setText("Si");
+
+        jRadioButton8.setForeground(new java.awt.Color(0, 0, 0));
+        jRadioButton8.setText("No");
+
+        jRadioButton9.setForeground(new java.awt.Color(0, 0, 0));
+        jRadioButton9.setText("Si");
+
+        jRadioButton10.setForeground(new java.awt.Color(0, 0, 0));
+        jRadioButton10.setText("No");
+
+        jRadioButton11.setForeground(new java.awt.Color(0, 0, 0));
+        jRadioButton11.setText("Si");
+
+        jRadioButton12.setForeground(new java.awt.Color(0, 0, 0));
+        jRadioButton12.setText("No");
+
+        jRadioButton13.setForeground(new java.awt.Color(0, 0, 0));
+        jRadioButton13.setText("Si");
+
+        jRadioButton14.setForeground(new java.awt.Color(0, 0, 0));
+        jRadioButton14.setText("No");
+
+        jRadioButton15.setForeground(new java.awt.Color(0, 0, 0));
+        jRadioButton15.setText("Si");
+
+        jRadioButton16.setForeground(new java.awt.Color(0, 0, 0));
+        jRadioButton16.setText("No");
+
+        jRadioButton17.setForeground(new java.awt.Color(0, 0, 0));
+        jRadioButton17.setText("Si");
+
+        jRadioButton18.setForeground(new java.awt.Color(0, 0, 0));
+        jRadioButton18.setText("No");
+
+        jRadioButton19.setForeground(new java.awt.Color(0, 0, 0));
+        jRadioButton19.setText("Si");
+
+        jRadioButton20.setForeground(new java.awt.Color(0, 0, 0));
+        jRadioButton20.setText("No");
+
+        jRadioButton21.setForeground(new java.awt.Color(0, 0, 0));
+        jRadioButton21.setText("Si");
+
+        jRadioButton22.setForeground(new java.awt.Color(0, 0, 0));
+        jRadioButton22.setText("No");
+
         javax.swing.GroupLayout pnlDerechoBaseLayout = new javax.swing.GroupLayout(pnlDerechoBase);
         pnlDerechoBase.setLayout(pnlDerechoBaseLayout);
         pnlDerechoBaseLayout.setHorizontalGroup(
@@ -105,40 +185,129 @@ public class PanelDerechoAntecedentesNoPatologicos extends javax.swing.JPanel {
                     .addComponent(jLabel11)
                     .addComponent(jLabel9))
                 .addGap(54, 54, 54)
-                .addComponent(jRadioButton1)
-                .addGap(18, 18, 18)
-                .addComponent(jRadioButton2)
+                .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                        .addComponent(jRadioButton1)
+                        .addGap(18, 18, 18)
+                        .addComponent(jRadioButton2))
+                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                        .addComponent(jRadioButton3)
+                        .addGap(18, 18, 18)
+                        .addComponent(jRadioButton4))
+                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                        .addComponent(jRadioButton5)
+                        .addGap(18, 18, 18)
+                        .addComponent(jRadioButton6))
+                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                        .addComponent(jRadioButton7)
+                        .addGap(18, 18, 18)
+                        .addComponent(jRadioButton8))
+                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                        .addComponent(jRadioButton9)
+                        .addGap(18, 18, 18)
+                        .addComponent(jRadioButton10))
+                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                        .addComponent(jRadioButton11)
+                        .addGap(18, 18, 18)
+                        .addComponent(jRadioButton12))
+                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                        .addComponent(jRadioButton13)
+                        .addGap(18, 18, 18)
+                        .addComponent(jRadioButton14))
+                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                        .addComponent(jRadioButton15)
+                        .addGap(18, 18, 18)
+                        .addComponent(jRadioButton16))
+                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                        .addComponent(jRadioButton17)
+                        .addGap(18, 18, 18)
+                        .addComponent(jRadioButton18))
+                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                        .addComponent(jRadioButton19)
+                        .addGap(18, 18, 18)
+                        .addComponent(jRadioButton20))
+                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                        .addComponent(jRadioButton21)
+                        .addGap(18, 18, 18)
+                        .addComponent(jRadioButton22)))
                 .addContainerGap(543, Short.MAX_VALUE))
         );
         pnlDerechoBaseLayout.setVerticalGroup(
             pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
                 .addGap(103, 103, 103)
+                .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                        .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                                .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                                        .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                                                .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                                                        .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                            .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                                                                .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                                                                        .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                                            .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
+                                                                                .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                                                    .addComponent(jLabel1)
+                                                                                    .addComponent(jRadioButton1)
+                                                                                    .addComponent(jRadioButton2))
+                                                                                .addGap(18, 18, 18)
+                                                                                .addComponent(jLabel2))
+                                                                            .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                                                .addComponent(jRadioButton3)
+                                                                                .addComponent(jRadioButton4)))
+                                                                        .addGap(18, 18, 18)
+                                                                        .addComponent(jLabel3))
+                                                                    .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                                        .addComponent(jRadioButton5)
+                                                                        .addComponent(jRadioButton6)))
+                                                                .addGap(18, 18, 18)
+                                                                .addComponent(jLabel5))
+                                                            .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                                .addComponent(jRadioButton7)
+                                                                .addComponent(jRadioButton8)))
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(jLabel4))
+                                                    .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                        .addComponent(jRadioButton9)
+                                                        .addComponent(jRadioButton10)))
+                                                .addGap(18, 18, 18)
+                                                .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                    .addComponent(jLabel6)
+                                                    .addComponent(jRadioButton11)
+                                                    .addComponent(jRadioButton12))
+                                                .addGap(18, 18, 18)
+                                                .addComponent(jLabel7))
+                                            .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                .addComponent(jRadioButton13)
+                                                .addComponent(jRadioButton14)))
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jLabel8))
+                                    .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(jRadioButton15)
+                                        .addComponent(jRadioButton16)))
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel11))
+                            .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jRadioButton17)
+                                .addComponent(jRadioButton18)))
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel9))
+                    .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jRadioButton19)
+                        .addComponent(jRadioButton20)))
+                .addGap(16, 16, 16)
                 .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jRadioButton1)
-                    .addComponent(jRadioButton2))
-                .addGap(18, 18, 18)
-                .addComponent(jLabel2)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel3)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel5)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel4)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel6)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel7)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel8)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel11)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel9)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel10)
-                .addContainerGap(215, Short.MAX_VALUE))
+                    .addComponent(jLabel10)
+                    .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jRadioButton21)
+                        .addComponent(jRadioButton22)))
+                .addContainerGap(209, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -167,7 +336,27 @@ public class PanelDerechoAntecedentesNoPatologicos extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton10;
+    private javax.swing.JRadioButton jRadioButton11;
+    private javax.swing.JRadioButton jRadioButton12;
+    private javax.swing.JRadioButton jRadioButton13;
+    private javax.swing.JRadioButton jRadioButton14;
+    private javax.swing.JRadioButton jRadioButton15;
+    private javax.swing.JRadioButton jRadioButton16;
+    private javax.swing.JRadioButton jRadioButton17;
+    private javax.swing.JRadioButton jRadioButton18;
+    private javax.swing.JRadioButton jRadioButton19;
     private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JRadioButton jRadioButton20;
+    private javax.swing.JRadioButton jRadioButton21;
+    private javax.swing.JRadioButton jRadioButton22;
+    private javax.swing.JRadioButton jRadioButton3;
+    private javax.swing.JRadioButton jRadioButton4;
+    private javax.swing.JRadioButton jRadioButton5;
+    private javax.swing.JRadioButton jRadioButton6;
+    private javax.swing.JRadioButton jRadioButton7;
+    private javax.swing.JRadioButton jRadioButton8;
+    private javax.swing.JRadioButton jRadioButton9;
     private javax.swing.JPanel pnlDerechoBase;
     // End of variables declaration//GEN-END:variables
 }
