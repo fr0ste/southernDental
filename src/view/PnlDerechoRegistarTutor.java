@@ -6,9 +6,9 @@
  */
 package view;
 
-public class PanelDerechoRegistarTutor extends javax.swing.JPanel {
+public class PnlDerechoRegistarTutor extends javax.swing.JPanel {
 
-    public PanelDerechoRegistarTutor() {
+    public PnlDerechoRegistarTutor() {
         initComponents();
     }
 

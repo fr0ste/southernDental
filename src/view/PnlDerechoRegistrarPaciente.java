@@ -1,17 +1,19 @@
 /**
- * Autor: Joel && Elio
- * Fecha de creación: 16 de noviembre del 2022
- * Fecha de modificación: 19 de diciembre del 2022
- * Descripción: Panel derecho para registrar pacientes
- */
+  * Autor: Joel && Elio
+  * Fecha de creación: 16 de noviembre del 2022
+  * Fecha de modificación: 19 de diciembre del 2022
+  * Descripción: Panel derecho para registrar pacientes
+  */
 package view;
 
-public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
+public class PnlDerechoRegistrarPaciente extends javax.swing.JPanel {
 
-    public PanelDerechoBaseRegistrarPaciente() {
+
+    public PnlDerechoRegistrarPaciente() {
         initComponents();
     }
 
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -43,8 +45,6 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
         txtNacionalidad = new javax.swing.JTextField();
         txtLocalidad = new javax.swing.JTextField();
         txtCorreo = new javax.swing.JTextField();
-
-        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         pnlDerechoBase.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -249,11 +249,11 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
                 .addComponent(edad)
                 .addGap(18, 18, 18)
                 .addComponent(sexo)
-                .addGap(15, 15, 15)
-                .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGap(12, 12, 12)
+                .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(grupoEtnico)
                     .addComponent(txtGrupoEtnico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(12, 12, 12)
+                .addGap(15, 15, 15)
                 .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ocupacion)
                     .addComponent(txtOcupacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -273,66 +273,76 @@ public class PanelDerechoBaseRegistrarPaciente extends javax.swing.JPanel {
                     .addComponent(txtReligion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15)
                 .addComponent(fechaingreso)
-                .addGap(12, 12, 12)
-                .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGap(15, 15, 15)
+                .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(nacionalidad)
                     .addComponent(txtNacionalidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(15, 15, 15)
+                .addGap(12, 12, 12)
                 .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(localidad)
                     .addComponent(txtLocalidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(12, 12, 12)
                 .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(correo)
-                    .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(113, Short.MAX_VALUE))
         );
 
-        add(pnlDerechoBase, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 700));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(pnlDerechoBase, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(pnlDerechoBase, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtNombresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombresActionPerformed
+    private void txtCorreoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCorreoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtNombresActionPerformed
-
-    private void txtApellidoPaternoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoPaternoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtApellidoPaternoActionPerformed
-
-    private void txtApellidoMaternoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoMaternoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtApellidoMaternoActionPerformed
-
-    private void txtGrupoEtnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtGrupoEtnicoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtGrupoEtnicoActionPerformed
-
-    private void txtOcupacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtOcupacionActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtOcupacionActionPerformed
-
-    private void txtDomicilioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDomicilioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtDomicilioActionPerformed
-
-    private void txtEstadoCivilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEstadoCivilActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtEstadoCivilActionPerformed
-
-    private void txtReligionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtReligionActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtReligionActionPerformed
-
-    private void txtNacionalidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNacionalidadActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtNacionalidadActionPerformed
+    }//GEN-LAST:event_txtCorreoActionPerformed
 
     private void txtLocalidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLocalidadActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtLocalidadActionPerformed
 
-    private void txtCorreoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCorreoActionPerformed
+    private void txtNacionalidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNacionalidadActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtCorreoActionPerformed
+    }//GEN-LAST:event_txtNacionalidadActionPerformed
+
+    private void txtReligionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtReligionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtReligionActionPerformed
+
+    private void txtEstadoCivilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEstadoCivilActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtEstadoCivilActionPerformed
+
+    private void txtDomicilioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDomicilioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtDomicilioActionPerformed
+
+    private void txtOcupacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtOcupacionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtOcupacionActionPerformed
+
+    private void txtGrupoEtnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtGrupoEtnicoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtGrupoEtnicoActionPerformed
+
+    private void txtApellidoMaternoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoMaternoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtApellidoMaternoActionPerformed
+
+    private void txtApellidoPaternoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoPaternoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtApellidoPaternoActionPerformed
+
+    private void txtNombresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombresActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNombresActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

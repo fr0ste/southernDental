@@ -12,12 +12,12 @@ import view.base.*;
  *
  * @author Elioenaí
  */
-public class PanelDerechoRegistrarAlumno extends javax.swing.JPanel {
+public class PnlDerechoRegistrarAlumno extends javax.swing.JPanel {
 
     /**
      * Creates new form PanelDerechoBase
      */
-    public PanelDerechoRegistrarAlumno() {
+    public PnlDerechoRegistrarAlumno() {
         initComponents();
     }
 

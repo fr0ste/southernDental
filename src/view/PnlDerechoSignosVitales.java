@@ -10,10 +10,10 @@ package view;
 import view.base.*;
 
 
-public class PanelDerechoSignosVitales extends javax.swing.JPanel {
+public class PnlDerechoSignosVitales extends javax.swing.JPanel {
 
 
-    public PanelDerechoSignosVitales() {
+    public PnlDerechoSignosVitales() {
         initComponents();
     }
 

@@ -12,12 +12,12 @@ import view.base.*;
  *
  * @author Elioenaí
  */
-public class PanelDerechoAntecedentesNoPatologicos extends javax.swing.JPanel {
+public class PnlDerechoAntecedentesNoPatologicos extends javax.swing.JPanel {
 
     /**
      * Creates new form PanelDerechoBase
      */
-    public PanelDerechoAntecedentesNoPatologicos() {
+    public PnlDerechoAntecedentesNoPatologicos() {
         initComponents();
     }
 

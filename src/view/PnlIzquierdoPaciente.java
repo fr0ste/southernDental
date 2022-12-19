@@ -6,9 +6,9 @@
  */
 package view;
 
-public class PanelIzquierdoPaciente extends javax.swing.JPanel {
+public class PnlIzquierdoPaciente extends javax.swing.JPanel {
 
-    public PanelIzquierdoPaciente() {
+    public PnlIzquierdoPaciente() {
         initComponents();
 
     }
