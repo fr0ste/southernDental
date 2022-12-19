@@ -353,7 +353,6 @@ id_preventiva_y_salud_publica int not null auto_increment primary key
 -- ·historia clinica de cirugia bucal·
 
 create table interrogatorio_por_aparatos_y_sistemas(
-
 id_interrogatorio_por_aparatos_y_sistemas int not null auto_increment primary key,
 aparato_cardiovascular text,
 aparato_digestivo text,
@@ -362,10 +361,11 @@ sistema_nervioso text,
 sistema_genital text
 );
 
+
 create table cirugia_bucal(
 
-id_cirugia_bucal int not null auto_increment primary key
-
+id_cirugia_bucal int not null auto_increment primary key,
+id_interrogatorio_por_aparatos_y_sistemas int not null auto_increment primary key
 );
 
 -- ************************datos de personal de salud***********************************
