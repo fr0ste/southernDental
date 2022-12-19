@@ -361,6 +361,22 @@ sistema_nervioso text,
 sistema_genital text
 );
 
+create table padecimieto_actual(
+id_padecimieto_actual int not null auto_increment primary key,
+fecha_ultima_consulta_medica date,
+motivo_ultima_consulta_medica text,
+fecha_ultima_consulta_dental date,
+motivo_ultima_consulta_dental text,
+tipo_de_sangrado text,
+esta_embarazada boolean,
+esta_lactando boolean,
+examen_radiologico text,
+tecnicas_de_anestecia text,
+instrumental text,
+dientes_extraidos int,
+estado_del_paciente text
+);
+
 
 create table cirugia_bucal(
 
