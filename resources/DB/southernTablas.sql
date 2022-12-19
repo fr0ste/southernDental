@@ -52,7 +52,9 @@ temperatura double,
 freacuencia_cardiaca double,
 frecuencia_respiratoria double,
 pesion_arterial double,
-saturacion_oxigeno double
+saturacion_oxigeno double,
+glucosa double,
+pulso double
 );
 
 create table antecedentes_heredofamiliares(
@@ -343,8 +345,7 @@ id_cavidad_bucal_anexos int not null
 
 create table preventiva_y_salud_publica(
 
-id_preventiva_y_salud_publica int not null,
-
+id_preventiva_y_salud_publica int not null
 
 );
 
