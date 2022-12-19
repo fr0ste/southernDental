@@ -83,11 +83,11 @@ come_frutas_verduras boolean,
 come_carne boolean,
 come_cereales boolean,
 come_alimentos_chatarra boolean,
-dos_litros_de_agua_dia boolean,
+toma_dos_litros_de_agua_x_dia boolean,
 uno_mas_refrescos_dia boolean,
 horas_duerme_dia int,
 baño_veces_x_semana int,
-cepillado_dia int,
+cepillado_x_dia int,
 su_vivienda_tiene_piso int,
 material_de_vivienda varchar(30)
 );
@@ -379,7 +379,6 @@ estado_del_paciente text
 
 
 create table cirugia_bucal(
-
 id_cirugia_bucal int not null auto_increment primary key,
 id_interrogatorio_por_aparatos_y_sistemas int not null auto_increment primary key,
 id_padecimieto_actual int not null auto_increment primary key
