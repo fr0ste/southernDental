@@ -332,7 +332,8 @@ articulacion_temporomandibular text
 );
 
 create table operatoria_dental(
-id_operatoria_dental int not null auto_increment primary key
+id_operatoria_dental int not null auto_increment primary key,
+id_cavidad_bucal_anexos int not null
 );
 
 -- ************************datos de personal de salud***********************************
