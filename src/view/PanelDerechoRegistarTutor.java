@@ -36,6 +36,7 @@ public class PanelDerechoRegistarTutor extends javax.swing.JPanel {
         apellidoMaterno = new javax.swing.JLabel();
         sexo = new javax.swing.JLabel();
         ocupacion = new javax.swing.JLabel();
+        estadoCivil = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -56,6 +57,9 @@ public class PanelDerechoRegistarTutor extends javax.swing.JPanel {
         ocupacion.setForeground(new java.awt.Color(0, 0, 0));
         ocupacion.setText("Ocupacion:");
 
+        estadoCivil.setForeground(new java.awt.Color(0, 0, 0));
+        estadoCivil.setText("Estado Civil:");
+
         javax.swing.GroupLayout pnlDerechoBaseLayout = new javax.swing.GroupLayout(pnlDerechoBase);
         pnlDerechoBase.setLayout(pnlDerechoBaseLayout);
         pnlDerechoBaseLayout.setHorizontalGroup(
@@ -63,6 +67,7 @@ public class PanelDerechoRegistarTutor extends javax.swing.JPanel {
             .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
                 .addGap(111, 111, 111)
                 .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(estadoCivil)
                     .addComponent(ocupacion)
                     .addComponent(sexo)
                     .addComponent(apellidoMaterno)
@@ -83,7 +88,9 @@ public class PanelDerechoRegistarTutor extends javax.swing.JPanel {
                 .addComponent(sexo)
                 .addGap(18, 18, 18)
                 .addComponent(ocupacion)
-                .addContainerGap(478, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(estadoCivil)
+                .addContainerGap(442, Short.MAX_VALUE))
         );
 
         add(pnlDerechoBase, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1040, 700));
@@ -93,6 +100,7 @@ public class PanelDerechoRegistarTutor extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel apellidoMaterno;
     private javax.swing.JLabel apellidoPaterno;
+    private javax.swing.JLabel estadoCivil;
     private javax.swing.JLabel nombres;
     private javax.swing.JLabel ocupacion;
     private javax.swing.JPanel pnlDerechoBase;
