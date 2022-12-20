@@ -34,6 +34,9 @@ public class PnlIzquierdoAdministrador extends javax.swing.JPanel {
     private void initComponents() {
 
         pnlIzquierdoBase = new javax.swing.JPanel();
+        pnlHome = new javax.swing.JPanel();
+        btnHome = new javax.swing.JLabel();
+        icnHome = new javax.swing.JLabel();
         pnlRegistar = new javax.swing.JPanel();
         btnRegistar = new javax.swing.JLabel();
         icnRegistar = new javax.swing.JLabel();
@@ -50,6 +53,58 @@ public class PnlIzquierdoAdministrador extends javax.swing.JPanel {
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         pnlIzquierdoBase.setBackground(new java.awt.Color(0, 0, 32));
+
+        pnlHome.setBackground(new java.awt.Color(0, 0, 32));
+        pnlHome.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                pnlHomeMouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                pnlHomeMouseEntered(evt);
+            }
+        });
+
+        btnHome.setBackground(new java.awt.Color(0, 0, 32));
+        btnHome.setFont(new java.awt.Font("Liberation Sans", 0, 12)); // NOI18N
+        btnHome.setForeground(new java.awt.Color(255, 255, 255));
+        btnHome.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        btnHome.setText("HOME    ");
+        btnHome.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnHome.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnHomeMouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnHomeMouseEntered(evt);
+            }
+        });
+
+        icnHome.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        icnHome.setIcon(new javax.swing.ImageIcon("resources/images/iconoHome.png")
+        );
+        icnHome.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                icnHomeMouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                icnHomeMouseEntered(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnlHomeLayout = new javax.swing.GroupLayout(pnlHome);
+        pnlHome.setLayout(pnlHomeLayout);
+        pnlHomeLayout.setHorizontalGroup(
+            pnlHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlHomeLayout.createSequentialGroup()
+                .addComponent(icnHome, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnHome, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        pnlHomeLayout.setVerticalGroup(
+            pnlHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(icnHome, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
+            .addComponent(btnHome, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
         pnlRegistar.setBackground(new java.awt.Color(0, 0, 32));
         pnlRegistar.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -224,11 +279,16 @@ public class PnlIzquierdoAdministrador extends javax.swing.JPanel {
                     .addComponent(pnlEliminar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(pnlRegistar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pnlIzquierdoBaseLayout.createSequentialGroup()
+                .addComponent(pnlHome, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         pnlIzquierdoBaseLayout.setVerticalGroup(
             pnlIzquierdoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlIzquierdoBaseLayout.createSequentialGroup()
-                .addGap(147, 147, 147)
+                .addGap(102, 102, 102)
+                .addComponent(pnlHome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pnlRegistar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(pnlActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -312,16 +372,43 @@ public class PnlIzquierdoAdministrador extends javax.swing.JPanel {
         pnlRegistar.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_btnRegistarMouseExited
 
+    private void btnHomeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHomeMouseExited
+        pnlHome.setBackground(Colors.MOUSE_EXITED);
+    }//GEN-LAST:event_btnHomeMouseExited
 
+    private void btnHomeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHomeMouseEntered
+        pnlHome.setBackground(Colors.MOUSE_ENTERED);
+    }//GEN-LAST:event_btnHomeMouseEntered
+
+    private void icnHomeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icnHomeMouseExited
+        pnlHome.setBackground(Colors.MOUSE_EXITED);
+    }//GEN-LAST:event_icnHomeMouseExited
+
+    private void icnHomeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icnHomeMouseEntered
+        pnlHome.setBackground(Colors.MOUSE_ENTERED);
+    }//GEN-LAST:event_icnHomeMouseEntered
+
+    private void pnlHomeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlHomeMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pnlHomeMouseExited
+
+    private void pnlHomeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlHomeMouseEntered
+        pnlHome.setBackground(Colors.MOUSE_ENTERED);
+    }//GEN-LAST:event_pnlHomeMouseEntered
+
+  
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel btnActualizar;
     private javax.swing.JLabel btnEliminar;
+    private javax.swing.JLabel btnHome;
     private javax.swing.JLabel btnRegistar;
     private javax.swing.JLabel icnActualizar;
     private javax.swing.JLabel icnEliminar;
+    private javax.swing.JLabel icnHome;
     private javax.swing.JLabel icnRegistar;
     private javax.swing.JPanel pnlActualizar;
     private javax.swing.JPanel pnlEliminar;
+    private javax.swing.JPanel pnlHome;
     private javax.swing.JPanel pnlIzquierdoBase;
     private javax.swing.JPanel pnlRegistar;
     // End of variables declaration//GEN-END:variables
