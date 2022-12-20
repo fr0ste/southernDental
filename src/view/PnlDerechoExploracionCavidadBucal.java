@@ -2,20 +2,22 @@
   * Autor: Joel && Elio
   * Fecha de creación: 15 de noviembre del 2022
   * Fecha de modificación: 15 de diciembre del 2022
-  * Descripción: 
+  * Descripción: Panel que servirá como base para partes izquierdas del Frame
   */
-package view.base;
+package view;
+
+import view.base.*;
 
 /**
  *
  * @author Elioenaí
  */
-public class PanelDerechoBase extends javax.swing.JPanel {
+public class PnlDerechoExploracionCavidadBucal extends javax.swing.JPanel {
 
     /**
      * Creates new form PanelDerechoBase
      */
-    public PanelDerechoBase() {
+    public PnlDerechoExploracionCavidadBucal() {
         initComponents();
     }
 
