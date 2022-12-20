@@ -409,7 +409,11 @@ public class Home extends javax.swing.JFrame {
     private void btnHomeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHomeMouseEntered
         pnlHome.setBackground(Colors.MOUSE_ENTERED);
     }//GEN-LAST:event_btnHomeMouseEntered
-
+    
+    
+    public static void main(String[] args) {
+        new Home().setVisible(true);
+    }
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
