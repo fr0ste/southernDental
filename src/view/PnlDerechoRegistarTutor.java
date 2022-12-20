@@ -2,7 +2,7 @@
  * Autor: Joel && Elio
  * Fecha de creación: 19 de noviembre del 2022
  * Fecha de modificación: 19 de diciembre del 2022
- * Descripción: Panel que servirá para registar tutores
+ * Descripción: Registar tutor
  */
 package view;
 
