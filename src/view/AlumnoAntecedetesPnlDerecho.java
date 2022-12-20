@@ -4,6 +4,8 @@
  */
 package view;
 
+import javax.swing.plaf.basic.BasicInternalFrameUI;
+
 /**
  *
  * @author froste
@@ -15,6 +17,9 @@ public class AlumnoAntecedetesPnlDerecho extends javax.swing.JInternalFrame {
      */
     public AlumnoAntecedetesPnlDerecho() {
         initComponents();
+        this.setBorder(javax.swing.BorderFactory.createEmptyBorder(0,0,0,0));
+        BasicInternalFrameUI ui = (BasicInternalFrameUI)this.getUI();
+        ui.setNorthPane(null);
     }
 
     /**

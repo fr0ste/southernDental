@@ -183,7 +183,6 @@ public class Home extends javax.swing.JFrame {
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, -1, -1));
 
         container.setBackground(new java.awt.Color(255, 255, 255));
-        container.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setPreferredSize(new java.awt.Dimension(630, 133));
@@ -204,6 +203,11 @@ public class Home extends javax.swing.JFrame {
         btnPacientes.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btnPacientes.setText("PACIENTES");
         btnPacientes.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnPacientes.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnPacientesMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnlPacientesLayout = new javax.swing.GroupLayout(pnlPacientes);
         pnlPacientes.setLayout(pnlPacientesLayout);
@@ -276,7 +280,8 @@ public class Home extends javax.swing.JFrame {
 
         jPanel3.add(pnlProfesor, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 13, -1, -1));
 
-        container.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1050, 700));
+        container.add(jPanel3);
+        jPanel3.setBounds(0, 0, 1050, 700);
 
         jPanel1.add(container, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 33, 1040, 690));
 
@@ -403,6 +408,12 @@ public class Home extends javax.swing.JFrame {
     private void btnHomeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHomeMouseEntered
         pnlHome.setBackground(Colors.MOUSE_ENTERED);
     }//GEN-LAST:event_btnHomeMouseEntered
+
+    private void btnPacientesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPacientesMouseClicked
+        AlumnoAntecedetesPnlDerecho pd = new AlumnoAntecedetesPnlDerecho();
+        container.removeAll();
+        container.add(pd).setVisible(true);
+    }//GEN-LAST:event_btnPacientesMouseClicked
     
     
     public static void main(String[] args) {
