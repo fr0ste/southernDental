@@ -66,344 +66,227 @@ public class PnlDerechoAntecedentesHeredofamiliares extends javax.swing.JPanel {
         jLabel9 = new javax.swing.JLabel();
 
         pnlDerechoBase.setBackground(new java.awt.Color(255, 255, 255));
+        pnlDerechoBase.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtNombres.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNombresActionPerformed(evt);
             }
         });
+        pnlDerechoBase.add(txtNombres, new org.netbeans.lib.awtextra.AbsoluteConstraints(461, 110, 491, -1));
 
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Neoplasia:");
+        pnlDerechoBase.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(225, 113, -1, -1));
 
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Hipertención Arterial:");
+        pnlDerechoBase.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(159, 197, -1, -1));
 
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Padecimientos mentales / neuroligos:");
+        pnlDerechoBase.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 239, -1, -1));
 
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Diabetes:");
+        pnlDerechoBase.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(231, 155, -1, -1));
 
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Obesidad:");
+        pnlDerechoBase.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(226, 281, -1, -1));
 
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Padecimientos Hematologicos:");
+        pnlDerechoBase.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(91, 323, -1, -1));
 
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Problemas Cardicos:");
+        pnlDerechoBase.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(155, 407, -1, -1));
 
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Malformaciones Congenitas:");
+        pnlDerechoBase.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(108, 365, -1, -1));
 
-        jRadioButton1.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton1.setText("Si");
         jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton1ActionPerformed(evt);
             }
         });
+        pnlDerechoBase.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(348, 111, -1, -1));
 
         jRadioButton2.setBackground(new java.awt.Color(255, 255, 255));
-        jRadioButton2.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton2.setText("No");
         jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton2ActionPerformed(evt);
             }
         });
+        pnlDerechoBase.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(402, 111, -1, -1));
 
         jRadioButton3.setBackground(new java.awt.Color(255, 255, 255));
-        jRadioButton3.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton3.setText("No");
         jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton3ActionPerformed(evt);
             }
         });
+        pnlDerechoBase.add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(402, 153, -1, -1));
 
-        jRadioButton4.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton4.setText("Si");
         jRadioButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton4ActionPerformed(evt);
             }
         });
+        pnlDerechoBase.add(jRadioButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(348, 153, -1, -1));
 
         jRadioButton5.setBackground(new java.awt.Color(255, 255, 255));
-        jRadioButton5.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton5.setText("No");
         jRadioButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton5ActionPerformed(evt);
             }
         });
+        pnlDerechoBase.add(jRadioButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(402, 195, -1, -1));
 
-        jRadioButton6.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton6.setText("Si");
         jRadioButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton6ActionPerformed(evt);
             }
         });
+        pnlDerechoBase.add(jRadioButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(348, 195, -1, -1));
 
         jRadioButton7.setBackground(new java.awt.Color(255, 255, 255));
-        jRadioButton7.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton7.setText("No");
         jRadioButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton7ActionPerformed(evt);
             }
         });
+        pnlDerechoBase.add(jRadioButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(402, 237, -1, -1));
 
-        jRadioButton8.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton8.setText("Si");
         jRadioButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton8ActionPerformed(evt);
             }
         });
+        pnlDerechoBase.add(jRadioButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(348, 237, -1, -1));
 
-        jRadioButton9.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton9.setText("Si");
         jRadioButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton9ActionPerformed(evt);
             }
         });
+        pnlDerechoBase.add(jRadioButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(348, 279, -1, -1));
 
         jRadioButton10.setBackground(new java.awt.Color(255, 255, 255));
-        jRadioButton10.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton10.setText("No");
         jRadioButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton10ActionPerformed(evt);
             }
         });
+        pnlDerechoBase.add(jRadioButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(402, 279, -1, -1));
 
-        jRadioButton11.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton11.setText("Si");
         jRadioButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton11ActionPerformed(evt);
             }
         });
+        pnlDerechoBase.add(jRadioButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(348, 321, -1, -1));
 
         jRadioButton12.setBackground(new java.awt.Color(255, 255, 255));
-        jRadioButton12.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton12.setText("No");
         jRadioButton12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton12ActionPerformed(evt);
             }
         });
+        pnlDerechoBase.add(jRadioButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(402, 321, -1, -1));
 
-        jRadioButton13.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton13.setText("Si");
         jRadioButton13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton13ActionPerformed(evt);
             }
         });
+        pnlDerechoBase.add(jRadioButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(348, 363, -1, -1));
 
         jRadioButton14.setBackground(new java.awt.Color(255, 255, 255));
-        jRadioButton14.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton14.setText("No");
         jRadioButton14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton14ActionPerformed(evt);
             }
         });
+        pnlDerechoBase.add(jRadioButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(402, 363, -1, -1));
 
-        jRadioButton15.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton15.setText("Si");
         jRadioButton15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton15ActionPerformed(evt);
             }
         });
+        pnlDerechoBase.add(jRadioButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(348, 405, -1, -1));
 
         jRadioButton16.setBackground(new java.awt.Color(255, 255, 255));
-        jRadioButton16.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton16.setText("No");
         jRadioButton16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton16ActionPerformed(evt);
             }
         });
+        pnlDerechoBase.add(jRadioButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(402, 405, -1, -1));
 
         txtNombres1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNombres1ActionPerformed(evt);
             }
         });
+        pnlDerechoBase.add(txtNombres1, new org.netbeans.lib.awtextra.AbsoluteConstraints(461, 152, 491, -1));
 
         txtNombres2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNombres2ActionPerformed(evt);
             }
         });
+        pnlDerechoBase.add(txtNombres2, new org.netbeans.lib.awtextra.AbsoluteConstraints(461, 236, 491, -1));
 
         txtNombres3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNombres3ActionPerformed(evt);
             }
         });
+        pnlDerechoBase.add(txtNombres3, new org.netbeans.lib.awtextra.AbsoluteConstraints(461, 278, 491, -1));
 
         txtNombres4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNombres4ActionPerformed(evt);
             }
         });
+        pnlDerechoBase.add(txtNombres4, new org.netbeans.lib.awtextra.AbsoluteConstraints(461, 194, 491, -1));
 
         txtNombres5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNombres5ActionPerformed(evt);
             }
         });
+        pnlDerechoBase.add(txtNombres5, new org.netbeans.lib.awtextra.AbsoluteConstraints(461, 404, 491, -1));
 
         txtNombres6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNombres6ActionPerformed(evt);
             }
         });
+        pnlDerechoBase.add(txtNombres6, new org.netbeans.lib.awtextra.AbsoluteConstraints(461, 320, 491, -1));
 
         txtNombres7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNombres7ActionPerformed(evt);
             }
         });
+        pnlDerechoBase.add(txtNombres7, new org.netbeans.lib.awtextra.AbsoluteConstraints(461, 362, 491, -1));
 
-        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("Respuesta Amplia");
-
-        javax.swing.GroupLayout pnlDerechoBaseLayout = new javax.swing.GroupLayout(pnlDerechoBase);
-        pnlDerechoBase.setLayout(pnlDerechoBaseLayout);
-        pnlDerechoBaseLayout.setHorizontalGroup(
-            pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
-                .addGap(49, 49, 49)
-                .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel8))
-                .addGap(55, 55, 55)
-                .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
-                        .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
-                                    .addComponent(jRadioButton1)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(jRadioButton2))
-                                .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
-                                    .addComponent(jRadioButton4)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(jRadioButton3)))
-                            .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
-                                .addComponent(jRadioButton6)
-                                .addGap(18, 18, 18)
-                                .addComponent(jRadioButton5)))
-                        .addGap(18, 18, 18)
-                        .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtNombres)
-                            .addComponent(txtNombres1, javax.swing.GroupLayout.DEFAULT_SIZE, 491, Short.MAX_VALUE)
-                            .addComponent(txtNombres4, javax.swing.GroupLayout.DEFAULT_SIZE, 491, Short.MAX_VALUE)
-                            .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
-                        .addComponent(jRadioButton8)
-                        .addGap(18, 18, 18)
-                        .addComponent(jRadioButton7)
-                        .addGap(18, 18, 18)
-                        .addComponent(txtNombres2, javax.swing.GroupLayout.PREFERRED_SIZE, 491, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
-                        .addComponent(jRadioButton9)
-                        .addGap(18, 18, 18)
-                        .addComponent(jRadioButton10)
-                        .addGap(18, 18, 18)
-                        .addComponent(txtNombres3, javax.swing.GroupLayout.PREFERRED_SIZE, 491, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
-                        .addComponent(jRadioButton11)
-                        .addGap(18, 18, 18)
-                        .addComponent(jRadioButton12)
-                        .addGap(18, 18, 18)
-                        .addComponent(txtNombres6, javax.swing.GroupLayout.PREFERRED_SIZE, 491, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
-                        .addComponent(jRadioButton13)
-                        .addGap(18, 18, 18)
-                        .addComponent(jRadioButton14)
-                        .addGap(18, 18, 18)
-                        .addComponent(txtNombres7, javax.swing.GroupLayout.PREFERRED_SIZE, 491, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
-                        .addComponent(jRadioButton15)
-                        .addGap(18, 18, 18)
-                        .addComponent(jRadioButton16)
-                        .addGap(18, 18, 18)
-                        .addComponent(txtNombres5, javax.swing.GroupLayout.PREFERRED_SIZE, 491, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(88, Short.MAX_VALUE))
-        );
-        pnlDerechoBaseLayout.setVerticalGroup(
-            pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
-                .addGap(74, 74, 74)
-                .addComponent(jLabel9)
-                .addGap(18, 18, 18)
-                .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jRadioButton1)
-                    .addComponent(jRadioButton2)
-                    .addComponent(txtNombres, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(jRadioButton4)
-                    .addComponent(jRadioButton3)
-                    .addComponent(txtNombres1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jRadioButton6)
-                    .addComponent(jRadioButton5)
-                    .addComponent(txtNombres4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jRadioButton8)
-                    .addComponent(jRadioButton7)
-                    .addComponent(txtNombres2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(jRadioButton9)
-                    .addComponent(jRadioButton10)
-                    .addComponent(txtNombres3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(jRadioButton11)
-                    .addComponent(jRadioButton12)
-                    .addComponent(txtNombres6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
-                    .addComponent(jRadioButton13)
-                    .addComponent(jRadioButton14)
-                    .addComponent(txtNombres7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(jRadioButton15)
-                    .addComponent(jRadioButton16)
-                    .addComponent(txtNombres5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(272, Short.MAX_VALUE))
-        );
+        pnlDerechoBase.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(461, 74, 491, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
