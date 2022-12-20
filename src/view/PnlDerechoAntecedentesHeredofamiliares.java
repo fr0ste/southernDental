@@ -19,15 +19,15 @@ public class PnlDerechoAntecedentesHeredofamiliares extends javax.swing.JPanel {
     private void initComponents() {
 
         pnlDerechoBase = new javax.swing.JPanel();
-        txtNombres = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        neoplasia = new javax.swing.JLabel();
+        HipertencionArterial = new javax.swing.JLabel();
+        PadecimientosMentales = new javax.swing.JLabel();
+        Diabetes = new javax.swing.JLabel();
+        Obesidad = new javax.swing.JLabel();
+        PadecimientosEmatologicos = new javax.swing.JLabel();
+        ProblemaCardiacos = new javax.swing.JLabel();
+        MalfomacionesCongenitas = new javax.swing.JLabel();
+        RespuestaAmplia = new javax.swing.JLabel();
         jRadioButton1 = new javax.swing.JRadioButton();
         jRadioButton2 = new javax.swing.JRadioButton();
         jRadioButton3 = new javax.swing.JRadioButton();
@@ -44,46 +44,44 @@ public class PnlDerechoAntecedentesHeredofamiliares extends javax.swing.JPanel {
         jRadioButton14 = new javax.swing.JRadioButton();
         jRadioButton15 = new javax.swing.JRadioButton();
         jRadioButton16 = new javax.swing.JRadioButton();
-        txtNombres1 = new javax.swing.JTextField();
-        txtNombres2 = new javax.swing.JTextField();
-        txtNombres3 = new javax.swing.JTextField();
-        txtNombres4 = new javax.swing.JTextField();
-        txtNombres5 = new javax.swing.JTextField();
-        txtNombres6 = new javax.swing.JTextField();
-        txtNombres7 = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
+        txtNeoplasia = new javax.swing.JTextField();
+        txtDiabetes = new javax.swing.JTextField();
+        txtPadecimientosMentales = new javax.swing.JTextField();
+        txtObesidad = new javax.swing.JTextField();
+        txtHipertencionArterial = new javax.swing.JTextField();
+        txtProblemasCardiacos = new javax.swing.JTextField();
+        txtPadecimientosHematologicos = new javax.swing.JTextField();
+        txtMalformacionesCongenitas = new javax.swing.JTextField();
 
         pnlDerechoBase.setBackground(new java.awt.Color(255, 255, 255));
 
-        txtNombres.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNombresActionPerformed(evt);
-            }
-        });
+        neoplasia.setForeground(new java.awt.Color(0, 0, 0));
+        neoplasia.setText("Neoplasia:");
 
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel1.setText("Neoplasia:");
+        HipertencionArterial.setForeground(new java.awt.Color(0, 0, 0));
+        HipertencionArterial.setText("Hipertención Arterial:");
 
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel2.setText("Hipertención Arterial:");
+        PadecimientosMentales.setForeground(new java.awt.Color(0, 0, 0));
+        PadecimientosMentales.setText("Padecimientos mentales / neuroligos:");
 
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel3.setText("Padecimientos mentales / neuroligos:");
+        Diabetes.setForeground(new java.awt.Color(0, 0, 0));
+        Diabetes.setText("Diabetes:");
 
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel4.setText("Diabetes:");
+        Obesidad.setForeground(new java.awt.Color(0, 0, 0));
+        Obesidad.setText("Obesidad:");
 
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel5.setText("Obesidad:");
+        PadecimientosEmatologicos.setForeground(new java.awt.Color(0, 0, 0));
+        PadecimientosEmatologicos.setText("Padecimientos Hematologicos:");
 
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel6.setText("Padecimientos Hematologicos:");
+        ProblemaCardiacos.setForeground(new java.awt.Color(0, 0, 0));
+        ProblemaCardiacos.setText("Problemas Cardicos:");
 
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel7.setText("Problemas Cardicos:");
+        MalfomacionesCongenitas.setForeground(new java.awt.Color(0, 0, 0));
+        MalfomacionesCongenitas.setText("Malformaciones Congenitas:");
 
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel8.setText("Malformaciones Congenitas:");
+        RespuestaAmplia.setForeground(new java.awt.Color(0, 0, 0));
+        RespuestaAmplia.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        RespuestaAmplia.setText("Respuesta Amplia");
 
         jRadioButton1.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton1.setText("Si");
@@ -221,51 +219,53 @@ public class PnlDerechoAntecedentesHeredofamiliares extends javax.swing.JPanel {
             }
         });
 
-        txtNombres1.addActionListener(new java.awt.event.ActionListener() {
+        txtNeoplasia.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNombres1ActionPerformed(evt);
+                txtNeoplasiaActionPerformed(evt);
             }
         });
 
-        txtNombres2.addActionListener(new java.awt.event.ActionListener() {
+        txtDiabetes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNombres2ActionPerformed(evt);
+                txtDiabetesActionPerformed(evt);
             }
         });
 
-        txtNombres3.addActionListener(new java.awt.event.ActionListener() {
+        txtPadecimientosMentales.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNombres3ActionPerformed(evt);
+                txtPadecimientosMentalesActionPerformed(evt);
             }
         });
 
-        txtNombres4.addActionListener(new java.awt.event.ActionListener() {
+        txtObesidad.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNombres4ActionPerformed(evt);
+                txtObesidadActionPerformed(evt);
             }
         });
 
-        txtNombres5.addActionListener(new java.awt.event.ActionListener() {
+        txtHipertencionArterial.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNombres5ActionPerformed(evt);
+                txtHipertencionArterialActionPerformed(evt);
             }
         });
 
-        txtNombres6.addActionListener(new java.awt.event.ActionListener() {
+        txtProblemasCardiacos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNombres6ActionPerformed(evt);
+                txtProblemasCardiacosActionPerformed(evt);
             }
         });
 
-        txtNombres7.addActionListener(new java.awt.event.ActionListener() {
+        txtPadecimientosHematologicos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNombres7ActionPerformed(evt);
+                txtPadecimientosHematologicosActionPerformed(evt);
             }
         });
 
-        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel9.setText("Respuesta Amplia");
+        txtMalformacionesCongenitas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtMalformacionesCongenitasActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnlDerechoBaseLayout = new javax.swing.GroupLayout(pnlDerechoBase);
         pnlDerechoBase.setLayout(pnlDerechoBaseLayout);
@@ -274,14 +274,14 @@ public class PnlDerechoAntecedentesHeredofamiliares extends javax.swing.JPanel {
             .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
                 .addGap(49, 49, 49)
                 .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel8))
+                    .addComponent(ProblemaCardiacos)
+                    .addComponent(neoplasia)
+                    .addComponent(PadecimientosMentales)
+                    .addComponent(Diabetes)
+                    .addComponent(HipertencionArterial)
+                    .addComponent(Obesidad)
+                    .addComponent(PadecimientosEmatologicos)
+                    .addComponent(MalfomacionesCongenitas))
                 .addGap(55, 55, 55)
                 .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
@@ -301,95 +301,95 @@ public class PnlDerechoAntecedentesHeredofamiliares extends javax.swing.JPanel {
                                 .addComponent(jRadioButton5)))
                         .addGap(18, 18, 18)
                         .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtNombres)
-                            .addComponent(txtNombres1, javax.swing.GroupLayout.DEFAULT_SIZE, 491, Short.MAX_VALUE)
-                            .addComponent(txtNombres4, javax.swing.GroupLayout.DEFAULT_SIZE, 491, Short.MAX_VALUE)
-                            .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(txtNeoplasia)
+                            .addComponent(txtDiabetes, javax.swing.GroupLayout.DEFAULT_SIZE, 491, Short.MAX_VALUE)
+                            .addComponent(txtHipertencionArterial, javax.swing.GroupLayout.DEFAULT_SIZE, 491, Short.MAX_VALUE)
+                            .addComponent(RespuestaAmplia, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
                         .addComponent(jRadioButton8)
                         .addGap(18, 18, 18)
                         .addComponent(jRadioButton7)
                         .addGap(18, 18, 18)
-                        .addComponent(txtNombres2, javax.swing.GroupLayout.PREFERRED_SIZE, 491, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtPadecimientosMentales, javax.swing.GroupLayout.PREFERRED_SIZE, 491, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
                         .addComponent(jRadioButton9)
                         .addGap(18, 18, 18)
                         .addComponent(jRadioButton10)
                         .addGap(18, 18, 18)
-                        .addComponent(txtNombres3, javax.swing.GroupLayout.PREFERRED_SIZE, 491, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtObesidad, javax.swing.GroupLayout.PREFERRED_SIZE, 491, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
                         .addComponent(jRadioButton11)
                         .addGap(18, 18, 18)
                         .addComponent(jRadioButton12)
                         .addGap(18, 18, 18)
-                        .addComponent(txtNombres6, javax.swing.GroupLayout.PREFERRED_SIZE, 491, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtPadecimientosHematologicos, javax.swing.GroupLayout.PREFERRED_SIZE, 491, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
                         .addComponent(jRadioButton13)
                         .addGap(18, 18, 18)
                         .addComponent(jRadioButton14)
                         .addGap(18, 18, 18)
-                        .addComponent(txtNombres7, javax.swing.GroupLayout.PREFERRED_SIZE, 491, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtMalformacionesCongenitas, javax.swing.GroupLayout.PREFERRED_SIZE, 491, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
                         .addComponent(jRadioButton15)
                         .addGap(18, 18, 18)
                         .addComponent(jRadioButton16)
                         .addGap(18, 18, 18)
-                        .addComponent(txtNombres5, javax.swing.GroupLayout.PREFERRED_SIZE, 491, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(txtProblemasCardiacos, javax.swing.GroupLayout.PREFERRED_SIZE, 491, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(88, Short.MAX_VALUE))
         );
         pnlDerechoBaseLayout.setVerticalGroup(
             pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlDerechoBaseLayout.createSequentialGroup()
                 .addGap(74, 74, 74)
-                .addComponent(jLabel9)
+                .addComponent(RespuestaAmplia)
                 .addGap(18, 18, 18)
                 .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
+                    .addComponent(neoplasia)
                     .addComponent(jRadioButton1)
                     .addComponent(jRadioButton2)
-                    .addComponent(txtNombres, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtNeoplasia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
+                    .addComponent(Diabetes)
                     .addComponent(jRadioButton4)
                     .addComponent(jRadioButton3)
-                    .addComponent(txtNombres1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtDiabetes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
+                    .addComponent(HipertencionArterial)
                     .addComponent(jRadioButton6)
                     .addComponent(jRadioButton5)
-                    .addComponent(txtNombres4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtHipertencionArterial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
+                    .addComponent(PadecimientosMentales)
                     .addComponent(jRadioButton8)
                     .addComponent(jRadioButton7)
-                    .addComponent(txtNombres2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtPadecimientosMentales, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
+                    .addComponent(Obesidad)
                     .addComponent(jRadioButton9)
                     .addComponent(jRadioButton10)
-                    .addComponent(txtNombres3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtObesidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
+                    .addComponent(PadecimientosEmatologicos)
                     .addComponent(jRadioButton11)
                     .addComponent(jRadioButton12)
-                    .addComponent(txtNombres6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtPadecimientosHematologicos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
+                    .addComponent(MalfomacionesCongenitas)
                     .addComponent(jRadioButton13)
                     .addComponent(jRadioButton14)
-                    .addComponent(txtNombres7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtMalformacionesCongenitas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
+                    .addComponent(ProblemaCardiacos)
                     .addComponent(jRadioButton15)
                     .addComponent(jRadioButton16)
-                    .addComponent(txtNombres5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtProblemasCardiacos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(272, Short.MAX_VALUE))
         );
 
@@ -469,49 +469,48 @@ public class PnlDerechoAntecedentesHeredofamiliares extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_jRadioButton16ActionPerformed
 
-    private void txtNombresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombresActionPerformed
+    private void txtNeoplasiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNeoplasiaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtNombresActionPerformed
+    }//GEN-LAST:event_txtNeoplasiaActionPerformed
 
-    private void txtNombres1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombres1ActionPerformed
+    private void txtDiabetesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDiabetesActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtNombres1ActionPerformed
+    }//GEN-LAST:event_txtDiabetesActionPerformed
 
-    private void txtNombres2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombres2ActionPerformed
+    private void txtPadecimientosMentalesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPadecimientosMentalesActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtNombres2ActionPerformed
+    }//GEN-LAST:event_txtPadecimientosMentalesActionPerformed
 
-    private void txtNombres3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombres3ActionPerformed
+    private void txtObesidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtObesidadActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtNombres3ActionPerformed
+    }//GEN-LAST:event_txtObesidadActionPerformed
 
-    private void txtNombres4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombres4ActionPerformed
+    private void txtHipertencionArterialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtHipertencionArterialActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtNombres4ActionPerformed
+    }//GEN-LAST:event_txtHipertencionArterialActionPerformed
 
-    private void txtNombres5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombres5ActionPerformed
+    private void txtProblemasCardiacosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtProblemasCardiacosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtNombres5ActionPerformed
+    }//GEN-LAST:event_txtProblemasCardiacosActionPerformed
 
-    private void txtNombres6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombres6ActionPerformed
+    private void txtPadecimientosHematologicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPadecimientosHematologicosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtNombres6ActionPerformed
+    }//GEN-LAST:event_txtPadecimientosHematologicosActionPerformed
 
-    private void txtNombres7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombres7ActionPerformed
+    private void txtMalformacionesCongenitasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMalformacionesCongenitasActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtNombres7ActionPerformed
+    }//GEN-LAST:event_txtMalformacionesCongenitasActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel Diabetes;
+    private javax.swing.JLabel HipertencionArterial;
+    private javax.swing.JLabel MalfomacionesCongenitas;
+    private javax.swing.JLabel Obesidad;
+    private javax.swing.JLabel PadecimientosEmatologicos;
+    private javax.swing.JLabel PadecimientosMentales;
+    private javax.swing.JLabel ProblemaCardiacos;
+    private javax.swing.JLabel RespuestaAmplia;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton10;
     private javax.swing.JRadioButton jRadioButton11;
@@ -528,14 +527,15 @@ public class PnlDerechoAntecedentesHeredofamiliares extends javax.swing.JPanel {
     private javax.swing.JRadioButton jRadioButton7;
     private javax.swing.JRadioButton jRadioButton8;
     private javax.swing.JRadioButton jRadioButton9;
+    private javax.swing.JLabel neoplasia;
     private javax.swing.JPanel pnlDerechoBase;
-    private javax.swing.JTextField txtNombres;
-    private javax.swing.JTextField txtNombres1;
-    private javax.swing.JTextField txtNombres2;
-    private javax.swing.JTextField txtNombres3;
-    private javax.swing.JTextField txtNombres4;
-    private javax.swing.JTextField txtNombres5;
-    private javax.swing.JTextField txtNombres6;
-    private javax.swing.JTextField txtNombres7;
+    private javax.swing.JTextField txtDiabetes;
+    private javax.swing.JTextField txtHipertencionArterial;
+    private javax.swing.JTextField txtMalformacionesCongenitas;
+    private javax.swing.JTextField txtNeoplasia;
+    private javax.swing.JTextField txtObesidad;
+    private javax.swing.JTextField txtPadecimientosHematologicos;
+    private javax.swing.JTextField txtPadecimientosMentales;
+    private javax.swing.JTextField txtProblemasCardiacos;
     // End of variables declaration//GEN-END:variables
 }

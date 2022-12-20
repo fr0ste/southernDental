@@ -39,14 +39,14 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel4" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel2" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel5" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel6" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel8" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="ProblemaCardiacos" min="-2" max="-2" attributes="0"/>
+                      <Component id="neoplasia" min="-2" max="-2" attributes="0"/>
+                      <Component id="PadecimientosMentales" min="-2" max="-2" attributes="0"/>
+                      <Component id="Diabetes" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="HipertencionArterial" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="Obesidad" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="PadecimientosEmatologicos" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="MalfomacionesCongenitas" alignment="1" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
@@ -72,10 +72,10 @@
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="txtNombres" max="32767" attributes="0"/>
-                              <Component id="txtNombres1" pref="491" max="32767" attributes="0"/>
-                              <Component id="txtNombres4" alignment="0" pref="491" max="32767" attributes="0"/>
-                              <Component id="jLabel9" alignment="0" max="32767" attributes="0"/>
+                              <Component id="txtNeoplasia" max="32767" attributes="0"/>
+                              <Component id="txtDiabetes" pref="491" max="32767" attributes="0"/>
+                              <Component id="txtHipertencionArterial" alignment="0" pref="491" max="32767" attributes="0"/>
+                              <Component id="RespuestaAmplia" alignment="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
@@ -83,35 +83,35 @@
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="jRadioButton7" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="txtNombres2" min="-2" pref="491" max="-2" attributes="0"/>
+                          <Component id="txtPadecimientosMentales" min="-2" pref="491" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="jRadioButton9" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="jRadioButton10" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="txtNombres3" min="-2" pref="491" max="-2" attributes="0"/>
+                          <Component id="txtObesidad" min="-2" pref="491" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="jRadioButton11" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="jRadioButton12" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="txtNombres6" min="-2" pref="491" max="-2" attributes="0"/>
+                          <Component id="txtPadecimientosHematologicos" min="-2" pref="491" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="jRadioButton13" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="jRadioButton14" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="txtNombres7" min="-2" pref="491" max="-2" attributes="0"/>
+                          <Component id="txtMalformacionesCongenitas" min="-2" pref="491" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="jRadioButton15" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="jRadioButton16" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="txtNombres5" min="-2" pref="491" max="-2" attributes="0"/>
+                          <Component id="txtProblemasCardiacos" min="-2" pref="491" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace pref="88" max="32767" attributes="0"/>
@@ -122,62 +122,62 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
-                  <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                  <Component id="RespuestaAmplia" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="neoplasia" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jRadioButton1" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jRadioButton2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtNombres" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtNeoplasia" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Diabetes" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jRadioButton4" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jRadioButton3" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtNombres1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtDiabetes" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="HipertencionArterial" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jRadioButton6" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jRadioButton5" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtNombres4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtHipertencionArterial" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="PadecimientosMentales" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jRadioButton8" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jRadioButton7" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtNombres2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtPadecimientosMentales" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Obesidad" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jRadioButton9" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jRadioButton10" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtNombres3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtObesidad" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="PadecimientosEmatologicos" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jRadioButton11" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jRadioButton12" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtNombres6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtPadecimientosHematologicos" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="MalfomacionesCongenitas" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jRadioButton13" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jRadioButton14" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtNombres7" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtMalformacionesCongenitas" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="ProblemaCardiacos" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jRadioButton15" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jRadioButton16" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtNombres5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtProblemasCardiacos" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="272" max="32767" attributes="0"/>
               </Group>
@@ -185,12 +185,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JTextField" name="txtNombres">
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNombresActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel1">
+        <Component class="javax.swing.JLabel" name="neoplasia">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="0" type="rgb"/>
@@ -198,7 +193,7 @@
             <Property name="text" type="java.lang.String" value="Neoplasia:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel2">
+        <Component class="javax.swing.JLabel" name="HipertencionArterial">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="0" type="rgb"/>
@@ -206,7 +201,7 @@
             <Property name="text" type="java.lang.String" value="Hipertenci&#xf3;n Arterial:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel3">
+        <Component class="javax.swing.JLabel" name="PadecimientosMentales">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="0" type="rgb"/>
@@ -214,7 +209,7 @@
             <Property name="text" type="java.lang.String" value="Padecimientos mentales / neuroligos:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel4">
+        <Component class="javax.swing.JLabel" name="Diabetes">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="0" type="rgb"/>
@@ -222,7 +217,7 @@
             <Property name="text" type="java.lang.String" value="Diabetes:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel5">
+        <Component class="javax.swing.JLabel" name="Obesidad">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="0" type="rgb"/>
@@ -230,7 +225,7 @@
             <Property name="text" type="java.lang.String" value="Obesidad:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel6">
+        <Component class="javax.swing.JLabel" name="PadecimientosEmatologicos">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="0" type="rgb"/>
@@ -238,7 +233,7 @@
             <Property name="text" type="java.lang.String" value="Padecimientos Hematologicos:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel7">
+        <Component class="javax.swing.JLabel" name="ProblemaCardiacos">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="0" type="rgb"/>
@@ -246,12 +241,21 @@
             <Property name="text" type="java.lang.String" value="Problemas Cardicos:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel8">
+        <Component class="javax.swing.JLabel" name="MalfomacionesCongenitas">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="0" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Malformaciones Congenitas:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="RespuestaAmplia">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="Respuesta Amplia"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton1">
@@ -454,49 +458,45 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton16ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtNombres1">
+        <Component class="javax.swing.JTextField" name="txtNeoplasia">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNombres1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNeoplasiaActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtNombres2">
+        <Component class="javax.swing.JTextField" name="txtDiabetes">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNombres2ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtDiabetesActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtNombres3">
+        <Component class="javax.swing.JTextField" name="txtPadecimientosMentales">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNombres3ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtPadecimientosMentalesActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtNombres4">
+        <Component class="javax.swing.JTextField" name="txtObesidad">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNombres4ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtObesidadActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtNombres5">
+        <Component class="javax.swing.JTextField" name="txtHipertencionArterial">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNombres5ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtHipertencionArterialActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtNombres6">
+        <Component class="javax.swing.JTextField" name="txtProblemasCardiacos">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNombres6ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtProblemasCardiacosActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtNombres7">
+        <Component class="javax.swing.JTextField" name="txtPadecimientosHematologicos">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNombres7ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtPadecimientosHematologicosActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel9">
-          <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
-            <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="Respuesta Amplia"/>
-          </Properties>
+        <Component class="javax.swing.JTextField" name="txtMalformacionesCongenitas">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtMalformacionesCongenitasActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
