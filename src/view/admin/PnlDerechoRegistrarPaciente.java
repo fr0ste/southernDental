@@ -6,8 +6,6 @@
   */
 package view.admin;
 
-import view.*;
-
 public class PnlDerechoRegistrarPaciente extends javax.swing.JPanel {
 
 
@@ -65,49 +63,34 @@ public class PnlDerechoRegistrarPaciente extends javax.swing.JPanel {
 
         pnlDerechoBase.setBackground(new java.awt.Color(255, 255, 255));
 
-        nombres.setForeground(new java.awt.Color(0, 0, 0));
         nombres.setText("Nombres:");
 
-        apellido1.setForeground(new java.awt.Color(0, 0, 0));
         apellido1.setText("Apellido Paterno:");
 
-        apellido2.setForeground(new java.awt.Color(0, 0, 0));
         apellido2.setText("Apellido Materno:");
 
-        edad.setForeground(new java.awt.Color(0, 0, 0));
         edad.setText("Edad:");
 
-        sexo.setForeground(new java.awt.Color(0, 0, 0));
         sexo.setText("Sexo:");
 
-        grupoEtnico.setForeground(new java.awt.Color(0, 0, 0));
         grupoEtnico.setText("Grupo étnico:");
 
-        ocupacion.setForeground(new java.awt.Color(0, 0, 0));
         ocupacion.setText("Ocupación:");
 
-        fechanacimiento.setForeground(new java.awt.Color(0, 0, 0));
         fechanacimiento.setText("Fecha de nacimiento:");
 
-        domicilio.setForeground(new java.awt.Color(0, 0, 0));
         domicilio.setText("Domicilio:");
 
-        estadoCivil.setForeground(new java.awt.Color(0, 0, 0));
         estadoCivil.setText("Estado civil:");
 
-        religion.setForeground(new java.awt.Color(0, 0, 0));
         religion.setText("Religión:");
 
-        fechaingreso.setForeground(new java.awt.Color(0, 0, 0));
         fechaingreso.setText("Fecha de ingreso:");
 
-        nacionalidad.setForeground(new java.awt.Color(0, 0, 0));
         nacionalidad.setText("Nacionalidad:");
 
-        localidad.setForeground(new java.awt.Color(0, 0, 0));
         localidad.setText("Localidad:");
 
-        correo.setForeground(new java.awt.Color(0, 0, 0));
         correo.setText("Correo electrónico:");
 
         txtNombres.addActionListener(new java.awt.event.ActionListener() {
@@ -182,28 +165,20 @@ public class PnlDerechoRegistrarPaciente extends javax.swing.JPanel {
             }
         });
 
-        jRadioButton1.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton1.setText("Hombre");
 
-        jRadioButton2.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton2.setText("Hombre");
 
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Dia:");
 
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Mes:");
 
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Año:");
 
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Dia:");
 
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Mes:");
 
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Año:");
 
         javax.swing.GroupLayout pnlDerechoBaseLayout = new javax.swing.GroupLayout(pnlDerechoBase);
@@ -361,15 +336,15 @@ public class PnlDerechoRegistrarPaciente extends javax.swing.JPanel {
                     .addComponent(religion)
                     .addComponent(txtReligion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(12, 12, 12)
-                .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(fechaingreso)
+                .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jSpinner4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel4)
                         .addComponent(jLabel5)
                         .addComponent(jLabel6)
                         .addComponent(jSpinner5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jSpinner6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jSpinner6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(fechaingreso))
                 .addGap(12, 12, 12)
                 .addGroup(pnlDerechoBaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(nacionalidad)

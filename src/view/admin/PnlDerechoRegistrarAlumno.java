@@ -6,8 +6,6 @@
   */
 package view.admin;
 
-import view.*;
-
 /**
  *
  * @author Elioenaí

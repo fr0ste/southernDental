@@ -6,8 +6,6 @@
  */
 package view.admin;
 
-import view.*;
-
 public class PnlDerechoRegistarTutor extends javax.swing.JPanel {
 
     public PnlDerechoRegistarTutor() {
@@ -33,22 +31,16 @@ public class PnlDerechoRegistarTutor extends javax.swing.JPanel {
 
         pnlDerechoBase.setBackground(new java.awt.Color(255, 255, 255));
 
-        nombres.setForeground(new java.awt.Color(0, 0, 0));
         nombres.setText("Nombres:");
 
-        apellidoPaterno.setForeground(new java.awt.Color(0, 0, 0));
         apellidoPaterno.setText("Apellido Paterno:");
 
-        apellidoMaterno.setForeground(new java.awt.Color(0, 0, 0));
         apellidoMaterno.setText("Apellido Materno:");
 
-        sexo.setForeground(new java.awt.Color(0, 0, 0));
         sexo.setText("Sexo:");
 
-        ocupacion.setForeground(new java.awt.Color(0, 0, 0));
         ocupacion.setText("Ocupacion:");
 
-        estadoCivil.setForeground(new java.awt.Color(0, 0, 0));
         estadoCivil.setText("Estado Civil:");
 
         txtNombres.addActionListener(new java.awt.event.ActionListener() {
