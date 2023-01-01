@@ -4,7 +4,7 @@
   * Fecha de modificación: 20 de diciembre del 2022
   * Descripción: Clase procedimiento actual del paciente
   */
-package view;
+package view.alumnos;
 
 public class PnlDerechoProcedimientoActual extends javax.swing.JPanel {
 
@@ -94,49 +94,34 @@ public class PnlDerechoProcedimientoActual extends javax.swing.JPanel {
 
         pnlDerechoBase1.setBackground(new java.awt.Color(255, 255, 255));
 
-        nombres.setForeground(new java.awt.Color(0, 0, 0));
         nombres.setText("Nombres:");
 
-        apellido1.setForeground(new java.awt.Color(0, 0, 0));
         apellido1.setText("Apellido Paterno:");
 
-        apellido2.setForeground(new java.awt.Color(0, 0, 0));
         apellido2.setText("Apellido Materno:");
 
-        edad.setForeground(new java.awt.Color(0, 0, 0));
         edad.setText("Edad:");
 
-        sexo.setForeground(new java.awt.Color(0, 0, 0));
         sexo.setText("Sexo:");
 
-        grupoEtnico.setForeground(new java.awt.Color(0, 0, 0));
         grupoEtnico.setText("Grupo étnico:");
 
-        ocupacion.setForeground(new java.awt.Color(0, 0, 0));
         ocupacion.setText("Ocupación:");
 
-        fechanacimiento.setForeground(new java.awt.Color(0, 0, 0));
         fechanacimiento.setText("Fecha de nacimiento:");
 
-        domicilio.setForeground(new java.awt.Color(0, 0, 0));
         domicilio.setText("Domicilio:");
 
-        estadoCivil.setForeground(new java.awt.Color(0, 0, 0));
         estadoCivil.setText("Estado civil:");
 
-        religion.setForeground(new java.awt.Color(0, 0, 0));
         religion.setText("Religión:");
 
-        fechaingreso.setForeground(new java.awt.Color(0, 0, 0));
         fechaingreso.setText("Fecha de ingreso:");
 
-        nacionalidad.setForeground(new java.awt.Color(0, 0, 0));
         nacionalidad.setText("Nacionalidad:");
 
-        localidad.setForeground(new java.awt.Color(0, 0, 0));
         localidad.setText("Localidad:");
 
-        correo.setForeground(new java.awt.Color(0, 0, 0));
         correo.setText("Correo electrónico:");
 
         txtNombres.addActionListener(new java.awt.event.ActionListener() {
@@ -211,28 +196,20 @@ public class PnlDerechoProcedimientoActual extends javax.swing.JPanel {
             }
         });
 
-        jRadioButton1.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton1.setText("Hombre");
 
-        jRadioButton2.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton2.setText("Hombre");
 
-        jLabel12.setForeground(new java.awt.Color(0, 0, 0));
         jLabel12.setText("Dia:");
 
-        jLabel13.setForeground(new java.awt.Color(0, 0, 0));
         jLabel13.setText("Mes:");
 
-        jLabel14.setForeground(new java.awt.Color(0, 0, 0));
         jLabel14.setText("Año:");
 
-        jLabel15.setForeground(new java.awt.Color(0, 0, 0));
         jLabel15.setText("Dia:");
 
-        jLabel16.setForeground(new java.awt.Color(0, 0, 0));
         jLabel16.setText("Mes:");
 
-        jLabel17.setForeground(new java.awt.Color(0, 0, 0));
         jLabel17.setText("Año:");
 
         javax.swing.GroupLayout pnlDerechoBase1Layout = new javax.swing.GroupLayout(pnlDerechoBase1);
@@ -390,15 +367,16 @@ public class PnlDerechoProcedimientoActual extends javax.swing.JPanel {
                     .addComponent(religion)
                     .addComponent(txtReligion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(12, 12, 12)
-                .addGroup(pnlDerechoBase1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(fechaingreso)
+                .addGroup(pnlDerechoBase1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlDerechoBase1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jSpinner4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel15)
                         .addComponent(jLabel16)
                         .addComponent(jLabel17)
                         .addComponent(jSpinner5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jSpinner6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jSpinner6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(pnlDerechoBase1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(fechaingreso)))
                 .addGap(12, 12, 12)
                 .addGroup(pnlDerechoBase1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(nacionalidad)
@@ -416,46 +394,32 @@ public class PnlDerechoProcedimientoActual extends javax.swing.JPanel {
 
         pnlDerechoBase.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Fecha de la última consulta médica:");
 
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Fecha de la última consulta dental:");
 
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Motivo de la última consulta dental:");
 
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Tipo de sangrado:");
 
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Esta embarazada:");
 
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Esta lactando:");
 
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Tecnicas de anestecia:");
 
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Examen radiologico:");
 
-        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("Dientes extraidos:");
 
-        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Instrumental:");
 
-        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("Estados del paciente:");
 
-        jLabel18.setForeground(new java.awt.Color(0, 0, 0));
         jLabel18.setText("Dia:");
 
-        jLabel19.setForeground(new java.awt.Color(0, 0, 0));
         jLabel19.setText("Mes:");
 
-        jLabel20.setForeground(new java.awt.Color(0, 0, 0));
         jLabel20.setText("Año:");
 
         txtNombres1.addActionListener(new java.awt.event.ActionListener() {
@@ -464,13 +428,10 @@ public class PnlDerechoProcedimientoActual extends javax.swing.JPanel {
             }
         });
 
-        jLabel21.setForeground(new java.awt.Color(0, 0, 0));
         jLabel21.setText("Dia:");
 
-        jLabel22.setForeground(new java.awt.Color(0, 0, 0));
         jLabel22.setText("Mes:");
 
-        jLabel23.setForeground(new java.awt.Color(0, 0, 0));
         jLabel23.setText("Año:");
 
         txtNombres2.addActionListener(new java.awt.event.ActionListener() {

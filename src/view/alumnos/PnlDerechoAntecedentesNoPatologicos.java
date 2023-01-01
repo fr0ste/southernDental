@@ -4,7 +4,7 @@
   * Fecha de modificación: 20 de diciembre del 2022
   * Descripción: Panel que servirá para registar antecedentes no patologicos
   */
-package view;
+package view.alumnos;
 
 
 public class PnlDerechoAntecedentesNoPatologicos extends javax.swing.JPanel {
@@ -55,91 +55,62 @@ public class PnlDerechoAntecedentesNoPatologicos extends javax.swing.JPanel {
 
         pnlDerechoBase.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Come frutas y verduras:");
 
-        jRadioButton1.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton1.setText("Si");
 
-        jRadioButton2.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton2.setText("No");
 
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Come carnes:");
 
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Come cereales:");
 
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Toma dos litros de agua al dia:");
 
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Come alimentos chatarra:");
 
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Toma o bebe uno o más refrescosa al dia:");
 
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Horas que duerme al dia:");
 
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Cuantas veces se baña a la semana:");
 
-        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("Su vivenda tiene piso:");
 
-        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Su vivenda esta hecha de:");
 
-        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("Cuantas veces al dia cepilla sus dientes:");
 
-        jRadioButton3.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton3.setText("Si");
 
-        jRadioButton4.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton4.setText("No");
 
-        jRadioButton5.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton5.setText("Si");
 
-        jRadioButton6.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton6.setText("No");
 
-        jRadioButton7.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton7.setText("Si");
 
-        jRadioButton8.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton8.setText("No");
 
-        jRadioButton9.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton9.setText("Si");
 
-        jRadioButton10.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton10.setText("No");
 
-        jRadioButton11.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton11.setText("Si");
 
-        jRadioButton12.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton12.setText("No");
 
-        jRadioButton19.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton19.setText("Si");
 
-        jRadioButton20.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton20.setText("No");
 
-        jRadioButton21.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton21.setText("Adobe");
 
-        jRadioButton22.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton22.setText("Madera");
 
-        jRadioButton23.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton23.setText("Otro");
 
-        jRadioButton24.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton24.setText("Lamina");
 
         javax.swing.GroupLayout pnlDerechoBaseLayout = new javax.swing.GroupLayout(pnlDerechoBase);

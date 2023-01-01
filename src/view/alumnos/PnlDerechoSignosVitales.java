@@ -5,7 +5,7 @@
   * Descripción: Panel que servirá para regisar los signos vitales de los 
   * pacientes
   */
-package view;
+package view.alumnos;
 
 import view.base.*;
 
@@ -47,25 +47,18 @@ public class PnlDerechoSignosVitales extends javax.swing.JPanel {
 
         pnlDerechoBase.setBackground(new java.awt.Color(255, 255, 255));
 
-        peso.setForeground(new java.awt.Color(0, 0, 0));
         peso.setText("Peso:");
 
-        estatura.setForeground(new java.awt.Color(0, 0, 0));
         estatura.setText("Estatura:");
 
-        temperatura.setForeground(new java.awt.Color(0, 0, 0));
         temperatura.setText("Temperatura:");
 
-        fcardiaca.setForeground(new java.awt.Color(0, 0, 0));
         fcardiaca.setText("Frecuencia Cardiaca:");
 
-        frespiratoria.setForeground(new java.awt.Color(0, 0, 0));
         frespiratoria.setText("Frecuencia Respiratoria:");
 
-        presion.setForeground(new java.awt.Color(0, 0, 0));
         presion.setText("Presión Arterial:");
 
-        oxigeno.setForeground(new java.awt.Color(0, 0, 0));
         oxigeno.setText("Saturación Oxigeno:");
 
         txtPeso.addActionListener(new java.awt.event.ActionListener() {

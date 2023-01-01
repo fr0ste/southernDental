@@ -4,7 +4,7 @@
  * Fecha de modificación: 20 de diciembre del 2022
  * Descripción: Panel que servirá para registar antecedentes patologicos
  */
-package view;
+package view.alumnos;
 
 import view.base.*;
 
@@ -74,157 +74,106 @@ public class PnlDerechoAntencedentesPatologicos extends javax.swing.JPanel {
 
         pnlDerechoBase.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Tabaquismo:");
 
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Alcoholismo:");
 
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Perforaciones:");
 
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Tatuajes:");
 
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Otras sustancias psicoactivas o recreativas:");
 
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Neoplasia (Cancer):");
 
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Diabetes:");
 
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Hipertención Arterial:");
 
-        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("Padecimientos mentales / convulsiones / desmayos / migraña / neuralgia:");
 
-        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Padecimientos hematológicos / Hemorrágicos / Anemia / Leucemia:");
 
-        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("Obesidad diagnosticada:");
 
-        jLabel12.setForeground(new java.awt.Color(0, 0, 0));
         jLabel12.setText("Obesidad diagnosticada:");
 
-        jLabel13.setForeground(new java.awt.Color(0, 0, 0));
         jLabel13.setText("Malformaciones congénitas / Sindromes:");
 
-        jLabel14.setForeground(new java.awt.Color(0, 0, 0));
         jLabel14.setText("Problemas cardiacos / angina de pecho / infarto / tromboembolia / marcapasos / bypass:");
 
-        jLabel15.setForeground(new java.awt.Color(0, 0, 0));
         jLabel15.setText("Radioterapia / Quimioterapia:");
 
-        jLabel16.setForeground(new java.awt.Color(0, 0, 0));
         jLabel16.setText("Padecimientos reumatológicos / artritis / osteoporosis:");
 
-        jLabel17.setForeground(new java.awt.Color(0, 0, 0));
         jLabel17.setText("Enfermedades del riñon:");
 
-        jRadioButton1.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton1.setText("Si");
 
-        jRadioButton2.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton2.setText("No");
 
-        jRadioButton3.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton3.setText("Si");
 
-        jRadioButton4.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton4.setText("No");
 
-        jRadioButton5.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton5.setText("Si");
 
-        jRadioButton6.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton6.setText("No");
 
-        jRadioButton7.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton7.setText("Si");
 
-        jRadioButton8.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton8.setText("No");
 
-        jRadioButton9.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton9.setText("Si");
 
-        jRadioButton10.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton10.setText("No");
 
-        jRadioButton11.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton11.setText("Si");
 
-        jRadioButton12.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton12.setText("No");
 
-        jRadioButton13.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton13.setText("Si");
 
-        jRadioButton14.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton14.setText("No");
 
-        jRadioButton15.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton15.setText("Si");
 
-        jRadioButton16.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton16.setText("No");
 
-        jRadioButton17.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton17.setText("Si");
 
-        jRadioButton18.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton18.setText("No");
 
-        jRadioButton19.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton19.setText("Si");
 
-        jRadioButton20.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton20.setText("No");
 
-        jRadioButton21.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton21.setText("Si");
 
-        jRadioButton22.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton22.setText("No");
 
-        jRadioButton23.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton23.setText("Si");
 
-        jRadioButton24.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton24.setText("No");
 
-        jRadioButton25.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton25.setText("Si");
 
-        jRadioButton26.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton26.setText("No");
 
-        jRadioButton27.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton27.setText("Si");
 
-        jRadioButton28.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton28.setText("No");
 
-        jRadioButton29.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton29.setText("Si");
 
-        jRadioButton30.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton30.setText("No");
 
-        jRadioButton31.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton31.setText("Si");
 
-        jRadioButton32.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton32.setText("No");
 
-        jRadioButton33.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton33.setText("Si");
 
-        jRadioButton34.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton34.setText("No");
 
         javax.swing.GroupLayout pnlDerechoBaseLayout = new javax.swing.GroupLayout(pnlDerechoBase);

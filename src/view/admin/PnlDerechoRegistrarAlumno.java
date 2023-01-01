@@ -4,7 +4,9 @@
   * Fecha de modificación: 15 de diciembre del 2022
   * Descripción: Panel que servirá como base para partes izquierdas del Frame
   */
-package view;
+package view.admin;
+
+import view.*;
 
 /**
  *

@@ -4,7 +4,7 @@
   * Fecha de modificación: 20 de diciembre del 2022
   * Descripción: Panel que servirá para registar antecedente heredofamiliares
   */
-package view;
+package view.alumnos;
 
 public class PnlDerechoAntecedentesHeredofamiliares extends javax.swing.JPanel {
 
@@ -55,35 +55,25 @@ public class PnlDerechoAntecedentesHeredofamiliares extends javax.swing.JPanel {
 
         pnlDerechoBase.setBackground(new java.awt.Color(255, 255, 255));
 
-        neoplasia.setForeground(new java.awt.Color(0, 0, 0));
         neoplasia.setText("Neoplasia:");
 
-        HipertencionArterial.setForeground(new java.awt.Color(0, 0, 0));
         HipertencionArterial.setText("Hipertención Arterial:");
 
-        PadecimientosMentales.setForeground(new java.awt.Color(0, 0, 0));
         PadecimientosMentales.setText("Padecimientos mentales / neuroligos:");
 
-        Diabetes.setForeground(new java.awt.Color(0, 0, 0));
         Diabetes.setText("Diabetes:");
 
-        Obesidad.setForeground(new java.awt.Color(0, 0, 0));
         Obesidad.setText("Obesidad:");
 
-        PadecimientosEmatologicos.setForeground(new java.awt.Color(0, 0, 0));
         PadecimientosEmatologicos.setText("Padecimientos Hematologicos:");
 
-        ProblemaCardiacos.setForeground(new java.awt.Color(0, 0, 0));
         ProblemaCardiacos.setText("Problemas Cardicos:");
 
-        MalfomacionesCongenitas.setForeground(new java.awt.Color(0, 0, 0));
         MalfomacionesCongenitas.setText("Malformaciones Congenitas:");
 
-        RespuestaAmplia.setForeground(new java.awt.Color(0, 0, 0));
         RespuestaAmplia.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         RespuestaAmplia.setText("Respuesta Amplia");
 
-        jRadioButton1.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton1.setText("Si");
         jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -92,7 +82,6 @@ public class PnlDerechoAntecedentesHeredofamiliares extends javax.swing.JPanel {
         });
 
         jRadioButton2.setBackground(new java.awt.Color(255, 255, 255));
-        jRadioButton2.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton2.setText("No");
         jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,7 +90,6 @@ public class PnlDerechoAntecedentesHeredofamiliares extends javax.swing.JPanel {
         });
 
         jRadioButton3.setBackground(new java.awt.Color(255, 255, 255));
-        jRadioButton3.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton3.setText("No");
         jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -109,7 +97,6 @@ public class PnlDerechoAntecedentesHeredofamiliares extends javax.swing.JPanel {
             }
         });
 
-        jRadioButton4.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton4.setText("Si");
         jRadioButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -118,7 +105,6 @@ public class PnlDerechoAntecedentesHeredofamiliares extends javax.swing.JPanel {
         });
 
         jRadioButton5.setBackground(new java.awt.Color(255, 255, 255));
-        jRadioButton5.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton5.setText("No");
         jRadioButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -126,7 +112,6 @@ public class PnlDerechoAntecedentesHeredofamiliares extends javax.swing.JPanel {
             }
         });
 
-        jRadioButton6.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton6.setText("Si");
         jRadioButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -135,7 +120,6 @@ public class PnlDerechoAntecedentesHeredofamiliares extends javax.swing.JPanel {
         });
 
         jRadioButton7.setBackground(new java.awt.Color(255, 255, 255));
-        jRadioButton7.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton7.setText("No");
         jRadioButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -143,7 +127,6 @@ public class PnlDerechoAntecedentesHeredofamiliares extends javax.swing.JPanel {
             }
         });
 
-        jRadioButton8.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton8.setText("Si");
         jRadioButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -151,7 +134,6 @@ public class PnlDerechoAntecedentesHeredofamiliares extends javax.swing.JPanel {
             }
         });
 
-        jRadioButton9.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton9.setText("Si");
         jRadioButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -160,7 +142,6 @@ public class PnlDerechoAntecedentesHeredofamiliares extends javax.swing.JPanel {
         });
 
         jRadioButton10.setBackground(new java.awt.Color(255, 255, 255));
-        jRadioButton10.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton10.setText("No");
         jRadioButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -168,7 +149,6 @@ public class PnlDerechoAntecedentesHeredofamiliares extends javax.swing.JPanel {
             }
         });
 
-        jRadioButton11.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton11.setText("Si");
         jRadioButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -177,7 +157,6 @@ public class PnlDerechoAntecedentesHeredofamiliares extends javax.swing.JPanel {
         });
 
         jRadioButton12.setBackground(new java.awt.Color(255, 255, 255));
-        jRadioButton12.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton12.setText("No");
         jRadioButton12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -185,7 +164,6 @@ public class PnlDerechoAntecedentesHeredofamiliares extends javax.swing.JPanel {
             }
         });
 
-        jRadioButton13.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton13.setText("Si");
         jRadioButton13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -194,7 +172,6 @@ public class PnlDerechoAntecedentesHeredofamiliares extends javax.swing.JPanel {
         });
 
         jRadioButton14.setBackground(new java.awt.Color(255, 255, 255));
-        jRadioButton14.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton14.setText("No");
         jRadioButton14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -202,7 +179,6 @@ public class PnlDerechoAntecedentesHeredofamiliares extends javax.swing.JPanel {
             }
         });
 
-        jRadioButton15.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton15.setText("Si");
         jRadioButton15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -211,7 +187,6 @@ public class PnlDerechoAntecedentesHeredofamiliares extends javax.swing.JPanel {
         });
 
         jRadioButton16.setBackground(new java.awt.Color(255, 255, 255));
-        jRadioButton16.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton16.setText("No");
         jRadioButton16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

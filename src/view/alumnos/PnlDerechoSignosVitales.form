@@ -114,57 +114,36 @@
       <SubComponents>
         <Component class="javax.swing.JLabel" name="peso">
           <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Peso:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="estatura">
           <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Estatura:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="temperatura">
           <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Temperatura:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="fcardiaca">
           <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Frecuencia Cardiaca:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="frespiratoria">
           <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Frecuencia Respiratoria:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="presion">
           <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Presi&#xf3;n Arterial:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="oxigeno">
           <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Saturaci&#xf3;n Oxigeno:"/>
           </Properties>
         </Component>

@@ -4,7 +4,7 @@
   * Fecha de modificación: 20 de diciembre del 2022
   * Descripción:Protesis bucal
   */
-package view;
+package view.alumnos;
 
 
 public class PnlDerechoProtesisBucal extends javax.swing.JPanel {
@@ -45,76 +45,52 @@ public class PnlDerechoProtesisBucal extends javax.swing.JPanel {
 
         pnlDerechoBase.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Placa Bacteriana:");
 
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Materia Alba:");
 
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Bolsas Periodontales:");
 
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Sarro:");
 
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Gingivitis:");
 
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Absceso Periodontal:");
 
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Reabsorción osea:");
 
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Movilidad dental:");
 
-        jRadioButton1.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton1.setText("Si");
 
-        jRadioButton2.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton2.setText("No");
 
-        jRadioButton3.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton3.setText("No");
 
-        jRadioButton4.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton4.setText("Si");
 
-        jRadioButton5.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton5.setText("No");
 
-        jRadioButton6.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton6.setText("Si");
 
-        jRadioButton7.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton7.setText("No");
 
-        jRadioButton8.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton8.setText("Si");
 
-        jRadioButton9.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton9.setText("No");
 
-        jRadioButton10.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton10.setText("Si");
 
-        jRadioButton11.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton11.setText("No");
 
-        jRadioButton12.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton12.setText("Si");
 
-        jRadioButton13.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton13.setText("No");
 
-        jRadioButton14.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton14.setText("Si");
 
-        jRadioButton15.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton15.setText("No");
 
-        jRadioButton16.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton16.setText("Si");
 
         javax.swing.GroupLayout pnlDerechoBaseLayout = new javax.swing.GroupLayout(pnlDerechoBase);

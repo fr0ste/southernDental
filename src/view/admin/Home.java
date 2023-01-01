@@ -6,7 +6,7 @@
   *              alumno, paciente o profesor para administrar su información
   */
 
-package view;
+package view.admin;
 
 import utilities.Colors;
 
@@ -124,11 +124,11 @@ public class Home extends javax.swing.JFrame {
 
         pnlHome.setBackground(new java.awt.Color(0, 0, 32));
         pnlHome.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                pnlHomeMouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 pnlHomeMouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                pnlHomeMouseEntered(evt);
             }
         });
 
@@ -138,11 +138,11 @@ public class Home extends javax.swing.JFrame {
         btnHome.setText("HOME");
         btnHome.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnHome.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnHomeMouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 btnHomeMouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnHomeMouseEntered(evt);
             }
         });
 
@@ -150,11 +150,11 @@ public class Home extends javax.swing.JFrame {
         icnHome.setIcon(new javax.swing.ImageIcon("resources/images/iconoHome.png")
         );
         icnHome.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                icnHomeMouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 icnHomeMouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                icnHomeMouseEntered(evt);
             }
         });
 

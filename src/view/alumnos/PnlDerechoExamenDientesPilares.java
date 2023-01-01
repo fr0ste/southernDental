@@ -4,7 +4,7 @@
  * Fecha de modificación: 20 de diciembre del 2022
  * Descripción: Examen dientes pilares
  */
-package view;
+package view.alumnos;
 
 public class PnlDerechoExamenDientesPilares extends javax.swing.JPanel {
 
@@ -40,34 +40,24 @@ public class PnlDerechoExamenDientesPilares extends javax.swing.JPanel {
 
         pnlDerechoBase.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Amalgamas:");
 
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Dientes Cariados:");
 
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Dientes Ausentes:");
 
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Resinas:");
 
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Extracciones Indicadas:");
 
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Dientes obturados:");
 
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Incrustaciones:");
 
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Protesis Fijas:");
 
-        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("Protesis Removible:");
 
-        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Raíces:");
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
