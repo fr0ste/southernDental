@@ -20,7 +20,12 @@ public class Home extends javax.swing.JFrame {
     private final int MENU_PACIENTES = 1;
     private final int MENU_ALUMNOS =2;
     private final int MENU_PROFESORES =3;
-    
+    private final int VENTANA_HOME = 0;
+    private final int VENTANA_PACIENTE = 1;    
+    private final int VENTANA_ALUMNO=2;    
+    private final int VENTANA_PROFESOR=3;
+
+
 
     public Home() {
         initComponents();
@@ -42,14 +47,6 @@ public class Home extends javax.swing.JFrame {
         pnlIzquierdo = new javax.swing.JPanel();
         pnlSuperior1 = new javax.swing.JPanel();
         btnCerrar1 = new javax.swing.JLabel();
-        containerDerecho = new javax.swing.JDesktopPane();
-        jPanel3 = new javax.swing.JPanel();
-        pnlProfesor = new javax.swing.JPanel();
-        btnProfesor = new javax.swing.JLabel();
-        pnlAlumnos = new javax.swing.JPanel();
-        btnAlumnos = new javax.swing.JLabel();
-        pnlPacientes = new javax.swing.JPanel();
-        btnPacientes = new javax.swing.JLabel();
         menu = new javax.swing.JTabbedPane();
         jPanel4 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
@@ -80,6 +77,17 @@ public class Home extends javax.swing.JFrame {
         pnlHome2 = new javax.swing.JPanel();
         btnHome2 = new javax.swing.JLabel();
         icnHome2 = new javax.swing.JLabel();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jPanel3 = new javax.swing.JPanel();
+        pnlProfesor = new javax.swing.JPanel();
+        btnProfesor = new javax.swing.JLabel();
+        pnlAlumnos = new javax.swing.JPanel();
+        btnAlumnos = new javax.swing.JLabel();
+        pnlPacientes = new javax.swing.JPanel();
+        btnPacientes = new javax.swing.JLabel();
+        jPanel10 = new javax.swing.JPanel();
+        jPanel11 = new javax.swing.JPanel();
+        jPanel12 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -159,122 +167,6 @@ public class Home extends javax.swing.JFrame {
 
         jPanel1.add(lblSuperior, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        containerDerecho.setLayout(new java.awt.GridLayout(1, 0));
-
-        pnlProfesor.setBackground(new java.awt.Color(0, 0, 32));
-        pnlProfesor.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                pnlProfesorMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                pnlProfesorMouseExited(evt);
-            }
-        });
-
-        btnProfesor.setBackground(new java.awt.Color(0, 0, 32));
-        btnProfesor.setForeground(new java.awt.Color(255, 255, 255));
-        btnProfesor.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btnProfesor.setText("PROFESOR");
-        btnProfesor.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        javax.swing.GroupLayout pnlProfesorLayout = new javax.swing.GroupLayout(pnlProfesor);
-        pnlProfesor.setLayout(pnlProfesorLayout);
-        pnlProfesorLayout.setHorizontalGroup(
-            pnlProfesorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnProfesor, javax.swing.GroupLayout.DEFAULT_SIZE, 282, Short.MAX_VALUE)
-        );
-        pnlProfesorLayout.setVerticalGroup(
-            pnlProfesorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnProfesor, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-
-        pnlAlumnos.setBackground(new java.awt.Color(0, 0, 32));
-        pnlAlumnos.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                pnlAlumnosMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                pnlAlumnosMouseExited(evt);
-            }
-        });
-
-        btnAlumnos.setBackground(new java.awt.Color(0, 0, 32));
-        btnAlumnos.setForeground(new java.awt.Color(255, 255, 255));
-        btnAlumnos.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btnAlumnos.setText("ALUMNOS");
-        btnAlumnos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        javax.swing.GroupLayout pnlAlumnosLayout = new javax.swing.GroupLayout(pnlAlumnos);
-        pnlAlumnos.setLayout(pnlAlumnosLayout);
-        pnlAlumnosLayout.setHorizontalGroup(
-            pnlAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnAlumnos, javax.swing.GroupLayout.DEFAULT_SIZE, 282, Short.MAX_VALUE)
-        );
-        pnlAlumnosLayout.setVerticalGroup(
-            pnlAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnAlumnos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-
-        pnlPacientes.setBackground(new java.awt.Color(0, 0, 32));
-        pnlPacientes.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                pnlPacientesMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                pnlPacientesMouseExited(evt);
-            }
-        });
-
-        btnPacientes.setBackground(new java.awt.Color(0, 0, 32));
-        btnPacientes.setForeground(new java.awt.Color(255, 255, 255));
-        btnPacientes.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btnPacientes.setText("PACIENTES");
-        btnPacientes.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnPacientes.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnPacientesMouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout pnlPacientesLayout = new javax.swing.GroupLayout(pnlPacientes);
-        pnlPacientes.setLayout(pnlPacientesLayout);
-        pnlPacientesLayout.setHorizontalGroup(
-            pnlPacientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnPacientes, javax.swing.GroupLayout.DEFAULT_SIZE, 270, Short.MAX_VALUE)
-        );
-        pnlPacientesLayout.setVerticalGroup(
-            pnlPacientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnPacientes, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(94, Short.MAX_VALUE)
-                .addComponent(pnlPacientes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(40, 40, 40)
-                .addComponent(pnlAlumnos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
-                .addComponent(pnlProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(54, 54, 54))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(169, 169, 169)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(pnlPacientes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pnlAlumnos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pnlProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(431, Short.MAX_VALUE))
-        );
-
-        containerDerecho.add(jPanel3);
-
-        jPanel1.add(containerDerecho, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 30, 1050, 720));
-
         jPanel2.setBackground(new java.awt.Color(0, 0, 32));
         jPanel2.setPreferredSize(new java.awt.Dimension(240, 700));
 
@@ -340,7 +232,7 @@ public class Home extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(108, 108, 108)
                 .addComponent(pnlHome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(536, Short.MAX_VALUE))
+                .addContainerGap(553, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -351,9 +243,9 @@ public class Home extends javax.swing.JFrame {
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 683, Short.MAX_VALUE)
-                .addContainerGap())
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         menu.addTab("tab1", jPanel4);
@@ -577,7 +469,7 @@ public class Home extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel5.add(pnlIzquierdoBase, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 240, 690));
+        jPanel5.add(pnlIzquierdoBase, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         menu.addTab("tab2", jPanel5);
 
@@ -600,11 +492,14 @@ public class Home extends javax.swing.JFrame {
         btnHome3.setText("HOME");
         btnHome3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnHome3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnHome3MouseExited(evt);
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnHome3MouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnHome3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnHome3MouseExited(evt);
             }
         });
 
@@ -646,7 +541,7 @@ public class Home extends javax.swing.JFrame {
             .addGroup(jPanel9Layout.createSequentialGroup()
                 .addGap(108, 108, 108)
                 .addComponent(pnlHome3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(536, Short.MAX_VALUE))
+                .addContainerGap(533, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
@@ -683,11 +578,14 @@ public class Home extends javax.swing.JFrame {
         btnHome2.setText("HOME");
         btnHome2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnHome2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnHome2MouseExited(evt);
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnHome2MouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnHome2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnHome2MouseExited(evt);
             }
         });
 
@@ -749,6 +647,169 @@ public class Home extends javax.swing.JFrame {
 
         jPanel1.add(menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 240, 720));
 
+        pnlProfesor.setBackground(new java.awt.Color(0, 0, 32));
+        pnlProfesor.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                pnlProfesorMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                pnlProfesorMouseExited(evt);
+            }
+        });
+
+        btnProfesor.setBackground(new java.awt.Color(0, 0, 32));
+        btnProfesor.setForeground(new java.awt.Color(255, 255, 255));
+        btnProfesor.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btnProfesor.setText("PROFESOR");
+        btnProfesor.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnProfesor.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnProfesorMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnlProfesorLayout = new javax.swing.GroupLayout(pnlProfesor);
+        pnlProfesor.setLayout(pnlProfesorLayout);
+        pnlProfesorLayout.setHorizontalGroup(
+            pnlProfesorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(btnProfesor, javax.swing.GroupLayout.DEFAULT_SIZE, 282, Short.MAX_VALUE)
+        );
+        pnlProfesorLayout.setVerticalGroup(
+            pnlProfesorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(btnProfesor, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+
+        pnlAlumnos.setBackground(new java.awt.Color(0, 0, 32));
+        pnlAlumnos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                pnlAlumnosMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                pnlAlumnosMouseExited(evt);
+            }
+        });
+
+        btnAlumnos.setBackground(new java.awt.Color(0, 0, 32));
+        btnAlumnos.setForeground(new java.awt.Color(255, 255, 255));
+        btnAlumnos.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btnAlumnos.setText("ALUMNOS");
+        btnAlumnos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnAlumnos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnAlumnosMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnlAlumnosLayout = new javax.swing.GroupLayout(pnlAlumnos);
+        pnlAlumnos.setLayout(pnlAlumnosLayout);
+        pnlAlumnosLayout.setHorizontalGroup(
+            pnlAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(btnAlumnos, javax.swing.GroupLayout.DEFAULT_SIZE, 282, Short.MAX_VALUE)
+        );
+        pnlAlumnosLayout.setVerticalGroup(
+            pnlAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(btnAlumnos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+
+        pnlPacientes.setBackground(new java.awt.Color(0, 0, 32));
+        pnlPacientes.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                pnlPacientesMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                pnlPacientesMouseExited(evt);
+            }
+        });
+
+        btnPacientes.setBackground(new java.awt.Color(0, 0, 32));
+        btnPacientes.setForeground(new java.awt.Color(255, 255, 255));
+        btnPacientes.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btnPacientes.setText("PACIENTES");
+        btnPacientes.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnPacientes.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnPacientesMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnlPacientesLayout = new javax.swing.GroupLayout(pnlPacientes);
+        pnlPacientes.setLayout(pnlPacientesLayout);
+        pnlPacientesLayout.setHorizontalGroup(
+            pnlPacientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(btnPacientes, javax.swing.GroupLayout.DEFAULT_SIZE, 270, Short.MAX_VALUE)
+        );
+        pnlPacientesLayout.setVerticalGroup(
+            pnlPacientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(btnPacientes, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(pnlPacientes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(40, 40, 40)
+                .addComponent(pnlAlumnos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28)
+                .addComponent(pnlProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(54, 54, 54))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(169, 169, 169)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(pnlPacientes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pnlAlumnos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pnlProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jTabbedPane1.addTab("tab1", jPanel3);
+
+        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
+        jPanel10.setLayout(jPanel10Layout);
+        jPanel10Layout.setHorizontalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1050, Short.MAX_VALUE)
+        );
+        jPanel10Layout.setVerticalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 689, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("tab2", jPanel10);
+
+        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
+        jPanel11.setLayout(jPanel11Layout);
+        jPanel11Layout.setHorizontalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1050, Short.MAX_VALUE)
+        );
+        jPanel11Layout.setVerticalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 689, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("tab3", jPanel11);
+
+        javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
+        jPanel12.setLayout(jPanel12Layout);
+        jPanel12Layout.setHorizontalGroup(
+            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1050, Short.MAX_VALUE)
+        );
+        jPanel12Layout.setVerticalGroup(
+            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 689, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("tab4", jPanel12);
+
+        jPanel1.add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 30, 1050, 720));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -757,7 +818,7 @@ public class Home extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 751, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 760, Short.MAX_VALUE)
         );
 
         pack();
@@ -889,12 +950,8 @@ public class Home extends javax.swing.JFrame {
 
     private void btnPacientesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPacientesMouseClicked
         
-        containerDerecho.removeAll();
-        menu.setSelectedIndex(1);
-        
-        revalidate();
-        repaint();
-        
+       jTabbedPane1.setSelectedIndex(VENTANA_PACIENTE);
+        menu.setSelectedIndex(MENU_PACIENTES);
     }//GEN-LAST:event_btnPacientesMouseClicked
 
     private void btnHome1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHome1MouseEntered
@@ -1010,8 +1067,29 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_pnlHome3MouseEntered
 
     private void btnHome1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHome1MouseClicked
-        menu.setSelectedIndex(0);
+        menu.setSelectedIndex(MENU_HOME);
+        jTabbedPane1.setSelectedIndex(VENTANA_HOME);
     }//GEN-LAST:event_btnHome1MouseClicked
+
+    private void btnProfesorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProfesorMouseClicked
+        menu.setSelectedIndex(MENU_PROFESORES);
+        jTabbedPane1.setSelectedIndex(VENTANA_PROFESOR);
+    }//GEN-LAST:event_btnProfesorMouseClicked
+
+    private void btnAlumnosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAlumnosMouseClicked
+        menu.setSelectedIndex(MENU_ALUMNOS);
+        jTabbedPane1.setSelectedIndex(VENTANA_ALUMNO);
+    }//GEN-LAST:event_btnAlumnosMouseClicked
+
+    private void btnHome3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHome3MouseClicked
+        menu.setSelectedIndex(MENU_HOME);
+        jTabbedPane1.setSelectedIndex(VENTANA_HOME);
+    }//GEN-LAST:event_btnHome3MouseClicked
+
+    private void btnHome2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHome2MouseClicked
+        menu.setSelectedIndex(MENU_HOME);
+        jTabbedPane1.setSelectedIndex(VENTANA_HOME);
+    }//GEN-LAST:event_btnHome2MouseClicked
 
 
 
@@ -1028,7 +1106,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel btnProfesor;
     private javax.swing.JLabel btnRegistar;
     private javax.swing.JLabel btnSalir;
-    private javax.swing.JDesktopPane containerDerecho;
     private javax.swing.JLabel icnActualizar;
     private javax.swing.JLabel icnEliminar;
     private javax.swing.JLabel icnHome;
@@ -1037,6 +1114,9 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel icnHome3;
     private javax.swing.JLabel icnRegistar;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
+    private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -1045,6 +1125,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
+    private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JPanel lblSuperior;
     private javax.swing.JTabbedPane menu;
     private javax.swing.JPanel pnlActualizar;
