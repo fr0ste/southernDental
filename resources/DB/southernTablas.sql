@@ -61,7 +61,8 @@ apellido varchar(100),
 apellido2 varchar(100),
 semestre int,
 grupo int,
-id_catedratico_responsable int not null
+id_catedratico_responsable int not null,
+foreign key(id_catedratico_responsable) references catedraticos(id_catedraticos) 
 );
 
 
