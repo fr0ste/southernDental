@@ -62,10 +62,8 @@ public class Home extends javax.swing.JFrame {
         btnRegistar = new javax.swing.JLabel();
         icnRegistar = new javax.swing.JLabel();
         pnlActualizar = new javax.swing.JPanel();
-        btnActualizar = new javax.swing.JLabel();
         icnActualizar = new javax.swing.JLabel();
         pnlEliminar = new javax.swing.JPanel();
-        btnEliminar = new javax.swing.JLabel();
         icnEliminar = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         jPanel9 = new javax.swing.JPanel();
@@ -294,7 +292,8 @@ public class Home extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlHome1Layout.createSequentialGroup()
                 .addComponent(icnHome1, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnHome1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(btnHome1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(31, 31, 31))
         );
         pnlHome1Layout.setVerticalGroup(
             pnlHome1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -308,7 +307,7 @@ public class Home extends javax.swing.JFrame {
         btnRegistar.setFont(new java.awt.Font("Liberation Sans", 0, 12)); // NOI18N
         btnRegistar.setForeground(new java.awt.Color(255, 255, 255));
         btnRegistar.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        btnRegistar.setText("REGISTAR PACIENTE   ");
+        btnRegistar.setText("GESTIONAR ADMINSTRADORES");
         btnRegistar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnRegistar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -337,35 +336,20 @@ public class Home extends javax.swing.JFrame {
             pnlRegistarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlRegistarLayout.createSequentialGroup()
                 .addComponent(icnRegistar, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlRegistarLayout.createSequentialGroup()
                 .addComponent(btnRegistar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addGap(32, 32, 32))
         );
         pnlRegistarLayout.setVerticalGroup(
             pnlRegistarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlRegistarLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(pnlRegistarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnRegistar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(icnRegistar, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)))
+                .addComponent(btnRegistar, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(icnRegistar, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pnlActualizar.setBackground(new java.awt.Color(0, 0, 32));
-
-        btnActualizar.setBackground(new java.awt.Color(0, 0, 32));
-        btnActualizar.setFont(new java.awt.Font("Liberation Sans", 0, 12)); // NOI18N
-        btnActualizar.setForeground(new java.awt.Color(255, 255, 255));
-        btnActualizar.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        btnActualizar.setText("ACTUALIZAR PACIENTE   ");
-        btnActualizar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnActualizar.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnActualizarMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnActualizarMouseExited(evt);
-            }
-        });
 
         icnActualizar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         icnActualizar.setIcon(new javax.swing.ImageIcon("resources/images/actualizar.png")
@@ -385,32 +369,14 @@ public class Home extends javax.swing.JFrame {
             pnlActualizarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlActualizarLayout.createSequentialGroup()
                 .addComponent(icnActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(171, 171, 171))
         );
         pnlActualizarLayout.setVerticalGroup(
             pnlActualizarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(icnActualizar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
-            .addComponent(btnActualizar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pnlEliminar.setBackground(new java.awt.Color(0, 0, 32));
-
-        btnEliminar.setBackground(new java.awt.Color(0, 0, 32));
-        btnEliminar.setFont(new java.awt.Font("Liberation Sans", 0, 12)); // NOI18N
-        btnEliminar.setForeground(new java.awt.Color(255, 255, 255));
-        btnEliminar.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        btnEliminar.setText("ELIMINAR PACIENTE   ");
-        btnEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnEliminar.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnEliminarMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnEliminarMouseExited(evt);
-            }
-        });
 
         icnEliminar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         icnEliminar.setIcon(new javax.swing.ImageIcon("resources/images/borrar.png")
@@ -430,14 +396,11 @@ public class Home extends javax.swing.JFrame {
             pnlEliminarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlEliminarLayout.createSequentialGroup()
                 .addComponent(icnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnEliminar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnlEliminarLayout.setVerticalGroup(
             pnlEliminarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(icnEliminar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(btnEliminar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(icnEliminar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout pnlIzquierdoBaseLayout = new javax.swing.GroupLayout(pnlIzquierdoBase);
@@ -461,7 +424,7 @@ public class Home extends javax.swing.JFrame {
                 .addGap(102, 102, 102)
                 .addComponent(pnlHome1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pnlRegistar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pnlRegistar, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(pnlActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -724,7 +687,7 @@ public class Home extends javax.swing.JFrame {
         btnPacientes.setBackground(new java.awt.Color(0, 0, 32));
         btnPacientes.setForeground(new java.awt.Color(255, 255, 255));
         btnPacientes.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btnPacientes.setText("PACIENTES");
+        btnPacientes.setText("administradores");
         btnPacientes.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnPacientes.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -986,14 +949,6 @@ public class Home extends javax.swing.JFrame {
         pnlRegistar.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_icnRegistarMouseExited
 
-    private void btnActualizarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnActualizarMouseEntered
-        pnlActualizar.setBackground(Colors.MOUSE_ENTERED);
-    }//GEN-LAST:event_btnActualizarMouseEntered
-
-    private void btnActualizarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnActualizarMouseExited
-        pnlActualizar.setBackground(Colors.MOUSE_EXITED);
-    }//GEN-LAST:event_btnActualizarMouseExited
-
     private void icnActualizarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icnActualizarMouseEntered
         pnlActualizar.setBackground(Colors.MOUSE_ENTERED);
     }//GEN-LAST:event_icnActualizarMouseEntered
@@ -1001,14 +956,6 @@ public class Home extends javax.swing.JFrame {
     private void icnActualizarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icnActualizarMouseExited
         pnlActualizar.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_icnActualizarMouseExited
-
-    private void btnEliminarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEliminarMouseEntered
-        pnlEliminar.setBackground(Colors.MOUSE_ENTERED);
-    }//GEN-LAST:event_btnEliminarMouseEntered
-
-    private void btnEliminarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEliminarMouseExited
-        pnlEliminar.setBackground(Colors.MOUSE_EXITED);
-    }//GEN-LAST:event_btnEliminarMouseExited
 
     private void icnEliminarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icnEliminarMouseEntered
         pnlEliminar.setBackground(Colors.MOUSE_ENTERED);
@@ -1094,10 +1041,8 @@ public class Home extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel btnActualizar;
     private javax.swing.JLabel btnAlumnos;
     private javax.swing.JLabel btnCerrar1;
-    private javax.swing.JLabel btnEliminar;
     private javax.swing.JLabel btnHome;
     private javax.swing.JLabel btnHome1;
     private javax.swing.JLabel btnHome2;
