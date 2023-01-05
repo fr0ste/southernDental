@@ -89,5 +89,7 @@ apellido2 varchar(100),
 semestre int,
 grupo int,
 id_catedratico_responsable int not null,
-foreign key(id_catedratico_responsable) references catedraticos(id_catedratico)
+foreign key(id_catedratico_responsable) references catedraticos(id_catedratico),
+FOREIGN KEY(f_id_usuario) references usuarios(id_usuario),
+f_id_tutor int
 );
