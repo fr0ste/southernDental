@@ -72,7 +72,9 @@ id_catedratico int not null auto_increment primary key,
 nombre varchar(100),
 nombre2 varchar(100),
 apellido varchar(100),
-apellido2 varchar(100)
+apellido2 varchar(100),
+FOREIGN KEY(f_id_usuario) references usuarios(id_usuario),
+f_id_tutor int
 
 );
 
