@@ -73,7 +73,7 @@ nombre varchar(100),
 nombre2 varchar(100),
 apellido varchar(100),
 apellido2 varchar(100),
-f_id_tutor int not null,
+f_id_usuario int not null,
 FOREIGN KEY(f_id_usuario) references usuarios(id_usuario)
 
 );
@@ -90,6 +90,32 @@ semestre int,
 grupo int,
 f_id_catedratico_responsable int not null,
 f_id_usuario int not null,
-foreign key(id_catedratico_responsable) references catedraticos(id_catedratico),
+foreign key(f_id_catedratico_responsable) references catedraticos(id_catedratico),
 FOREIGN KEY(f_id_usuario) references usuarios(id_usuario)
+);
+
+
+-- ************************************* tablas para la cosulta *************************************
+
+-- datos de consulta
+
+create table consulta(
+id_consulta int not null auto_increment primary key,
+-- id_interrogatorio int,
+diagnostico text,
+pronostico text,
+tratamiento text,
+manejo_integral text,
+motivo_de_la_consulta text,
+fecha_de_consulta date,
+id_paciente int not null,
+id_personal_de_salud int not null, 
+id_clinica int not null,
+id_procedimiento_realizado int
+);
+
+create table procedimiento_tipo(
+id_procedimiento_tipo int not null auto_increment primary key,
+nombre varchar(100),
+descripcion text
 );
