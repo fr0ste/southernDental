@@ -18,8 +18,8 @@ CREATE TABLE usuarios
 nombre_usuario VARCHAR (20) NOT NULL,
 pass_usuario VARCHAR (15) NOT NULL,
 email_usuario varchar (100) not NULL,
-id_rol int NOT NULL,
-foreign key (id_rol) references roles_tipos_usuario(id_rol)
+f_id_rol int NOT NULL,
+foreign key (f_id_rol) references roles_tipos_usuario(id_rol)
 );
 
 
@@ -59,10 +59,10 @@ fecha_ingreso date,
 nacionalidad varchar(50),
 localidad varchar(100),
 e_mail varchar(100),
-f_id_usuario int,
+f_id_usuario int not null,
 FOREIGN KEY(f_id_usuario) references usuarios(id_usuario),
-f_id_tutor int,
-FOREIGN KEY(f_id_tutor) references tutot(id_tutor)
+f_id_tutor int not null,
+FOREIGN KEY(f_id_tutor) references tutor(id_tutor)
 );
 
 
@@ -73,8 +73,8 @@ nombre varchar(100),
 nombre2 varchar(100),
 apellido varchar(100),
 apellido2 varchar(100),
-FOREIGN KEY(f_id_usuario) references usuarios(id_usuario),
-f_id_tutor int
+f_id_tutor int not null,
+FOREIGN KEY(f_id_usuario) references usuarios(id_usuario)
 
 );
 
@@ -88,8 +88,8 @@ apellido varchar(100),
 apellido2 varchar(100),
 semestre int,
 grupo int,
-id_catedratico_responsable int not null,
+f_id_catedratico_responsable int not null,
+f_id_usuario int not null,
 foreign key(id_catedratico_responsable) references catedraticos(id_catedratico),
-FOREIGN KEY(f_id_usuario) references usuarios(id_usuario),
-f_id_tutor int
+FOREIGN KEY(f_id_usuario) references usuarios(id_usuario)
 );
