@@ -125,5 +125,11 @@ fecha_de_consulta date,
 f_id_paciente int not null,
 f_id_clinica int not null,
 f_id_alumno int not null,
-f_id_procedimiento_realizado int not null
+f_id_procedimiento_realizado int not null,
+FOREIGN KEY(f_id_paciente) references paciente(id_paciente),
+FOREIGN KEY(f_id_clinica) references clinica(id_clinica),
+FOREIGN KEY(f_id_alumno) references usuarios(id_usuario),
+FOREIGN KEY(f_id_procedimiento_realizado) references procedimiento_tipo(id_procedimiento_tipo)
 );
+
+
