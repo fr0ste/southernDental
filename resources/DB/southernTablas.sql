@@ -94,8 +94,22 @@ foreign key(f_id_catedratico_responsable) references catedraticos(id_catedratico
 FOREIGN KEY(f_id_usuario) references usuarios(id_usuario)
 );
 
+-- ************************************* tablas para los datos de la clinica ************************
+create table clinica(
+id_clinica int not null auto_increment primary key,
+nombre_clinica varchar(100),
+direccion varchar(100)
+
+);
+
 
 -- ************************************* tablas para la cosulta *************************************
+--
+create table procedimiento_tipo(
+id_procedimiento_tipo int not null auto_increment primary key,
+nombre varchar(100),
+descripcion text
+);
 
 -- datos de consulta
 
@@ -108,14 +122,8 @@ tratamiento text,
 manejo_integral text,
 motivo_de_la_consulta text,
 fecha_de_consulta date,
-id_paciente int not null,
-id_personal_de_salud int not null, 
-id_clinica int not null,
-id_procedimiento_realizado int
-);
-
-create table procedimiento_tipo(
-id_procedimiento_tipo int not null auto_increment primary key,
-nombre varchar(100),
-descripcion text
+f_id_paciente int not null,
+f_id_clinica int not null,
+f_id_alumno int not null,
+f_id_procedimiento_realizado int not null
 );
