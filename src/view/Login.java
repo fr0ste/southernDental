@@ -335,7 +335,7 @@ public class Login extends javax.swing.JFrame {
                     null, "usuario correcto");
             if (jComboBox1.getSelectedItem().toString().equals(
                     "administrador")) {
-                new Registro().setVisible(true);
+                new Home().setVisible(true);
                 this.setVisible(false);
                 
             }else if (jComboBox1.getSelectedItem().toString().equals(
