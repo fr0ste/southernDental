@@ -155,6 +155,12 @@ public class Home extends javax.swing.JFrame {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnProfesorMouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnProfesorMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnProfesorMouseExited(evt);
+            }
         });
 
         javax.swing.GroupLayout pnlProfesorLayout = new javax.swing.GroupLayout(pnlProfesor);
@@ -188,6 +194,12 @@ public class Home extends javax.swing.JFrame {
         btnAlumnos.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnAlumnosMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnAlumnosMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnAlumnosMouseExited(evt);
             }
         });
 
@@ -471,6 +483,22 @@ public class Home extends javax.swing.JFrame {
     private void btnPacientesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPacientesMouseExited
         pnlAdministrador.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_btnPacientesMouseExited
+
+    private void btnAlumnosMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAlumnosMouseEntered
+        pnlAlumnos.setBackground(Colors.MOUSE_ENTERED);
+    }//GEN-LAST:event_btnAlumnosMouseEntered
+
+    private void btnProfesorMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProfesorMouseEntered
+        pnlProfesor.setBackground(Colors.MOUSE_ENTERED);
+    }//GEN-LAST:event_btnProfesorMouseEntered
+
+    private void btnProfesorMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProfesorMouseExited
+        pnlProfesor.setBackground(Colors.MOUSE_EXITED);
+    }//GEN-LAST:event_btnProfesorMouseExited
+
+    private void btnAlumnosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAlumnosMouseExited
+        pnlAlumnos.setBackground(Colors.MOUSE_EXITED);
+    }//GEN-LAST:event_btnAlumnosMouseExited
 
 
 
