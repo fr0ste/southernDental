@@ -41,6 +41,13 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
         btnHome = new javax.swing.JLabel();
         icnHome = new javax.swing.JLabel();
         PnlDerecho = new javax.swing.JPanel();
+        txtCorreoElectronico = new javax.swing.JTextField();
+        lblNombreUsuario = new javax.swing.JLabel();
+        txtNombreUsuario = new javax.swing.JTextField();
+        lblNombreUsuario1 = new javax.swing.JLabel();
+        passUsuario = new javax.swing.JPasswordField();
+        jLabel1 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -192,15 +199,65 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
 
         PnlDerecho.setBackground(new java.awt.Color(255, 255, 255));
 
+        lblNombreUsuario.setForeground(new java.awt.Color(0, 0, 0));
+        lblNombreUsuario.setText("Nombre del Usuario");
+
+        lblNombreUsuario1.setForeground(new java.awt.Color(0, 0, 0));
+        lblNombreUsuario1.setText("Contraseña");
+
+        passUsuario.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        passUsuario.setText("jPasswordField1");
+        passUsuario.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                passUsuarioMouseClicked(evt);
+            }
+        });
+
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel1.setText("Correo electrónico");
+
+        jComboBox1.setBackground(new java.awt.Color(255, 255, 255));
+        jComboBox1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jComboBox1.setForeground(new java.awt.Color(0, 0, 0));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "administrador", "alumno", "paciente" }));
+        jComboBox1.setBorder(null);
+
         javax.swing.GroupLayout PnlDerechoLayout = new javax.swing.GroupLayout(PnlDerecho);
         PnlDerecho.setLayout(PnlDerechoLayout);
         PnlDerechoLayout.setHorizontalGroup(
             PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1040, Short.MAX_VALUE)
+            .addGroup(PnlDerechoLayout.createSequentialGroup()
+                .addGap(105, 105, 105)
+                .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblNombreUsuario)
+                    .addComponent(lblNombreUsuario1)
+                    .addComponent(jLabel1))
+                .addGap(18, 18, 18)
+                .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(txtNombreUsuario, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(passUsuario, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(txtCorreoElectronico, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(657, Short.MAX_VALUE))
         );
         PnlDerechoLayout.setVerticalGroup(
             PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 690, Short.MAX_VALUE)
+            .addGroup(PnlDerechoLayout.createSequentialGroup()
+                .addGap(46, 46, 46)
+                .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblNombreUsuario)
+                    .addComponent(txtNombreUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(passUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblNombreUsuario1))
+                .addGap(18, 18, 18)
+                .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(txtCorreoElectronico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(52, 52, 52)
+                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(465, Short.MAX_VALUE))
         );
 
         mainContainer.add(PnlDerecho, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 30, 1040, 690));
@@ -258,6 +315,10 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
         pnlHome.setBackground(Colors.MOUSE_ENTERED);
     }//GEN-LAST:event_pnlHomeMouseEntered
 
+    private void passUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_passUsuarioMouseClicked
+        passUsuario.setText("");
+    }//GEN-LAST:event_passUsuarioMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -301,10 +362,17 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
     private javax.swing.JLabel btnHome;
     private javax.swing.JLabel btnSalir;
     private javax.swing.JLabel icnHome;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel lblNombreUsuario;
+    private javax.swing.JLabel lblNombreUsuario1;
     private javax.swing.JPanel lblSuperior;
     private javax.swing.JPanel mainContainer;
+    private javax.swing.JPasswordField passUsuario;
     private javax.swing.JPanel pnlHome;
     private javax.swing.JPanel pnlIzquierdo;
     private javax.swing.JPanel pnlSuperior1;
+    private javax.swing.JTextField txtCorreoElectronico;
+    private javax.swing.JTextField txtNombreUsuario;
     // End of variables declaration//GEN-END:variables
 }
