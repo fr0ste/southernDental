@@ -1,11 +1,10 @@
- /**
-  * Autor: Joel && Elio
-  * Fecha de creación: 26 de noviembre del 2022
-  * Fecha de modificación: 01 de diciembre del 2022
-  * Descripción: Ventana donde el administrador podra seleccionar 
-  *              alumno, paciente o profesor para administrar su información
-  */
-
+/**
+ * Autor: Joel && Elio
+ * Fecha de creación: 26 de noviembre del 2022
+ * Fecha de modificación: 01 de diciembre del 2022
+ * Descripción: Ventana donde el administrador podra seleccionar
+ *              alumno, paciente o profesor para administrar su información
+ */
 package view.admin;
 
 import utilities.Colors;
@@ -18,21 +17,20 @@ public class Home extends javax.swing.JFrame {
     private int xMouse, yMouse;
     private final int MENU_HOME = 0;
     private final int MENU_PACIENTES = 1;
-    private final int MENU_ALUMNOS =2;
-    private final int MENU_PROFESORES =3;
+    private final int MENU_ALUMNOS = 2;
+    private final int MENU_PROFESORES = 3;
     private final int VENTANA_HOME = 0;
-    private final int VENTANA_PACIENTE = 1;    
-    private final int VENTANA_ALUMNO=2;    
-    private final int VENTANA_PROFESOR=3;
-
-
+    private final int VENTANA_PACIENTE = 1;
+    private final int VENTANA_ALUMNO = 2;
+    private final int VENTANA_PROFESOR = 3;
+    
 
     public Home() {
         initComponents();
         setLocationRelativeTo(null);
 
     }
-    
+
     public static void main(String[] args) {
         new Home().setVisible(true);
     }
@@ -339,100 +337,101 @@ public class Home extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    
+
     /**
-     * 
+     *
      * otorga y gestiona el evento de mouse pressed para la barra superior.
-     * 
+     *
      */
     private void lblSuperiorMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblSuperiorMousePressed
         xMouse = evt.getX();
         yMouse = evt.getY();
     }//GEN-LAST:event_lblSuperiorMousePressed
-    
+
     /**
-     * 
+     *
      * otorga y gestiona el evento de mouse dragged para la barra superior.
-     * 
+     *
      */
     private void lblSuperiorMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblSuperiorMouseDragged
         int x = evt.getXOnScreen();
         int y = evt.getYOnScreen();
         this.setLocation(x - xMouse, y - yMouse);
     }//GEN-LAST:event_lblSuperiorMouseDragged
-    
+
     /**
-     * 
+     *
      * otorga y gestiona el evento de mouse clicked para el botón de salir.
-     * 
+     *
      */
     private void btnSalirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalirMouseClicked
         System.exit(0);
     }//GEN-LAST:event_btnSalirMouseClicked
-    
-   
+
     /**
-     * 
+     *
      * otorga y gestiona el evento de mouse entered para el panel que contiene
      * el botón de pacientes.
-     * 
+     *
      */
     private void pnlAdministradorMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlAdministradorMouseEntered
         pnlAdministrador.setBackground(Colors.MOUSE_ENTERED);
     }//GEN-LAST:event_pnlAdministradorMouseEntered
-    
+
     /**
-     * 
-     * otorga y gestiona el evento de mouse exited para el panel que contiene
-     * el botón de pacientes.
-     * 
+     *
+     * otorga y gestiona el evento de mouse exited para el panel que contiene el
+     * botón de pacientes.
+     *
      */
     private void pnlAdministradorMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlAdministradorMouseExited
         pnlAdministrador.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_pnlAdministradorMouseExited
-    
+
     /**
-     * 
+     *
      * otorga y gestiona el evento de mouse entered para el panel que contiene
      * el botón de alumnos.
-     * 
+     *
      */
     private void pnlAlumnosMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlAlumnosMouseEntered
         pnlAlumnos.setBackground(Colors.MOUSE_ENTERED);
     }//GEN-LAST:event_pnlAlumnosMouseEntered
-    
+
     /**
-     * 
-     * otorga y gestiona el evento de mouse exited para el panel que contiene
-     * el botón de alumnos.
-     * 
+     *
+     * otorga y gestiona el evento de mouse exited para el panel que contiene el
+     * botón de alumnos.
+     *
      */
     private void pnlAlumnosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlAlumnosMouseExited
         pnlAlumnos.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_pnlAlumnosMouseExited
-    
+
     /**
-     * 
+     *
      * otorga y gestiona el evento de mouse entered para el panel que contiene
      * el botón de profesor.
-     * 
+     *
      */
     private void pnlProfesorMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlProfesorMouseEntered
         pnlProfesor.setBackground(Colors.MOUSE_ENTERED);
     }//GEN-LAST:event_pnlProfesorMouseEntered
-    
+
     /**
-     * 
-     * otorga y gestiona el evento de mouse exited para el panel que contiene
-     * el botón de profesor.
-     * 
+     *
+     * otorga y gestiona el evento de mouse exited para el panel que contiene el
+     * botón de profesor.
+     *
      */
     private void pnlProfesorMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlProfesorMouseExited
         pnlProfesor.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_pnlProfesorMouseExited
-    
+
     private void btnPacientesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPacientesMouseClicked
-        
+        FrmAdminGestionarAdmin VentanaAdmin = new FrmAdminGestionarAdmin();
+        VentanaAdmin.setVisible(true);
+        this.setVisible(false);
 //       jTabbedPane1.setSelectedIndex(VENTANA_PACIENTE);
 //        menu.setSelectedIndex(MENU_PACIENTES);
     }//GEN-LAST:event_btnPacientesMouseClicked
@@ -499,7 +498,6 @@ public class Home extends javax.swing.JFrame {
     private void btnAlumnosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAlumnosMouseExited
         pnlAlumnos.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_btnAlumnosMouseExited
-
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -46,13 +46,13 @@ public class FrmAdminRegistarAlumno extends javax.swing.JFrame {
         estadoCivil = new javax.swing.JLabel();
         ocupacion = new javax.swing.JLabel();
         apellidoMaterno = new javax.swing.JLabel();
-        txtEstadoCivil = new javax.swing.JTextField();
-        txtOcupacion = new javax.swing.JTextField();
+        txtidCatedratico = new javax.swing.JTextField();
+        txtSemestre = new javax.swing.JTextField();
         apellidoPaterno = new javax.swing.JLabel();
         txtApellidoPaterno = new javax.swing.JTextField();
         txtApellidoMaterno = new javax.swing.JTextField();
-        estadoCivil1 = new javax.swing.JLabel();
-        txtEstadoCivil1 = new javax.swing.JTextField();
+        Catedratico = new javax.swing.JLabel();
+        txtGrupo = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -151,11 +151,11 @@ public class FrmAdminRegistarAlumno extends javax.swing.JFrame {
         btnHome.setText("HOME");
         btnHome.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnHome.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnHomeMouseExited(evt);
-            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnHomeMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnHomeMouseExited(evt);
             }
         });
 
@@ -222,15 +222,15 @@ public class FrmAdminRegistarAlumno extends javax.swing.JFrame {
         apellidoMaterno.setForeground(new java.awt.Color(0, 0, 0));
         apellidoMaterno.setText("Apellido Materno:");
 
-        txtEstadoCivil.addActionListener(new java.awt.event.ActionListener() {
+        txtidCatedratico.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtEstadoCivilActionPerformed(evt);
+                txtidCatedraticoActionPerformed(evt);
             }
         });
 
-        txtOcupacion.addActionListener(new java.awt.event.ActionListener() {
+        txtSemestre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtOcupacionActionPerformed(evt);
+                txtSemestreActionPerformed(evt);
             }
         });
 
@@ -249,12 +249,12 @@ public class FrmAdminRegistarAlumno extends javax.swing.JFrame {
             }
         });
 
-        estadoCivil1.setForeground(new java.awt.Color(0, 0, 0));
-        estadoCivil1.setText("Id Catedratico Responsable:");
+        Catedratico.setForeground(new java.awt.Color(0, 0, 0));
+        Catedratico.setText("Id Catedratico Responsable:");
 
-        txtEstadoCivil1.addActionListener(new java.awt.event.ActionListener() {
+        txtGrupo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtEstadoCivil1ActionPerformed(evt);
+                txtGrupoActionPerformed(evt);
             }
         });
 
@@ -265,7 +265,7 @@ public class FrmAdminRegistarAlumno extends javax.swing.JFrame {
             .addGroup(PnlDerechoLayout.createSequentialGroup()
                 .addGap(111, 111, 111)
                 .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(estadoCivil1)
+                    .addComponent(Catedratico)
                     .addComponent(estadoCivil)
                     .addComponent(ocupacion)
                     .addComponent(apellidoMaterno)
@@ -276,9 +276,9 @@ public class FrmAdminRegistarAlumno extends javax.swing.JFrame {
                     .addComponent(txtNombres, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtApellidoPaterno, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtApellidoMaterno, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtOcupacion, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtEstadoCivil, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtEstadoCivil1, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtSemestre, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtidCatedratico, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtGrupo, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(411, Short.MAX_VALUE))
         );
         PnlDerechoLayout.setVerticalGroup(
@@ -299,15 +299,15 @@ public class FrmAdminRegistarAlumno extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ocupacion)
-                    .addComponent(txtOcupacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtSemestre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(estadoCivil)
-                    .addComponent(txtEstadoCivil1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtGrupo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(estadoCivil1)
-                    .addComponent(txtEstadoCivil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Catedratico)
+                    .addComponent(txtidCatedratico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(399, Short.MAX_VALUE))
         );
 
@@ -370,13 +370,13 @@ public class FrmAdminRegistarAlumno extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNombresActionPerformed
 
-    private void txtEstadoCivilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEstadoCivilActionPerformed
+    private void txtidCatedraticoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtidCatedraticoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtEstadoCivilActionPerformed
+    }//GEN-LAST:event_txtidCatedraticoActionPerformed
 
-    private void txtOcupacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtOcupacionActionPerformed
+    private void txtSemestreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSemestreActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtOcupacionActionPerformed
+    }//GEN-LAST:event_txtSemestreActionPerformed
 
     private void txtApellidoPaternoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoPaternoActionPerformed
         // TODO add your handling code here:
@@ -386,9 +386,9 @@ public class FrmAdminRegistarAlumno extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtApellidoMaternoActionPerformed
 
-    private void txtEstadoCivil1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEstadoCivil1ActionPerformed
+    private void txtGrupoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtGrupoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtEstadoCivil1ActionPerformed
+    }//GEN-LAST:event_txtGrupoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -427,6 +427,7 @@ public class FrmAdminRegistarAlumno extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Catedratico;
     private javax.swing.JPanel PnlDerecho;
     private javax.swing.JPanel PnlIzquierdo;
     private javax.swing.JLabel apellidoMaterno;
@@ -435,7 +436,6 @@ public class FrmAdminRegistarAlumno extends javax.swing.JFrame {
     private javax.swing.JLabel btnHome;
     private javax.swing.JLabel btnSalir;
     private javax.swing.JLabel estadoCivil;
-    private javax.swing.JLabel estadoCivil1;
     private javax.swing.JLabel icnHome;
     private javax.swing.JPanel lblSuperior;
     private javax.swing.JPanel mainContainer;
@@ -446,9 +446,9 @@ public class FrmAdminRegistarAlumno extends javax.swing.JFrame {
     private javax.swing.JPanel pnlSuperior1;
     private javax.swing.JTextField txtApellidoMaterno;
     private javax.swing.JTextField txtApellidoPaterno;
-    private javax.swing.JTextField txtEstadoCivil;
-    private javax.swing.JTextField txtEstadoCivil1;
+    private javax.swing.JTextField txtGrupo;
     private javax.swing.JTextField txtNombres;
-    private javax.swing.JTextField txtOcupacion;
+    private javax.swing.JTextField txtSemestre;
+    private javax.swing.JTextField txtidCatedratico;
     // End of variables declaration//GEN-END:variables
 }

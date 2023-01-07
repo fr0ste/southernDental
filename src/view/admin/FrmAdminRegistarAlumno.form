@@ -243,8 +243,8 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnHomeMouseExited"/>
                     <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnHomeMouseEntered"/>
+                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnHomeMouseExited"/>
                   </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="icnHome">
@@ -281,7 +281,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="estadoCivil1" min="-2" max="-2" attributes="0"/>
+                          <Component id="Catedratico" min="-2" max="-2" attributes="0"/>
                           <Component id="estadoCivil" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="ocupacion" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="apellidoMaterno" alignment="1" min="-2" max="-2" attributes="0"/>
@@ -293,9 +293,9 @@
                           <Component id="txtNombres" alignment="0" min="-2" pref="316" max="-2" attributes="0"/>
                           <Component id="txtApellidoPaterno" alignment="0" min="-2" pref="316" max="-2" attributes="0"/>
                           <Component id="txtApellidoMaterno" alignment="0" min="-2" pref="316" max="-2" attributes="0"/>
-                          <Component id="txtOcupacion" alignment="0" min="-2" pref="316" max="-2" attributes="0"/>
-                          <Component id="txtEstadoCivil" alignment="0" min="-2" pref="316" max="-2" attributes="0"/>
-                          <Component id="txtEstadoCivil1" min="-2" pref="316" max="-2" attributes="0"/>
+                          <Component id="txtSemestre" alignment="0" min="-2" pref="316" max="-2" attributes="0"/>
+                          <Component id="txtidCatedratico" alignment="0" min="-2" pref="316" max="-2" attributes="0"/>
+                          <Component id="txtGrupo" min="-2" pref="316" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="411" max="32767" attributes="0"/>
                   </Group>
@@ -322,17 +322,17 @@
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="ocupacion" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtOcupacion" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtSemestre" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="estadoCivil" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtEstadoCivil1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtGrupo" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="estadoCivil1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtEstadoCivil" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Catedratico" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtidCatedratico" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="399" max="32767" attributes="0"/>
                   </Group>
@@ -377,14 +377,14 @@
                 <Property name="text" type="java.lang.String" value="Apellido Materno:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtEstadoCivil">
+            <Component class="javax.swing.JTextField" name="txtidCatedratico">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtEstadoCivilActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtidCatedraticoActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtOcupacion">
+            <Component class="javax.swing.JTextField" name="txtSemestre">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtOcupacionActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtSemestreActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="apellidoPaterno">
@@ -405,7 +405,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtApellidoMaternoActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="estadoCivil1">
+            <Component class="javax.swing.JLabel" name="Catedratico">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="0" green="0" red="0" type="rgb"/>
@@ -413,9 +413,9 @@
                 <Property name="text" type="java.lang.String" value="Id Catedratico Responsable:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtEstadoCivil1">
+            <Component class="javax.swing.JTextField" name="txtGrupo">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtEstadoCivil1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtGrupoActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>

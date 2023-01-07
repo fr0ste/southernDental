@@ -4,6 +4,8 @@
  */
 package view.admin;
 
+import controller.UsuarioController;
+import entity.Usuario;
 import view.base.*;
 import utilities.Colors;
 
@@ -359,16 +361,16 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
     }//GEN-LAST:event_passUsuarioMouseClicked
 
     private void lblGuardarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblGuardarMouseClicked
-//        Usuario usuario = new Usuario();
-//        UsuarioController uController = new UsuarioController();
-//        usuario.setNombreUsuario(this.txtNombreUsuario.getText());
-//        usuario.setPassUsuario(String.valueOf(
-//            this.passUsuario.getPassword()));
-//    usuario.setEmail(this.txtCorreoElectronico.getText());
-//    usuario.setRol(this.jComboBox1.getSelectedItem().toString());
-//    uController.insertarUsuario(usuario);
-//    txtNombreUsuario.setText("");
-//    txtCorreoElectronico.setText("");
+        Usuario usuario = new Usuario();
+        UsuarioController uController = new UsuarioController();
+        usuario.setNombreUsuario(this.txtNombreUsuario.getText());
+        usuario.setPassUsuario(String.valueOf(
+                this.passUsuario.getPassword()));
+        usuario.setEmail(this.txtCorreoElectronico.getText());
+        usuario.setRol(this.jComboBox1.getSelectedItem().toString());
+        uController.insertarUsuario(usuario);
+        txtNombreUsuario.setText("");
+        txtCorreoElectronico.setText("");
 
     }//GEN-LAST:event_lblGuardarMouseClicked
 

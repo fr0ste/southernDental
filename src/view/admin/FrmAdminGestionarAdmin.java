@@ -4,6 +4,9 @@
  */
 package view.admin;
 
+import controller.UsuarioController;
+import entity.Usuario;
+import javax.swing.table.DefaultTableModel;
 import view.base.*;
 import utilities.Colors;
 
@@ -17,9 +20,15 @@ public class FrmAdminGestionarAdmin extends javax.swing.JFrame {
      * variables
      */
     private int xMouse, yMouse;
+    private DefaultTableModel modeloTabla;
+
     public FrmAdminGestionarAdmin() {
         initComponents();
         setLocationRelativeTo(null);
+        UsuarioController usuarioController = new UsuarioController();
+        modeloTabla = (DefaultTableModel) tablaRol.getModel();
+        usuarioController.mostrarRegistros(modeloTabla);
+
     }
 
     /**
@@ -42,6 +51,14 @@ public class FrmAdminGestionarAdmin extends javax.swing.JFrame {
         btnHome = new javax.swing.JLabel();
         icnHome = new javax.swing.JLabel();
         PnlDerecho = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tablaRol = new javax.swing.JTable();
+        pnlEliminar1 = new javax.swing.JPanel();
+        lblEliminar1 = new javax.swing.JLabel();
+        pnlEliminar = new javax.swing.JPanel();
+        lblEliminar = new javax.swing.JLabel();
+        pnlActualizar = new javax.swing.JPanel();
+        lblActualizar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -126,11 +143,11 @@ public class FrmAdminGestionarAdmin extends javax.swing.JFrame {
 
         pnlHome.setBackground(new java.awt.Color(0, 0, 32));
         pnlHome.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                pnlHomeMouseExited(evt);
-            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 pnlHomeMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                pnlHomeMouseExited(evt);
             }
         });
 
@@ -140,11 +157,11 @@ public class FrmAdminGestionarAdmin extends javax.swing.JFrame {
         btnHome.setText("HOME");
         btnHome.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnHome.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnHomeMouseExited(evt);
-            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnHomeMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnHomeMouseExited(evt);
             }
         });
 
@@ -152,11 +169,11 @@ public class FrmAdminGestionarAdmin extends javax.swing.JFrame {
         icnHome.setIcon(new javax.swing.ImageIcon("resources/images/iconoHome.png")
         );
         icnHome.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                icnHomeMouseExited(evt);
-            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 icnHomeMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                icnHomeMouseExited(evt);
             }
         });
 
@@ -193,15 +210,152 @@ public class FrmAdminGestionarAdmin extends javax.swing.JFrame {
 
         PnlDerecho.setBackground(new java.awt.Color(255, 255, 255));
 
+        tablaRol.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "id", "Usuario", "Email", "Rol"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        tablaRol.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tablaRolMouseClicked(evt);
+            }
+        });
+        jScrollPane1.setViewportView(tablaRol);
+
+        pnlEliminar1.setBackground(new java.awt.Color(0, 0, 32));
+        pnlEliminar1.setForeground(new java.awt.Color(255, 255, 255));
+
+        lblEliminar1.setForeground(new java.awt.Color(255, 255, 255));
+        lblEliminar1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblEliminar1.setText("Agregar Usuario");
+        lblEliminar1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblEliminar1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lblEliminar1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                lblEliminar1MouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnlEliminar1Layout = new javax.swing.GroupLayout(pnlEliminar1);
+        pnlEliminar1.setLayout(pnlEliminar1Layout);
+        pnlEliminar1Layout.setHorizontalGroup(
+            pnlEliminar1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlEliminar1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblEliminar1, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        pnlEliminar1Layout.setVerticalGroup(
+            pnlEliminar1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblEliminar1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        pnlEliminar.setBackground(new java.awt.Color(0, 0, 32));
+        pnlEliminar.setForeground(new java.awt.Color(255, 255, 255));
+
+        lblEliminar.setForeground(new java.awt.Color(255, 255, 255));
+        lblEliminar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblEliminar.setText("Eliminar");
+        lblEliminar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblEliminarMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lblEliminarMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                lblEliminarMouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnlEliminarLayout = new javax.swing.GroupLayout(pnlEliminar);
+        pnlEliminar.setLayout(pnlEliminarLayout);
+        pnlEliminarLayout.setHorizontalGroup(
+            pnlEliminarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        pnlEliminarLayout.setVerticalGroup(
+            pnlEliminarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        pnlActualizar.setBackground(new java.awt.Color(0, 0, 32));
+        pnlActualizar.setForeground(new java.awt.Color(255, 255, 255));
+
+        lblActualizar.setForeground(new java.awt.Color(255, 255, 255));
+        lblActualizar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblActualizar.setText("Actualizar");
+        lblActualizar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblActualizarMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lblActualizarMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                lblActualizarMouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnlActualizarLayout = new javax.swing.GroupLayout(pnlActualizar);
+        pnlActualizar.setLayout(pnlActualizarLayout);
+        pnlActualizarLayout.setHorizontalGroup(
+            pnlActualizarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        pnlActualizarLayout.setVerticalGroup(
+            pnlActualizarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
         javax.swing.GroupLayout PnlDerechoLayout = new javax.swing.GroupLayout(PnlDerecho);
         PnlDerecho.setLayout(PnlDerechoLayout);
         PnlDerechoLayout.setHorizontalGroup(
             PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1040, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PnlDerechoLayout.createSequentialGroup()
+                .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(PnlDerechoLayout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(pnlEliminar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(PnlDerechoLayout.createSequentialGroup()
+                        .addGap(106, 106, 106)
+                        .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(pnlActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(pnlEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(82, 82, 82)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 650, Short.MAX_VALUE)))
+                .addGap(95, 95, 95))
         );
         PnlDerechoLayout.setVerticalGroup(
             PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 690, Short.MAX_VALUE)
+            .addGroup(PnlDerechoLayout.createSequentialGroup()
+                .addGap(102, 102, 102)
+                .addComponent(pnlEliminar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PnlDerechoLayout.createSequentialGroup()
+                        .addComponent(pnlActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(pnlEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(272, Short.MAX_VALUE))
         );
 
         mainContainer.add(PnlDerecho, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 30, 1040, 690));
@@ -259,6 +413,68 @@ public class FrmAdminGestionarAdmin extends javax.swing.JFrame {
         pnlHome.setBackground(Colors.MOUSE_ENTERED);
     }//GEN-LAST:event_pnlHomeMouseEntered
 
+    private void tablaRolMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tablaRolMouseClicked
+
+    }//GEN-LAST:event_tablaRolMouseClicked
+
+    private void lblEliminarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEliminarMouseClicked
+        UsuarioController uController = new UsuarioController();
+        Usuario usuario = new Usuario();
+        usuario.setIdUsuario(Integer.parseInt(tablaRol.getValueAt(
+                tablaRol.getSelectedRow(), 0).toString()));
+        uController.eliminarUsuario(usuario);
+        UsuarioController usuarioController = new UsuarioController();
+        modeloTabla = (DefaultTableModel) tablaRol.getModel();
+        usuarioController.mostrarRegistros(modeloTabla);
+
+    }//GEN-LAST:event_lblEliminarMouseClicked
+
+    private void lblEliminarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEliminarMouseEntered
+        pnlEliminar.setBackground(Colors.MOUSE_ENTERED);
+    }//GEN-LAST:event_lblEliminarMouseEntered
+
+    private void lblEliminarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEliminarMouseExited
+        pnlEliminar.setBackground(Colors.MOUSE_EXITED);
+    }//GEN-LAST:event_lblEliminarMouseExited
+
+    private void lblActualizarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblActualizarMouseClicked
+//        Usuario usuario = new Usuario();
+//        UsuarioController uController = new UsuarioController();
+//        usuario.setIdUsuario(Integer.parseInt(tablaRol.getValueAt(
+//                tablaRol.getSelectedRow(), 0).toString()));
+//        usuario.setNombreUsuario(this.txtNombreUsuario.getText());
+//        usuario.setEmail(this.txtCorreoElectronico.getText());
+//        uController.actualizarUsuario(usuario);
+//        txtNombreUsuario.setText("");
+//        txtCorreoElectronico.setText("");
+//        UsuarioController usuarioController = new UsuarioController();
+//        modeloTabla = (DefaultTableModel) tablaRol.getModel();
+//        usuarioController.mostrarRegistros(modeloTabla);
+
+    }//GEN-LAST:event_lblActualizarMouseClicked
+
+    private void lblActualizarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblActualizarMouseEntered
+        pnlActualizar.setBackground(Colors.MOUSE_ENTERED);
+    }//GEN-LAST:event_lblActualizarMouseEntered
+
+    private void lblActualizarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblActualizarMouseExited
+        pnlActualizar.setBackground(Colors.MOUSE_EXITED);
+    }//GEN-LAST:event_lblActualizarMouseExited
+
+    private void lblEliminar1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEliminar1MouseClicked
+        FrmAdminRegistrarAdmin VentanaRegistroAdmin = new FrmAdminRegistrarAdmin();
+        VentanaRegistroAdmin.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_lblEliminar1MouseClicked
+
+    private void lblEliminar1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEliminar1MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblEliminar1MouseEntered
+
+    private void lblEliminar1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEliminar1MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblEliminar1MouseExited
+
     /**
      * @param args the command line arguments
      */
@@ -304,10 +520,18 @@ public class FrmAdminGestionarAdmin extends javax.swing.JFrame {
     private javax.swing.JLabel btnHome;
     private javax.swing.JLabel btnSalir;
     private javax.swing.JLabel icnHome;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblActualizar;
+    private javax.swing.JLabel lblEliminar;
+    private javax.swing.JLabel lblEliminar1;
     private javax.swing.JPanel lblSuperior;
     private javax.swing.JPanel mainContainer;
+    private javax.swing.JPanel pnlActualizar;
+    private javax.swing.JPanel pnlEliminar;
+    private javax.swing.JPanel pnlEliminar1;
     private javax.swing.JPanel pnlHome;
     private javax.swing.JPanel pnlIzquierdo;
     private javax.swing.JPanel pnlSuperior1;
+    private javax.swing.JTable tablaRol;
     // End of variables declaration//GEN-END:variables
 }
