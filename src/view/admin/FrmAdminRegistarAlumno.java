@@ -41,6 +41,18 @@ public class FrmAdminRegistarAlumno extends javax.swing.JFrame {
         btnHome = new javax.swing.JLabel();
         icnHome = new javax.swing.JLabel();
         PnlDerecho = new javax.swing.JPanel();
+        nombres = new javax.swing.JLabel();
+        txtNombres = new javax.swing.JTextField();
+        estadoCivil = new javax.swing.JLabel();
+        ocupacion = new javax.swing.JLabel();
+        apellidoMaterno = new javax.swing.JLabel();
+        txtEstadoCivil = new javax.swing.JTextField();
+        txtOcupacion = new javax.swing.JTextField();
+        apellidoPaterno = new javax.swing.JLabel();
+        txtApellidoPaterno = new javax.swing.JTextField();
+        txtApellidoMaterno = new javax.swing.JTextField();
+        estadoCivil1 = new javax.swing.JLabel();
+        txtEstadoCivil1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -185,22 +197,118 @@ public class FrmAdminRegistarAlumno extends javax.swing.JFrame {
             .addGroup(PnlIzquierdoLayout.createSequentialGroup()
                 .addGap(108, 108, 108)
                 .addComponent(pnlHome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(523, Short.MAX_VALUE))
+                .addContainerGap(543, Short.MAX_VALUE))
         );
 
-        mainContainer.add(PnlIzquierdo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, -1, 670));
+        mainContainer.add(PnlIzquierdo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, -1, 690));
 
         PnlDerecho.setBackground(new java.awt.Color(255, 255, 255));
+
+        nombres.setForeground(new java.awt.Color(0, 0, 0));
+        nombres.setText("Nombres:");
+
+        txtNombres.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNombresActionPerformed(evt);
+            }
+        });
+
+        estadoCivil.setForeground(new java.awt.Color(0, 0, 0));
+        estadoCivil.setText("Grupo:");
+
+        ocupacion.setForeground(new java.awt.Color(0, 0, 0));
+        ocupacion.setText("Semestre:");
+
+        apellidoMaterno.setForeground(new java.awt.Color(0, 0, 0));
+        apellidoMaterno.setText("Apellido Materno:");
+
+        txtEstadoCivil.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtEstadoCivilActionPerformed(evt);
+            }
+        });
+
+        txtOcupacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtOcupacionActionPerformed(evt);
+            }
+        });
+
+        apellidoPaterno.setForeground(new java.awt.Color(0, 0, 0));
+        apellidoPaterno.setText("Apellido Paterno:");
+
+        txtApellidoPaterno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtApellidoPaternoActionPerformed(evt);
+            }
+        });
+
+        txtApellidoMaterno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtApellidoMaternoActionPerformed(evt);
+            }
+        });
+
+        estadoCivil1.setForeground(new java.awt.Color(0, 0, 0));
+        estadoCivil1.setText("Id Catedratico Responsable:");
+
+        txtEstadoCivil1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtEstadoCivil1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout PnlDerechoLayout = new javax.swing.GroupLayout(PnlDerecho);
         PnlDerecho.setLayout(PnlDerechoLayout);
         PnlDerechoLayout.setHorizontalGroup(
             PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1040, Short.MAX_VALUE)
+            .addGroup(PnlDerechoLayout.createSequentialGroup()
+                .addGap(111, 111, 111)
+                .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(estadoCivil1)
+                    .addComponent(estadoCivil)
+                    .addComponent(ocupacion)
+                    .addComponent(apellidoMaterno)
+                    .addComponent(apellidoPaterno)
+                    .addComponent(nombres))
+                .addGap(18, 18, 18)
+                .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtNombres, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtApellidoPaterno, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtApellidoMaterno, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtOcupacion, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtEstadoCivil, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtEstadoCivil1, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(411, Short.MAX_VALUE))
         );
         PnlDerechoLayout.setVerticalGroup(
             PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 690, Short.MAX_VALUE)
+            .addGroup(PnlDerechoLayout.createSequentialGroup()
+                .addGap(57, 57, 57)
+                .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(nombres)
+                    .addComponent(txtNombres, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(apellidoPaterno)
+                    .addComponent(txtApellidoPaterno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(apellidoMaterno)
+                    .addComponent(txtApellidoMaterno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ocupacion)
+                    .addComponent(txtOcupacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(estadoCivil)
+                    .addComponent(txtEstadoCivil1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(estadoCivil1)
+                    .addComponent(txtEstadoCivil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(399, Short.MAX_VALUE))
         );
 
         mainContainer.add(PnlDerecho, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 30, 1040, 690));
@@ -258,6 +366,30 @@ public class FrmAdminRegistarAlumno extends javax.swing.JFrame {
         pnlHome.setBackground(Colors.MOUSE_ENTERED);
     }//GEN-LAST:event_pnlHomeMouseEntered
 
+    private void txtNombresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombresActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNombresActionPerformed
+
+    private void txtEstadoCivilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEstadoCivilActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtEstadoCivilActionPerformed
+
+    private void txtOcupacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtOcupacionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtOcupacionActionPerformed
+
+    private void txtApellidoPaternoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoPaternoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtApellidoPaternoActionPerformed
+
+    private void txtApellidoMaternoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoMaternoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtApellidoMaternoActionPerformed
+
+    private void txtEstadoCivil1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEstadoCivil1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtEstadoCivil1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -297,14 +429,26 @@ public class FrmAdminRegistarAlumno extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel PnlDerecho;
     private javax.swing.JPanel PnlIzquierdo;
+    private javax.swing.JLabel apellidoMaterno;
+    private javax.swing.JLabel apellidoPaterno;
     private javax.swing.JLabel btnCerrar1;
     private javax.swing.JLabel btnHome;
     private javax.swing.JLabel btnSalir;
+    private javax.swing.JLabel estadoCivil;
+    private javax.swing.JLabel estadoCivil1;
     private javax.swing.JLabel icnHome;
     private javax.swing.JPanel lblSuperior;
     private javax.swing.JPanel mainContainer;
+    private javax.swing.JLabel nombres;
+    private javax.swing.JLabel ocupacion;
     private javax.swing.JPanel pnlHome;
     private javax.swing.JPanel pnlIzquierdo;
     private javax.swing.JPanel pnlSuperior1;
+    private javax.swing.JTextField txtApellidoMaterno;
+    private javax.swing.JTextField txtApellidoPaterno;
+    private javax.swing.JTextField txtEstadoCivil;
+    private javax.swing.JTextField txtEstadoCivil1;
+    private javax.swing.JTextField txtNombres;
+    private javax.swing.JTextField txtOcupacion;
     // End of variables declaration//GEN-END:variables
 }
