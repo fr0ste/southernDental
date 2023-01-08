@@ -37,7 +37,7 @@ public class FrmAlumnoHome extends javax.swing.JFrame {
         icnHome = new javax.swing.JLabel();
         btnHome = new javax.swing.JLabel();
         PnlDerecho = new javax.swing.JPanel();
-        jPanel1 = new javax.swing.JPanel();
+        pnlDatosDeUsuario = new javax.swing.JPanel();
         lblMensajeBienvenida = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -194,16 +194,16 @@ public class FrmAlumnoHome extends javax.swing.JFrame {
 
         PnlDerecho.setBackground(new java.awt.Color(255, 255, 255));
 
-        jPanel1.setBackground(new java.awt.Color(204, 204, 204));
+        pnlDatosDeUsuario.setBackground(new java.awt.Color(204, 204, 204));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout pnlDatosDeUsuarioLayout = new javax.swing.GroupLayout(pnlDatosDeUsuario);
+        pnlDatosDeUsuario.setLayout(pnlDatosDeUsuarioLayout);
+        pnlDatosDeUsuarioLayout.setHorizontalGroup(
+            pnlDatosDeUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 971, Short.MAX_VALUE)
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        pnlDatosDeUsuarioLayout.setVerticalGroup(
+            pnlDatosDeUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 223, Short.MAX_VALUE)
         );
 
@@ -215,7 +215,7 @@ public class FrmAlumnoHome extends javax.swing.JFrame {
             PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PnlDerechoLayout.createSequentialGroup()
                 .addContainerGap(40, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pnlDatosDeUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29))
             .addGroup(PnlDerechoLayout.createSequentialGroup()
                 .addGap(491, 491, 491)
@@ -228,7 +228,7 @@ public class FrmAlumnoHome extends javax.swing.JFrame {
                 .addGap(14, 14, 14)
                 .addComponent(lblMensajeBienvenida)
                 .addGap(62, 62, 62)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pnlDatosDeUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(373, Short.MAX_VALUE))
         );
 
@@ -330,10 +330,10 @@ public class FrmAlumnoHome extends javax.swing.JFrame {
     private javax.swing.JLabel btnHome;
     private javax.swing.JLabel btnSalir;
     private javax.swing.JLabel icnHome;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblMensajeBienvenida;
     private javax.swing.JPanel lblSuperior;
     private javax.swing.JPanel mainContainer;
+    private javax.swing.JPanel pnlDatosDeUsuario;
     private javax.swing.JPanel pnlHome;
     private javax.swing.JPanel pnlIzquierdo;
     private javax.swing.JPanel pnlSuperior1;
