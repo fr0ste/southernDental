@@ -442,6 +442,9 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_btnProfesorMouseClicked
 
     private void btnAlumnosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAlumnosMouseClicked
+//        FrmAdminRegistarAlumno FrmRegistrarAlumno = new FrmAdminRegistarAlumno();
+//        FrmRegistrarAlumno.setVisible(true);
+//        this.setVisible(false);
 //        menu.setSelectedIndex(MENU_ALUMNOS);
 //        jTabbedPane1.setSelectedIndex(VENTANA_ALUMNO);
     }//GEN-LAST:event_btnAlumnosMouseClicked
