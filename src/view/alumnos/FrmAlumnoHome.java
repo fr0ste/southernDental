@@ -36,8 +36,11 @@ public class FrmAlumnoHome extends javax.swing.JFrame {
         pnlHome = new javax.swing.JPanel();
         icnHome = new javax.swing.JLabel();
         btnHome = new javax.swing.JLabel();
+        icnLogo = new javax.swing.JLabel();
         PnlDerecho = new javax.swing.JPanel();
         pnlDatosDeUsuario = new javax.swing.JPanel();
+        pnlDatosUsuario = new javax.swing.JPanel();
+        icnUsuario = new javax.swing.JLabel();
         lblMensajeBienvenida = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -170,24 +173,26 @@ public class FrmAlumnoHome extends javax.swing.JFrame {
             }
         });
 
+        icnLogo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        icnLogo.setIcon(new javax.swing.ImageIcon("/home/froste/NetBeansProjects/southernDental/resources/images/LogoLight_128.png")); // NOI18N
+
         javax.swing.GroupLayout PnlIzquierdoLayout = new javax.swing.GroupLayout(PnlIzquierdo);
         PnlIzquierdo.setLayout(PnlIzquierdoLayout);
         PnlIzquierdoLayout.setHorizontalGroup(
             PnlIzquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(pnlHome, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PnlIzquierdoLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnHome, javax.swing.GroupLayout.DEFAULT_SIZE, 228, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(icnLogo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(btnHome, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         PnlIzquierdoLayout.setVerticalGroup(
             PnlIzquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PnlIzquierdoLayout.createSequentialGroup()
-                .addGap(212, 212, 212)
-                .addComponent(pnlHome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(icnLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnHome, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(369, Short.MAX_VALUE))
+                .addGap(144, 144, 144)
+                .addComponent(pnlHome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(338, Short.MAX_VALUE))
         );
 
         mainContainer.add(PnlIzquierdo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, -1, 670));
@@ -196,15 +201,33 @@ public class FrmAlumnoHome extends javax.swing.JFrame {
 
         pnlDatosDeUsuario.setBackground(new java.awt.Color(204, 204, 204));
 
+        icnUsuario.setIcon(new javax.swing.ImageIcon("/home/froste/NetBeansProjects/southernDental/resources/images/usuario(2).png")); // NOI18N
+
+        javax.swing.GroupLayout pnlDatosUsuarioLayout = new javax.swing.GroupLayout(pnlDatosUsuario);
+        pnlDatosUsuario.setLayout(pnlDatosUsuarioLayout);
+        pnlDatosUsuarioLayout.setHorizontalGroup(
+            pnlDatosUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(icnUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, 350, Short.MAX_VALUE)
+        );
+        pnlDatosUsuarioLayout.setVerticalGroup(
+            pnlDatosUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlDatosUsuarioLayout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addComponent(icnUsuario)
+                .addContainerGap(206, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout pnlDatosDeUsuarioLayout = new javax.swing.GroupLayout(pnlDatosDeUsuario);
         pnlDatosDeUsuario.setLayout(pnlDatosDeUsuarioLayout);
         pnlDatosDeUsuarioLayout.setHorizontalGroup(
             pnlDatosDeUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 971, Short.MAX_VALUE)
+            .addGroup(pnlDatosDeUsuarioLayout.createSequentialGroup()
+                .addComponent(pnlDatosUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 522, Short.MAX_VALUE))
         );
         pnlDatosDeUsuarioLayout.setVerticalGroup(
             pnlDatosDeUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 223, Short.MAX_VALUE)
+            .addComponent(pnlDatosUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         lblMensajeBienvenida.setText("Bienvenido");
@@ -214,9 +237,9 @@ public class FrmAlumnoHome extends javax.swing.JFrame {
         PnlDerechoLayout.setHorizontalGroup(
             PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PnlDerechoLayout.createSequentialGroup()
-                .addContainerGap(40, Short.MAX_VALUE)
+                .addContainerGap(138, Short.MAX_VALUE)
                 .addComponent(pnlDatosDeUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29))
+                .addGap(30, 30, 30))
             .addGroup(PnlDerechoLayout.createSequentialGroup()
                 .addGap(491, 491, 491)
                 .addComponent(lblMensajeBienvenida)
@@ -229,7 +252,7 @@ public class FrmAlumnoHome extends javax.swing.JFrame {
                 .addComponent(lblMensajeBienvenida)
                 .addGap(62, 62, 62)
                 .addComponent(pnlDatosDeUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(373, Short.MAX_VALUE))
+                .addContainerGap(247, Short.MAX_VALUE))
         );
 
         mainContainer.add(PnlDerecho, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 30, 1040, 690));
@@ -330,10 +353,13 @@ public class FrmAlumnoHome extends javax.swing.JFrame {
     private javax.swing.JLabel btnHome;
     private javax.swing.JLabel btnSalir;
     private javax.swing.JLabel icnHome;
+    private javax.swing.JLabel icnLogo;
+    private javax.swing.JLabel icnUsuario;
     private javax.swing.JLabel lblMensajeBienvenida;
     private javax.swing.JPanel lblSuperior;
     private javax.swing.JPanel mainContainer;
     private javax.swing.JPanel pnlDatosDeUsuario;
+    private javax.swing.JPanel pnlDatosUsuario;
     private javax.swing.JPanel pnlHome;
     private javax.swing.JPanel pnlIzquierdo;
     private javax.swing.JPanel pnlSuperior1;
