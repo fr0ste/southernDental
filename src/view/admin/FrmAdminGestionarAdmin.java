@@ -53,7 +53,7 @@ public class FrmAdminGestionarAdmin extends javax.swing.JFrame {
         PnlDerecho = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tablaRol = new javax.swing.JTable();
-        pnlEliminar1 = new javax.swing.JPanel();
+        pnlAgregar = new javax.swing.JPanel();
         lblEliminar1 = new javax.swing.JLabel();
         pnlEliminar = new javax.swing.JPanel();
         lblEliminar = new javax.swing.JLabel();
@@ -168,6 +168,7 @@ public class FrmAdminGestionarAdmin extends javax.swing.JFrame {
         icnHome.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         icnHome.setIcon(new javax.swing.ImageIcon("resources/images/iconoHome.png")
         );
+        icnHome.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         icnHome.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 icnHomeMouseEntered(evt);
@@ -235,12 +236,13 @@ public class FrmAdminGestionarAdmin extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(tablaRol);
 
-        pnlEliminar1.setBackground(new java.awt.Color(0, 0, 32));
-        pnlEliminar1.setForeground(new java.awt.Color(255, 255, 255));
+        pnlAgregar.setBackground(new java.awt.Color(0, 0, 32));
+        pnlAgregar.setForeground(new java.awt.Color(255, 255, 255));
 
         lblEliminar1.setForeground(new java.awt.Color(255, 255, 255));
         lblEliminar1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblEliminar1.setText("Agregar Usuario");
+        lblEliminar1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblEliminar1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblEliminar1MouseClicked(evt);
@@ -253,17 +255,17 @@ public class FrmAdminGestionarAdmin extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout pnlEliminar1Layout = new javax.swing.GroupLayout(pnlEliminar1);
-        pnlEliminar1.setLayout(pnlEliminar1Layout);
-        pnlEliminar1Layout.setHorizontalGroup(
-            pnlEliminar1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlEliminar1Layout.createSequentialGroup()
+        javax.swing.GroupLayout pnlAgregarLayout = new javax.swing.GroupLayout(pnlAgregar);
+        pnlAgregar.setLayout(pnlAgregarLayout);
+        pnlAgregarLayout.setHorizontalGroup(
+            pnlAgregarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlAgregarLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(lblEliminar1, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        pnlEliminar1Layout.setVerticalGroup(
-            pnlEliminar1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        pnlAgregarLayout.setVerticalGroup(
+            pnlAgregarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(lblEliminar1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
@@ -273,6 +275,7 @@ public class FrmAdminGestionarAdmin extends javax.swing.JFrame {
         lblEliminar.setForeground(new java.awt.Color(255, 255, 255));
         lblEliminar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblEliminar.setText("Eliminar");
+        lblEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblEliminar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblEliminarMouseClicked(evt);
@@ -302,6 +305,7 @@ public class FrmAdminGestionarAdmin extends javax.swing.JFrame {
         lblActualizar.setForeground(new java.awt.Color(255, 255, 255));
         lblActualizar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblActualizar.setText("Actualizar");
+        lblActualizar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblActualizar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblActualizarMouseClicked(evt);
@@ -333,7 +337,7 @@ public class FrmAdminGestionarAdmin extends javax.swing.JFrame {
                 .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(PnlDerechoLayout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(pnlEliminar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(pnlAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(PnlDerechoLayout.createSequentialGroup()
                         .addGap(106, 106, 106)
                         .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -347,7 +351,7 @@ public class FrmAdminGestionarAdmin extends javax.swing.JFrame {
             PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PnlDerechoLayout.createSequentialGroup()
                 .addGap(102, 102, 102)
-                .addComponent(pnlEliminar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pnlAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(PnlDerechoLayout.createSequentialGroup()
@@ -468,50 +472,50 @@ public class FrmAdminGestionarAdmin extends javax.swing.JFrame {
     }//GEN-LAST:event_lblEliminar1MouseClicked
 
     private void lblEliminar1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEliminar1MouseEntered
-        // TODO add your handling code here:
+        pnlAgregar.setBackground(Colors.MOUSE_ENTERED);
     }//GEN-LAST:event_lblEliminar1MouseEntered
 
     private void lblEliminar1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEliminar1MouseExited
-        // TODO add your handling code here:
+        pnlAgregar.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_lblEliminar1MouseExited
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FrmAdminGestionarAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FrmAdminGestionarAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FrmAdminGestionarAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FrmAdminGestionarAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new FrmAdminGestionarAdmin().setVisible(true);
-            }
-        });
-    }
+//    public static void main(String args[]) {
+//        /* Set the Nimbus look and feel */
+//        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+//        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+//         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+//         */
+//        try {
+//            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+//                if ("Nimbus".equals(info.getName())) {
+//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+//                    break;
+//                }
+//            }
+//        } catch (ClassNotFoundException ex) {
+//            java.util.logging.Logger.getLogger(FrmAdminGestionarAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (InstantiationException ex) {
+//            java.util.logging.Logger.getLogger(FrmAdminGestionarAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (IllegalAccessException ex) {
+//            java.util.logging.Logger.getLogger(FrmAdminGestionarAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+//            java.util.logging.Logger.getLogger(FrmAdminGestionarAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        }
+//        //</editor-fold>
+//        //</editor-fold>
+//        //</editor-fold>
+//        //</editor-fold>
+//
+//        /* Create and display the form */
+//        java.awt.EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                new FrmAdminGestionarAdmin().setVisible(true);
+//            }
+//        });
+//    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel PnlDerecho;
@@ -527,8 +531,8 @@ public class FrmAdminGestionarAdmin extends javax.swing.JFrame {
     private javax.swing.JPanel lblSuperior;
     private javax.swing.JPanel mainContainer;
     private javax.swing.JPanel pnlActualizar;
+    private javax.swing.JPanel pnlAgregar;
     private javax.swing.JPanel pnlEliminar;
-    private javax.swing.JPanel pnlEliminar1;
     private javax.swing.JPanel pnlHome;
     private javax.swing.JPanel pnlIzquierdo;
     private javax.swing.JPanel pnlSuperior1;
