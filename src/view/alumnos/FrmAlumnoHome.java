@@ -192,8 +192,7 @@ public class FrmAlumnoHome extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(icnHome, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnHome, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(10, Short.MAX_VALUE))
+                .addComponent(btnHome, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnlHomeLayout.setVerticalGroup(
             pnlHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -253,9 +252,8 @@ public class FrmAlumnoHome extends javax.swing.JFrame {
             .addGroup(pnlPacientesLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(icnPacientes, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnPacientes, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                .addComponent(btnPacientes, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         pnlPacientesLayout.setVerticalGroup(
             pnlPacientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -313,8 +311,7 @@ public class FrmAlumnoHome extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(icnConsultas, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnConstultas, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(btnConstultas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnlConsultasLayout.setVerticalGroup(
             pnlConsultasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -355,6 +352,8 @@ public class FrmAlumnoHome extends javax.swing.JFrame {
 
         pnlDatosDeUsuario.setBackground(new java.awt.Color(204, 204, 204));
 
+        pnlDatosUsuario.setBackground(new java.awt.Color(249, 250, 251));
+
         icnUsuario.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         icnUsuario.setIcon(new javax.swing.ImageIcon("/home/froste/NetBeansProjects/southernDental/resources/images/usuario(2).png")); // NOI18N
 
@@ -387,6 +386,8 @@ public class FrmAlumnoHome extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        jPanel1.setBackground(new java.awt.Color(249, 250, 251));
 
         jLabel3.setText("sexo");
 
@@ -465,6 +466,7 @@ public class FrmAlumnoHome extends javax.swing.JFrame {
 
         lblMensajeBienvenida.setText("Bienvenido");
 
+        jPanel4.setBackground(new java.awt.Color(73, 112, 161));
         jPanel4.setPreferredSize(new java.awt.Dimension(380, 147));
 
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -494,6 +496,8 @@ public class FrmAlumnoHome extends javax.swing.JFrame {
                 .addComponent(txtNumeroPacientes, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(42, Short.MAX_VALUE))
         );
+
+        jPanel3.setBackground(new java.awt.Color(73, 112, 161));
 
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel13.setText("CONSULTAS");
@@ -541,7 +545,7 @@ public class FrmAlumnoHome extends javax.swing.JFrame {
                         .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(103, 103, 103)
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 33, Short.MAX_VALUE)))
+                        .addGap(0, 63, Short.MAX_VALUE)))
                 .addGap(40, 40, 40))
         );
         PnlDerechoLayout.setVerticalGroup(
@@ -554,11 +558,11 @@ public class FrmAlumnoHome extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
                 .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 147, Short.MAX_VALUE))
+                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(80, 80, 80))
         );
 
-        mainContainer.add(PnlDerecho, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 30, 1040, 690));
+        mainContainer.add(PnlDerecho, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 30, 1070, 690));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
