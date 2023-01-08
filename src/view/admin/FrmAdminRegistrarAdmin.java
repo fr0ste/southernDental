@@ -151,11 +151,14 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
         btnHome.setText("HOME");
         btnHome.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnHome.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnHomeMouseExited(evt);
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnHomeMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnHomeMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnHomeMouseExited(evt);
             }
         });
 
@@ -381,6 +384,12 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
     private void lblGuardarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblGuardarMouseExited
         pnlGuardar.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_lblGuardarMouseExited
+
+    private void btnHomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHomeMouseClicked
+        FrmAdminGestionarAdmin GestionarAdmin= new FrmAdminGestionarAdmin();
+        GestionarAdmin.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnHomeMouseClicked
 
     /**
      * @param args the command line arguments
