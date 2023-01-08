@@ -166,7 +166,7 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
         });
 
         icnHome1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        icnHome1.setIcon(new javax.swing.ImageIcon("resources/images/iconoHome.png")
+        icnHome1.setIcon(new javax.swing.ImageIcon("resources/images/gestionar.png")
         );
         icnHome1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
