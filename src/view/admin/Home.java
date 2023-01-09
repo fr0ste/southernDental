@@ -147,7 +147,7 @@ public class Home extends javax.swing.JFrame {
         btnProfesor.setBackground(new java.awt.Color(0, 0, 32));
         btnProfesor.setForeground(new java.awt.Color(255, 255, 255));
         btnProfesor.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btnProfesor.setText("PROFESOR");
+        btnProfesor.setText("PROFESORES");
         btnProfesor.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnProfesor.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -437,6 +437,9 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_btnPacientesMouseClicked
 
     private void btnProfesorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProfesorMouseClicked
+        FrmAdminRegistrarTutor VentanaTutor = new FrmAdminRegistrarTutor();
+        VentanaTutor.setVisible(true);
+        this.setVisible(false);
 //        menu.setSelectedIndex(MENU_PROFESORES);
 //        jTabbedPane1.setSelectedIndex(VENTANA_PROFESOR);
     }//GEN-LAST:event_btnProfesorMouseClicked
