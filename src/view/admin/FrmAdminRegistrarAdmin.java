@@ -8,6 +8,7 @@ import controller.UsuarioController;
 import entity.Usuario;
 import view.base.*;
 import utilities.Colors;
+import view.Registro;
 
 /**
  *
@@ -19,6 +20,7 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
      * variables
      */
     private int xMouse, yMouse;
+
     public FrmAdminRegistrarAdmin() {
         initComponents();
         setLocationRelativeTo(null);
@@ -327,9 +329,9 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
         PnlDerechoLayout.setHorizontalGroup(
             PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PnlDerechoLayout.createSequentialGroup()
+                .addGap(113, 113, 113)
                 .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(PnlDerechoLayout.createSequentialGroup()
-                        .addGap(105, 105, 105)
                         .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(lblNombreUsuario)
                             .addComponent(lblNombreUsuario1)
@@ -339,16 +341,16 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
                             .addComponent(txtNombreUsuario, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(passUsuario, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtCorreoElectronico, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(jComboBox1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(PnlDerechoLayout.createSequentialGroup()
-                        .addGap(263, 263, 263)
+                        .addGap(158, 158, 158)
                         .addComponent(pnlGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(657, Short.MAX_VALUE))
+                .addContainerGap(649, Short.MAX_VALUE))
         );
         PnlDerechoLayout.setVerticalGroup(
             PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PnlDerechoLayout.createSequentialGroup()
-                .addGap(46, 46, 46)
+                .addGap(127, 127, 127)
                 .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblNombreUsuario)
                     .addComponent(txtNombreUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -364,7 +366,7 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
                 .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(36, 36, 36)
                 .addComponent(pnlGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(395, Short.MAX_VALUE))
+                .addContainerGap(314, Short.MAX_VALUE))
         );
 
         mainContainer.add(PnlDerecho, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 30, 1040, 690));
@@ -449,8 +451,8 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
     }//GEN-LAST:event_lblGuardarMouseExited
 
     private void btnHomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHomeMouseClicked
-        FrmAdminGestionarAdmin GestionarAdmin= new FrmAdminGestionarAdmin();
-        GestionarAdmin.setVisible(true);
+        Home home = new Home();
+        home.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnHomeMouseClicked
 
