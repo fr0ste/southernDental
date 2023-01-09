@@ -1,22 +1,20 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+/**
+ * Autor: Joel && Elio
+ * Fecha de creación: 08 de enero del 2023
+ * Fecha de modificación: 09 de enero del 2023
+ * Descripción: Frame registrar tutor
  */
 package view.admin;
 
-import view.base.*;
 import utilities.Colors;
 
-/**
- *
- * @author froste
- */
 public class FrmAdminRegistrarTutor extends javax.swing.JFrame {
 
     /**
      * variables
      */
     private int xMouse, yMouse;
+
     public FrmAdminRegistrarTutor() {
         initComponents();
         setLocationRelativeTo(null);
@@ -400,23 +398,23 @@ public class FrmAdminRegistrarTutor extends javax.swing.JFrame {
     }//GEN-LAST:event_pnlHomeMouseEntered
 
     private void txtNombresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombresActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_txtNombresActionPerformed
 
     private void txtEstadoCivilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEstadoCivilActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_txtEstadoCivilActionPerformed
 
     private void txtOcupacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtOcupacionActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_txtOcupacionActionPerformed
 
     private void txtApellidoPaternoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoPaternoActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_txtApellidoPaternoActionPerformed
 
     private void txtApellidoMaternoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoMaternoActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_txtApellidoMaternoActionPerformed
 
     private void lblGuardarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblGuardarMouseClicked
