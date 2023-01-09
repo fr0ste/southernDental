@@ -205,9 +205,9 @@ public class FrmAdminGestionarAdmin extends javax.swing.JFrame {
         PnlIzquierdoLayout.setVerticalGroup(
             PnlIzquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PnlIzquierdoLayout.createSequentialGroup()
-                .addGap(108, 108, 108)
+                .addGap(122, 122, 122)
                 .addComponent(pnlHome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(543, Short.MAX_VALUE))
+                .addContainerGap(529, Short.MAX_VALUE))
         );
 
         mainContainer.add(PnlIzquierdo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, -1, 690));

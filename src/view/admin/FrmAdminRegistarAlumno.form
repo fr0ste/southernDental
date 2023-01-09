@@ -278,24 +278,32 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="Catedratico" min="-2" max="-2" attributes="0"/>
-                          <Component id="estadoCivil" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="ocupacion" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="apellidoMaterno" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="apellidoPaterno" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="nombres" alignment="1" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="txtNombres" alignment="0" min="-2" pref="316" max="-2" attributes="0"/>
-                          <Component id="txtApellidoPaterno" alignment="0" min="-2" pref="316" max="-2" attributes="0"/>
-                          <Component id="txtApellidoMaterno" alignment="0" min="-2" pref="316" max="-2" attributes="0"/>
-                          <Component id="txtSemestre" alignment="0" min="-2" pref="316" max="-2" attributes="0"/>
-                          <Component id="txtidCatedratico" alignment="0" min="-2" pref="316" max="-2" attributes="0"/>
-                          <Component id="txtGrupo" min="-2" pref="316" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="Catedratico" min="-2" max="-2" attributes="0"/>
+                                  <Component id="estadoCivil" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ocupacion" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="apellidoMaterno" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="apellidoPaterno" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="nombres" alignment="1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="txtNombres" alignment="0" min="-2" pref="316" max="-2" attributes="0"/>
+                                  <Component id="txtApellidoPaterno" alignment="0" min="-2" pref="316" max="-2" attributes="0"/>
+                                  <Component id="txtApellidoMaterno" alignment="0" min="-2" pref="316" max="-2" attributes="0"/>
+                                  <Component id="txtSemestre" alignment="0" min="-2" pref="316" max="-2" attributes="0"/>
+                                  <Component id="txtidCatedratico" alignment="0" min="-2" pref="316" max="-2" attributes="0"/>
+                                  <Component id="txtGrupo" min="-2" pref="316" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="415" max="-2" attributes="0"/>
+                              <Component id="pnlGuardar" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace pref="411" max="32767" attributes="0"/>
                   </Group>
@@ -334,7 +342,9 @@
                           <Component id="Catedratico" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="txtidCatedratico" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="399" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                      <Component id="pnlGuardar" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="336" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -418,6 +428,48 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtGrupoActionPerformed"/>
               </Events>
             </Component>
+            <Container class="javax.swing.JPanel" name="pnlGuardar">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="20" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lblGuardar" alignment="0" min="-2" pref="107" max="-2" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lblGuardar" alignment="0" min="-2" pref="34" max="-2" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="lblGuardar">
+                  <Properties>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
+                    <Property name="text" type="java.lang.String" value="Guardar"/>
+                    <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                      <Color id="Cursor de Mano"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblGuardarMouseClicked"/>
+                    <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblGuardarMouseEntered"/>
+                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblGuardarMouseExited"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
           </SubComponents>
         </Container>
       </SubComponents>

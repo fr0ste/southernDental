@@ -7,7 +7,7 @@
  */
 package view.admin;
 
-import utilities.Colors;
+    import utilities.Colors;
 
 public class Home extends javax.swing.JFrame {
 
@@ -172,7 +172,7 @@ public class Home extends javax.swing.JFrame {
             .addComponent(btnProfesor, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
         );
 
-        jPanel1.add(pnlProfesor, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 110, -1, -1));
+        jPanel1.add(pnlProfesor, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 150, -1, -1));
 
         pnlAlumnos.setBackground(new java.awt.Color(0, 0, 32));
         pnlAlumnos.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -212,7 +212,7 @@ public class Home extends javax.swing.JFrame {
             .addComponent(btnAlumnos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
         );
 
-        jPanel1.add(pnlAlumnos, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 110, -1, -1));
+        jPanel1.add(pnlAlumnos, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 150, -1, -1));
 
         pnlAdministrador.setBackground(new java.awt.Color(0, 0, 32));
         pnlAdministrador.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -252,18 +252,18 @@ public class Home extends javax.swing.JFrame {
             .addComponent(btnPacientes, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
         );
 
-        jPanel1.add(pnlAdministrador, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 110, -1, -1));
+        jPanel1.add(pnlAdministrador, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 150, -1, -1));
 
         jPanel2.setBackground(new java.awt.Color(0, 0, 32));
         jPanel2.setPreferredSize(new java.awt.Dimension(240, 700));
 
         pnlHome.setBackground(new java.awt.Color(0, 0, 32));
         pnlHome.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                pnlHomeMouseExited(evt);
-            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 pnlHomeMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                pnlHomeMouseExited(evt);
             }
         });
 
@@ -317,9 +317,9 @@ public class Home extends javax.swing.JFrame {
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(108, 108, 108)
+                .addGap(150, 150, 150)
                 .addComponent(pnlHome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(633, Short.MAX_VALUE))
+                .addContainerGap(591, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 780));
@@ -442,9 +442,9 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_btnProfesorMouseClicked
 
     private void btnAlumnosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAlumnosMouseClicked
-//        FrmAdminRegistarAlumno FrmRegistrarAlumno = new FrmAdminRegistarAlumno();
-//        FrmRegistrarAlumno.setVisible(true);
-//        this.setVisible(false);
+        FrmAdminRegistarAlumno FrmRegistrarAlumno = new FrmAdminRegistarAlumno();
+        FrmRegistrarAlumno.setVisible(true);
+        this.setVisible(false);
 //        menu.setSelectedIndex(MENU_ALUMNOS);
 //        jTabbedPane1.setSelectedIndex(VENTANA_ALUMNO);
     }//GEN-LAST:event_btnAlumnosMouseClicked

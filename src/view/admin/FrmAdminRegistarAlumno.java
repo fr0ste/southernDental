@@ -17,8 +17,10 @@ public class FrmAdminRegistarAlumno extends javax.swing.JFrame {
      * variables
      */
     private int xMouse, yMouse;
+
     public FrmAdminRegistarAlumno() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -53,6 +55,8 @@ public class FrmAdminRegistarAlumno extends javax.swing.JFrame {
         txtApellidoMaterno = new javax.swing.JTextField();
         Catedratico = new javax.swing.JLabel();
         txtGrupo = new javax.swing.JTextField();
+        pnlGuardar = new javax.swing.JPanel();
+        lblGuardar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -258,27 +262,62 @@ public class FrmAdminRegistarAlumno extends javax.swing.JFrame {
             }
         });
 
+        pnlGuardar.setBackground(new java.awt.Color(0, 0, 32));
+        pnlGuardar.setForeground(new java.awt.Color(255, 255, 255));
+
+        lblGuardar.setForeground(new java.awt.Color(255, 255, 255));
+        lblGuardar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblGuardar.setText("Guardar");
+        lblGuardar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblGuardar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblGuardarMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lblGuardarMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                lblGuardarMouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnlGuardarLayout = new javax.swing.GroupLayout(pnlGuardar);
+        pnlGuardar.setLayout(pnlGuardarLayout);
+        pnlGuardarLayout.setHorizontalGroup(
+            pnlGuardarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        pnlGuardarLayout.setVerticalGroup(
+            pnlGuardarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
         javax.swing.GroupLayout PnlDerechoLayout = new javax.swing.GroupLayout(PnlDerecho);
         PnlDerecho.setLayout(PnlDerechoLayout);
         PnlDerechoLayout.setHorizontalGroup(
             PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PnlDerechoLayout.createSequentialGroup()
-                .addGap(111, 111, 111)
-                .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(Catedratico)
-                    .addComponent(estadoCivil)
-                    .addComponent(ocupacion)
-                    .addComponent(apellidoMaterno)
-                    .addComponent(apellidoPaterno)
-                    .addComponent(nombres))
-                .addGap(18, 18, 18)
                 .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtNombres, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtApellidoPaterno, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtApellidoMaterno, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtSemestre, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtidCatedratico, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtGrupo, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(PnlDerechoLayout.createSequentialGroup()
+                        .addGap(111, 111, 111)
+                        .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(Catedratico)
+                            .addComponent(estadoCivil)
+                            .addComponent(ocupacion)
+                            .addComponent(apellidoMaterno)
+                            .addComponent(apellidoPaterno)
+                            .addComponent(nombres))
+                        .addGap(18, 18, 18)
+                        .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtNombres, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtApellidoPaterno, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtApellidoMaterno, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtSemestre, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtidCatedratico, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtGrupo, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(PnlDerechoLayout.createSequentialGroup()
+                        .addGap(415, 415, 415)
+                        .addComponent(pnlGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(411, Short.MAX_VALUE))
         );
         PnlDerechoLayout.setVerticalGroup(
@@ -308,7 +347,9 @@ public class FrmAdminRegistarAlumno extends javax.swing.JFrame {
                 .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Catedratico)
                     .addComponent(txtidCatedratico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(399, Short.MAX_VALUE))
+                .addGap(29, 29, 29)
+                .addComponent(pnlGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(336, Short.MAX_VALUE))
         );
 
         mainContainer.add(PnlDerecho, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 30, 1040, 690));
@@ -390,6 +431,18 @@ public class FrmAdminRegistarAlumno extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtGrupoActionPerformed
 
+    private void lblGuardarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblGuardarMouseClicked
+
+    }//GEN-LAST:event_lblGuardarMouseClicked
+
+    private void lblGuardarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblGuardarMouseEntered
+        pnlGuardar.setBackground(Colors.MOUSE_ENTERED);
+    }//GEN-LAST:event_lblGuardarMouseEntered
+
+    private void lblGuardarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblGuardarMouseExited
+        pnlGuardar.setBackground(Colors.MOUSE_EXITED);
+    }//GEN-LAST:event_lblGuardarMouseExited
+
     /**
      * @param args the command line arguments
      */
@@ -437,10 +490,12 @@ public class FrmAdminRegistarAlumno extends javax.swing.JFrame {
     private javax.swing.JLabel btnSalir;
     private javax.swing.JLabel estadoCivil;
     private javax.swing.JLabel icnHome;
+    private javax.swing.JLabel lblGuardar;
     private javax.swing.JPanel lblSuperior;
     private javax.swing.JPanel mainContainer;
     private javax.swing.JLabel nombres;
     private javax.swing.JLabel ocupacion;
+    private javax.swing.JPanel pnlGuardar;
     private javax.swing.JPanel pnlHome;
     private javax.swing.JPanel pnlIzquierdo;
     private javax.swing.JPanel pnlSuperior1;

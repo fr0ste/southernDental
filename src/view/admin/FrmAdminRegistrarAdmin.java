@@ -329,7 +329,7 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
         PnlDerechoLayout.setHorizontalGroup(
             PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PnlDerechoLayout.createSequentialGroup()
-                .addGap(113, 113, 113)
+                .addGap(85, 85, 85)
                 .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(PnlDerechoLayout.createSequentialGroup()
                         .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -345,12 +345,12 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
                     .addGroup(PnlDerechoLayout.createSequentialGroup()
                         .addGap(158, 158, 158)
                         .addComponent(pnlGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(649, Short.MAX_VALUE))
+                .addContainerGap(677, Short.MAX_VALUE))
         );
         PnlDerechoLayout.setVerticalGroup(
             PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PnlDerechoLayout.createSequentialGroup()
-                .addGap(127, 127, 127)
+                .addGap(137, 137, 137)
                 .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblNombreUsuario)
                     .addComponent(txtNombreUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -366,7 +366,7 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
                 .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(36, 36, 36)
                 .addComponent(pnlGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(314, Short.MAX_VALUE))
+                .addContainerGap(304, Short.MAX_VALUE))
         );
 
         mainContainer.add(PnlDerecho, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 30, 1040, 690));
