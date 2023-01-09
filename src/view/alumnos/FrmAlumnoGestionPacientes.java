@@ -42,6 +42,9 @@ public class FrmAlumnoGestionPacientes extends javax.swing.JFrame {
         pnlPacientes = new javax.swing.JPanel();
         icnPacientes = new javax.swing.JLabel();
         btnPacientes = new javax.swing.JLabel();
+        pnlAgregarPaciente = new javax.swing.JPanel();
+        icnAgregarPaciente = new javax.swing.JLabel();
+        btnAgregarPaciente = new javax.swing.JLabel();
         PnlDerecho = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
@@ -135,9 +138,11 @@ public class FrmAlumnoGestionPacientes extends javax.swing.JFrame {
         mainContainer.add(lblSuperior, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         PnlIzquierdo.setBackground(new java.awt.Color(0, 0, 32));
-        PnlIzquierdo.setPreferredSize(new java.awt.Dimension(240, 700));
+        PnlIzquierdo.setPreferredSize(new java.awt.Dimension(240, 690));
 
         pnlHome.setBackground(new java.awt.Color(0, 0, 32));
+        pnlHome.setPreferredSize(new java.awt.Dimension(240, 50));
+        pnlHome.setVerifyInputWhenFocusTarget(false);
         pnlHome.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 pnlHomeMouseEntered(evt);
@@ -149,7 +154,7 @@ public class FrmAlumnoGestionPacientes extends javax.swing.JFrame {
 
         btnHome.setBackground(new java.awt.Color(0, 0, 32));
         btnHome.setForeground(new java.awt.Color(255, 255, 255));
-        btnHome.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btnHome.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnHome.setText("HOME");
         btnHome.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnHome.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -178,20 +183,26 @@ public class FrmAlumnoGestionPacientes extends javax.swing.JFrame {
         pnlHomeLayout.setHorizontalGroup(
             pnlHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlHomeLayout.createSequentialGroup()
-                .addComponent(icnHome, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnHome, javax.swing.GroupLayout.DEFAULT_SIZE, 165, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(icnHome, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnHome, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         pnlHomeLayout.setVerticalGroup(
             pnlHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(icnHome, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 51, Short.MAX_VALUE)
-            .addComponent(btnHome, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlHomeLayout.createSequentialGroup()
+                .addContainerGap(12, Short.MAX_VALUE)
+                .addGroup(pnlHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnHome, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
+                    .addComponent(icnHome, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
         icnLogo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         icnLogo.setIcon(new javax.swing.ImageIcon("/home/froste/NetBeansProjects/southernDental/resources/images/LogoLight_128.png")); // NOI18N
 
         pnlConsultas.setBackground(new java.awt.Color(0, 0, 32));
+        pnlConsultas.setPreferredSize(new java.awt.Dimension(240, 50));
         pnlConsultas.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 pnlConsultasMouseEntered(evt);
@@ -215,8 +226,9 @@ public class FrmAlumnoGestionPacientes extends javax.swing.JFrame {
 
         btnConstultas.setBackground(new java.awt.Color(0, 0, 32));
         btnConstultas.setForeground(new java.awt.Color(255, 255, 255));
-        btnConstultas.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btnConstultas.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnConstultas.setText("CONSULTAS");
+        btnConstultas.setToolTipText("");
         btnConstultas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnConstultas.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -233,7 +245,7 @@ public class FrmAlumnoGestionPacientes extends javax.swing.JFrame {
             pnlConsultasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlConsultasLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(icnConsultas, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(icnConsultas, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnConstultas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -242,12 +254,13 @@ public class FrmAlumnoGestionPacientes extends javax.swing.JFrame {
             .addGroup(pnlConsultasLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(pnlConsultasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnConstultas, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
-                    .addComponent(icnConsultas, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE))
+                    .addComponent(btnConstultas, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
+                    .addComponent(icnConsultas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
         pnlPacientes.setBackground(new java.awt.Color(0, 0, 32));
+        pnlPacientes.setPreferredSize(new java.awt.Dimension(240, 50));
         pnlPacientes.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 pnlPacientesMouseEntered(evt);
@@ -271,7 +284,7 @@ public class FrmAlumnoGestionPacientes extends javax.swing.JFrame {
 
         btnPacientes.setBackground(new java.awt.Color(0, 0, 32));
         btnPacientes.setForeground(new java.awt.Color(255, 255, 255));
-        btnPacientes.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btnPacientes.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnPacientes.setText("PACIENTES");
         btnPacientes.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnPacientes.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -289,9 +302,10 @@ public class FrmAlumnoGestionPacientes extends javax.swing.JFrame {
             pnlPacientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlPacientesLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(icnPacientes, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
-                .addComponent(btnPacientes, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(icnPacientes, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnPacientes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         pnlPacientesLayout.setVerticalGroup(
             pnlPacientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -301,7 +315,65 @@ public class FrmAlumnoGestionPacientes extends javax.swing.JFrame {
                     .addGroup(pnlPacientesLayout.createSequentialGroup()
                         .addComponent(btnPacientes, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(icnPacientes, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE))
+                    .addComponent(icnPacientes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+
+        pnlAgregarPaciente.setBackground(new java.awt.Color(0, 0, 32));
+        pnlAgregarPaciente.setPreferredSize(new java.awt.Dimension(240, 50));
+        pnlAgregarPaciente.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                pnlAgregarPacienteMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                pnlAgregarPacienteMouseExited(evt);
+            }
+        });
+
+        icnAgregarPaciente.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        icnAgregarPaciente.setIcon(new javax.swing.ImageIcon("resources/images/iconoHome.png")
+        );
+        icnAgregarPaciente.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                icnAgregarPacienteMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                icnAgregarPacienteMouseExited(evt);
+            }
+        });
+
+        btnAgregarPaciente.setBackground(new java.awt.Color(0, 0, 32));
+        btnAgregarPaciente.setForeground(new java.awt.Color(255, 255, 255));
+        btnAgregarPaciente.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnAgregarPaciente.setText("AGREGAR PACIENTE");
+        btnAgregarPaciente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnAgregarPaciente.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnAgregarPacienteMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnAgregarPacienteMouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnlAgregarPacienteLayout = new javax.swing.GroupLayout(pnlAgregarPaciente);
+        pnlAgregarPaciente.setLayout(pnlAgregarPacienteLayout);
+        pnlAgregarPacienteLayout.setHorizontalGroup(
+            pnlAgregarPacienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlAgregarPacienteLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(icnAgregarPaciente, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnAgregarPaciente, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        pnlAgregarPacienteLayout.setVerticalGroup(
+            pnlAgregarPacienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlAgregarPacienteLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnlAgregarPacienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnAgregarPaciente, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
+                    .addComponent(icnAgregarPaciente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -309,13 +381,18 @@ public class FrmAlumnoGestionPacientes extends javax.swing.JFrame {
         PnlIzquierdo.setLayout(PnlIzquierdoLayout);
         PnlIzquierdoLayout.setHorizontalGroup(
             PnlIzquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pnlHome, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(pnlConsultas, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(PnlIzquierdoLayout.createSequentialGroup()
-                .addContainerGap()
+                .addComponent(pnlAgregarPaciente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(pnlHome, javax.swing.GroupLayout.DEFAULT_SIZE, 247, Short.MAX_VALUE)
+            .addGroup(PnlIzquierdoLayout.createSequentialGroup()
                 .addGroup(PnlIzquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(icnLogo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pnlPacientes, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(pnlConsultas, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 241, Short.MAX_VALUE)
+                    .addGroup(PnlIzquierdoLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(PnlIzquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(icnLogo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(pnlPacientes, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE))))
                 .addContainerGap())
         );
         PnlIzquierdoLayout.setVerticalGroup(
@@ -324,14 +401,16 @@ public class FrmAlumnoGestionPacientes extends javax.swing.JFrame {
                 .addComponent(icnLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pnlHome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(pnlConsultas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(pnlPacientes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(352, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(pnlAgregarPaciente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(pnlConsultas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(298, Short.MAX_VALUE))
         );
 
-        mainContainer.add(PnlIzquierdo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, -1, 690));
+        mainContainer.add(PnlIzquierdo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, -1, -1));
 
         PnlDerecho.setBackground(new java.awt.Color(153, 153, 153));
 
@@ -383,18 +462,18 @@ public class FrmAlumnoGestionPacientes extends javax.swing.JFrame {
                 .addComponent(jLabel5)
                 .addGap(31, 31, 31)
                 .addComponent(jLabel6)
-                .addContainerGap(255, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
             },
             new String [] {
-                "ID", "NOMBRE", "APELLIDO", "APELLIDO"
+                "ID", "NOMBRE", "APELLIDO", "APELLIDO", "", ""
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -403,11 +482,11 @@ public class FrmAlumnoGestionPacientes extends javax.swing.JFrame {
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 648, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 648, Short.MAX_VALUE)
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 566, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -421,10 +500,12 @@ public class FrmAlumnoGestionPacientes extends javax.swing.JFrame {
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 53, Short.MAX_VALUE))
+                .addGap(83, 83, 83)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(53, Short.MAX_VALUE))
         );
 
         jLabel1.setText("PACIENTES REGISTRADOS");
@@ -459,7 +540,7 @@ public class FrmAlumnoGestionPacientes extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(mainContainer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(mainContainer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -528,22 +609,6 @@ public class FrmAlumnoGestionPacientes extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_pnlConsultasMouseExited
 
-    private void icnPacientesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icnPacientesMouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_icnPacientesMouseEntered
-
-    private void icnPacientesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icnPacientesMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_icnPacientesMouseExited
-
-    private void btnPacientesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPacientesMouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnPacientesMouseEntered
-
-    private void btnPacientesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPacientesMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnPacientesMouseExited
-
     private void pnlPacientesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlPacientesMouseEntered
         // TODO add your handling code here:
     }//GEN-LAST:event_pnlPacientesMouseEntered
@@ -551,6 +616,46 @@ public class FrmAlumnoGestionPacientes extends javax.swing.JFrame {
     private void pnlPacientesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlPacientesMouseExited
         // TODO add your handling code here:
     }//GEN-LAST:event_pnlPacientesMouseExited
+
+    private void btnPacientesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPacientesMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnPacientesMouseExited
+
+    private void btnPacientesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPacientesMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnPacientesMouseEntered
+
+    private void icnPacientesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icnPacientesMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_icnPacientesMouseExited
+
+    private void icnPacientesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icnPacientesMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_icnPacientesMouseEntered
+
+    private void icnAgregarPacienteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icnAgregarPacienteMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_icnAgregarPacienteMouseEntered
+
+    private void icnAgregarPacienteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icnAgregarPacienteMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_icnAgregarPacienteMouseExited
+
+    private void btnAgregarPacienteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAgregarPacienteMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAgregarPacienteMouseEntered
+
+    private void btnAgregarPacienteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAgregarPacienteMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAgregarPacienteMouseExited
+
+    private void pnlAgregarPacienteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlAgregarPacienteMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pnlAgregarPacienteMouseEntered
+
+    private void pnlAgregarPacienteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlAgregarPacienteMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pnlAgregarPacienteMouseExited
 
     /**
      * @param args the command line arguments
@@ -591,11 +696,13 @@ public class FrmAlumnoGestionPacientes extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel PnlDerecho;
     private javax.swing.JPanel PnlIzquierdo;
+    private javax.swing.JLabel btnAgregarPaciente;
     private javax.swing.JLabel btnCerrar1;
     private javax.swing.JLabel btnConstultas;
     private javax.swing.JLabel btnHome;
     private javax.swing.JLabel btnPacientes;
     private javax.swing.JLabel btnSalir;
+    private javax.swing.JLabel icnAgregarPaciente;
     private javax.swing.JLabel icnConsultas;
     private javax.swing.JLabel icnHome;
     private javax.swing.JLabel icnLogo;
@@ -614,6 +721,7 @@ public class FrmAlumnoGestionPacientes extends javax.swing.JFrame {
     private javax.swing.JTable jTable1;
     private javax.swing.JPanel lblSuperior;
     private javax.swing.JPanel mainContainer;
+    private javax.swing.JPanel pnlAgregarPaciente;
     private javax.swing.JPanel pnlConsultas;
     private javax.swing.JPanel pnlHome;
     private javax.swing.JPanel pnlIzquierdo;

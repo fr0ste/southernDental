@@ -172,7 +172,7 @@ public class FrmAlumnoHome extends javax.swing.JFrame {
 
         btnHome.setBackground(new java.awt.Color(0, 0, 32));
         btnHome.setForeground(new java.awt.Color(255, 255, 255));
-        btnHome.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btnHome.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnHome.setText("HOME");
         btnHome.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnHome.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -233,7 +233,7 @@ public class FrmAlumnoHome extends javax.swing.JFrame {
 
         btnPacientes.setBackground(new java.awt.Color(0, 0, 32));
         btnPacientes.setForeground(new java.awt.Color(255, 255, 255));
-        btnPacientes.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btnPacientes.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnPacientes.setText("PACIENTES");
         btnPacientes.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnPacientes.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -252,8 +252,8 @@ public class FrmAlumnoHome extends javax.swing.JFrame {
             .addGroup(pnlPacientesLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(icnPacientes, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
-                .addComponent(btnPacientes, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(btnPacientes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnlPacientesLayout.setVerticalGroup(
             pnlPacientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -291,7 +291,7 @@ public class FrmAlumnoHome extends javax.swing.JFrame {
 
         btnConstultas.setBackground(new java.awt.Color(0, 0, 32));
         btnConstultas.setForeground(new java.awt.Color(255, 255, 255));
-        btnConstultas.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btnConstultas.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnConstultas.setText("CONSULTAS");
         btnConstultas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnConstultas.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -311,7 +311,7 @@ public class FrmAlumnoHome extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(icnConsultas, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnConstultas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(btnConstultas, javax.swing.GroupLayout.DEFAULT_SIZE, 159, Short.MAX_VALUE))
         );
         pnlConsultasLayout.setVerticalGroup(
             pnlConsultasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
