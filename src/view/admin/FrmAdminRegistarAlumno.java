@@ -141,11 +141,11 @@ public class FrmAdminRegistarAlumno extends javax.swing.JFrame {
 
         pnlHome.setBackground(new java.awt.Color(0, 0, 32));
         pnlHome.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                pnlHomeMouseExited(evt);
-            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 pnlHomeMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                pnlHomeMouseExited(evt);
             }
         });
 
@@ -155,6 +155,9 @@ public class FrmAdminRegistarAlumno extends javax.swing.JFrame {
         btnHome.setText("HOME");
         btnHome.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnHome.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnHomeMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnHomeMouseEntered(evt);
             }
@@ -297,9 +300,9 @@ public class FrmAdminRegistarAlumno extends javax.swing.JFrame {
         PnlDerechoLayout.setHorizontalGroup(
             PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PnlDerechoLayout.createSequentialGroup()
+                .addGap(79, 79, 79)
                 .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(PnlDerechoLayout.createSequentialGroup()
-                        .addGap(111, 111, 111)
                         .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(Catedratico)
                             .addComponent(estadoCivil)
@@ -316,9 +319,9 @@ public class FrmAdminRegistarAlumno extends javax.swing.JFrame {
                             .addComponent(txtidCatedratico, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtGrupo, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(PnlDerechoLayout.createSequentialGroup()
-                        .addGap(415, 415, 415)
+                        .addGap(304, 304, 304)
                         .addComponent(pnlGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(411, Short.MAX_VALUE))
+                .addContainerGap(443, Short.MAX_VALUE))
         );
         PnlDerechoLayout.setVerticalGroup(
             PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -442,6 +445,12 @@ public class FrmAdminRegistarAlumno extends javax.swing.JFrame {
     private void lblGuardarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblGuardarMouseExited
         pnlGuardar.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_lblGuardarMouseExited
+
+    private void btnHomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHomeMouseClicked
+        Home home = new Home();
+        home.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnHomeMouseClicked
 
     /**
      * @param args the command line arguments
