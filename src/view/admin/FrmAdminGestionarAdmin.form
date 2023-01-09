@@ -243,6 +243,7 @@
                     </Property>
                   </Properties>
                   <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnHomeMouseClicked"/>
                     <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnHomeMouseEntered"/>
                     <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnHomeMouseExited"/>
                   </Events>
