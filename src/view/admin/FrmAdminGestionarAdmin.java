@@ -39,6 +39,12 @@ public class FrmAdminGestionarAdmin extends javax.swing.JFrame {
         pnlHome = new javax.swing.JPanel();
         btnHome = new javax.swing.JLabel();
         icnHome = new javax.swing.JLabel();
+        pnlHome1 = new javax.swing.JPanel();
+        btnHome1 = new javax.swing.JLabel();
+        icnHome1 = new javax.swing.JLabel();
+        pnlHome2 = new javax.swing.JPanel();
+        btnHome2 = new javax.swing.JLabel();
+        icnHome2 = new javax.swing.JLabel();
         PnlDerecho = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tablaRol = new javax.swing.JTable();
@@ -181,8 +187,118 @@ public class FrmAdminGestionarAdmin extends javax.swing.JFrame {
         );
         pnlHomeLayout.setVerticalGroup(
             pnlHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(icnHome, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
+            .addComponent(icnHome, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(btnHome, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        pnlHome1.setBackground(new java.awt.Color(0, 0, 32));
+        pnlHome1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                pnlHome1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                pnlHome1MouseExited(evt);
+            }
+        });
+
+        btnHome1.setBackground(new java.awt.Color(0, 0, 32));
+        btnHome1.setForeground(new java.awt.Color(255, 255, 255));
+        btnHome1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btnHome1.setText("ALUMNOS");
+        btnHome1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnHome1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnHome1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnHome1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnHome1MouseExited(evt);
+            }
+        });
+
+        icnHome1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        icnHome1.setIcon(new javax.swing.ImageIcon("resources/images/iconoHome.png")
+        );
+        icnHome1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        icnHome1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                icnHome1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                icnHome1MouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnlHome1Layout = new javax.swing.GroupLayout(pnlHome1);
+        pnlHome1.setLayout(pnlHome1Layout);
+        pnlHome1Layout.setHorizontalGroup(
+            pnlHome1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlHome1Layout.createSequentialGroup()
+                .addComponent(icnHome1, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnHome1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        pnlHome1Layout.setVerticalGroup(
+            pnlHome1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(icnHome1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(btnHome1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        pnlHome2.setBackground(new java.awt.Color(0, 0, 32));
+        pnlHome2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                pnlHome2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                pnlHome2MouseExited(evt);
+            }
+        });
+
+        btnHome2.setBackground(new java.awt.Color(0, 0, 32));
+        btnHome2.setForeground(new java.awt.Color(255, 255, 255));
+        btnHome2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btnHome2.setText("PROFESORES");
+        btnHome2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnHome2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnHome2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnHome2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnHome2MouseExited(evt);
+            }
+        });
+
+        icnHome2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        icnHome2.setIcon(new javax.swing.ImageIcon("resources/images/iconoHome.png")
+        );
+        icnHome2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        icnHome2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                icnHome2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                icnHome2MouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnlHome2Layout = new javax.swing.GroupLayout(pnlHome2);
+        pnlHome2.setLayout(pnlHome2Layout);
+        pnlHome2Layout.setHorizontalGroup(
+            pnlHome2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlHome2Layout.createSequentialGroup()
+                .addComponent(icnHome2, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnHome2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        pnlHome2Layout.setVerticalGroup(
+            pnlHome2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(icnHome2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
+            .addComponent(btnHome2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         javax.swing.GroupLayout PnlIzquierdoLayout = new javax.swing.GroupLayout(PnlIzquierdo);
@@ -190,13 +306,19 @@ public class FrmAdminGestionarAdmin extends javax.swing.JFrame {
         PnlIzquierdoLayout.setHorizontalGroup(
             PnlIzquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(pnlHome, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(pnlHome1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(pnlHome2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         PnlIzquierdoLayout.setVerticalGroup(
             PnlIzquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PnlIzquierdoLayout.createSequentialGroup()
-                .addGap(122, 122, 122)
+                .addGap(135, 135, 135)
                 .addComponent(pnlHome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(529, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(pnlHome1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(pnlHome2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(404, Short.MAX_VALUE))
         );
 
         mainContainer.add(PnlIzquierdo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, -1, 690));
@@ -477,51 +599,111 @@ public class FrmAdminGestionarAdmin extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_btnHomeMouseClicked
 
+    private void btnHome1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHome1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnHome1MouseClicked
+
+    private void btnHome1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHome1MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnHome1MouseEntered
+
+    private void btnHome1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHome1MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnHome1MouseExited
+
+    private void icnHome1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icnHome1MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_icnHome1MouseEntered
+
+    private void icnHome1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icnHome1MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_icnHome1MouseExited
+
+    private void pnlHome1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlHome1MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pnlHome1MouseEntered
+
+    private void pnlHome1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlHome1MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pnlHome1MouseExited
+
+    private void btnHome2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHome2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnHome2MouseClicked
+
+    private void btnHome2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHome2MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnHome2MouseEntered
+
+    private void btnHome2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHome2MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnHome2MouseExited
+
+    private void icnHome2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icnHome2MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_icnHome2MouseEntered
+
+    private void icnHome2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icnHome2MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_icnHome2MouseExited
+
+    private void pnlHome2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlHome2MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pnlHome2MouseEntered
+
+    private void pnlHome2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlHome2MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pnlHome2MouseExited
+
     /**
      * @param args the command line arguments
      */
-//    public static void main(String args[]) {
-//        /* Set the Nimbus look and feel */
-//        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-//        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-//         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-//         */
-//        try {
-//            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-//                if ("Nimbus".equals(info.getName())) {
-//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-//                    break;
-//                }
-//            }
-//        } catch (ClassNotFoundException ex) {
-//            java.util.logging.Logger.getLogger(FrmAdminGestionarAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-//        } catch (InstantiationException ex) {
-//            java.util.logging.Logger.getLogger(FrmAdminGestionarAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-//        } catch (IllegalAccessException ex) {
-//            java.util.logging.Logger.getLogger(FrmAdminGestionarAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-//        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-//            java.util.logging.Logger.getLogger(FrmAdminGestionarAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-//        }
-//        //</editor-fold>
-//        //</editor-fold>
-//        //</editor-fold>
-//        //</editor-fold>
-//
-//        /* Create and display the form */
-//        java.awt.EventQueue.invokeLater(new Runnable() {
-//            public void run() {
-//                new FrmAdminGestionarAdmin().setVisible(true);
-//            }
-//        });
-//    }
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(FrmAdminGestionarAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(FrmAdminGestionarAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(FrmAdminGestionarAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(FrmAdminGestionarAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new FrmAdminGestionarAdmin().setVisible(true);
+            }
+        });
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel PnlDerecho;
     private javax.swing.JPanel PnlIzquierdo;
     private javax.swing.JLabel btnCerrar1;
     private javax.swing.JLabel btnHome;
+    private javax.swing.JLabel btnHome1;
+    private javax.swing.JLabel btnHome2;
     private javax.swing.JLabel btnSalir;
     private javax.swing.JLabel icnHome;
+    private javax.swing.JLabel icnHome1;
+    private javax.swing.JLabel icnHome2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblActualizar;
     private javax.swing.JLabel lblEliminar;
@@ -532,6 +714,8 @@ public class FrmAdminGestionarAdmin extends javax.swing.JFrame {
     private javax.swing.JPanel pnlAgregar;
     private javax.swing.JPanel pnlEliminar;
     private javax.swing.JPanel pnlHome;
+    private javax.swing.JPanel pnlHome1;
+    private javax.swing.JPanel pnlHome2;
     private javax.swing.JPanel pnlIzquierdo;
     private javax.swing.JPanel pnlSuperior1;
     private javax.swing.JTable tablaRol;

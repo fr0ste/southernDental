@@ -5,7 +5,9 @@
 package view.admin;
 
 import view.base.*;
+import javax.swing.BorderFactory;
 import utilities.Colors;
+import java.awt.Color;
 
 /**
  *
@@ -19,6 +21,7 @@ public class FrmAdminAlumno extends javax.swing.JFrame {
     private int xMouse, yMouse;
     public FrmAdminAlumno() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -41,6 +44,28 @@ public class FrmAdminAlumno extends javax.swing.JFrame {
         btnHome = new javax.swing.JLabel();
         icnHome = new javax.swing.JLabel();
         PnlDerecho = new javax.swing.JPanel();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        txtGrupo = new javax.swing.JTextField();
+        Catedratico = new javax.swing.JLabel();
+        txtNombres = new javax.swing.JTextField();
+        apellidoPaterno = new javax.swing.JLabel();
+        txtApellidoMaterno = new javax.swing.JTextField();
+        txtApellidoPaterno = new javax.swing.JTextField();
+        estadoCivil = new javax.swing.JLabel();
+        nombres = new javax.swing.JLabel();
+        apellidoMaterno = new javax.swing.JLabel();
+        estadoCivil1 = new javax.swing.JLabel();
+        Catedratico1 = new javax.swing.JLabel();
+        txtGrupo2 = new javax.swing.JTextField();
+        txtGrupo3 = new javax.swing.JTextField();
+        txtGrupo4 = new javax.swing.JTextField();
+        txtGrupo5 = new javax.swing.JTextField();
+        Catedratico2 = new javax.swing.JLabel();
+        txtGrupo6 = new javax.swing.JTextField();
+        Catedratico3 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -185,22 +210,218 @@ public class FrmAdminAlumno extends javax.swing.JFrame {
             .addGroup(PnlIzquierdoLayout.createSequentialGroup()
                 .addGap(108, 108, 108)
                 .addComponent(pnlHome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(523, Short.MAX_VALUE))
+                .addContainerGap(553, Short.MAX_VALUE))
         );
 
-        mainContainer.add(PnlIzquierdo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, -1, 670));
+        mainContainer.add(PnlIzquierdo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, -1, 700));
 
         PnlDerecho.setBackground(new java.awt.Color(255, 255, 255));
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel1.setText("Buscar");
+
+        txtGrupo.setBorder(BorderFactory.createMatteBorder(0,0,1,0,Color.BLACK));
+        txtGrupo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtGrupoActionPerformed(evt);
+            }
+        });
+
+        Catedratico.setForeground(new java.awt.Color(0, 0, 0));
+        Catedratico.setText("Matricula:");
+
+        txtNombres.setBorder(BorderFactory.createMatteBorder(0,0,1,0,Color.BLACK));
+        txtNombres.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNombresActionPerformed(evt);
+            }
+        });
+
+        apellidoPaterno.setForeground(new java.awt.Color(0, 0, 0));
+        apellidoPaterno.setText("Apellido Paterno:");
+
+        txtApellidoMaterno.setBorder(BorderFactory.createMatteBorder(0,0,1,0,Color.BLACK));
+        txtApellidoMaterno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtApellidoMaternoActionPerformed(evt);
+            }
+        });
+
+        txtApellidoPaterno.setBorder(BorderFactory.createMatteBorder(0,0,1,0,Color.BLACK));
+        txtApellidoPaterno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtApellidoPaternoActionPerformed(evt);
+            }
+        });
+
+        estadoCivil.setForeground(new java.awt.Color(0, 0, 0));
+        estadoCivil.setText("Semestre:");
+
+        nombres.setForeground(new java.awt.Color(0, 0, 0));
+        nombres.setText("Nombres:");
+
+        apellidoMaterno.setForeground(new java.awt.Color(0, 0, 0));
+        apellidoMaterno.setText("Apellido Materno:");
+
+        estadoCivil1.setForeground(new java.awt.Color(0, 0, 0));
+        estadoCivil1.setText("Grupo:");
+
+        Catedratico1.setForeground(new java.awt.Color(0, 0, 0));
+        Catedratico1.setText("Id Catedratico Responsable:");
+
+        txtGrupo2.setBorder(BorderFactory.createMatteBorder(0,0,1,0,Color.BLACK));
+        txtGrupo2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtGrupo2ActionPerformed(evt);
+            }
+        });
+
+        txtGrupo3.setBorder(BorderFactory.createMatteBorder(0,0,1,0,Color.BLACK));
+        txtGrupo3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtGrupo3ActionPerformed(evt);
+            }
+        });
+
+        txtGrupo4.setBorder(BorderFactory.createMatteBorder(0,0,1,0,Color.BLACK));
+        txtGrupo4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtGrupo4ActionPerformed(evt);
+            }
+        });
+
+        txtGrupo5.setBorder(BorderFactory.createMatteBorder(0,0,1,0,Color.BLACK));
+        txtGrupo5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtGrupo5ActionPerformed(evt);
+            }
+        });
+
+        Catedratico2.setForeground(new java.awt.Color(0, 0, 0));
+        Catedratico2.setText("Teléfono:");
+
+        txtGrupo6.setBorder(BorderFactory.createMatteBorder(0,0,1,0,Color.BLACK));
+        txtGrupo6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtGrupo6ActionPerformed(evt);
+            }
+        });
+
+        Catedratico3.setForeground(new java.awt.Color(0, 0, 0));
+        Catedratico3.setText("Correo Electónico:");
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Nombre", "Apellido Paterno", "Apellido Materno", "Matricula"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
 
         javax.swing.GroupLayout PnlDerechoLayout = new javax.swing.GroupLayout(PnlDerecho);
         PnlDerecho.setLayout(PnlDerechoLayout);
         PnlDerechoLayout.setHorizontalGroup(
             PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1040, Short.MAX_VALUE)
+            .addGroup(PnlDerechoLayout.createSequentialGroup()
+                .addGap(120, 120, 120)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 602, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel1)
+                .addContainerGap(253, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PnlDerechoLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PnlDerechoLayout.createSequentialGroup()
+                        .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(estadoCivil1)
+                            .addComponent(estadoCivil)
+                            .addComponent(apellidoMaterno)
+                            .addComponent(apellidoPaterno)
+                            .addComponent(Catedratico))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtApellidoPaterno)
+                            .addComponent(txtApellidoMaterno)
+                            .addComponent(txtGrupo)
+                            .addComponent(txtGrupo2)
+                            .addComponent(txtGrupo3, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PnlDerechoLayout.createSequentialGroup()
+                        .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Catedratico1, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(Catedratico2, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(Catedratico3, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtGrupo6, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(txtGrupo5, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(txtGrupo4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PnlDerechoLayout.createSequentialGroup()
+                        .addComponent(nombres)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtNombres, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(53, 53, 53))
         );
         PnlDerechoLayout.setVerticalGroup(
             PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 690, Short.MAX_VALUE)
+            .addGroup(PnlDerechoLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
+                .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 542, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PnlDerechoLayout.createSequentialGroup()
+                        .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(nombres)
+                            .addComponent(txtNombres, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtApellidoPaterno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(apellidoPaterno))
+                        .addGap(18, 18, 18)
+                        .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(apellidoMaterno)
+                            .addComponent(txtApellidoMaterno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(estadoCivil)
+                            .addComponent(txtGrupo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(estadoCivil1)
+                            .addComponent(txtGrupo2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Catedratico)
+                            .addComponent(txtGrupo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Catedratico1)
+                            .addComponent(txtGrupo4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtGrupo5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Catedratico2))
+                        .addGap(18, 18, 18)
+                        .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtGrupo6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Catedratico3))))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
 
         mainContainer.add(PnlDerecho, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 30, 1040, 690));
@@ -258,6 +479,46 @@ public class FrmAdminAlumno extends javax.swing.JFrame {
         pnlHome.setBackground(Colors.MOUSE_ENTERED);
     }//GEN-LAST:event_pnlHomeMouseEntered
 
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void txtApellidoMaternoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoMaternoActionPerformed
+
+    }//GEN-LAST:event_txtApellidoMaternoActionPerformed
+
+    private void txtGrupoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtGrupoActionPerformed
+
+    }//GEN-LAST:event_txtGrupoActionPerformed
+
+    private void txtApellidoPaternoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoPaternoActionPerformed
+
+    }//GEN-LAST:event_txtApellidoPaternoActionPerformed
+
+    private void txtNombresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombresActionPerformed
+
+    }//GEN-LAST:event_txtNombresActionPerformed
+
+    private void txtGrupo2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtGrupo2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtGrupo2ActionPerformed
+
+    private void txtGrupo3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtGrupo3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtGrupo3ActionPerformed
+
+    private void txtGrupo4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtGrupo4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtGrupo4ActionPerformed
+
+    private void txtGrupo5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtGrupo5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtGrupo5ActionPerformed
+
+    private void txtGrupo6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtGrupo6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtGrupo6ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -295,16 +556,38 @@ public class FrmAdminAlumno extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Catedratico;
+    private javax.swing.JLabel Catedratico1;
+    private javax.swing.JLabel Catedratico2;
+    private javax.swing.JLabel Catedratico3;
     private javax.swing.JPanel PnlDerecho;
     private javax.swing.JPanel PnlIzquierdo;
+    private javax.swing.JLabel apellidoMaterno;
+    private javax.swing.JLabel apellidoPaterno;
     private javax.swing.JLabel btnCerrar1;
     private javax.swing.JLabel btnHome;
     private javax.swing.JLabel btnSalir;
+    private javax.swing.JLabel estadoCivil;
+    private javax.swing.JLabel estadoCivil1;
     private javax.swing.JLabel icnHome;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JPanel lblSuperior;
     private javax.swing.JPanel mainContainer;
+    private javax.swing.JLabel nombres;
     private javax.swing.JPanel pnlHome;
     private javax.swing.JPanel pnlIzquierdo;
     private javax.swing.JPanel pnlSuperior1;
+    private javax.swing.JTextField txtApellidoMaterno;
+    private javax.swing.JTextField txtApellidoPaterno;
+    private javax.swing.JTextField txtGrupo;
+    private javax.swing.JTextField txtGrupo2;
+    private javax.swing.JTextField txtGrupo3;
+    private javax.swing.JTextField txtGrupo4;
+    private javax.swing.JTextField txtGrupo5;
+    private javax.swing.JTextField txtGrupo6;
+    private javax.swing.JTextField txtNombres;
     // End of variables declaration//GEN-END:variables
 }
