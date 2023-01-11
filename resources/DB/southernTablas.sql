@@ -26,6 +26,21 @@ foreign key (f_id_rol) references roles_tipos_usuario(id_rol)
 
 -- ******************************************** ESQUEMAS DE USUARIOS DE LA APLICACION *******************************
 
+-- tablas administradores de clinica
+create table administradores(
+id_paciente int not null auto_increment primary key,
+nombre1 varchar(50),
+nombre2 varchar(50),
+apellido1 varchar(50),
+apellido2 varchar(50),
+numero_trabajador varchar(15),
+fecha_nacimiento date,
+sexo char,
+fk_usuario int,
+foreign key (fk_usuario) references usuarios(id_usuario)
+);
+
+
 -- tablas de pacientes
 
 
@@ -36,6 +51,7 @@ nombre2 varchar(50),
 apellido1 varchar(50),
 apellido2 varchar(50),
 sexo char,
+fecha_nacimiento date,
 ocupacion varchar(100),
 estado_civil varchar(50)
 );
@@ -47,7 +63,6 @@ nombre1 varchar(50),
 nombre2 varchar(50),
 apellido1 varchar(50),
 apellido2 varchar(50),
-edad int,
 sexo char,
 grupo_etnico varchar(50),
 ocupacion varchar(80),
@@ -58,7 +73,6 @@ religion varchar(50),
 fecha_ingreso date,
 nacionalidad varchar(50),
 localidad varchar(100),
-e_mail varchar(100),
 f_id_usuario int not null,
 FOREIGN KEY(f_id_usuario) references usuarios(id_usuario),
 f_id_tutor int not null,
@@ -73,6 +87,7 @@ nombre varchar(100),
 nombre2 varchar(100),
 apellido varchar(100),
 apellido2 varchar(100),
+numero_trabajador varchar(15),
 f_id_usuario int not null,
 FOREIGN KEY(f_id_usuario) references usuarios(id_usuario)
 
@@ -88,6 +103,8 @@ apellido varchar(100),
 apellido2 varchar(100),
 semestre int,
 grupo int,
+matricula varchar(10),
+telefono varchar(10),
 f_id_catedratico_responsable int not null,
 f_id_usuario int not null,
 foreign key(f_id_catedratico_responsable) references catedraticos(id_catedratico),
