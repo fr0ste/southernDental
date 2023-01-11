@@ -1,8 +1,18 @@
--- datos de usuario froste
-insert into usuarios(nombre_usuario,pass_usuario,email_usuario) values('froste','froste123','73338az@gmail.com');
-insert into roles_tipos_usuario(nombre_rol) values('administrador'),('alumno'),('paciente');
-insert into roles_usuarios(id_usuario,id_rol) values(1,2);
+use southern_dental;
 
--- datos de usuario Eli0
-insert into usuarios(nombre_usuario,pass_usuario,email_usuario) values('Eli0','elio123','elio@gmail.com');
-insert into roles_usuarios(id_usuario,id_rol) values(2,1);
+-- insertamos los roles de los usuarios del sistema
+insert into roles_tipos_usuario(nombre_rol) values ('administrador'),('profesor'),('alumnos');
+
+-- agregamos usuarios a la base de datos
+insert into usuarios(nombre_usuario,pass_usuario,email_usuario,f_id_rol) 
+values ('Elio','elio123','elio@mail.com','1'),('froste','froste123','froste@mail.com','1'),
+('juan','juan123','juan@mail.com','2'),('pepe','pepe123','pepe@gmail.com','2'),
+('ana','ana123','ana@mail.com','3');
+
+
+-- agregamos a los administradores de la aplicacion
+insert into administradores(nombre1,nombre2,apellido1,apellido2,fecha_nacimiento,sexo,fk_usuario) 
+values('Carlos','Aurelio','Alcantara','Perez',"2001-01-23",'M',1),
+('Getzemani','Alejandro','Martinez','Rodriguez',"2000-06-12",'M',2),
+('Oscar','','Fuentes','Alvarado',"2000-02-12",'M',3);
+
