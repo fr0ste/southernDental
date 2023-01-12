@@ -1,7 +1,7 @@
 use southern_dental;
 
 -- insertamos los roles de los usuarios del sistema
-insert into roles_tipos_usuario(nombre_rol) values ('administrador'),('profesor'),('alumnos');
+insert into roles_tipos_usuario(nombre_rol) values ('administrador'),('profesor'),('alumno');
 
 -- agregamos usuarios a la base de datos
 insert into usuarios(nombre_usuario,pass_usuario,email_usuario,f_id_rol) 

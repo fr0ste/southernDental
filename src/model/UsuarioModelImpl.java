@@ -36,19 +36,20 @@ public class UsuarioModelImpl {
             ResultSet rs;
             conexion = new Conexion();//se establece la conexión
             connection = conexion.getConnection();//se obtiene la 
-                                                  //conexión de la base de datos 
+                                                  //conexión de la base de datos
+            System.out.println("1");
             String query = "with usuarios_registrados as "
                     + "(select * from usuarios left join "
                     + "roles_tipos_usuario on "
                     + "usuarios.f_id_rol = roles_tipos_usuario.id_rol)\n" 
                     + "select * from usuarios_registrados where "
-                    + "usuarios_registrados.nombre_usuario="
-                    + usuario.getNombreUsuario()+" and pass_usuario=" +usuario.getPassUsuario()+" and nombre_rol="+usuario.getRol()+";";
-            
+                    + "usuarios_registrados.nombre_usuario='"
+                    + usuario.getNombreUsuario()+"' and pass_usuario='" +usuario.getPassUsuario()+"' and nombre_rol='"+usuario.getRol()+"';";
+            System.out.println("2");
             stm = connection.createStatement();
-           
+            System.out.println("3");
             rs = stm.executeQuery(query);
-            
+            System.out.println("4");
             while (rs.next()) {
                 Usuario usuario1 = new Usuario();
                 listaUsuario.add(usuario1);
