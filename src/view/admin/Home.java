@@ -55,6 +55,7 @@ public class Home extends javax.swing.JFrame {
         pnlHome = new javax.swing.JPanel();
         btnHome = new javax.swing.JLabel();
         icnHome = new javax.swing.JLabel();
+        icnLogo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -282,7 +283,7 @@ public class Home extends javax.swing.JFrame {
         });
 
         icnHome.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        icnHome.setIcon(new javax.swing.ImageIcon("resources/images/iconoHome.png")
+        icnHome.setIcon(new javax.swing.ImageIcon("resources/images/hogar.png")
         );
         icnHome.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -308,18 +309,24 @@ public class Home extends javax.swing.JFrame {
             .addComponent(btnHome, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        icnLogo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        icnLogo.setIcon(new javax.swing.ImageIcon("resources/images/LogoLight_128.png"));
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(pnlHome, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(icnLogo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(150, 150, 150)
+                .addGap(36, 36, 36)
+                .addComponent(icnLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(pnlHome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(591, Short.MAX_VALUE))
+                .addContainerGap(537, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 780));
@@ -328,7 +335,7 @@ public class Home extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1290, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -437,7 +444,7 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_btnPacientesMouseClicked
 
     private void btnProfesorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProfesorMouseClicked
-        FrmAdminRegistrarTutor VentanaTutor = new FrmAdminRegistrarTutor();
+        FrmAdminGestionarProfesor VentanaTutor = new FrmAdminGestionarProfesor();
         VentanaTutor.setVisible(true);
         this.setVisible(false);
 //        menu.setSelectedIndex(MENU_PROFESORES);
@@ -445,7 +452,7 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_btnProfesorMouseClicked
 
     private void btnAlumnosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAlumnosMouseClicked
-        FrmAdminAlumno FrmRegistrarAlumno = new FrmAdminAlumno();
+        FrmAdminGestionarAlumno FrmRegistrarAlumno = new FrmAdminGestionarAlumno();
         FrmRegistrarAlumno.setVisible(true);
         this.setVisible(false);
 //        menu.setSelectedIndex(MENU_ALUMNOS);
@@ -514,6 +521,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel btnProfesor;
     private javax.swing.JLabel btnSalir;
     private javax.swing.JLabel icnHome;
+    private javax.swing.JLabel icnLogo;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel lblSuperior;

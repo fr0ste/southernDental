@@ -1,7 +1,7 @@
 /**
  * Autor: Joel && Elio
  * Fecha de creación: 08 de enero del 2023
- * Fecha de modificación: 09 de enero del 2023
+ * Fecha de modificación: 12 de enero del 2023
  * Descripción: Frame Registrar Administrador
  */
 package view.admin;
@@ -39,12 +39,13 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
         pnlHome = new javax.swing.JPanel();
         btnHome = new javax.swing.JLabel();
         icnHome = new javax.swing.JLabel();
-        pnlGestionar1 = new javax.swing.JPanel();
-        btnHome2 = new javax.swing.JLabel();
-        icnHome2 = new javax.swing.JLabel();
-        pnlGestionar2 = new javax.swing.JPanel();
-        btnHome3 = new javax.swing.JLabel();
-        icnHome3 = new javax.swing.JLabel();
+        pnlProfesores = new javax.swing.JPanel();
+        btnProfesores = new javax.swing.JLabel();
+        icnProfesores = new javax.swing.JLabel();
+        pnlAlumnos = new javax.swing.JPanel();
+        btnAlumnos = new javax.swing.JLabel();
+        icnAlumnos = new javax.swing.JLabel();
+        icnLogo = new javax.swing.JLabel();
         PnlDerecho = new javax.swing.JPanel();
         txtCorreoElectronico = new javax.swing.JTextField();
         lblNombreUsuario = new javax.swing.JLabel();
@@ -55,6 +56,9 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
         jComboBox1 = new javax.swing.JComboBox<>();
         pnlGuardar = new javax.swing.JPanel();
         lblGuardar = new javax.swing.JLabel();
+        icnLogo1 = new javax.swing.JLabel();
+        icnLogo2 = new javax.swing.JLabel();
+        icnLogo3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -149,8 +153,8 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
 
         btnHome1.setBackground(new java.awt.Color(0, 0, 32));
         btnHome1.setForeground(new java.awt.Color(255, 255, 255));
-        btnHome1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btnHome1.setText("GESTIONAR ADMIN");
+        btnHome1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnHome1.setText("GESTIONAR USUARIO");
         btnHome1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnHome1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -204,7 +208,7 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
 
         btnHome.setBackground(new java.awt.Color(0, 0, 32));
         btnHome.setForeground(new java.awt.Color(255, 255, 255));
-        btnHome.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btnHome.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnHome.setText("HOME");
         btnHome.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnHome.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -220,7 +224,7 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
         });
 
         icnHome.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        icnHome.setIcon(new javax.swing.ImageIcon("resources/images/iconoHome.png")
+        icnHome.setIcon(new javax.swing.ImageIcon("resources/images/hogar.png")
         );
         icnHome.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         icnHome.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -247,137 +251,145 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
             .addComponent(btnHome, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        pnlGestionar1.setBackground(new java.awt.Color(0, 0, 32));
-        pnlGestionar1.addMouseListener(new java.awt.event.MouseAdapter() {
+        pnlProfesores.setBackground(new java.awt.Color(0, 0, 32));
+        pnlProfesores.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                pnlGestionar1MouseEntered(evt);
+                pnlProfesoresMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                pnlGestionar1MouseExited(evt);
+                pnlProfesoresMouseExited(evt);
             }
         });
 
-        btnHome2.setBackground(new java.awt.Color(0, 0, 32));
-        btnHome2.setForeground(new java.awt.Color(255, 255, 255));
-        btnHome2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btnHome2.setText("PROFESORES");
-        btnHome2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnHome2.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnProfesores.setBackground(new java.awt.Color(0, 0, 32));
+        btnProfesores.setForeground(new java.awt.Color(255, 255, 255));
+        btnProfesores.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnProfesores.setText("PROFESORES");
+        btnProfesores.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnProfesores.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnHome2MouseClicked(evt);
+                btnProfesoresMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnHome2MouseEntered(evt);
+                btnProfesoresMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnHome2MouseExited(evt);
+                btnProfesoresMouseExited(evt);
             }
         });
 
-        icnHome2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        icnHome2.setIcon(new javax.swing.ImageIcon("resources/images/gestionar.png")
+        icnProfesores.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        icnProfesores.setIcon(new javax.swing.ImageIcon("resources/images/profesor.png")
         );
-        icnHome2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        icnHome2.addMouseListener(new java.awt.event.MouseAdapter() {
+        icnProfesores.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        icnProfesores.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                icnHome2MouseEntered(evt);
+                icnProfesoresMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                icnHome2MouseExited(evt);
+                icnProfesoresMouseExited(evt);
             }
         });
 
-        javax.swing.GroupLayout pnlGestionar1Layout = new javax.swing.GroupLayout(pnlGestionar1);
-        pnlGestionar1.setLayout(pnlGestionar1Layout);
-        pnlGestionar1Layout.setHorizontalGroup(
-            pnlGestionar1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlGestionar1Layout.createSequentialGroup()
-                .addComponent(icnHome2, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+        javax.swing.GroupLayout pnlProfesoresLayout = new javax.swing.GroupLayout(pnlProfesores);
+        pnlProfesores.setLayout(pnlProfesoresLayout);
+        pnlProfesoresLayout.setHorizontalGroup(
+            pnlProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlProfesoresLayout.createSequentialGroup()
+                .addComponent(icnProfesores, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnHome2, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(btnProfesores, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        pnlGestionar1Layout.setVerticalGroup(
-            pnlGestionar1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(icnHome2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(btnHome2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+        pnlProfesoresLayout.setVerticalGroup(
+            pnlProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(icnProfesores, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(btnProfesores, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        pnlGestionar2.setBackground(new java.awt.Color(0, 0, 32));
-        pnlGestionar2.addMouseListener(new java.awt.event.MouseAdapter() {
+        pnlAlumnos.setBackground(new java.awt.Color(0, 0, 32));
+        pnlAlumnos.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                pnlGestionar2MouseEntered(evt);
+                pnlAlumnosMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                pnlGestionar2MouseExited(evt);
+                pnlAlumnosMouseExited(evt);
             }
         });
 
-        btnHome3.setBackground(new java.awt.Color(0, 0, 32));
-        btnHome3.setForeground(new java.awt.Color(255, 255, 255));
-        btnHome3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btnHome3.setText("ALUMNOS");
-        btnHome3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnHome3.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnAlumnos.setBackground(new java.awt.Color(0, 0, 32));
+        btnAlumnos.setForeground(new java.awt.Color(255, 255, 255));
+        btnAlumnos.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnAlumnos.setText("ALUMNOS");
+        btnAlumnos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnAlumnos.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnHome3MouseClicked(evt);
+                btnAlumnosMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnHome3MouseEntered(evt);
+                btnAlumnosMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnHome3MouseExited(evt);
+                btnAlumnosMouseExited(evt);
             }
         });
 
-        icnHome3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        icnHome3.setIcon(new javax.swing.ImageIcon("resources/images/gestionar.png")
+        icnAlumnos.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        icnAlumnos.setIcon(new javax.swing.ImageIcon("resources/images/alumno.png")
         );
-        icnHome3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        icnHome3.addMouseListener(new java.awt.event.MouseAdapter() {
+        icnAlumnos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        icnAlumnos.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                icnHome3MouseEntered(evt);
+                icnAlumnosMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                icnHome3MouseExited(evt);
+                icnAlumnosMouseExited(evt);
             }
         });
 
-        javax.swing.GroupLayout pnlGestionar2Layout = new javax.swing.GroupLayout(pnlGestionar2);
-        pnlGestionar2.setLayout(pnlGestionar2Layout);
-        pnlGestionar2Layout.setHorizontalGroup(
-            pnlGestionar2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlGestionar2Layout.createSequentialGroup()
-                .addComponent(icnHome3, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+        javax.swing.GroupLayout pnlAlumnosLayout = new javax.swing.GroupLayout(pnlAlumnos);
+        pnlAlumnos.setLayout(pnlAlumnosLayout);
+        pnlAlumnosLayout.setHorizontalGroup(
+            pnlAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlAlumnosLayout.createSequentialGroup()
+                .addComponent(icnAlumnos, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnHome3, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(btnAlumnos, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        pnlGestionar2Layout.setVerticalGroup(
-            pnlGestionar2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(icnHome3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
-            .addComponent(btnHome3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+        pnlAlumnosLayout.setVerticalGroup(
+            pnlAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(icnAlumnos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
+            .addComponent(btnAlumnos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
+
+        icnLogo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        icnLogo.setIcon(new javax.swing.ImageIcon("resources/images/LogoLight_128.png"));
 
         javax.swing.GroupLayout PnlIzquierdoLayout = new javax.swing.GroupLayout(PnlIzquierdo);
         PnlIzquierdo.setLayout(PnlIzquierdoLayout);
         PnlIzquierdoLayout.setHorizontalGroup(
             PnlIzquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(pnlHome, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(pnlGestionar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(pnlGestionar2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(pnlProfesores, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(pnlAlumnos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(pnlGestionar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(PnlIzquierdoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(icnLogo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         PnlIzquierdoLayout.setVerticalGroup(
             PnlIzquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PnlIzquierdoLayout.createSequentialGroup()
-                .addGap(121, 121, 121)
+                .addComponent(icnLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(pnlHome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(pnlGestionar2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(pnlGestionar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
                 .addComponent(pnlGestionar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(362, Short.MAX_VALUE))
+                .addGap(19, 19, 19)
+                .addComponent(pnlProfesores, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(pnlAlumnos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(314, Short.MAX_VALUE))
         );
 
         mainContainer.add(PnlIzquierdo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, -1, 690));
@@ -385,7 +397,7 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
         PnlDerecho.setBackground(new java.awt.Color(255, 255, 255));
 
         lblNombreUsuario.setForeground(new java.awt.Color(0, 0, 0));
-        lblNombreUsuario.setText("Nombre del Usuario");
+        lblNombreUsuario.setText("Nombre de Usuario");
 
         lblNombreUsuario1.setForeground(new java.awt.Color(0, 0, 0));
         lblNombreUsuario1.setText("Contraseña");
@@ -437,35 +449,65 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
             .addComponent(lblGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        icnLogo1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        icnLogo1.setIcon(new javax.swing.ImageIcon("resources/images/administrar_128.png"));
+
+        icnLogo2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        icnLogo2.setIcon(new javax.swing.ImageIcon("resources/images/profesor_128.png"));
+
+        icnLogo3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        icnLogo3.setIcon(new javax.swing.ImageIcon("resources/images/alumno_128.png"));
+
         javax.swing.GroupLayout PnlDerechoLayout = new javax.swing.GroupLayout(PnlDerecho);
         PnlDerecho.setLayout(PnlDerechoLayout);
         PnlDerechoLayout.setHorizontalGroup(
             PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PnlDerechoLayout.createSequentialGroup()
-                .addGap(27, 27, 27)
-                .addComponent(lblNombreUsuario)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtNombreUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblNombreUsuario1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(passUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, 161, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtCorreoElectronico, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(39, 39, 39))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PnlDerechoLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(pnlGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(449, 449, 449))
+                .addGap(435, 435, 435))
+            .addGroup(PnlDerechoLayout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(lblNombreUsuario)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txtNombreUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblNombreUsuario1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PnlDerechoLayout.createSequentialGroup()
+                        .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(PnlDerechoLayout.createSequentialGroup()
+                                .addComponent(icnLogo3, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(51, 51, 51))
+                            .addGroup(PnlDerechoLayout.createSequentialGroup()
+                                .addComponent(icnLogo1, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                        .addComponent(icnLogo2, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(PnlDerechoLayout.createSequentialGroup()
+                        .addComponent(passUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtCorreoElectronico, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(24, 24, 24))))
         );
         PnlDerechoLayout.setVerticalGroup(
             PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PnlDerechoLayout.createSequentialGroup()
-                .addGap(392, 392, 392)
+                .addContainerGap(72, Short.MAX_VALUE)
+                .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PnlDerechoLayout.createSequentialGroup()
+                        .addComponent(icnLogo1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(icnLogo3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(PnlDerechoLayout.createSequentialGroup()
+                        .addGap(82, 82, 82)
+                        .addComponent(icnLogo2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(71, 71, 71)
                 .addGroup(PnlDerechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblNombreUsuario1)
                     .addComponent(lblNombreUsuario)
@@ -474,9 +516,9 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
                     .addComponent(jLabel1)
                     .addComponent(txtCorreoElectronico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(51, 51, 51)
+                .addGap(58, 58, 58)
                 .addComponent(pnlGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(189, Short.MAX_VALUE))
+                .addGap(125, 125, 125))
         );
 
         mainContainer.add(PnlDerecho, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 30, 1040, 690));
@@ -596,61 +638,66 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
         pnlGestionar.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_pnlGestionarMouseExited
 
-    private void btnHome2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHome2MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnHome2MouseClicked
+    private void btnProfesoresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProfesoresMouseClicked
+        FrmAdminGestionarProfesor ventanaProfesor = new FrmAdminGestionarProfesor();
+        ventanaProfesor.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnProfesoresMouseClicked
 
-    private void btnHome2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHome2MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnHome2MouseEntered
+    private void btnProfesoresMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProfesoresMouseEntered
+        pnlProfesores.setBackground(Colors.MOUSE_ENTERED);
+    }//GEN-LAST:event_btnProfesoresMouseEntered
 
-    private void btnHome2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHome2MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnHome2MouseExited
+    private void btnProfesoresMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProfesoresMouseExited
+        pnlProfesores.setBackground(Colors.MOUSE_EXITED);
+    }//GEN-LAST:event_btnProfesoresMouseExited
 
-    private void icnHome2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icnHome2MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_icnHome2MouseEntered
+    private void icnProfesoresMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icnProfesoresMouseEntered
+        pnlProfesores.setBackground(Colors.MOUSE_ENTERED);
+    }//GEN-LAST:event_icnProfesoresMouseEntered
 
-    private void icnHome2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icnHome2MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_icnHome2MouseExited
+    private void icnProfesoresMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icnProfesoresMouseExited
+        pnlProfesores.setBackground(Colors.MOUSE_EXITED);
+    }//GEN-LAST:event_icnProfesoresMouseExited
 
-    private void pnlGestionar1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlGestionar1MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_pnlGestionar1MouseEntered
+    private void pnlProfesoresMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlProfesoresMouseEntered
+        pnlProfesores.setBackground(Colors.MOUSE_ENTERED);
+    }//GEN-LAST:event_pnlProfesoresMouseEntered
 
-    private void pnlGestionar1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlGestionar1MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_pnlGestionar1MouseExited
+    private void pnlProfesoresMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlProfesoresMouseExited
+        pnlProfesores.setBackground(Colors.MOUSE_EXITED);
+    }//GEN-LAST:event_pnlProfesoresMouseExited
 
-    private void btnHome3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHome3MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnHome3MouseClicked
+    private void btnAlumnosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAlumnosMouseClicked
+        FrmAdminGestionarAlumno ventanaAlumno = new FrmAdminGestionarAlumno();
+        ventanaAlumno.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnAlumnosMouseClicked
 
-    private void btnHome3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHome3MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnHome3MouseEntered
+    private void btnAlumnosMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAlumnosMouseEntered
+        pnlAlumnos.setBackground(Colors.MOUSE_ENTERED);
+    }//GEN-LAST:event_btnAlumnosMouseEntered
 
-    private void btnHome3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHome3MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnHome3MouseExited
+    private void btnAlumnosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAlumnosMouseExited
+        pnlAlumnos.setBackground(Colors.MOUSE_EXITED);
+    }//GEN-LAST:event_btnAlumnosMouseExited
 
-    private void icnHome3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icnHome3MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_icnHome3MouseEntered
+    private void icnAlumnosMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icnAlumnosMouseEntered
+        pnlAlumnos.setBackground(Colors.MOUSE_ENTERED);
+    }//GEN-LAST:event_icnAlumnosMouseEntered
 
-    private void icnHome3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icnHome3MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_icnHome3MouseExited
+    private void icnAlumnosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icnAlumnosMouseExited
+        pnlAlumnos.setBackground(Colors.MOUSE_EXITED);
 
-    private void pnlGestionar2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlGestionar2MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_pnlGestionar2MouseEntered
+    }//GEN-LAST:event_icnAlumnosMouseExited
 
-    private void pnlGestionar2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlGestionar2MouseExited
+    private void pnlAlumnosMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlAlumnosMouseEntered
+        pnlAlumnos.setBackground(Colors.MOUSE_ENTERED);
+    }//GEN-LAST:event_pnlAlumnosMouseEntered
+
+    private void pnlAlumnosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlAlumnosMouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_pnlGestionar2MouseExited
+    }//GEN-LAST:event_pnlAlumnosMouseExited
 
     /**
      * @param args the command line arguments
@@ -679,6 +726,8 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -691,16 +740,20 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel PnlDerecho;
     private javax.swing.JPanel PnlIzquierdo;
+    private javax.swing.JLabel btnAlumnos;
     private javax.swing.JLabel btnCerrar1;
     private javax.swing.JLabel btnHome;
     private javax.swing.JLabel btnHome1;
-    private javax.swing.JLabel btnHome2;
-    private javax.swing.JLabel btnHome3;
+    private javax.swing.JLabel btnProfesores;
     private javax.swing.JLabel btnSalir;
+    private javax.swing.JLabel icnAlumnos;
     private javax.swing.JLabel icnHome;
     private javax.swing.JLabel icnHome1;
-    private javax.swing.JLabel icnHome2;
-    private javax.swing.JLabel icnHome3;
+    private javax.swing.JLabel icnLogo;
+    private javax.swing.JLabel icnLogo1;
+    private javax.swing.JLabel icnLogo2;
+    private javax.swing.JLabel icnLogo3;
+    private javax.swing.JLabel icnProfesores;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblGuardar;
@@ -709,12 +762,12 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
     private javax.swing.JPanel lblSuperior;
     private javax.swing.JPanel mainContainer;
     private javax.swing.JPasswordField passUsuario;
+    private javax.swing.JPanel pnlAlumnos;
     private javax.swing.JPanel pnlGestionar;
-    private javax.swing.JPanel pnlGestionar1;
-    private javax.swing.JPanel pnlGestionar2;
     private javax.swing.JPanel pnlGuardar;
     private javax.swing.JPanel pnlHome;
     private javax.swing.JPanel pnlIzquierdo;
+    private javax.swing.JPanel pnlProfesores;
     private javax.swing.JPanel pnlSuperior1;
     private javax.swing.JTextField txtCorreoElectronico;
     private javax.swing.JTextField txtNombreUsuario;

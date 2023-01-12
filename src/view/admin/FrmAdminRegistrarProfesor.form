@@ -187,13 +187,13 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="pnlHome" alignment="0" max="32767" attributes="0"/>
                   <Component id="pnlAlumnos" alignment="0" max="32767" attributes="0"/>
-                  <Group type="102" alignment="1" attributes="0">
+                  <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="icnLogo" pref="228" max="32767" attributes="0"/>
+                      <Component id="icnLogo" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
-                  <Component id="pnlProfesores" alignment="0" max="32767" attributes="0"/>
                   <Component id="pnlAdmin" alignment="0" max="32767" attributes="0"/>
+                  <Component id="pnlProfesor" alignment="1" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
@@ -203,12 +203,12 @@
                       <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
                       <Component id="pnlHome" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="pnlProfesor" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="pnlAlumnos" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="pnlAdmin" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="pnlProfesores" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="314" max="32767" attributes="0"/>
+                      <EmptySpace pref="315" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -221,8 +221,8 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pnlHomeMouseEntered"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pnlHomeMouseExited"/>
+                <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pnlHomeMouseEntered"/>
               </Events>
 
               <Layout>
@@ -237,7 +237,7 @@
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="icnHome" alignment="1" max="32767" attributes="0"/>
+                      <Component id="icnHome" alignment="1" pref="39" max="32767" attributes="0"/>
                       <Component id="btnHome" alignment="1" min="-2" pref="38" max="-2" attributes="0"/>
                   </Group>
                 </DimensionLayout>
@@ -269,9 +269,6 @@
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
                       <Connection code="new javax.swing.ImageIcon(&quot;resources/images/hogar.png&quot;)&#xa;" type="code"/>
                     </Property>
-                    <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                      <Color id="Cursor de Mano"/>
-                    </Property>
                   </Properties>
                   <Events>
                     <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="icnHomeMouseEntered"/>
@@ -280,31 +277,34 @@
                 </Component>
               </SubComponents>
             </Container>
+            <Component class="javax.swing.JLabel" name="icnLogo">
+              <Properties>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new javax.swing.ImageIcon(&quot;resources/images/LogoLight_128.png&quot;)" type="code"/>
+                </Property>
+              </Properties>
+            </Component>
             <Container class="javax.swing.JPanel" name="pnlAlumnos">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="20" green="0" red="0" type="rgb"/>
                 </Property>
               </Properties>
-              <Events>
-                <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pnlAlumnosMouseEntered"/>
-                <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pnlAlumnosMouseExited"/>
-              </Events>
 
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <Component id="icnAlumnos" max="32767" attributes="0"/>
+                          <Component id="icnAlumnos" min="-2" pref="69" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnAlumnos" min="-2" pref="162" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="btnAlumnos" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="icnAlumnos" alignment="1" pref="39" max="32767" attributes="0"/>
+                      <Component id="icnAlumnos" alignment="1" max="32767" attributes="0"/>
                       <Component id="btnAlumnos" alignment="1" min="-2" pref="38" max="-2" attributes="0"/>
                   </Group>
                 </DimensionLayout>
@@ -319,7 +319,7 @@
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="horizontalAlignment" type="int" value="2"/>
-                    <Property name="text" type="java.lang.String" value="GESTIONAR ALUMNOS"/>
+                    <Property name="text" type="java.lang.String" value="ALUMNOS"/>
                     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                       <Color id="Cursor de Mano"/>
                     </Property>
@@ -334,7 +334,7 @@
                   <Properties>
                     <Property name="horizontalAlignment" type="int" value="0"/>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                      <Connection code="new javax.swing.ImageIcon(&quot;resources/images/gestionar.png&quot;)&#xa;" type="code"/>
+                      <Connection code="new javax.swing.ImageIcon(&quot;resources/images/aalumnoHome.png&quot;)&#xa;" type="code"/>
                     </Property>
                     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                       <Color id="Cursor de Mano"/>
@@ -347,14 +347,6 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JLabel" name="icnLogo">
-              <Properties>
-                <Property name="horizontalAlignment" type="int" value="0"/>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                  <Connection code="new javax.swing.ImageIcon(&quot;resources/images/LogoLight_128.png&quot;)" type="code"/>
-                </Property>
-              </Properties>
-            </Component>
             <Container class="javax.swing.JPanel" name="pnlAdmin">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -421,36 +413,37 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Container class="javax.swing.JPanel" name="pnlProfesores">
+            <Container class="javax.swing.JPanel" name="pnlProfesor">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="20" green="0" red="0" type="rgb"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pnlProfesoresMouseEntered"/>
-                <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pnlProfesoresMouseExited"/>
+                <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pnlProfesorMouseEntered"/>
+                <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pnlProfesorMouseExited"/>
               </Events>
 
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <Component id="icnProfesores" min="-2" pref="69" max="-2" attributes="0"/>
+                          <Component id="icnProfesor" max="32767" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnProfesores" max="32767" attributes="0"/>
+                          <Component id="btnProfesor" min="-2" pref="162" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="icnProfesores" alignment="1" pref="39" max="32767" attributes="0"/>
-                      <Component id="btnProfesores" alignment="1" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="icnProfesor" alignment="1" max="32767" attributes="0"/>
+                      <Component id="btnProfesor" alignment="1" min="-2" pref="38" max="-2" attributes="0"/>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="btnProfesores">
+                <Component class="javax.swing.JLabel" name="btnProfesor">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="20" green="0" red="0" type="rgb"/>
@@ -459,30 +452,30 @@
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="horizontalAlignment" type="int" value="2"/>
-                    <Property name="text" type="java.lang.String" value="PROFESORES"/>
+                    <Property name="text" type="java.lang.String" value="GESTIONAR PROFESOR"/>
                     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                       <Color id="Cursor de Mano"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnProfesoresMouseClicked"/>
-                    <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnProfesoresMouseEntered"/>
-                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnProfesoresMouseExited"/>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnProfesorMouseClicked"/>
+                    <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnProfesorMouseEntered"/>
+                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnProfesorMouseExited"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JLabel" name="icnProfesores">
+                <Component class="javax.swing.JLabel" name="icnProfesor">
                   <Properties>
                     <Property name="horizontalAlignment" type="int" value="0"/>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                      <Connection code="new javax.swing.ImageIcon(&quot;resources/images/profesor.png&quot;)&#xa;" type="code"/>
+                      <Connection code="new javax.swing.ImageIcon(&quot;resources/images/gestionar.png&quot;)&#xa;" type="code"/>
                     </Property>
                     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                       <Color id="Cursor de Mano"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="icnProfesoresMouseEntered"/>
-                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="icnProfesoresMouseExited"/>
+                    <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="icnProfesorMouseEntered"/>
+                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="icnProfesorMouseExited"/>
                   </Events>
                 </Component>
               </SubComponents>
@@ -504,64 +497,70 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="pnlGuardar" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="465" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="estadoCivil3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="estadoCivil1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="sexo" min="-2" max="-2" attributes="0"/>
+                                  <Component id="nombres" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="ocupacion1" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="txtSemestre1" pref="241" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="nombres" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="ocupacion" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="txtOcupacion1" min="-2" pref="234" max="-2" attributes="0"/>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Component id="ocupacion1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="txtNombres" min="-2" pref="234" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="apellidoPaterno" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jRadioButton2" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="jRadioButton1" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Component id="ocupacion" min="-2" max="-2" attributes="0"/>
+                                          </Group>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="txtNombres" pref="241" max="32767" attributes="0"/>
-                                          <Component id="txtSemestre" max="32767" attributes="0"/>
+                                          <Component id="txtApellidoPaterno" max="32767" attributes="0"/>
+                                          <Component id="txtOcupacion" max="32767" attributes="0"/>
+                                          <Component id="txtOcupacion2" alignment="0" min="-2" pref="234" max="-2" attributes="0"/>
                                       </Group>
-                                  </Group>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="apellidoPaterno" min="-2" max="-2" attributes="0"/>
-                                  <Component id="estadoCivil" min="-2" max="-2" attributes="0"/>
-                                  <Component id="estadoCivil1" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="txtApellidoPaterno" pref="240" max="32767" attributes="0"/>
-                                  <Component id="txtGrupo" max="32767" attributes="0"/>
-                                  <Component id="txtGrupo1" alignment="0" max="32767" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Component id="estadoCivil2" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="txtGrupo2" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="Catedratico" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="apellidoMaterno" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="estadoCivil" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="estadoCivil2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="txtidCatedratico" max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="txtEstadoCivil1" max="32767" attributes="0"/>
+                                          <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                              <Component id="txtEstadoCivil" max="32767" attributes="0"/>
+                                              <Component id="txtApellidoMaterno" min="-2" pref="234" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace pref="19" max="32767" attributes="0"/>
                                   </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="apellidoMaterno" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="txtApellidoMaterno" min="-2" pref="214" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="txtOcupacion3" min="-2" pref="234" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace min="0" pref="16" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="461" max="-2" attributes="0"/>
+                              <Component id="pnlGuardar" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                           <Component id="icnLogo1" alignment="0" max="32767" attributes="0"/>
                       </Group>
@@ -571,10 +570,10 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace pref="75" max="32767" attributes="0"/>
                       <Component id="icnLogo1" min="-2" pref="260" max="-2" attributes="0"/>
-                      <EmptySpace pref="63" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="nombres" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="txtNombres" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -583,27 +582,33 @@
                           <Component id="apellidoMaterno" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="txtApellidoMaterno" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="sexo" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jRadioButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jRadioButton2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="ocupacion" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtSemestre" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtOcupacion" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="estadoCivil" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtGrupo" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="Catedratico" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtidCatedratico" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtEstadoCivil" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="ocupacion1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtSemestre1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="estadoCivil1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtGrupo1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtOcupacion1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="ocupacion1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtOcupacion2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="estadoCivil2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtGrupo2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtEstadoCivil1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="estadoCivil3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtOcupacion3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
                       <Component id="pnlGuardar" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -627,7 +632,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="0" green="0" red="0" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Grupo:"/>
+                <Property name="text" type="java.lang.String" value="Estado Civil:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="ocupacion">
@@ -635,7 +640,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="0" green="0" red="0" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Semestre:"/>
+                <Property name="text" type="java.lang.String" value="Ocupacion:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="apellidoMaterno">
@@ -646,15 +651,23 @@
                 <Property name="text" type="java.lang.String" value="Apellido Materno:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtidCatedratico">
+            <Component class="javax.swing.JTextField" name="txtEstadoCivil">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtidCatedraticoActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtEstadoCivilActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtSemestre">
+            <Component class="javax.swing.JTextField" name="txtOcupacion">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtSemestreActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtOcupacionActionPerformed"/>
               </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="sexo">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Sexo:"/>
+              </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="apellidoPaterno">
               <Properties>
@@ -672,19 +685,6 @@
             <Component class="javax.swing.JTextField" name="txtApellidoMaterno">
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtApellidoMaternoActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="javax.swing.JLabel" name="Catedratico">
-              <Properties>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="0" red="0" type="rgb"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Id Catedratico Responsable:"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="txtGrupo">
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtGrupoActionPerformed"/>
               </Events>
             </Component>
             <Container class="javax.swing.JPanel" name="pnlGuardar">
@@ -729,18 +729,21 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JLabel" name="ocupacion1">
+            <Component class="javax.swing.JRadioButton" name="jRadioButton1">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="0" green="0" red="0" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Semestre:"/>
+                <Property name="text" type="java.lang.String" value="Mujer"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtSemestre1">
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtSemestre1ActionPerformed"/>
-              </Events>
+            <Component class="javax.swing.JRadioButton" name="jRadioButton2">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Hombre"/>
+              </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="estadoCivil1">
               <Properties>
@@ -750,9 +753,22 @@
                 <Property name="text" type="java.lang.String" value="Matricula:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtGrupo1">
+            <Component class="javax.swing.JTextField" name="txtOcupacion1">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtGrupo1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtOcupacion1ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="ocupacion1">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Especialidad:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtOcupacion2">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtOcupacion2ActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="estadoCivil2">
@@ -763,16 +779,29 @@
                 <Property name="text" type="java.lang.String" value="Correo:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtGrupo2">
+            <Component class="javax.swing.JTextField" name="txtEstadoCivil1">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtGrupo2ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtEstadoCivil1ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="estadoCivil3">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Tel&#xe9;fono:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtOcupacion3">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtOcupacion3ActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="icnLogo1">
               <Properties>
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                  <Connection code="new javax.swing.ImageIcon(&quot;resources/images/alumno_256.png&quot;)" type="code"/>
+                  <Connection code="new javax.swing.ImageIcon(&quot;resources/images/profesor_256.png&quot;)" type="code"/>
                 </Property>
               </Properties>
             </Component>
