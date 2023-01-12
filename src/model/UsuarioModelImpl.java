@@ -77,12 +77,13 @@ public class UsuarioModelImpl {
             conexion = new Conexion();//se establece la conexión
             connection = conexion.getConnection();//se obtiene la conexión 
                                                   //de la base de datos 
-            String query = "select usuarios.id_usuario,nombre_usuario,"
-                    + "email_usuario,nombre_rol from "
-                    + "usuarios inner join roles_tipos_usuario "
-                    + "right join roles_usuarios "
-                    + "on usuarios.id_usuario = roles_usuarios.id_usuario and "
-                    + "roles_tipos_usuario.id_rol=roles_usuarios.id_rol;";
+            String query = "with usuarios_registrados as "
+                    + "(select * from usuarios left join roles_tipos_usuario on "
+                    + "usuarios.f_id_rol = roles_tipos_usuario.id_rol)\n" 
+                    + "select usuarios_registrados.id_usuario,"
+                    + "usuarios_registrados.nombre_usuario, "
+                    + "usuarios_registrados.email_usuario from "
+                    + "usuarios_registrados;";
             
             
             stm = connection.createStatement();
@@ -92,10 +93,10 @@ public class UsuarioModelImpl {
             while (rs.next()) {
                 Usuario usuario = new Usuario();
                 usuario.setIdUsuario(rs.getInt(
-                        "usuarios.id_usuario"));
+                        1));
                 usuario.setNombreUsuario(rs.getString(
-                        "nombre_usuario"));
-                usuario.setEmail(rs.getString("email_usuario"));
+                        2));
+                usuario.setEmail(rs.getString(3));
                 usuario.setRol(rs.getString("nombre_rol"));
                         
                 listaUsuario.add(usuario);
