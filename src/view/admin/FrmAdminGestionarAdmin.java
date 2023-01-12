@@ -1,7 +1,7 @@
 /**
  * Autor: Joel && Elio
  * Fecha de creación: 08 de enero del 2023
- * Fecha de modificación: 09 de enero del 2023
+ * Fecha de modificación: 12 de enero del 2023
  * Descripción: Frame Gestionar administradores
  */
 package view.admin;
@@ -148,14 +148,6 @@ public class FrmAdminGestionarAdmin extends javax.swing.JFrame {
         PnlIzquierdo.setPreferredSize(new java.awt.Dimension(240, 700));
 
         pnlHome.setBackground(new java.awt.Color(0, 0, 32));
-        pnlHome.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                pnlHomeMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                pnlHomeMouseExited(evt);
-            }
-        });
 
         btnHome.setBackground(new java.awt.Color(0, 0, 32));
         btnHome.setForeground(new java.awt.Color(255, 255, 255));
@@ -597,46 +589,66 @@ public class FrmAdminGestionarAdmin extends javax.swing.JFrame {
     private void btnSalirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalirMouseClicked
         System.exit(0);
     }//GEN-LAST:event_btnSalirMouseClicked
-
+    /**
+     *
+     * Permite mover la ventana a cualquier dirección
+     *
+     */
     private void lblSuperiorMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblSuperiorMouseDragged
         int x = evt.getXOnScreen();
         int y = evt.getYOnScreen();
         this.setLocation(x - xMouse, y - yMouse);
     }//GEN-LAST:event_lblSuperiorMouseDragged
-
+    /**
+     *
+     * Permite mover la ventana a cualquier dirección
+     *
+     */
     private void lblSuperiorMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblSuperiorMousePressed
         xMouse = evt.getX();
         yMouse = evt.getY();
     }//GEN-LAST:event_lblSuperiorMousePressed
-
+    /**
+     *
+     * otorga y gestiona el evento de mouse exited para el botón home
+     *
+     */
     private void btnHomeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHomeMouseExited
         pnlHome.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_btnHomeMouseExited
-
+    /**
+     *
+     * otorga y gestiona el evento de mouse entered para el botón home
+     *
+     */
     private void btnHomeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHomeMouseEntered
         pnlHome.setBackground(Colors.MOUSE_ENTERED);
     }//GEN-LAST:event_btnHomeMouseEntered
-
+    /**
+     *
+     * otorga y gestiona el evento de mouse exited para el botón home
+     *
+     */
     private void icnHomeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icnHomeMouseExited
         pnlHome.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_icnHomeMouseExited
-
+    /**
+     *
+     * otorga y gestiona el evento de mouse entered para el botón home
+     *
+     */
     private void icnHomeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icnHomeMouseEntered
         pnlHome.setBackground(Colors.MOUSE_ENTERED);
     }//GEN-LAST:event_icnHomeMouseEntered
 
-    private void pnlHomeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlHomeMouseExited
-        pnlHome.setBackground(Colors.MOUSE_EXITED);
-    }//GEN-LAST:event_pnlHomeMouseExited
-
-    private void pnlHomeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlHomeMouseEntered
-        pnlHome.setBackground(Colors.MOUSE_ENTERED);
-    }//GEN-LAST:event_pnlHomeMouseEntered
-
     private void tablaRolMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tablaRolMouseClicked
 
     }//GEN-LAST:event_tablaRolMouseClicked
-
+    /**
+     *
+     * Elimina un usario de la tabla
+     *
+     */
     private void lblEliminarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEliminarMouseClicked
         UsuarioController uController = new UsuarioController();
         Usuario usuario = new Usuario();
@@ -648,15 +660,27 @@ public class FrmAdminGestionarAdmin extends javax.swing.JFrame {
         usuarioController.mostrarRegistros(modeloTabla);
 
     }//GEN-LAST:event_lblEliminarMouseClicked
-
+    /**
+     *
+     * otorga y gestiona el evento de mouse entered para el botón eliminar
+     *
+     */
     private void lblEliminarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEliminarMouseEntered
         pnlEliminar.setBackground(Colors.MOUSE_ENTERED);
     }//GEN-LAST:event_lblEliminarMouseEntered
-
+    /**
+     *
+     * otorga y gestiona el evento de mouse exited para el botón eliminar
+     *
+     */
     private void lblEliminarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEliminarMouseExited
         pnlEliminar.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_lblEliminarMouseExited
-
+    /**
+     *
+     * Actualiza un usuario de la tabla
+     *
+     */
     private void lblActualizarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblActualizarMouseClicked
 //        Usuario usuario = new Usuario();
 //        UsuarioController uController = new UsuarioController();
@@ -672,81 +696,148 @@ public class FrmAdminGestionarAdmin extends javax.swing.JFrame {
 //        usuarioController.mostrarRegistros(modeloTabla);
 
     }//GEN-LAST:event_lblActualizarMouseClicked
-
+    /**
+     *
+     * otorga y gestiona el evento de mouse entered para el botón actualizar
+     *
+     */
     private void lblActualizarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblActualizarMouseEntered
         pnlActualizar.setBackground(Colors.MOUSE_ENTERED);
     }//GEN-LAST:event_lblActualizarMouseEntered
-
+    /**
+     *
+     * otorga y gestiona el evento de mouse exited para el botón actualizar
+     *
+     */
     private void lblActualizarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblActualizarMouseExited
         pnlActualizar.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_lblActualizarMouseExited
-
+    /**
+     *
+     * otorga y gestiona el evento de mouse clicked para el botón eliminar
+     *
+     */
     private void lblEliminar1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEliminar1MouseClicked
         FrmAdminRegistrarAdmin VentanaRegistroAdmin = new FrmAdminRegistrarAdmin();
         VentanaRegistroAdmin.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_lblEliminar1MouseClicked
-
+    /**
+     *
+     * otorga y gestiona el evento de mouse entered para el botón eliminar
+     *
+     */
     private void lblEliminar1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEliminar1MouseEntered
         pnlAgregar.setBackground(Colors.MOUSE_ENTERED);
     }//GEN-LAST:event_lblEliminar1MouseEntered
-
+    /**
+     *
+     * otorga y gestiona el evento de mouse exited para el botón eliminar
+     *
+     */
     private void lblEliminar1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEliminar1MouseExited
         pnlAgregar.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_lblEliminar1MouseExited
-
+    /**
+     *
+     * otorga y gestiona el evento de mouse clicked para el botón home
+     *
+     */
     private void btnHomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHomeMouseClicked
         Home home = new Home();
         home.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnHomeMouseClicked
-
+    /**
+     *
+     * otorga y gestiona el evento de mouse clicked para el botón alumnos
+     *
+     */
     private void btnAlumnosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAlumnosMouseClicked
         FrmAdminGestionarAlumno ventanaAlumno = new FrmAdminGestionarAlumno();
         ventanaAlumno.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnAlumnosMouseClicked
-
+    /**
+     *
+     * otorga y gestiona el evento de mouse entered para el botón alumnos
+     *
+     */
     private void btnAlumnosMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAlumnosMouseEntered
         pnlAlumnos.setBackground(Colors.MOUSE_ENTERED);
     }//GEN-LAST:event_btnAlumnosMouseEntered
-
+    /**
+     *
+     * otorga y gestiona el evento de mouse exited para el botón alumnos
+     *
+     */
     private void btnAlumnosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAlumnosMouseExited
         pnlAlumnos.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_btnAlumnosMouseExited
-
+    /**
+     *
+     * otorga y gestiona el evento de mouse entered para el botón alumnos
+     *
+     */
     private void icnAlumnosMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icnAlumnosMouseEntered
         pnlAlumnos.setBackground(Colors.MOUSE_ENTERED);
 
     }//GEN-LAST:event_icnAlumnosMouseEntered
-
+    /**
+     *
+     * otorga y gestiona el evento de mouse exited para el botón alumnos
+     *
+     */
     private void icnAlumnosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icnAlumnosMouseExited
         pnlAlumnos.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_icnAlumnosMouseExited
-
+    /**
+     *
+     * otorga y gestiona el evento de mouse clicked para el botón profesor
+     *
+     */
     private void btnProfesoresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProfesoresMouseClicked
         FrmAdminGestionarProfesor ventanaProfesor = new FrmAdminGestionarProfesor();
         ventanaProfesor.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnProfesoresMouseClicked
-
+    /**
+     *
+     * otorga y gestiona el evento de mouse entered para el botón profesor
+     *
+     */
     private void btnProfesoresMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProfesoresMouseEntered
         pnlProfesores.setBackground(Colors.MOUSE_ENTERED);
     }//GEN-LAST:event_btnProfesoresMouseEntered
-
+    /**
+     *
+     * otorga y gestiona el evento de mouse exited para el botón profesor
+     *
+     */
     private void btnProfesoresMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProfesoresMouseExited
         pnlProfesores.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_btnProfesoresMouseExited
-
+    /**
+     *
+     * otorga y gestiona el evento de mouse entered para el botón profesores
+     *
+     */
     private void icnProfesoresMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icnProfesoresMouseEntered
         pnlProfesores.setBackground(Colors.MOUSE_ENTERED);
-
     }//GEN-LAST:event_icnProfesoresMouseEntered
-
+/**
+     *
+     * otorga y gestiona el evento de mouse exited para el botón profesore
+     *
+     */
     private void icnProfesoresMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_icnProfesoresMouseExited
         pnlProfesores.setBackground(Colors.MOUSE_EXITED);
     }//GEN-LAST:event_icnProfesoresMouseExited
-
+/**
+     *
+     * otorga y gestiona el evento de mouse entered para el botón profesores
+     *
+     */
     private void pnlProfesoresMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlProfesoresMouseEntered
         // TODO add your handling code here:
     }//GEN-LAST:event_pnlProfesoresMouseEntered

@@ -1,8 +1,8 @@
 /**
  * Autor: Joel && Elio
- * Fecha de creación: 08 de enero del 2023
- * Fecha de modificación: 09 de enero del 2023
- * Descripción: Frame registrar tutor
+ * Fecha de creación: 11 de enero del 2023
+ * Fecha de modificación: 12 de enero del 2023
+ * Descripción: Ventana para Registrar Profesores
  */
 package view.admin;
 
@@ -717,19 +717,19 @@ public class FrmAdminRegistrarProfesor extends javax.swing.JFrame {
     }//GEN-LAST:event_btnHomeMouseClicked
 
     private void txtOcupacion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtOcupacion1ActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_txtOcupacion1ActionPerformed
 
     private void txtOcupacion2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtOcupacion2ActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_txtOcupacion2ActionPerformed
 
     private void txtEstadoCivil1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEstadoCivil1ActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_txtEstadoCivil1ActionPerformed
 
     private void txtOcupacion3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtOcupacion3ActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_txtOcupacion3ActionPerformed
 
     private void btnAlumnosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAlumnosMouseClicked
@@ -777,11 +777,11 @@ public class FrmAdminRegistrarProfesor extends javax.swing.JFrame {
     }//GEN-LAST:event_icnAdminMouseExited
 
     private void pnlAdminMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlAdminMouseEntered
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_pnlAdminMouseEntered
 
     private void pnlAdminMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlAdminMouseExited
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_pnlAdminMouseExited
 
     private void btnProfesorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProfesorMouseClicked
@@ -807,11 +807,11 @@ public class FrmAdminRegistrarProfesor extends javax.swing.JFrame {
     }//GEN-LAST:event_icnProfesorMouseExited
 
     private void pnlProfesorMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlProfesorMouseEntered
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_pnlProfesorMouseEntered
 
     private void pnlProfesorMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlProfesorMouseExited
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_pnlProfesorMouseExited
 
     /**

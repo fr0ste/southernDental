@@ -1,8 +1,8 @@
 /**
  * Autor: Joel && Elio
- * Fecha de creación: 08 de enero del 2023
- * Fecha de modificación: 09 de enero del 2023
- * Descripción: Frame Registrar Alumnos
+ * Fecha de creación: 11 de enero del 2023
+ * Fecha de modificación: 12 de enero del 2023
+ * Descripción: Ventana  para registar administradores
  */
 package view.admin;
 

@@ -1,6 +1,6 @@
 /**
  * Autor: Joel && Elio
- * Fecha de creación: 08 de enero del 2023
+ * Fecha de creación: 11 de enero del 2023
  * Fecha de modificación: 12 de enero del 2023
  * Descripción: Frame Registrar Administrador
  */

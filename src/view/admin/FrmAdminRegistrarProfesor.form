@@ -551,10 +551,7 @@
                                       </Group>
                                       <EmptySpace pref="19" max="32767" attributes="0"/>
                                   </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="txtOcupacion3" min="-2" pref="234" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                  </Group>
+                                  <Component id="txtOcupacion3" alignment="0" min="-2" pref="234" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
