@@ -5,7 +5,7 @@ insert into roles_tipos_usuario(nombre_rol) values ('administrador'),('profesor'
 
 -- agregamos usuarios a la base de datos
 insert into usuarios(nombre_usuario,pass_usuario,email_usuario,f_id_rol) 
-values ('Carlos','carlos123','carlos@mail.com','1'), ('juan','juan123','juan@mail.com','2'),
+values ('Carlos','carlos123','carlos@mail.com','1'), ('juan','juan123','juan@mail.com','1'),
 ('ana','ana123','ana@mail.com','3'),('agus','a123','a@mail.com','2');
 
 
