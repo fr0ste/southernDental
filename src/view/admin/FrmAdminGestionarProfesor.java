@@ -41,6 +41,9 @@ public class FrmAdminGestionarProfesor extends javax.swing.JFrame {
         pnlAlumnos = new javax.swing.JPanel();
         btnAlumnos = new javax.swing.JLabel();
         icnAlumnos = new javax.swing.JLabel();
+        pnlAlumnos1 = new javax.swing.JPanel();
+        btnAlumnos1 = new javax.swing.JLabel();
+        icnAlumnos1 = new javax.swing.JLabel();
         PnlDerecho = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tablaRol = new javax.swing.JTable();
@@ -307,6 +310,34 @@ public class FrmAdminGestionarProfesor extends javax.swing.JFrame {
             .addComponent(btnAlumnos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        pnlAlumnos1.setBackground(new java.awt.Color(75, 140, 172));
+
+        btnAlumnos1.setBackground(new java.awt.Color(0, 0, 32));
+        btnAlumnos1.setForeground(new java.awt.Color(255, 255, 255));
+        btnAlumnos1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnAlumnos1.setText("PROFESOR");
+        btnAlumnos1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        icnAlumnos1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        icnAlumnos1.setIcon(new javax.swing.ImageIcon("resources/images/profesor.png")
+        );
+        icnAlumnos1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        javax.swing.GroupLayout pnlAlumnos1Layout = new javax.swing.GroupLayout(pnlAlumnos1);
+        pnlAlumnos1.setLayout(pnlAlumnos1Layout);
+        pnlAlumnos1Layout.setHorizontalGroup(
+            pnlAlumnos1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlAlumnos1Layout.createSequentialGroup()
+                .addComponent(icnAlumnos1, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnAlumnos1, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        pnlAlumnos1Layout.setVerticalGroup(
+            pnlAlumnos1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(icnAlumnos1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
+            .addComponent(btnAlumnos1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
         javax.swing.GroupLayout PnlIzquierdoLayout = new javax.swing.GroupLayout(PnlIzquierdo);
         PnlIzquierdo.setLayout(PnlIzquierdoLayout);
         PnlIzquierdoLayout.setHorizontalGroup(
@@ -315,9 +346,10 @@ public class FrmAdminGestionarProfesor extends javax.swing.JFrame {
             .addComponent(pnlAdmin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(PnlIzquierdoLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(icnLogo, javax.swing.GroupLayout.DEFAULT_SIZE, 228, Short.MAX_VALUE)
+                .addComponent(icnLogo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
             .addComponent(pnlAlumnos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(pnlAlumnos1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         PnlIzquierdoLayout.setVerticalGroup(
             PnlIzquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -325,11 +357,13 @@ public class FrmAdminGestionarProfesor extends javax.swing.JFrame {
                 .addComponent(icnLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(pnlHome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
+                .addComponent(pnlAlumnos1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(pnlAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(pnlAlumnos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(371, Short.MAX_VALUE))
+                .addContainerGap(306, Short.MAX_VALUE))
         );
 
         mainContainer.add(PnlIzquierdo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, -1, 690));
@@ -493,47 +527,38 @@ public class FrmAdminGestionarProfesor extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(pnlEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(apellidoMaterno)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(txtApellidoMaterno, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(nombres, javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(apellidoPaterno))
-                                    .addGap(18, 18, 18)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(icnLogo1, javax.swing.GroupLayout.DEFAULT_SIZE, 316, Short.MAX_VALUE)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                            .addComponent(txtApellidoPaterno, javax.swing.GroupLayout.DEFAULT_SIZE, 316, Short.MAX_VALUE)
-                                            .addComponent(txtNombres)))))
+                        .addContainerGap()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(sexo)
+                                    .addComponent(ocupacion)
+                                    .addComponent(estadoCivil))
+                                .addGap(47, 47, 47)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtOcupacion, javax.swing.GroupLayout.DEFAULT_SIZE, 335, Short.MAX_VALUE)
+                                    .addComponent(txtApellidoMaterno1)
+                                    .addComponent(txtEstadoCivil)))
+                            .addComponent(icnLogo1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(48, 48, 48)
-                                        .addComponent(sexo))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(34, 34, 34)
-                                        .addComponent(ocupacion))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(28, 28, 28)
-                                        .addComponent(estadoCivil)))
+                                    .addComponent(apellidoPaterno)
+                                    .addComponent(nombres))
                                 .addGap(18, 18, 18)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtOcupacion)
-                                    .addComponent(txtApellidoMaterno1)
-                                    .addComponent(txtEstadoCivil))))))
+                                    .addComponent(txtApellidoPaterno)
+                                    .addComponent(txtNombres)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(apellidoMaterno)
+                                .addGap(18, 18, 18)
+                                .addComponent(txtApellidoMaterno)))))
                 .addGap(21, 21, 21))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(16, 16, 16)
                 .addComponent(icnLogo1, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(28, 28, 28)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(nombres)
                     .addComponent(txtNombres, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -891,12 +916,14 @@ public class FrmAdminGestionarProfesor extends javax.swing.JFrame {
     private javax.swing.JLabel apellidoPaterno;
     private javax.swing.JLabel btnAdmin;
     private javax.swing.JLabel btnAlumnos;
+    private javax.swing.JLabel btnAlumnos1;
     private javax.swing.JLabel btnCerrar1;
     private javax.swing.JLabel btnHome;
     private javax.swing.JLabel btnSalir;
     private javax.swing.JLabel estadoCivil;
     private javax.swing.JLabel icnAdmin;
     private javax.swing.JLabel icnAlumnos;
+    private javax.swing.JLabel icnAlumnos1;
     private javax.swing.JLabel icnHome;
     private javax.swing.JLabel icnLogo;
     private javax.swing.JLabel icnLogo1;
@@ -915,6 +942,7 @@ public class FrmAdminGestionarProfesor extends javax.swing.JFrame {
     private javax.swing.JPanel pnlAdmin;
     private javax.swing.JPanel pnlAgregar;
     private javax.swing.JPanel pnlAlumnos;
+    private javax.swing.JPanel pnlAlumnos1;
     private javax.swing.JPanel pnlEliminar;
     private javax.swing.JPanel pnlHome;
     private javax.swing.JPanel pnlIzquierdo;

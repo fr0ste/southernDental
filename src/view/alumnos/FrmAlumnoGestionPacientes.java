@@ -1,11 +1,13 @@
+/**
+ * Autor: Joel && Elio
+ * Fecha de creación: 11 de enero del 2023
+ * Fecha de modificación: 12 de enero del 2023
+ * Descripción: Ventana  para rgestionar pacientes
+ */
 package view.alumnos;
 
 import utilities.Colors;
 
-/**
- *
- * @author froste
- */
 public class FrmAlumnoGestionPacientes extends javax.swing.JFrame {
 
     /**
@@ -14,6 +16,7 @@ public class FrmAlumnoGestionPacientes extends javax.swing.JFrame {
     private int xMouse, yMouse;
     public FrmAlumnoGestionPacientes() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -55,8 +58,8 @@ public class FrmAlumnoGestionPacientes extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        tablaRol = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -199,7 +202,6 @@ public class FrmAlumnoGestionPacientes extends javax.swing.JFrame {
         );
 
         icnLogo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        icnLogo.setIcon(new javax.swing.ImageIcon("/home/froste/NetBeansProjects/southernDental/resources/images/LogoLight_128.png")); // NOI18N
 
         pnlConsultas.setBackground(new java.awt.Color(0, 0, 32));
         pnlConsultas.setPreferredSize(new java.awt.Dimension(240, 50));
@@ -414,10 +416,11 @@ public class FrmAlumnoGestionPacientes extends javax.swing.JFrame {
 
         PnlDerecho.setBackground(new java.awt.Color(153, 153, 153));
 
-        jPanel1.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
         icnUsuario.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        icnUsuario.setIcon(new javax.swing.ImageIcon("/home/froste/NetBeansProjects/southernDental/resources/images/usuario(2).png")); // NOI18N
 
         jLabel2.setText("NOMBRE");
 
@@ -465,28 +468,48 @@ public class FrmAlumnoGestionPacientes extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+
+        tablaRol.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null}
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
             },
             new String [] {
-                "ID", "NOMBRE", "APELLIDO", "APELLIDO", "", ""
+                "id", "Nombres", "Apellido Paterno", "ApellidoMaterno"
             }
-        ));
-        jScrollPane1.setViewportView(jTable1);
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        tablaRol.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tablaRolMouseClicked(evt);
+            }
+        });
+        jScrollPane2.setViewportView(tablaRol);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 648, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 499, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(143, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 566, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 543, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -657,6 +680,10 @@ public class FrmAlumnoGestionPacientes extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_pnlAgregarPacienteMouseExited
 
+    private void tablaRolMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tablaRolMouseClicked
+
+    }//GEN-LAST:event_tablaRolMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -717,8 +744,7 @@ public class FrmAlumnoGestionPacientes extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JPanel lblSuperior;
     private javax.swing.JPanel mainContainer;
     private javax.swing.JPanel pnlAgregarPaciente;
@@ -727,5 +753,6 @@ public class FrmAlumnoGestionPacientes extends javax.swing.JFrame {
     private javax.swing.JPanel pnlIzquierdo;
     private javax.swing.JPanel pnlPacientes;
     private javax.swing.JPanel pnlSuperior1;
+    private javax.swing.JTable tablaRol;
     // End of variables declaration//GEN-END:variables
 }

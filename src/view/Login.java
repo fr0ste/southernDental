@@ -14,6 +14,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JOptionPane;
 import service.UsuarioServiceImpl;
 import utilities.DefaultMsg;
+import view.alumnos.FrmAlumnoGestionPacientes;
 
 public class Login extends javax.swing.JFrame {
 
@@ -347,7 +348,7 @@ public class Login extends javax.swing.JFrame {
                 
             }else if (jComboBox1.getSelectedItem().toString().equals(
                     "alumno")) {
-                new Home().setVisible(true);
+                new FrmAlumnoGestionPacientes().setVisible(true);
                 this.setVisible(false);
                 
             }else if (jComboBox1.getSelectedItem().toString().equals(

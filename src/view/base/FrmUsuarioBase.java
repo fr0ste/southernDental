@@ -185,10 +185,10 @@ public class FrmUsuarioBase extends javax.swing.JFrame {
             .addGroup(PnlIzquierdoLayout.createSequentialGroup()
                 .addGap(108, 108, 108)
                 .addComponent(pnlHome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(523, Short.MAX_VALUE))
+                .addContainerGap(543, Short.MAX_VALUE))
         );
 
-        mainContainer.add(PnlIzquierdo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, -1, 670));
+        mainContainer.add(PnlIzquierdo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, -1, 690));
 
         PnlDerecho.setBackground(new java.awt.Color(255, 255, 255));
 

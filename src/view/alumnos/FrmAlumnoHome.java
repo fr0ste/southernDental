@@ -1,18 +1,20 @@
+/**
+ * Autor: Joel && Elio
+ * Fecha de creación: 11 de enero del 2023
+ * Fecha de modificación: 12 de enero del 2023
+ * Descripción: Ventana home alumnos
+ */
 package view.alumnos;
-
 
 import utilities.Colors;
 
-/**
- *
- * @author froste
- */
 public class FrmAlumnoHome extends javax.swing.JFrame {
 
     /**
      * variables
      */
     private int xMouse, yMouse;
+
     public FrmAlumnoHome() {
         initComponents();
     }

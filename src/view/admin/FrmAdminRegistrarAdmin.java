@@ -46,6 +46,9 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
         btnAlumnos = new javax.swing.JLabel();
         icnAlumnos = new javax.swing.JLabel();
         icnLogo = new javax.swing.JLabel();
+        pnlAlumnos1 = new javax.swing.JPanel();
+        btnAlumnos1 = new javax.swing.JLabel();
+        icnAlumnos1 = new javax.swing.JLabel();
         PnlDerecho = new javax.swing.JPanel();
         txtCorreoElectronico = new javax.swing.JTextField();
         lblNombreUsuario = new javax.swing.JLabel();
@@ -364,6 +367,34 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
         icnLogo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         icnLogo.setIcon(new javax.swing.ImageIcon("resources/images/LogoLight_128.png"));
 
+        pnlAlumnos1.setBackground(new java.awt.Color(75, 140, 172));
+
+        btnAlumnos1.setBackground(new java.awt.Color(0, 0, 32));
+        btnAlumnos1.setForeground(new java.awt.Color(255, 255, 255));
+        btnAlumnos1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnAlumnos1.setText("REGISTRAR USUARIO");
+        btnAlumnos1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        icnAlumnos1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        icnAlumnos1.setIcon(new javax.swing.ImageIcon("resources/images/profesor.png")
+        );
+        icnAlumnos1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        javax.swing.GroupLayout pnlAlumnos1Layout = new javax.swing.GroupLayout(pnlAlumnos1);
+        pnlAlumnos1.setLayout(pnlAlumnos1Layout);
+        pnlAlumnos1Layout.setHorizontalGroup(
+            pnlAlumnos1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlAlumnos1Layout.createSequentialGroup()
+                .addComponent(icnAlumnos1, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnAlumnos1, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        pnlAlumnos1Layout.setVerticalGroup(
+            pnlAlumnos1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(icnAlumnos1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
+            .addComponent(btnAlumnos1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
         javax.swing.GroupLayout PnlIzquierdoLayout = new javax.swing.GroupLayout(PnlIzquierdo);
         PnlIzquierdo.setLayout(PnlIzquierdoLayout);
         PnlIzquierdoLayout.setHorizontalGroup(
@@ -376,6 +407,7 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(icnLogo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
+            .addComponent(pnlAlumnos1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         PnlIzquierdoLayout.setVerticalGroup(
             PnlIzquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -384,12 +416,14 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(pnlHome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
+                .addComponent(pnlAlumnos1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(pnlGestionar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(19, 19, 19)
                 .addComponent(pnlProfesores, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(pnlAlumnos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(314, Short.MAX_VALUE))
+                .addContainerGap(257, Short.MAX_VALUE))
         );
 
         mainContainer.add(PnlIzquierdo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, -1, 690));
@@ -741,12 +775,14 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
     private javax.swing.JPanel PnlDerecho;
     private javax.swing.JPanel PnlIzquierdo;
     private javax.swing.JLabel btnAlumnos;
+    private javax.swing.JLabel btnAlumnos1;
     private javax.swing.JLabel btnCerrar1;
     private javax.swing.JLabel btnHome;
     private javax.swing.JLabel btnHome1;
     private javax.swing.JLabel btnProfesores;
     private javax.swing.JLabel btnSalir;
     private javax.swing.JLabel icnAlumnos;
+    private javax.swing.JLabel icnAlumnos1;
     private javax.swing.JLabel icnHome;
     private javax.swing.JLabel icnHome1;
     private javax.swing.JLabel icnLogo;
@@ -763,6 +799,7 @@ public class FrmAdminRegistrarAdmin extends javax.swing.JFrame {
     private javax.swing.JPanel mainContainer;
     private javax.swing.JPasswordField passUsuario;
     private javax.swing.JPanel pnlAlumnos;
+    private javax.swing.JPanel pnlAlumnos1;
     private javax.swing.JPanel pnlGestionar;
     private javax.swing.JPanel pnlGuardar;
     private javax.swing.JPanel pnlHome;
