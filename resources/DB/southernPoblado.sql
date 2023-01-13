@@ -21,3 +21,9 @@ values('Agustin','','Perez','','9212532667',4);
 -- agregamos datos de alumnos
 insert into alumnos(nombre,nombre2,apellido,apellido2,semestre,grupo,matricula,telefono,f_id_catedratico_responsable,f_id_usuario)
 values('ana','','Aguilar','',7,'717','125452311','9515476231',1,3); 
+
+
+
+
+-- agreagamos datos de 
+
